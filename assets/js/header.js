@@ -35,6 +35,6 @@ function myFunction(x) {
         nav.className = "menu-mobile active inactive";
         setTimeout(function(){
           nav.className = "menu-mobile";
-        }, 3000);
+        }, 2000);
     }
 }
