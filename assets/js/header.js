@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   var width = window.innerWidth;
   var responsiveContent = document.getElementById('responsive-header');
-  if (width < 768) {
+  if (width < 769) {
       // Mostrar el contenido para pantallas pequeñas
       var xhr = new XMLHttpRequest();
       xhr.onreadystatechange = function() {
