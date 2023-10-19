@@ -1,8 +1,10 @@
 jQuery(document).ready(function($) {
   var width = $(window).width();
   if (width < 768) {
-    <p>Pantalla pequeña</p>
+      // Mostrar el contenido para pantallas pequeñas
+      $('#responsive-content').text('Pantalla pequeña');
   } else {
-    <p>Pantalla grande</p>
+      // Mostrar el contenido para pantallas grandes
+      $('#responsive-content').text('Pantalla grande');
   }
 });
