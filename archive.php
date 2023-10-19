@@ -14,7 +14,7 @@ echo '<section class="container main-content"><div class="section padding-sectio
         the_posts_pagination();
         echo '</div>';     
     } else {
-        echo '<p>' . __('No se encontró ninguna coincidencia', 'renata') . '</p>';
+        echo '<p>' . __('No se encontró ninguna coincidencia', 'pinplast') . '</p>';
     }
     $post_count = wp_count_posts();
     if ( $post_count->publish > 0 ) :

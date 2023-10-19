@@ -11,7 +11,7 @@ echo '<section class="container main-content"><div class="section padding-sectio
         the_posts_pagination();
         echo '</div>';     
     } else {
-        echo '<p>' . __('Actualmente no hay artículos en este blog', 'renata') . '</p>';
+        echo '<p>' . __('Actualmente no hay artículos en este blog', 'pinplast') . '</p>';
     }
     $post_count = wp_count_posts();
     if ( $post_count->publish > 0 ) :
