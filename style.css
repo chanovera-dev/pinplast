@@ -17,7 +17,7 @@ Tags:
 /* ajustes globales */
 html{font-size:62.5%; scroll-behavior:smooth;}
 body,header,main,footer,section,aside,article,div,nav,input,textarea,ul,ol,li,figure,figcaption,blockquote,pre,dl,dt,dd,a{box-sizing:border-box;}
-body{margin:0; display:block; height:100%; font-family:"Roboto", "sans-serif"; font-size:1.6rem; font-weight:400; line-height:1.5; background-color:var(--background-color-body); color:var(--color-body); backface-visibility:hidden; overflow-y:scroll;}
+body{margin:0; display:block; height:100%; font-size:1.6rem; font-weight:400; line-height:1.5; background-color:var(--background-color-body); color:var(--color-body); backface-visibility:hidden; overflow-y:scroll;}
 :is(header,footer,section,div,article) :is(div,h1,h2,h3,h4,h5,h6,p,span,li,a,figure,blockquote,figcaption){margin:0;}
 :is(header,footer,aside,.resume-content) :is(ol,ul){margin:0; padding:0; list-style:none;}
 a{color:var(--color-body); transition:all .3s ease;}
