@@ -1,17 +1,20 @@
-<?php /* Template name: Blog */   
+<?php
 get_header();
-echo '<main id="main">';  
-echo '<section class="container main-content"><div class="section padding-section posts-wrapper">';              
+echo '<main id="main">'; 
+
+echo '<section class="container main-content"><div class="section padding-section posts-wrapper">';
+                  
     if ( have_posts() ){           
         echo '<div class="posts">';
+        include (TEMPLATEPATH. '/parts/sections/title-archive.php');
         while( have_posts() ){            
             the_post();  
-            get_template_part( 'templates/content', 'home' );    
+            get_template_part( 'templates/content', 'archive' );    
         }
         the_posts_pagination();
         echo '</div>';     
     } else {
-        echo '<p>' . __('Actualmente no hay artículos en este blog', 'renata') . '</p>';
+        echo '<p>' . __('No se encontró ninguna coincidencia', 'renata') . '</p>';
     }
     $post_count = wp_count_posts();
     if ( $post_count->publish > 0 ) :
