@@ -49,7 +49,7 @@ main{}
     .menu-mobile--button .bars.change{transition-delay:.8s; transform:rotate(45deg);}
     .menu-mobile--button .bars.change .bar2{width:0;}
     .menu-mobile--button .bars.change .bar1{transform:translateY(9px);}
-    .menu-mobile--button .bars.change .bar3{transform:translateY(-9px) rotate(90deg); width:1.8rem;}
+    .menu-mobile--button .bars.change .bar3{transform:translateY(-3px) rotate(90deg); width:1.8rem;}
     /* menú */
     .main-header{position:relative;}
     .menu-mobile{position:absolute; top:0; left:-100%; width:100%; max-width:290px; height:100svh; transition:all .3s ease;}
