@@ -4,6 +4,9 @@ function theme_colors() {
     ?>
         <style>
             :root{
+                --background-color-body:#ffffff;
+                --color-body:#000;
+                --link-focus:0 0 0 .1rem var(--blue);
                 --blue: #007bff;
                 --indigo: #6610f2;
                 --purple: #6f42c1;
