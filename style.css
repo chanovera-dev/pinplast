@@ -37,6 +37,17 @@ main{}
     
 
 @media screen and (min-width: 31px) and (max-width: 1023px){
+    /* botón */
+    .menu-mobile--button{position:relative; display:grid; place-content:center; cursor:pointer; z-index:1;}
+    .menu-mobile--button .bars{display:inline-block; width:2.5rem; height:2rem; transition:all .3s ease;}
+    .menu-mobile--button .bars :is(.bar1, .bar2, .bar3){width:2.5rem; height:.2rem; transition:.4s; background-color:var(--color-body);}
+    .menu-mobile--button .bars:hover :is(.bar1, .bar2, .bar3){}
+    .menu-mobile--button .bars > div:not(:last-child){margin-bottom:.7rem;}
+    .menu-mobile--button .bars.change{transition-delay:.8s; transform:rotate(45deg);}
+    .menu-mobile--button .bars.change .bar2{width:0;}
+    .menu-mobile--button .bars.change .bar1{transform:translateY(9px);}
+    .menu-mobile--button .bars.change .bar3{transform:translateY(-9px) rotate(90deg);}
+    /* menú */
     .main-header{position:relative;}
     .menu-mobile{position:absolute; top:0; left:-100%; width:100%; max-width:290px; height:100svh; transition:all .3s ease;}
 }
