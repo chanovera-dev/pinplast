@@ -23,7 +23,7 @@ body{margin:0; display:block; height:100%; font-size:1.6rem; font-weight:400; li
 a{color:var(--color-body); transition:all .3s ease;}
 a:hover{color:var(--blue);}
 a:focus{outline:none; box-shadow:var(--link-focus);}
-.container .section{width:min(100% - 3rem, 1110px); margin-inline:auto;}
+.container .section{width:min(100% - 3rem, 690px); margin-inline:auto;}
 img{display:block;}
 
 /* ajustes específicos */
@@ -36,7 +36,7 @@ main{}
     /* carrito */
     
 
-@media screen and (min-width: 31px) and (max-width: 1023px){
+@media screen and (min-width: 31px) and (max-width: 768px){
     /* cabecera */
     .main-header{background-color:#ffd333; color:#3d464d; box-shadow:0 1px rgba(0, 0, 0, 0.04), inset 0 -1px rgba(0, 0, 0, 0.04);}
     .header-content{display:flex; align-items:center; justify-content:space-between; height:5.4rem;}
