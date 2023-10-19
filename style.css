@@ -38,7 +38,7 @@ main{}
 
 @media screen and (min-width: 31px) and (max-width: 1023px){
     /* cabecera */
-    .responsive-header{display:flex; align-items:center; justify-content:space-between; height:5.4rem;}
+    .header-content{display:flex; align-items:center; justify-content:space-between; height:5.4rem;}
     /* botón */
     .menu-mobile--button{position:relative; display:grid; place-content:center; cursor:pointer; z-index:1;}
     .menu-mobile--button .bars{display:inline-block; width:2.5rem; height:2rem; transition:all .3s ease;}
