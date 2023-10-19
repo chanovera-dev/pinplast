@@ -11,12 +11,17 @@ add_action( 'wp_enqueue_scripts', 'load_parts_header' );
 // Carga componentes (estilos, javascript, etc) en el footer
 function load_parts_footer(){
     // JS de efectos en la cabecera
-    wp_enqueue_script( 'responsive-header', get_template_directory_uri() . '/assets/js/header.js', array(), '1.0', true );
-    wp_localize_script('responsive-header', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
+    //
     /* estilos css para los formularios */
     wp_enqueue_style( 'forms-styles', get_template_directory_uri() . '/assets/css/forms.css' ); 
 }
 add_action( 'get_footer', 'load_parts_footer' );
+
+function enqueue_custom_script() {
+    wp_enqueue_script( 'responsive-header', get_template_directory_uri() . '/assets/js/header.js', array(), '1.0', true );
+    wp_localize_script('responsive-header', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_script');
 
 add_action('wp_ajax_get_little_screen_content', 'get_little_screen_content');
 add_action('wp_ajax_nopriv_get_little_screen_content', 'get_little_screen_content');
