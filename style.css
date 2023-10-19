@@ -36,6 +36,9 @@ main{}
     /* carrito */
     
 
-@media screen and (min-width: 31px) and (max-width: 1023px){}
+@media screen and (min-width: 31px) and (max-width: 1023px){
+    .main-header{position:relative;}
+    .menu-mobile{position:absolute; top:0; left:-50%;}
+}
 
 @media(min-width:1024px){}
