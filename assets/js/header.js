@@ -23,3 +23,18 @@ document.addEventListener("DOMContentLoaded", function() {
       xhr.send();
   }
 });
+
+/* arreglo del botón del menú y del menú */
+function myFunction(x) {
+    var nav = document.getElementById("menu-mobile--button");
+    x.classList.toggle("change");
+    
+    if (nav.className === "menu-mobile--button") {
+        nav.className += " active";
+    } else {
+        nav.className = "menu-mobile--button active inactive";
+        setTimeout(function(){
+          nav.className = "menu-mobile--button";
+        }, 3000);
+    }
+}
