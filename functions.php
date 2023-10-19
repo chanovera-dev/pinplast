@@ -30,8 +30,11 @@ register_nav_menus(
     ) 
 );
 
-// Anexo para establecer las variables de los colores
+// Anexo para establecer las variables de los breakoints
 require_once(get_template_directory() . '/functions/colors.php');
+
+// Anexo para establecer las variables de los colores
+require_once(get_template_directory() . '/functions/breakpoints.php');
 
 // Anexo para establecer los componentes de los templates
 require_once(get_template_directory() . '/functions/components.php');

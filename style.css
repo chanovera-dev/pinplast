@@ -23,7 +23,7 @@ body{margin:0; display:block; height:100%; font-size:1.6rem; font-weight:400; li
 a{color:var(--color-body); transition:all .3s ease;}
 a:hover{color:var(--blue);}
 a:focus{outline:none; box-shadow:var(--link-focus);}
-.container .section{width:min(100% - 3rem, 690px); margin-inline:auto;}
+.container .section{width:var(--breakpoint); margin-inline:auto;}
 img{display:block;}
 
 /* ajustes específicos */
