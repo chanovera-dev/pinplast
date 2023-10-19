@@ -42,8 +42,8 @@ main{}
     .header-content{display:flex; align-items:center; justify-content:space-between; height:5.4rem;}
     /* botón */
     .menu-mobile--button{position:relative; display:grid; place-content:center; cursor:pointer; z-index:1;}
-    .menu-mobile--button .bars{display:inline-block; width:2.5rem; height:2rem; transition:all .3s ease;}
-    .menu-mobile--button .bars :is(.bar1, .bar2, .bar3){width:2.5rem; height:.2rem; transition:.4s; background-color:#3d464d;}
+    .menu-mobile--button .bars{display:inline-block; width:1.8rem; height:1.4rem; transition:all .3s ease;}
+    .menu-mobile--button .bars :is(.bar1, .bar2, .bar3){width:1.8rem; height:.2rem; transition:.4s; background-color:#3d464d;}
     .menu-mobile--button .bars .bar3{width:2rem;}
     .menu-mobile--button .bars:hover :is(.bar1, .bar2, .bar3){}
     .menu-mobile--button .bars > div:not(:last-child){margin-bottom:.5rem;}
