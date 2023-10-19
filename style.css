@@ -54,7 +54,7 @@ main{}
     .main-header{position:relative;}
     .menu-mobile{
         position:absolute; top:0; left:-100%; width:100%; height:100svh; transition:all .3s ease;
-        background-color:hsla(206, 12%, 27%, 0.272);
+        background-color:hsla(206, 12%, 27%, 0.7);
     }
     .menu-mobile.active{left:0;}
     .menu-mobile.active.inactive{left:-100%;}
