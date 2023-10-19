@@ -32,9 +32,6 @@ function myFunction(x) {
     if (nav.className === "menu-mobile") {
         nav.className += " active";
     } else {
-        nav.className = "menu-mobile active inactive";
-        setTimeout(function(){
-          nav.className = "menu-mobile";
-        }, 2000);
+        nav.className = "menu-mobile";
     }
 }
