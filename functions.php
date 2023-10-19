@@ -20,9 +20,9 @@ add_action( 'get_footer', 'load_parts_footer' );
 // Registro de menús
 register_nav_menus( 
     array(
-        'primary' => __( 'Primary', 'renata' ),
-        'secondary' => __( 'Secondary', 'renata' ),
-        'social' => __( 'Social', 'renata' ), 
+        'primary' => __( 'Primary', 'pinplast' ),
+        'secondary' => __( 'Secondary', 'pinplast' ),
+        'social' => __( 'Social', 'pinplast' ), 
     ) 
 );
 
