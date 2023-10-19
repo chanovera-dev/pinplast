@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
               responsiveContent.innerHTML = this.responseText;
           }
       };
-      xhttp.open("GET", "/parts/header/little-screen.php", true);
+      xhttp.open("GET", "ttps://2023.pinplast.com.mx/wp-content/themes/pinplast/parts/header/little-screen.php", true);
       xhttp.send();
   } else {
       // Mostrar el contenido para pantallas grandes
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
               responsiveContent.innerHTML = this.responseText;
           }
       };
-      xhttp.open("GET", "/parts/header/big-screen.php", true);
+      xhttp.open("GET", "ttps://2023.pinplast.com.mx/wp-content/themes/pinplast/parts/header/big-screen.php", true);
       xhttp.send();
   }
 });
