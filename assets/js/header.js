@@ -13,6 +13,13 @@ document.addEventListener("DOMContentLoaded", function() {
       xhr.send();
   } else {
       // Mostrar el contenido para pantallas grandes
-      responsiveContent.textContent = 'Pantalla grande';
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+              responsiveContent.innerHTML = this.responseText;
+          }
+      };
+      xhr.open("GET", ajax_object.ajax_url + "?action=get_big_screen_content", true);
+      xhr.send();
   }
 });
