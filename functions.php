@@ -17,10 +17,10 @@ function load_parts_footer(){
 }
 add_action( 'get_footer', 'load_parts_footer' );
 
-function add_responsive_content_script() {
-    wp_enqueue_script( 'responsive-content-script', get_template_directory_uri() . '/assets/js/header.js', array('jquery'), '1.0', true );
+function add_responsive_header_content_script() {
+    wp_enqueue_script( 'responsive-header', get_template_directory_uri() . '/js/header.js', array(), '1.0', true );
 }
-add_action( 'wp_enqueue_scripts', 'add_responsive_content_script' );
+add_action( 'wp_enqueue_scripts', 'add_responsive_header_content_script' );
 
 // Registro de menús
 register_nav_menus( 

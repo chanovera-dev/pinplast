@@ -1,10 +1,11 @@
-jQuery(document).ready(function($) {
-  var width = $(window).width();
+document.addEventListener("DOMContentLoaded", function() {
+  var width = window.innerWidth;
+  var responsiveContent = document.getElementById('responsive-header');
   if (width < 768) {
       // Mostrar el contenido para pantallas pequeñas
-      $('#responsive-content').text('Pantalla pequeña');
+      responsiveContent.textContent = 'Pantalla pequeña';
   } else {
       // Mostrar el contenido para pantallas grandes
-      $('#responsive-content').text('Pantalla grande');
+      responsiveContent.textContent = 'Pantalla grande';
   }
 });
