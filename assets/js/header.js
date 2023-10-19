@@ -35,3 +35,11 @@ function myFunction(x) {
         nav.className = "menu-mobile";
     }
 }
+
+//brecarga el sitio si cambia la orientación de la pantalla
+window.addEventListener("orientationchange", function() {
+    var orientation = window.screen.orientation;
+    if (orientation.type === "portrait-primary" || orientation.type === "portrait-secondary" || orientation.type === "landscape-primary" || orientation.type === "landscape-secondary") {
+        location.reload();
+    }
+});
