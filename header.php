@@ -10,11 +10,5 @@ echo '<!DOCTYPE html>
     echo '</head>
     <body '; body_class(); echo '>
         <header class="container main-header">
-            <section id="responsive-header" class="section header-content">';
-            if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
-                
-            } else {
-                
-            }
-            echo '</section>
+            <section id="responsive-header" class="section header-content"></section>
         </header>';
