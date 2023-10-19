@@ -23,6 +23,7 @@ require_once(get_template_directory() . '/functions/responsive.php');
 // Registro de menús
 register_nav_menus( 
     array(
+        'mobile' => __( 'Mobile', 'pinplast' ),
         'primary' => __( 'Primary', 'pinplast' ),
         'secondary' => __( 'Secondary', 'pinplast' ),
         'social' => __( 'Social', 'pinplast' ), 
