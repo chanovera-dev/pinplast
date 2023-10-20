@@ -32,10 +32,10 @@ function myFunction(x) {
     
     if (nav.className === "menu-mobile") {
         nav.className += " active";
-        body.className += " menu-active"
+        body.className += " menu-active";
     } else {
         nav.className = "menu-mobile";
-        body.className = "home blog wp-custom-logo theme-pinplast woocommerce-js"
+        body.className = "home blog wp-custom-logo theme-pinplast woocommerce-js";
     }
 }
 
