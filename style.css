@@ -33,9 +33,9 @@ main{}
 
 /* cabecera */
     /* marca */
-    .header-content .site-brand{z-index:1; display:flex; align-items:center;}
+    .header-content .site-brand{z-index:1; display:flex; align-items:center; margin-right:auto;}
     .header-content .site-brand .custom-logo-link:focus{outline:none;}
-    .header-content .site-brand .custom-logo-link .custom-logo{width:14rem; transition:all .3s ease;}
+    .header-content .site-brand .custom-logo-link .custom-logo{width:12rem; transition:all .3s ease;}
     /* carrito */
     
 
