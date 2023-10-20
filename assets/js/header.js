@@ -51,7 +51,7 @@ window.addEventListener("orientationchange", function() {
     }
 });
 
-let iconSearch = document.getElementById('bi-search');
+let iconSearch = document.getElementById('bi-x-circle');
 let searchForm = document.getElementById('searchform');
 
 iconSearch.addEventListener('click', function() {  
