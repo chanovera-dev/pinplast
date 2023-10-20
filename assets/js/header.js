@@ -53,6 +53,6 @@ window.addEventListener("orientationchange", function() {
 
 
 document.getElementById('bi-search').addEventListener('click', function() {
-    var searchForm = document.getElementById('searchform');
+    let searchForm = document.getElementById('searchform');
     searchForm.classList.add('active');
 });
