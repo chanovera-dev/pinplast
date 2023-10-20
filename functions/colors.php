@@ -7,6 +7,7 @@ function theme_colors() {
                 --background-color-body:#ffffff;
                 --color-body:#000;
                 --link-focus:0 0 0 .1rem var(--blue);
+                --border-color:#ebebeb;
                 --color-header:#3d464d;
                 --blue: #007bff;
                 --indigo: #6610f2;
