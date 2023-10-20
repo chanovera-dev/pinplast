@@ -43,6 +43,24 @@ function myFunction(x) {
     }
 }
 
+document.addEventListener('click', function(event) {
+    var isClickInsideMenu = document.getElementById('menu-mobile--wrapper').contains(event.target);
+    var menu = document.getElementById('menu-mobile--wrapper');
+    var body = document.getElementById('body');
+    var button = document.getElementById('menu-mobile--button');
+
+    if (!isClickInsideMenu && menu.classList.contains('active')) {
+        menu.classList.remove('active');
+        body.classList.remove('menu-active');
+        body.classList.add('menu-inactive');
+        button.classList.remove('change');
+        setTimeout(function() {
+            body.classList.remove('menu-inactive');
+        }, 300);
+    }
+});
+
+
 // recarga el sitio si cambia la orientación de la pantalla
 window.addEventListener("orientationchange", function() {
     var orientation = window.screen.orientation;
