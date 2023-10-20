@@ -56,12 +56,12 @@ main{}
         100%{background-color:hsla(206, 12%, 27%, 0);}
     }
     /* cabecera */
-    .main-header{background-color:#ffd333; color:#3d464d; box-shadow:0 1px rgba(0, 0, 0, 0.04), inset 0 -1px rgba(0, 0, 0, 0.04);}
+    .main-header{background-color:#ffd333; color:var(--color-header); box-shadow:0 1px rgba(0, 0, 0, 0.04), inset 0 -1px rgba(0, 0, 0, 0.04);}
     .header-content{display:flex; gap:2rem; align-items:center; justify-content:space-between; height:5.4rem;}
     /* botón */
     .menu-mobile--button{position:relative; display:grid; place-content:center; cursor:pointer; z-index:3;}
     .menu-mobile--button .bars{display:inline-block; width:1.8rem; height:1.8rem; transition:all .3s ease;}
-    .menu-mobile--button .bars :is(.bar1, .bar2, .bar3){width:1.8rem; height:.2rem; transition:.4s; background-color:#3d464d;}
+    .menu-mobile--button .bars :is(.bar1, .bar2, .bar3){width:1.8rem; height:.2rem; transition:.4s; background-color:var(--color-header);}
     .menu-mobile--button .bars .bar3{width:1.4rem;}
     .menu-mobile--button .bars > div:not(:last-child){margin-bottom:.4rem;}
     .menu-mobile--button .bars.change{transition-delay:.5s; transform:rotate(45deg);}
@@ -73,7 +73,15 @@ main{}
     .menu-mobile{position:absolute; top:0; left:-100%; width:100%; max-width:290px; height:100svh; transition:all .3s ease; z-index:2;}
     .menu-mobile .mobile{width:100%; max-width:290px; height:100svh; overflow-y:scroll; background-color:#ffffff; padding-top:6.9rem;}
     .menu-mobile.active{left:0;}
-    
+    /* searchform */
+    .searchform .searchform-wrapper #activate-search.change-icon .bi-x-circle{display:inherit; left:1.2rem; color:var(--color-header);}
+    .searchform .searchform-wrapper #activate-search.change-icon .bi-search{display:none;}
+    .searchform .searchform-wrapper svg{left:0;}
+    .searchform .searchform-wrapper input[type=text]#s:focus{border:1px solid transparent; box-shadow:var(--box-shadow-focus);}
+    .searchform .searchform-wrapper input[type=text]#s{width:1.8rem; padding-left:0rem; padding-right:0; background-color:transparent; border:1px solid transparent;}
+    .searchform .searchform-wrapper input[type=text]#s::placeholder{color:transparent;}
+    .searchform .searchform-wrapper input[type=text]#s.activate{width:500px; background-color:#000; border:1px solid var(--border-color-input); padding-left:3.7rem; padding-right:1rem;}
+    .searchform .searchform-wrapper input[type=text]#s.activate:focus{border:1px solid var(--color-link-focus); box-shadow:var(--box-shadow-input-focus);}
 }
 
 @media(min-width:1024px){}

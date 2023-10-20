@@ -7,6 +7,7 @@ function theme_colors() {
                 --background-color-body:#ffffff;
                 --color-body:#000;
                 --link-focus:0 0 0 .1rem var(--blue);
+                --color-header:#3d464d;
                 --blue: #007bff;
                 --indigo: #6610f2;
                 --purple: #6f42c1;
@@ -28,13 +29,6 @@ function theme_colors() {
                 --danger: #dc3545;
                 --light: #f8f9fa;
                 --dark: #343a40;
-                --breakpoint-xs: 0;
-                --breakpoint-sm: 576px;
-                --breakpoint-md: 768px;
-                --breakpoint-lg: 992px;
-                --breakpoint-xl: 1200px;
-                --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-                --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
             }
         </style>
     <?php
