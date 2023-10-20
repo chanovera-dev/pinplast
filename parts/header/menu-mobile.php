@@ -1,5 +1,5 @@
 <?php
-    echo '<div id="menu-mobile" class="menu-mobile">';   
+    echo '<div id="menu-mobile--wrapper" class="menu-mobile--wrapper">';   
         wp_nav_menu(
             array(
                 'container' => 'nav', 
