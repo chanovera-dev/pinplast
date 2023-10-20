@@ -52,7 +52,7 @@ window.addEventListener("orientationchange", function() {
 });
 
 let main = document.getElementById("main");
-let body = document.getElementById("body");
+
 
 if(body.addEventListener){
     body.addEventListener('click', function(){
