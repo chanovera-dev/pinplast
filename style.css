@@ -84,7 +84,7 @@ main{}
     .searchform .searchform-wrapper{display:flex; align-items:center;}
     .searchform .searchform-wrapper #activate-search svg{width:2rem; height:2rem; padding:1.7rem; color:var(--color-header);}
     .searchform .searchform-wrapper #activate-search svg.bi-x-circle{display:none;}
-    .searchform .searchform-wrapper input[type=text]{display:none;}
+    .searchform .searchform-wrapper input[type=text]{}
     .searchform.active{position:absolute; top:0; left:0; width:100%; height:100%; background-color:var(--background-color-input); box-shadow:0 1px 7px rgba(0, 0, 0, 0.25); z-index:5;}
     .searchform.active .searchform-wrapper{position:relative;}
     .searchform.active .searchform-wrapper input[type=text]{display:inherit; width:min(100% - 5.4rem); height:5.4rem; border-radius:0; border:none; border-right:1px solid var(--border-color); padding-right:5.4rem;}
