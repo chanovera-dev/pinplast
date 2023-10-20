@@ -59,7 +59,7 @@ let icon1 = document.getElementById("bi-search");
 let icon2 = document.getElementById("bi-x-circle");
 
 // Evento 
-activateSearch.onclick = () => {
+activateSearch.onclick = function() {
   inputSearch.classList.toggle("activate");
   inputSearch.style.transition = "all .3s ease";
   activateSearch.classList.toggle("change-icon");
