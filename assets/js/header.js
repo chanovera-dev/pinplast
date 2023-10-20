@@ -52,9 +52,10 @@ window.addEventListener("orientationchange", function() {
 });
 
 let main = document.getElementById("main");
+let body = document.getElementById("body");
 
-if(main.addEventListener){
-    main.addEventListener('click', function(){
+if(body.addEventListener){
+    body.addEventListener('click', function(){
         let nav = document.getElementById("menu-mobile--wrapper");
         if(document.querySelector("#menu-mobile--wrapper.active")){
             nav.classList.remove("active");
