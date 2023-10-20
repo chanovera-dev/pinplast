@@ -5,13 +5,14 @@ function load_parts_header() {
     // Estilos globales
     wp_register_style( 'global', get_template_directory_uri() . '/style.css', '', 1, 'all' );
     wp_enqueue_style( 'global' );
+    // JS de efectos en la cabecera
+    wp_enqueue_script( 'responsive-header', get_template_directory_uri() . '/assets/js/header.js', array(), '1.0', true );
+    wp_localize_script('responsive-header', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
 }
 add_action( 'wp_enqueue_scripts', 'load_parts_header' );
 
 // Carga componentes (estilos, javascript, etc) en el footer
 function load_parts_footer(){
-    // JS de efectos en la cabecera
-    //
     /* estilos css para los formularios */
     wp_enqueue_style( 'forms-styles', get_template_directory_uri() . '/assets/css/forms.css' ); 
 }
