@@ -97,7 +97,7 @@ main{}
     /* carrito */
     .header-cart{position:relative;}
     .header-cart a{position:absolute; width:1.5rem; height:1.5rem; background-color:var(--background-color-body); border-radius:50%; font-size:1rem; color:var(--color-body);}
-    .header-cart svg{width:2rem; height:2rem; padding:1.7rem; color:var(--color-header);}
+    .header-cart svg{width:2rem; height:2rem; padding:1.7rem; padding-right:0; color:var(--color-header);}
 }
 
 @media(min-width:1024px){}
