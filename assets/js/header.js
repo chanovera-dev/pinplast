@@ -51,10 +51,14 @@ function myFunction(x) {
 //     }
 // });
 
-let iconSearch = document.getElementById('bi-search');
+let searchButton = document.getElementById('bi-search');
+let searchButtonClose = document.getElementById('bi-x-circle');
 let searchForm = document.getElementById('searchform');
 
-iconSearch.addEventListener('click', function() {  
+searchButton.addEventListener('click', function() {  
     searchForm.classList.add('active');
-    console.log("Se presionó el botón de búsqueda.");
+});
+
+searchButtonClose.addEventListener('click', function() {  
+    searchForm.classList.remove('active');
 });
