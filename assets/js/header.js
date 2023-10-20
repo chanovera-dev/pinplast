@@ -30,16 +30,12 @@ function myFunction(x) {
     let body = document.getElementById("body");
     x.classList.toggle("change");
     
-    if (nav.className === "menu-mobile") {
+    if (nav.className === "menu-mobile" && body.className === "home blog wp-custom-logo theme-pinplast woocommerce-js") {
         nav.className += " active";
+        body.className += " menu-active"
     } else {
         nav.className = "menu-mobile";
-    }
-
-    if (body.className === "theme-pinplast") {
-        body.className += " menu-active";
-    } else {
-        body.className = "theme-pinplast";
+        body.className = "home blog wp-custom-logo theme-pinplast woocommerce-js"
     }
 }
 
