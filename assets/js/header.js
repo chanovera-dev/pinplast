@@ -29,17 +29,17 @@ function myFunction(x) {
     let nav = document.getElementById("menu-mobile--wrapper");
     let body = document.getElementById("body");
     x.classList.toggle("change");
-    
-    if (nav.className === "menu-mobile--wrapper") {
-        nav.className += " active";
+
+    if (!nav.classList.contains("active")) {
+        nav.classList.add("active");
         body.classList.add("menu-active");
     } else {
-        nav.className = "menu-mobile--wrapper";
+        nav.classList.remove("active");
         body.classList.add("menu-inactive");
-        setTimeout(function(x){
+        setTimeout(function() {
             body.classList.remove("menu-inactive");
             body.classList.remove("menu-active");
-          }, 300);
+        }, 300);
     }
 }
 
@@ -59,6 +59,7 @@ document.addEventListener('click', function(event) {
         }, 300);
     }
 });
+
 
 
 // recarga el sitio si cambia la orientación de la pantalla
