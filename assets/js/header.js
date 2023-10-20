@@ -39,7 +39,7 @@ function myFunction(x) {
         setTimeout(function(x){
             body.classList.remove("menu-inactive");
             body.classList.remove("menu-active");
-          }, 3000);
+          }, 2000);
     }
 }
 
