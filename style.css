@@ -32,6 +32,7 @@ main{}
 .main-content{}
 
 /* cabecera */
+#desktop-header{display:none;}
     /* marca */
     .header-content .site-brand{position:relative; bottom:.5rem; margin-right:auto; z-index:3;}
     .header-content .site-brand .custom-logo-link:focus{outline:none;}
@@ -117,4 +118,5 @@ main{}
 
 @media(min-width:1024px){
     #responsive-header{display:none;}
+    #desktop-header{display:inherit;}
 }

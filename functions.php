@@ -33,6 +33,7 @@ register_nav_menus(
         'mobile' => __( 'Mobile', 'pinplast' ),
         'primary' => __( 'Primary', 'pinplast' ),
         'secondary' => __( 'Secondary', 'pinplast' ),
+        'tertiary' => __( 'Tertiary', 'pinplast' ),
         'social' => __( 'Social', 'pinplast' ), 
     ) 
 );

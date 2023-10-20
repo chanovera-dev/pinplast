@@ -17,4 +17,7 @@ echo '<!DOCTYPE html>
                 get_search_form();
                 include(TEMPLATEPATH . '/parts/header/header-cart.php');
             echo '</section>
+            <section id="desktop-header" class="header-content">';
+            include(TEMPLATEPATH . '/parts/header/top-bar.php');
+            echo '</section>
         </header>';
