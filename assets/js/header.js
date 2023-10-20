@@ -51,14 +51,9 @@ window.addEventListener("orientationchange", function() {
     }
 });
 
-let body = document.body; // Accede al elemento body directamente
-
-if(body.addEventListener){
-    body.addEventListener('click', function(){
-        let nav = document.getElementById("menu-mobile--wrapper");
-        if(document.querySelector("#menu-mobile--wrapper.active")){
-            nav.classList.remove("active");
-        }
-        
-   });
-}
+document.addEventListener('click', function(event) {
+    let nav = document.getElementById("menu-mobile--wrapper");
+    if (event.target !== nav && !nav.contains(event.target)) {
+        nav.classList.remove("active");
+    }
+});
