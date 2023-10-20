@@ -95,9 +95,9 @@ main{}
     .searchform.active .searchform-wrapper #activate-search svg{color:#b3b3b3; padding:1.7rem;}
     .searchform.active .searchform-wrapper #activate-search svg.bi-x-circle{display:inherit;}
     /* carrito */
-    .header-cart{position:relative;}
-    .header-cart a{position:absolute; width:1.5rem; height:1.5rem; background-color:var(--background-color-body); border-radius:50%; font-size:1rem; color:var(--color-body);}
-    .header-cart svg{width:2rem; height:2rem; padding:1.7rem 0; color:var(--color-header);}
+    .header-cart{position:relative; height:5.2rem;}
+    .header-cart a{position:absolute; top:1rem; right:-1rem; text-align:center; width:1.5rem; height:1.5rem; background-color:var(--background-color-body); border-radius:50%; font-size:1rem; color:var(--color-body);}
+    .header-cart svg{width:2rem; height:2rem; padding:1.6rem 0; color:var(--color-header);}
 }
 
 @media(min-width:1024px){}
