@@ -7,7 +7,7 @@ textarea{padding:1rem; height:auto;}
 input[type=text]::placeholder,
 input[type=email]::placeholder,
 input[type=tel]::placeholder,
-textarea::placeholder{font-size:1.7rem; font-family:var(--wp--preset--font-family--system-font); transition:all .25s ease;}
+textarea::placeholder{font-size:1.6rem; color:#b3b3b3; font-family:var(--wp--preset--font-family--system-font); transition:all .25s ease;}
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=tel]:focus,
