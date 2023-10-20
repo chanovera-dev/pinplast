@@ -55,6 +55,7 @@ let main = document.getElementById("main");
 
 if(main.addEventListener){
     main.addEventListener('click', function(){
+        let nav = document.getElementById("menu-mobile--wrapper");
         if(document.querySelector("#menu-mobile--wrapper.active")){
             nav.classList.remove("active");
         }
