@@ -52,6 +52,7 @@ window.addEventListener("orientationchange", function() {
 });
 
 /* da foco principal a la caja de búsqueda en el modo escritorio */
+let main = document.getElementById("main");
 let activateSearch = document.getElementById("activate-search");
 let inputSearch = document.getElementById("s");
 let icon1 = document.getElementById("bi-search");
