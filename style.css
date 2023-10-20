@@ -102,12 +102,12 @@ main{}
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
     /* searchform */
-    .searchform{width:2rem; transition:all .3s ease;}
+    .searchform{width:100%; height:3.6rem;}
     .searchform .searchform-wrapper{display:flex; align-items:center;}
     .searchform .searchform-wrapper #activate-search{height:5.4rem;}
     .searchform .searchform-wrapper #activate-search svg{width:2rem; height:2rem; padding:1.7rem 0; color:var(--color-header);}
     .searchform .searchform-wrapper #activate-search svg.bi-x-circle{display:none;}
-    .searchform .searchform-wrapper input[type=text]{height:5.4rem; width:100%; padding:0; border:none; border-radius:0; background-color:rgba(255,255,255.5);}
+    .searchform .searchform-wrapper input[type=text]{height:3.6rem; width:100%; padding:0; border:none; border-radius:.4rem; background-color:rgba(255,255,255.5);}
     /* .searchform.active{position:absolute; top:0; left:0; width:100%; height:100%; background-color:var(--background-color-input); box-shadow:0 1px 7px rgba(0, 0, 0, 0.25); z-index:5;}
     .searchform.active .searchform-wrapper{position:relative;}
     .searchform.active .searchform-wrapper input[type=text]{width:min(100% - 5.4rem); border-right:1px solid var(--border-color); background-color:var(--background-color-input); padding:0 5.4rem 0 1rem;}
