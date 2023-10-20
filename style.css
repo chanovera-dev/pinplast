@@ -79,8 +79,8 @@ main{}
     /* menú */
     .main-header{position:relative;}
     .menu-mobile--wrapper{position:absolute; top:0; left:-100%; width:100%; max-width:290px; height:100svh; transition:all .3s ease; z-index:2;}
-    .menu-mobile--wrapper .mobile{width:100%; max-width:290px; height:100svh; background-color:#ffffff; padding-top:6.9rem;}
-    .menu-mobile--wrapper .mobile .menu{overflow-y:scroll;}
+    .menu-mobile--wrapper .mobile{width:100%; max-width:290px; overflow:hidden; height:100svh; background-color:#ffffff; padding-top:6.9rem;}
+    .menu-mobile--wrapper .mobile .menu{overflow-y:scroll; height:100%;}
     .menu-mobile--wrapper.active{left:0;}
     .menu-mobile--wrapper .mobile .menu li:not(:last-child){border-bottom:1px solid var(--border-color);}
     .menu-mobile--wrapper .mobile .menu li a{display:flex; align-items:center; padding:0 2rem; height:4.8rem;}
