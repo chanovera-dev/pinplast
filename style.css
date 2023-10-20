@@ -40,7 +40,7 @@ main{}
     
     /* carrito */
     
-@media screen and (min-width: 31px) and (max-width: 768px){
+@media screen and (min-width: 31px) and (max-width: 767px){
     /* searchform */
     .searchform{width:2rem; transition:all .3s ease;}
     .searchform .searchform-wrapper{display:flex; align-items:center;}
