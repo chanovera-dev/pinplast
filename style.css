@@ -42,7 +42,7 @@ main{}
 @media screen and (min-width: 31px) and (max-width: 768px){
     /* cabecera */
     .main-header{background-color:#ffd333; color:#3d464d; box-shadow:0 1px rgba(0, 0, 0, 0.04), inset 0 -1px rgba(0, 0, 0, 0.04);}
-    .header-content{display:flex; align-items:center; justify-content:space-between; height:5.4rem;}
+    .header-content{display:flex; gap:2rem; align-items:center; justify-content:space-between; height:5.4rem;}
     /* botón */
     .menu-mobile--button{position:relative; display:grid; place-content:center; cursor:pointer; z-index:1;}
     .menu-mobile--button .bars{display:inline-block; width:1.8rem; height:1.8rem; transition:all .3s ease;}
