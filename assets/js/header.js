@@ -43,10 +43,32 @@ function myFunction(x) {
     }
 }
 
-//brecarga el sitio si cambia la orientación de la pantalla
+// recarga el sitio si cambia la orientación de la pantalla
 window.addEventListener("orientationchange", function() {
     var orientation = window.screen.orientation;
     if (orientation.type === "portrait-primary" || orientation.type === "portrait-secondary" || orientation.type === "landscape-primary" || orientation.type === "landscape-secondary") {
         location.reload();
     }
 });
+
+/* da foco principal a la caja de búsqueda en el modo escritorio */
+var activateSearch = document.getElementById("activate-search");
+var inputSearch = document.getElementById("s");
+var icon1 = document.getElementById("bi-search");
+var icon2 = document.getElementById("bi-x-circle");
+
+// Evento 
+activateSearch.onclick = () => {
+  inputSearch.classList.toggle("activate");
+  inputSearch.style.transition = "all .3s ease";
+  activateSearch.classList.toggle("change-icon");
+};
+
+if(main.addEventListener){
+    main.addEventListener('click', function(){
+        if(document.querySelector("#activate-search.change-icon")){
+            inputSearch.classList.remove("activate");
+            activateSearch.classList.toggle("change-icon");
+        }
+   });
+}
