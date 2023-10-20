@@ -78,9 +78,9 @@ main{}
     .menu-mobile--button .bars.change .bar3{transform:translateY(-3px) rotate(90deg); width:1.8rem;}
     /* menú */
     .main-header{position:relative;}
-    .menu-mobile{position:absolute; top:0; left:-100%; width:100%; max-width:290px; height:100svh; transition:all .3s ease; z-index:2;}
-    .menu-mobile .mobile{width:100%; max-width:290px; height:100svh; overflow-y:scroll; background-color:#ffffff; padding-top:6.9rem;}
-    .menu-mobile.active{left:0;}
+    .menu-mobile--wrapper{position:absolute; top:0; left:-100%; width:100%; max-width:290px; height:100svh; transition:all .3s ease; z-index:2;}
+    .menu-mobile--wrapper .mobile{width:100%; max-width:290px; height:100svh; overflow-y:scroll; background-color:#ffffff; padding-top:6.9rem;}
+    .menu-mobile--wrapper.active{left:0;}
     /* searchform */
     .searchform .searchform-wrapper #activate-search.change-icon .bi-x-circle{display:inherit; left:1.2rem; color:var(--color-header);}
     .searchform .searchform-wrapper #activate-search.change-icon .bi-search{display:none;}
