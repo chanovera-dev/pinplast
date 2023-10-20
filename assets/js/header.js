@@ -44,12 +44,12 @@ function myFunction(x) {
 }
 
 // recarga el sitio si cambia la orientación de la pantalla
-window.addEventListener("orientationchange", function() {
-    var orientation = window.screen.orientation;
-    if (orientation.type === "portrait-primary" || orientation.type === "portrait-secondary" || orientation.type === "landscape-primary" || orientation.type === "landscape-secondary") {
-        location.reload();
-    }
-});
+// window.addEventListener("orientationchange", function() {
+//     var orientation = window.screen.orientation;
+//     if (orientation.type === "portrait-primary" || orientation.type === "portrait-secondary" || orientation.type === "landscape-primary" || orientation.type === "landscape-secondary") {
+//         location.reload();
+//     }
+// });
 
 let iconSearch = document.getElementById('bi-search');
 let searchForm = document.getElementById('searchform');
