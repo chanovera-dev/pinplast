@@ -36,7 +36,7 @@ function myFunction(x) {
         body.className = bodyClasses + " menu-active";
     } else {
         nav.className = "menu-mobile";
-        body.className = bodyClasses;
+        body.className = bodyClasses - " menu-active";
     }
 }
 
