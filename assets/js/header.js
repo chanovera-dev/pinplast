@@ -26,13 +26,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /* arreglo del botón del menú y del menú */
 function myFunction(x) {
-    var nav = document.getElementById("menu-mobile");
+    let nav = document.getElementById("menu-mobile");
+    let body = document.getElementById("body");
     x.classList.toggle("change");
     
     if (nav.className === "menu-mobile") {
         nav.className += " active";
     } else {
         nav.className = "menu-mobile";
+    }
+
+    if (nav.className === "home blog wp-custom-logo theme-pinplast woocommerce-js") {
+        nav.className += " menu-active";
+    } else {
+        nav.className = "home blog wp-custom-logo theme-pinplast woocommerce-js";
     }
 }
 
