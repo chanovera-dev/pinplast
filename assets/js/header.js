@@ -26,15 +26,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /* arreglo del botón del menú y del menú */
 function myFunction(x) {
-    let nav = document.getElementById("menu-mobile");
+    let nav = document.getElementById("menu-mobile--wrapper");
     let body = document.getElementById("body");
     x.classList.toggle("change");
     
-    if (nav.className === "menu-mobile") {
+    if (nav.className === "menu-mobile--wrapper") {
         nav.className += " active";
         body.classList.add("menu-active");
     } else {
-        nav.className = "menu-mobile";
+        nav.className = "menu-mobile--wrapper";
         body.classList.add("menu-inactive");
         setTimeout(function(x){
             body.classList.remove("menu-inactive");
