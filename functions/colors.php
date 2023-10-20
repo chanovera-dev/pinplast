@@ -8,6 +8,7 @@ function theme_colors() {
                 --color-body:#000;
                 --link-focus:0 0 0 .1rem var(--blue);
                 --border-color:#ebebeb;
+                --background-color-input:#ffffff;
                 --color-header:#3d464d;
                 --blue: #007bff;
                 --indigo: #6610f2;
