@@ -51,8 +51,9 @@ window.addEventListener("orientationchange", function() {
     }
 });
 
+let iconSearch = document.getElementById('bi-search');
+let searchForm = document.getElementById('searchform');
 
-document.getElementById('bi-search').addEventListener('click', function() {
-    let searchForm = document.getElementById('searchform');
+iconSearch.addEventListener('click', function() {  
     searchForm.classList.add('active');
 });
