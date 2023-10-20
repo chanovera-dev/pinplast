@@ -17,6 +17,13 @@ function load_parts_footer(){
 }
 add_action( 'get_footer', 'load_parts_footer' );
 
+// permite cargar archivos svg
+function cc_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+   }
+   add_filter('upload_mimes', 'cc_mime_types');
+
 // Anexo para establecer contenido discriminando el tamaño de la pantalla
 require_once(get_template_directory() . '/functions/responsive.php');
 
