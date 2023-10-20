@@ -51,7 +51,7 @@ window.addEventListener("orientationchange", function() {
     }
 });
 
-let body = document.querySelector("#body:before");
+let body = document.body; // Accede al elemento body directamente
 
 if(body.addEventListener){
     body.addEventListener('click', function(){
