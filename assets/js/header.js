@@ -54,6 +54,8 @@ window.addEventListener("orientationchange", function() {
 /* da foco principal a la caja de búsqueda en el modo escritorio */
 var activateSearch = document.getElementById("activate-search");
 var inputSearch = document.getElementById("s");
+let headerNavs = document.querySelector('#menu-searchform-group');
+var menu2 = document.querySelector('nav');
 var icon1 = document.getElementById("bi-search");
 var icon2 = document.getElementById("bi-x-circle");
 
@@ -62,6 +64,9 @@ activateSearch.onclick = () => {
   inputSearch.classList.toggle("activate");
   inputSearch.style.transition = "all .3s ease";
   activateSearch.classList.toggle("change-icon");
+  headerNavs.classList.toggle('gap0');
+  menu2.classList.toggle('font0');
+ 
 };
 
 if(main.addEventListener){
@@ -69,6 +74,9 @@ if(main.addEventListener){
         if(document.querySelector("#activate-search.change-icon")){
             inputSearch.classList.remove("activate");
             activateSearch.classList.toggle("change-icon");
+            menu2.classList.remove('font0');
+            headerNavs.classList.remove('gap0');
         }
+        
    });
 }
