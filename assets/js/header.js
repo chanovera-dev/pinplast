@@ -35,7 +35,7 @@ function myFunction(x) {
         body.className += " menu-active";
     } else {
         nav.className = "menu-mobile";
-        body.className = "home blog wp-custom-logo theme-pinplast woocommerce-js";
+        body.className-= " menu-active";
     }
 }
 
