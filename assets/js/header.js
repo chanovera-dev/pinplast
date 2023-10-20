@@ -36,10 +36,10 @@ function myFunction(x) {
         nav.className = "menu-mobile";
     }
 
-    if (nav.className === "home blog wp-custom-logo theme-pinplast woocommerce-js") {
-        nav.className += " menu-active";
+    if (body.className === "home blog wp-custom-logo theme-pinplast woocommerce-js") {
+        body.className += " menu-active";
     } else {
-        nav.className = "home blog wp-custom-logo theme-pinplast woocommerce-js";
+        body.className = "home blog wp-custom-logo theme-pinplast woocommerce-js";
     }
 }
 
