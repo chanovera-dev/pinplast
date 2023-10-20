@@ -53,7 +53,7 @@ window.addEventListener("orientationchange", function() {
 
 document.addEventListener('click', function(event) {
     let nav = document.getElementById("menu-mobile--wrapper");
-    if (event.target !== nav && !nav.contains(event.target)) {
+    if (nav.classList.contains('active') && event.target !== nav && !nav.contains(event.target)) {
         nav.classList.remove("active");
     }
 });
