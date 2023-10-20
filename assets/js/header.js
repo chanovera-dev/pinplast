@@ -28,15 +28,14 @@ document.addEventListener("DOMContentLoaded", function() {
 function myFunction(x) {
     let nav = document.getElementById("menu-mobile");
     let body = document.getElementById("body");
-    let bodyClasses = body.className;
     x.classList.toggle("change");
     
     if (nav.className === "menu-mobile") {
         nav.className += " active";
-        body.className = bodyClasses + " menu-active";
+        body.classList.add("menu-active");
     } else {
         nav.className = "menu-mobile";
-        body.className = bodyClasses - " menu-active";
+        body.classList.remove("menu-active");
     }
 }
 
