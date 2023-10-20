@@ -25,7 +25,7 @@ function cc_mime_types($mimes) {
    add_filter('upload_mimes', 'cc_mime_types');
 
 // Anexo para establecer contenido discriminando el tamaño de la pantalla
-require_once(get_template_directory() . '/functions/responsive.php');
+//require_once(get_template_directory() . '/functions/responsive.php');
 
 // Registro de menús
 register_nav_menus( 
