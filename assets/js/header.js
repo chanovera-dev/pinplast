@@ -51,10 +51,3 @@ window.addEventListener("orientationchange", function() {
     }
 });
 
-document.addEventListener('click', function(event) {
-    let nav = document.getElementById("menu-mobile--wrapper");
-    let button = document.getElementById("menu-mobile--button");
-    if (nav.classList.contains('active') && event.target !== nav && !nav.contains(event.target) && event.target !== button) {
-        nav.classList.remove("active");
-    }
-});
