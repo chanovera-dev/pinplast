@@ -43,6 +43,18 @@ function myFunction(x) {
     }
 }
 
+document.addEventListener('click', function(event) {
+    let nav = document.getElementById("menu-mobile--wrapper");
+    let body = document.getElementById("body");
+    let button = document.getElementById("menu-mobile--button");
+
+    if (!nav.contains(event.target) && event.target !== button) {
+        let x = document.getElementById("menu-mobile--button"); // No se ha definido "myBtn" en tu código, asegúrate de cambiarlo al ID correcto si es diferente
+        myFunction(x);
+    }
+});
+
+
 // recarga el sitio si cambia la orientación de la pantalla
 window.addEventListener("orientationchange", function() {
     var orientation = window.screen.orientation;
