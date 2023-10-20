@@ -86,6 +86,7 @@ main{}
     .searchform-wrapper input[type=text]{width:min(100% - 5.4rem); height:5.4rem; border-radius:0; border:none; border-right:1px solid var(--border-color); padding-right:5.4rem;}
     .searchform-wrapper input[type=text]:focus{ border:none; border-right:1px solid var(--border-color);}
     #activate-search{position:absolute; height:5.4rem; top:0; right:0;}
+    #activate-search svg{color:#b3b3b3; width:2rem; height:2rem; padding:1.7rem;}
 
 }
 
