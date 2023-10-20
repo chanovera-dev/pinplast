@@ -56,4 +56,5 @@ let searchForm = document.getElementById('searchform');
 
 iconSearch.addEventListener('click', function() {  
     searchForm.classList.add('active');
+    console.log("Se presionó el botón de búsqueda.");
 });
