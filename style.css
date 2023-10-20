@@ -81,6 +81,7 @@ main{}
     .menu-mobile--wrapper .mobile .menu li ul.sub-menu{border-top:1px solid var(--border-color);}
     .menu-mobile--wrapper .mobile .menu li ul.sub-menu li a{height:4rem; font-size:1.4rem; background-color:#f7f7f7;}
     /* searchform */
+    .searchform{width:5.2rem; transition:all .3s ease;}
     .searchform .searchform-wrapper{display:flex; align-items:center;}
     .searchform .searchform-wrapper #activate-search{height:5.4rem;}
     .searchform .searchform-wrapper #activate-search svg{width:2rem; height:2rem; padding:1.7rem; color:var(--color-header);}
