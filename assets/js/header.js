@@ -35,7 +35,11 @@ function myFunction(x) {
         body.classList.add("menu-active");
     } else {
         nav.className = "menu-mobile";
-        body.classList.remove("menu-active");
+        body.classList.add("menu-inactive");
+        setTimeout(function(x){
+            body.classList.remove("menu-inactive");
+            body.classList.remove("menu-active");
+          }, 3000);
     }
 }
 
