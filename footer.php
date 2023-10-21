@@ -1,6 +1,6 @@
 <?php
         echo '<footer id="main-footer" class="container">
-            <section class="section">
+            <section class="section footer-content">
                 <aside>
                     <h2>'._('Contacto', 'pinplast').'</h2>
                     <p>'._('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in feugiat lorem. Pellentque ac placerat tellus.', 'pinplast').'</p>';
