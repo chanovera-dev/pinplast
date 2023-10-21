@@ -48,7 +48,7 @@ main{}
 footer h2{font-size:2rem; font-weight:700;}
 footer ul li{position:relative; display:flex; align-items:center; line-height:1.8; font-size:1.5rem;}
 footer ul li a{display:inline-flex; align-items:center; gap:.7rem; font-size:1.5rem;}
-.tnp.tnp-subscription form{display:flex; align-items:flex-end; gap:1rem;}
+.tnp.tnp-subscription form{display:flex!important; align-items:flex-end!important; gap:1rem!important;}
     
 @media screen and (min-width: 31px) and (max-width: 767px){
     /* searchform */
