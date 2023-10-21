@@ -34,7 +34,9 @@
                         ); 
                     echo '</div>';
                 echo '</div>
-                <div></div>
+                <div>';
+                echo do_shortcode('[newsletter_form]');
+                echo '</div>
                 <div></div>
                 <div></div>
             </section>
