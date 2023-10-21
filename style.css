@@ -124,6 +124,7 @@ footer ul li a{display:inline-flex; align-items:center; gap:.7rem; font-size:1.5
 
     /* footer */
     .footer-content{grid-template-columns:1fr 1fr;}
+    .newsletter{grid-column:1/-1;}
 }
 
 @media(min-width:1024px){
