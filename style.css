@@ -143,7 +143,7 @@ main{}
     /* bottom bar */
     .bottom-bar-wrapper{background-color:#ffd333;}
     .bottom-bar{display:grid; gap:3rem; grid-template-columns:255px 1fr 255px; height:5.4rem; align-items:center;}
-    .bottom-bar ul{display:flex; align-items:center; gap:1.6rem;}
+    .bottom-bar ul{display:flex; align-items:center; gap:2rem;}
     .bottom-bar ul li a{font-weight:700;}
         /* carrito */
         .header-cart{margin-left:auto;}
