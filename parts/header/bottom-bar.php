@@ -9,6 +9,6 @@ echo '<div class="bottom-bar-wrapper">
                 'theme_location' => 'primary',
             ) 
         );
-        include(TEMPLATEPATH . '/parts/header/cart-header.php');
+        include(TEMPLATEPATH . '/parts/header/header-cart.php');
     echo '</section>
 </div>';
