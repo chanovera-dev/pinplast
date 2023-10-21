@@ -132,7 +132,7 @@ main{}
     .searchform .searchform-wrapper #activate-search{height:5.4rem; position:absolute; top:0; right:0;}
     .searchform .searchform-wrapper #activate-search svg{width:2rem; height:2rem; padding:.8rem; color:#b3b3b3;}
     .searchform .searchform-wrapper #activate-search svg.bi-x-circle{display:none;}
-    .searchform .searchform-wrapper input[type=text]{height:3.6rem; width:100%; padding:0; border:none; padding:0 3.6rem 0 1rem; border-radius:.3rem; background-color:rgba(255,255,255,.5);}
+    .searchform .searchform-wrapper input[type=text]{height:3.6rem; width:100%; padding:0; border:2px solid #b3b3b3; padding:0 3.6rem 0 1rem; border-radius:.3rem; background-color:rgba(255,255,255,.5);}
     .searchform .searchform-wrapper input[type=text]:focus{background-color:rgba(255,255,255,1);}
     .searchform .searchform-wrapper input[type=text]::placeholder{color:var(--color-body);}
     .searchform .searchform-wrapper input[type=text]:focus::placeholder{color:#b3b3b3;}
