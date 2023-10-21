@@ -145,4 +145,6 @@ main{}
     /* bottom bar */
     .bottom-bar-wrapper{background-color:#ffd333;}
     .bottom-bar{display:grid; gap:3rem; grid-template-columns:1fr 474.45px 1fr; height:5.4rem; align-items:center;}
+    .bottom-bar ul{display:flex; align-items:center; gap:1.6rem;}
+    .bottom-bar ul li a{font-weight:700;}
 }
