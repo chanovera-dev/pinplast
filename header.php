@@ -20,5 +20,6 @@ echo '<!DOCTYPE html>
             <section id="desktop-header" class="header-content">';
             include(TEMPLATEPATH . '/parts/header/top-bar.php');
             include(TEMPLATEPATH . '/parts/header/middle-bar.php');
+            include(TEMPLATEPATH . '/parts/header/bottom-bar.php');
             echo '</section>
         </header>';
