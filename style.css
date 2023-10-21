@@ -124,4 +124,5 @@ main{}
     .top-bar-wrapper{background-color:#f7f7f7; height:3.2rem; display:flex; align-items:center;}
     .top-bar{display:flex; align-items:center; justify-content:space-between;}
     .top-bar ul{display:flex; align-items:center; gap:1.6rem;}
+    .top-bar ul li a{font-size:1.4rem;}
 }
