@@ -34,6 +34,8 @@ register_nav_menus(
         'primary' => __( 'Primary', 'pinplast' ),
         'secondary' => __( 'Secondary', 'pinplast' ),
         'tertiary' => __( 'Tertiary', 'pinplast' ),
+        'footer1' => __( 'Footer menu 1', 'pinplast' ),
+        'footer2' => __( 'Footer menu 2', 'pinplast' ),
         'social' => __( 'Social', 'pinplast' ), 
     ) 
 );
