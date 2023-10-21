@@ -1,4 +1,4 @@
-<?php /* Template name: Blog */   
+<?php
 get_header();
 echo '<main id="main">'; 
 
