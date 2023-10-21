@@ -117,7 +117,7 @@ main{}
 
 @media(min-width:1024px){
     /* marca */
-    .header-content .site-brand .custom-logo-link .custom-logo{position:relative; width:19.5rem;}
+    .header-content .site-brand .custom-logo-link .custom-logo{position:relative; top:.8rem; width:19.5rem;}
     /* header */
     #responsive-header{display:none;}
     #desktop-header{display:inherit;}
@@ -138,4 +138,6 @@ main{}
     .searchform .searchform-wrapper input[type=text]:focus{border:2px solid #ffd333;}
     .searchform .searchform-wrapper input[type=text]::placeholder{color:#b3b3b3;}
     .searchform .searchform-wrapper input[type=text]:focus::placeholder{color:#b3b3b3;}
+    /* customer service */
+    .customer-service{text-align:right;}
 }
