@@ -49,7 +49,6 @@ footer h2{font-size:2rem; font-weight:700;}
 footer ul li{position:relative; display:flex; align-items:center; line-height:1.8; font-size:1.5rem;}
 footer ul li a{display:inline-flex; align-items:center; gap:.7rem; font-size:1.5rem;}
 .tnp.tnp-subscription{display:flex; align-items:flex-end; gap:1rem;}
-.main-footer .footer-content .newsletter .tnp-subscription input[type=email]{border:1px solid var(--border-color); background-color:var(--background-color-input); font-family:var(--wp--preset--font-family--system-font); font-size:1.6rem; color:var(--color-body); width:100%; height:4rem; padding:0 1rem; border-radius:.4rem; transition:all .3s ease-out;}
     
 @media screen and (min-width: 31px) and (max-width: 767px){
     /* searchform */
