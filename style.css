@@ -117,6 +117,10 @@ main{}
 }
 
 @media(min-width:1024px){
+    /* header */
     #responsive-header{display:none;}
     #desktop-header{display:inherit;}
+    /* top bar */
+    .top-bar-wrapper{background-color:#f7f7f7;}
+    .top-bar{display:flex; align-items:center; justify-content:space-between;}
 }
