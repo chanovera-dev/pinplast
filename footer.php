@@ -35,7 +35,9 @@
                     echo '</div>';
                 echo '</div>
                 <div>';
-                echo do_shortcode('[newsletter_form]');
+                echo '<div class="title-wrapper"><h2 class="title">Newsletter</h2></div>
+                <p>'.__('Praesent pellentesque volutpat ex, vitae auctor lorem pulvinar mollis felis at lacinia.', 'pinplast').'</p>';
+                    echo do_shortcode('[newsletter_form]');
                 echo '</div>
                 <div></div>
                 <div></div>
