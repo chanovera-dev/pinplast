@@ -5,7 +5,7 @@ echo '<div class="middle-bar-wrapper">
     get_search_form();
     echo '<div class="customer-service">';
         echo '<p>Customer Service</p>';
-        echo get_theme_mod('phone_number', '2299216844');
+        echo '<p><span>' . get_theme_mod('phone_number', '2299216844') . '</span></p>';
     echo '</div>
     </section>
 </div>';
