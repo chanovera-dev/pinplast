@@ -9,7 +9,7 @@
 :is(.archive,.search,.home,.blog,.post-template-default) :is(.posts-wrapper,.title-section .title,.content-section,.comments-section){display:grid; gap:5rem;}
 
 /* sidebar */
-aside{display:grid; gap:5rem; align-content:baseline;}
+aside{display:grid; gap:2.5rem; align-content:baseline;}
 aside ul li{position:relative; display:flex; align-items:center; height:4rem;}
 aside ul li:not(:last-child){border-bottom:1px solid var(--line-color);}
 aside ul li a{display:inline-flex; align-items:center; gap:.7rem;}
