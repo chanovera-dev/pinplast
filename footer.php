@@ -6,7 +6,7 @@
                     <p>'._('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in feugiat lorem. Pellentque ac placerat tellus.', 'pinplast').'</p>';
                     include(TEMPLATEPATH . '/parts/widgets/address.php');
                 echo '</aside>
-                <div>';
+                <div class="menus">';
                     echo '<div>';
                         $menu_id = get_nav_menu_locations()[ 'footer1' ];
                         $menu = wp_get_nav_menu_object( $menu_id );
