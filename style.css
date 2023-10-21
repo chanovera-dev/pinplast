@@ -132,8 +132,8 @@ main{}
     .searchform .searchform-wrapper #activate-search{height:4.2rem; position:absolute; top:0; right:0;}
     .searchform .searchform-wrapper #activate-search svg{width:2rem; height:2rem; padding:1.1rem; color:#c3c3c3;}
     .searchform .searchform-wrapper #activate-search svg.bi-x-circle{display:none;}
-    .searchform .searchform-wrapper input[type=text]{height:4.2rem; width:100%; padding:0; border:2px solid #b3b3b3; padding:0 4.2rem 0 1rem; border-radius:.3rem; background-color:rgba(255,255,255,.5);}
+    .searchform .searchform-wrapper input[type=text]{height:4.2rem; width:100%; padding:0; border:2px solid #d3d3d3; padding:0 4.2rem 0 1rem; border-radius:.3rem; background-color:rgba(255,255,255,.5);}
     .searchform .searchform-wrapper input[type=text]:focus{border:2px solid yellow;}
-    .searchform .searchform-wrapper input[type=text]::placeholder{color:var(--color-body);}
+    .searchform .searchform-wrapper input[type=text]::placeholder{color:#b3b3b3;}
     .searchform .searchform-wrapper input[type=text]:focus::placeholder{color:#b3b3b3;}
 }
