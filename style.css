@@ -81,6 +81,8 @@ footer .social{margin-top:.8rem;}
     .searchform.active .searchform-wrapper #activate-search svg.bi-x-circle{display:inherit;}
 
     /* footer */
+    footer{text-align:center;}
+    footer ul li{justify-content:center;}
     .copyright{display:grid; gap:2.4rem; padding:2rem 0 2.4rem;}
     .copyright p{order:2;}
     .payments{order:1;}
