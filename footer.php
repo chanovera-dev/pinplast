@@ -42,7 +42,7 @@
                         $menu_id = get_nav_menu_locations()[ 'social' ];
                         $menu = wp_get_nav_menu_object( $menu_id );
                         $items = wp_get_nav_menu_items( $menu_id );
-                        echo '<div class="title-wrapper"><p class="title">' . $menu->name . '</p></div>';
+                        echo '<p class="title">' . $menu->name . '</p>';
                         wp_nav_menu(
                             array(
                                 'container' => 'nav', 
