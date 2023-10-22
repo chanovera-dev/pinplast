@@ -47,7 +47,7 @@ require_once(get_template_directory() . '/functions/colors.php');
 require_once(get_template_directory() . '/functions/breakpoints.php');
 
 // Anexo para establecer las variables de los iconos
-require_once(get_template_directory() . '/functions/icons.php');
+//require_once(get_template_directory() . '/functions/icons.php');
 
 // Anexo para establecer los componentes de los templates
 require_once(get_template_directory() . '/functions/components.php');
