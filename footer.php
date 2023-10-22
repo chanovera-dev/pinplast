@@ -59,8 +59,12 @@
                 echo '</div>';
 
                 echo '</div>
-                <div class="copyright">'.'<p>©'.date("Y").__(' Pinplast', 'pinplast').' - '.__('Tienda de pinturas y accesorios, hecha a mano por ', 'pinplast').'<a href="https://www.chanovera.com">chanovera</a> y <a href="https://peramanzana.com">peramanzana</a></p></div>
-                <div></div>
+                <div class="copyright">'.
+                    '<p>©'.date("Y").__(' Pinplast', 'pinplast').' - '.__('Tienda de pinturas y accesorios, hecha a mano por ', 'pinplast').'<a href="https://www.chanovera.com">chanovera</a> y <a href="https://peramanzana.com">peramanzana</a></p>
+                    <div class="payments">
+                        <img src="'.get_theme_mod('payments', get_bloginfo('template_url') . '/assets/img/payments.png').'" loading="lazy">
+                    </div>
+                </div>
             </section>
         </footer>';
         wp_footer();

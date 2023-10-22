@@ -62,7 +62,7 @@ footer .social{margin-top:.8rem;}
 .social .menu li a[href*="youtube"]{background-color:#e52e2e;}
 .social .menu li a[href*="instagram"]{background-color:#815dc7;}
 .social .menu li a[href*="sites"]{background-color:#e52e2e;}
-.copyright{font-size:1.5rem; grid-column:1/-1;}
+.copyright{font-size:1.5rem; grid-column:1/-1; text-align:center;}
 
 @media screen and (min-width: 31px) and (max-width: 767px){
     /* searchform */
