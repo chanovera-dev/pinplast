@@ -59,7 +59,7 @@
                 echo '</div>';
 
                 echo '</div>
-                <div></div>
+                <div>'.'<p>©'.date("Y").__('Pinplast', 'pinplast').' - '.__('Tienda de pinturas y accesorios, hecha a mano por ', 'pinplast').'<a href="https://www.chanovera.com">chanovera</a> y <a href="https://peramanzana.com">peramanzana</a></p></div>
                 <div></div>
             </section>
         </footer>';
