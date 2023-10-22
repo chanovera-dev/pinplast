@@ -35,15 +35,6 @@ function theme_colors() {
                 
             }
 
-        </style>
-    <?php
-}
-add_action('wp_head', 'theme_colors');
-
-function theme_icons() {
-    ?>
-        <style>
-
             /* iconos de redes sociales */
             .social .menu li a[href*="facebook"]:before{content: ''; background-image: url('<?php echo get_template_directory_uri(); ?>/assets/icons/facebook.svg');}
             .social .menu li a[href*="twitter"]:before{content: ''; background-image: url('<?php echo get_template_directory_uri(); ?>/assets/icons/twitter.svg');}
@@ -53,5 +44,5 @@ function theme_icons() {
         </style>
     <?php
 }
-add_action('wp_head', 'theme_icons');
+add_action('wp_head', 'theme_colors');
 
