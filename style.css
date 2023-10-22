@@ -64,6 +64,7 @@ footer .social{margin-top:.8rem;}
 .social .menu li a[href*="instagram"]{background-color:#815dc7;}
 .social .menu li a[href*="sites"]{background-color:#e52e2e;}
 .copyright{font-size:1.5rem; grid-column:1/-1; text-align:center; border-top:1px solid #ebebeb;}
+.copyright p a{color:var(--blue);}
 
 @media screen and (min-width: 31px) and (max-width: 767px){
     /* searchform */
@@ -88,7 +89,6 @@ footer .social{margin-top:.8rem;}
     .social .menu{margin-bottom:2.9rem;}
     .copyright{display:grid; gap:2.4rem; padding:2rem 0 2.4rem;}
     .copyright p{order:2;}
-    .copyright a{color:var(--blue);}
     .payments{order:1;}
     .payments img{margin-inline:auto;}
 }
