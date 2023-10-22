@@ -137,7 +137,7 @@ footer .social{margin-top:.8rem;}
 
 @media(min-width:768px){
     /* footer */
-    .copyright{display:flex; align-items:baseline; justify-content:space-between;}
+    .copyright{display:flex; align-items:center; justify-content:space-between; height:5.4rem;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
