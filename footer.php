@@ -33,8 +33,12 @@
                             ) 
                         ); 
                     echo '</div>';
-                echo '</div>
-                <div class="newsletter">';
+                echo '</div>';
+                $menu_id = get_nav_menu_locations()['social'];
+                $menu = wp_get_nav_menu_object($menu_id);
+                $items = wp_get_nav_menu_items($menu_id);
+                if (!empty($items)) {
+                    echo '<div class="newsletter">';
                 echo '<div class="title-wrapper"><h2 class="title">Newsletter</h2></div>
                     <p>'.__('Praesent pellentesque volutpat ex, vitae auctor lorem pulvinar mollis felis at lacinia.', 'pinplast').'</p>';
                     echo do_shortcode('[newsletter_form]');
@@ -50,9 +54,11 @@
                                 'theme_location' => 'social',
                             ) 
                         ); 
-                    echo '</div>';
-                echo '</div>
-                <div></div>
+                    echo '</div>
+                </div>';
+                }
+                
+                echo '<div></div>
                 <div></div>
             </section>
         </footer>';
