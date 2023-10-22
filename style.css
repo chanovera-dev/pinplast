@@ -81,7 +81,7 @@ footer .social{margin-top:.8rem;}
     .searchform.active .searchform-wrapper #activate-search svg.bi-x-circle{display:inherit;}
 
     /* footer */
-    footer{text-align:center;}
+    footer{text-align:center; padding-top:4.8rem; border-top:1px solid #ebebeb;}
     footer ul li,
     .social .menu{justify-content:center;}
     .social .menu{margin-bottom:2.9rem;}
