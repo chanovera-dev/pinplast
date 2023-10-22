@@ -55,6 +55,7 @@ footer ul li a{display:inline-flex; align-items:center; gap:.7rem; font-size:1.5
 .tnp-subscription input.tnp-submit{background-color:#ffd333!important; color:#000000!important; font-weight:700!important; border-radius:.3rem!important; display:flex; align-items:center; height:4rem!important; padding:0 2rem!important; text-transform:capitalize!important;}
 .social .menu li a{display:inline-flex; align-items:center; gap:.7rem; height:3.4rem; padding: 0 1.8rem;}
 .social .menu li a:before{position:relative; padding:.8rem; display:inline-block;}
+.social .menu li a[href*="facebook"]{background-color:#3c5a99;}
 
 @media screen and (min-width: 31px) and (max-width: 767px){
     /* searchform */
