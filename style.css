@@ -56,6 +56,9 @@ footer ul li a{display:inline-flex; align-items:center; gap:.7rem; font-size:1.5
 .social .menu li a{display:inline-flex; align-items:center; gap:0; height:3.4rem; padding: 0 .9rem; border-radius:1.7rem;}
 .social .menu li a:before{position:relative; padding:.8rem; display:inline-block;}
 .social .menu li a[href*="facebook"]{background-color:#3c5a99;}
+.social .menu li a[href*="twitter"]{background-color:#00a2e8;}
+.social .menu li a[href*="youtube"]{background-color:#e52e2e;}
+.social .menu li a[href*="instagram"]{background-color:#815dc7;}
 
 @media screen and (min-width: 31px) and (max-width: 767px){
     /* searchform */

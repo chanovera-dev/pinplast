@@ -35,10 +35,23 @@ function theme_colors() {
                 
             }
 
-            /* iconos de redes sociales */
-            .social .menu li a[href*="facebook"]:before{content: ''; background-image: url('<?php echo get_template_directory_uri(); ?>/assets/icons/facebook.svg');}
-
         </style>
     <?php
 }
 add_action('wp_head', 'theme_colors');
+
+function theme_icons() {
+    ?>
+        <style>
+
+            /* iconos de redes sociales */
+            .social .menu li a[href*="facebook"]:before{content: ''; background-image: url('<?php echo get_template_directory_uri(); ?>/assets/icons/facebook.svg');}
+            .social .menu li a[href*="twitter"]:before{content: ''; background-image: url('<?php echo get_template_directory_uri(); ?>/assets/icons/twitter.svg');}
+            .social .menu li a[href*="youtube"]:before{content: ''; background-image: url('<?php echo get_template_directory_uri(); ?>/assets/icons/youtube.svg');}
+            .social .menu li a[href*="instagram"]:before{content: ''; background-image: url('<?php echo get_template_directory_uri(); ?>/assets/icons/instagram.svg');}
+
+        </style>
+    <?php
+}
+add_action('wp_head', 'theme_icons');
+
