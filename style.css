@@ -43,6 +43,7 @@ main{}
     .header-cart svg{width:2rem; height:2rem; padding:1.6rem 0; color:var(--color-header);}
 
 /* footer */
+.main-footer{padding-top:4.8rem; border-top:1px solid #ebebeb;}
 .footer-content{display:grid; gap:2.5rem;}
 .menus{display:grid; gap:2.5rem; grid-template-columns:1fr 1fr;}
 footer h2{font-size:2rem; font-weight:700;}
@@ -81,7 +82,7 @@ footer .social{margin-top:.8rem;}
     .searchform.active .searchform-wrapper #activate-search svg.bi-x-circle{display:inherit;}
 
     /* footer */
-    footer{text-align:center; padding-top:4.8rem; border-top:1px solid #ebebeb;}
+    footer{text-align:center;}
     footer ul li,
     .social .menu{justify-content:center;}
     .social .menu{margin-bottom:2.9rem;}
