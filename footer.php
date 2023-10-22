@@ -36,8 +36,21 @@
                 echo '</div>
                 <div class="newsletter">';
                 echo '<div class="title-wrapper"><h2 class="title">Newsletter</h2></div>
-                <p>'.__('Praesent pellentesque volutpat ex, vitae auctor lorem pulvinar mollis felis at lacinia.', 'pinplast').'</p>';
+                    <p>'.__('Praesent pellentesque volutpat ex, vitae auctor lorem pulvinar mollis felis at lacinia.', 'pinplast').'</p>';
                     echo do_shortcode('[newsletter_form]');
+                    echo '<div>';
+                        $menu_id = get_nav_menu_locations()[ 'social' ];
+                        $menu = wp_get_nav_menu_object( $menu_id );
+                        $items = wp_get_nav_menu_items( $menu_id );
+                        echo '<div class="title-wrapper"><p class="title">' . $menu->name . '</p></div>';
+                        wp_nav_menu(
+                            array(
+                                'container' => 'nav', 
+                                'container_class' => 'social', 
+                                'theme_location' => 'social',
+                            ) 
+                        ); 
+                    echo '</div>';
                 echo '</div>
                 <div></div>
                 <div></div>
