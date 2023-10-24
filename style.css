@@ -37,7 +37,9 @@ main{}
     .header-content .site-brand{position:relative; bottom:.5rem; margin-right:auto; z-index:3;}
     .header-content .site-brand .custom-logo-link:focus{outline:none;}
     .header-content .site-brand .custom-logo-link .custom-logo{width:13rem; transition:all .3s ease;}
-    /* carrito */
+    /* carrito y whishlist */
+    .nav.right{margin-left:auto;}
+    /*
     .header-cart{position:relative; height:5.2rem;}
     .header-cart a{position:absolute; top:1rem; right:-1rem; text-align:center; width:1.5rem; height:1.5rem; background-color:var(--background-color-body); border-radius:50%; font-size:1rem; color:var(--color-body);}
     .header-cart svg{width:2rem; height:2rem; padding:1.6rem 0; color:var(--color-header);}
