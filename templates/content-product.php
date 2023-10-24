@@ -3,7 +3,7 @@
         <?php do_action( 'woocommerce_before_single_product' ); ?>
     </section>
     <section class="container">
-        <div class="section woocommerce-breadcrumb">
+        <div class="section">
             <?php woocommerce_breadcrumb(); ?>
         </div>
     </section>
