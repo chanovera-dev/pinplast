@@ -41,7 +41,7 @@ main{}
     .nav.right{display:flex; gap:2rem;}
     .nav.right li{position:relative; display:flex; height:2rem;}
     .nav.right li svg{width:2rem; height:2rem; color:var(--color-header);}
-    .nav.right li .counter{position:absolute; top:1rem; right:-1rem; text-align:center; width:1.5rem; height:1.5rem; background-color:var(--background-color-body); border-radius:50%; font-size:1rem; color:var(--color-body);}
+    .nav.right li .counter{position:absolute; top:-.5rem; right:-1rem; text-align:center; width:1.5rem; height:1.5rem; background-color:var(--background-color-body); border-radius:50%; font-size:1rem; color:var(--color-body);}
 
 /* footer */
 #main-footer{padding-top:4.8rem; border-top:1px solid #ebebeb; margin-top:1.6rem;}
