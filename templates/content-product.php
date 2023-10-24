@@ -1,6 +1,9 @@
 <div class="main-content">
     <section class="container">
-    <?php do_action( 'woocommerce_before_single_product' ); ?>
+        <?php do_action( 'woocommerce_before_single_product' ); ?>
+    </section>
+    <section class="container">
+        <?php do_action( 'woocommerce_breadcrumb' ); ?>
     </section>
     <section class="container container-data-product">
         <div class="section padding-section data-product">
