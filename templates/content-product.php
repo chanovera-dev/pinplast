@@ -3,7 +3,9 @@
         <?php do_action( 'woocommerce_before_single_product' ); ?>
     </section>
     <section class="container">
-        <?php woocommerce_breadcrumb(); ?>
+        <div class="section">
+            <?php woocommerce_breadcrumb(); ?>
+        </div>
     </section>
     <section class="container container-data-product">
         <div class="section padding-section data-product">
