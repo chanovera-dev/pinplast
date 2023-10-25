@@ -51,7 +51,7 @@
         /* tabs de contenido extra */
         .tabs.wc-tabs{margin:0; padding:0; list-style:none; display:flex; align-items:center; justify-content:center;}
         .tabs.wc-tabs a{display:flex; align-items:center; padding:0 4.8rem; height:6.8rem; font-size:2rem; font-weight:700; color:#3d464d;}
-        .tabs.wc-tabs a:hover{background-color:#f2f2f2; border-bottom:1px solid #3d464d; color:#3d464d;}
+        .tabs.wc-tabs a:hover{background-color:#f2f2f2; border-bottom:2px solid #3d464d; color:#3d464d;}
         /* descripción del producto */
         .woocommerce-Tabs-panel--description > *{line-height:1.7;}
         .woocommerce-Tabs-panel--description > *:not(:last-child){margin-bottom:1.7rem;}
