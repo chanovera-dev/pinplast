@@ -69,8 +69,9 @@
 .related.products .products{margin:0; padding:0; list-style:none; display:flex; align-items:flex-start; gap:1.5rem; overflow-x:scroll; padding-bottom:2rem;}
 .related.products .products li{box-shadow:0 0 0 1px #ededed inset;}
 .related.products .products li a{display:grid; margin-bottom:1rem;}
+.related.products .products li a > *{padding:0 1rem;}
 .related.products .products li a > *:not(:last-child){margin-bottom:1rem;}
-.related.products .products li a .woocommerce-loop-product__title{font-size:1.5rem;}
+.related.products .products li a .woocommerce-loop-product__title{font-size:1.5rem; font-weight:300;}
 .related.products .products li a img{width:60%; height:auto; margin-inline:auto;}
 
 @media(min-width:768px){
