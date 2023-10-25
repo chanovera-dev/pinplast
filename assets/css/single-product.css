@@ -72,4 +72,8 @@
 @media(min-width:768px){
     /* datos del producto */
     .single-product main .container .section.data-product{grid-template-columns:1fr 1fr;}
+
+    /* productos relacionados */
+    .related.products .products li{max-width:212px;}
+
 }
