@@ -57,6 +57,8 @@
         .woocommerce-Tabs-panel--description > *{line-height:1.7;}
         .woocommerce-Tabs-panel--description > *:not(:last-child){margin-bottom:1.7rem;}
 
+        #respond > *{margin-bottom:1.6rem;}
+
 /* estrellas */
 .woocommerce p.stars a{font-size:0; display:inline-flex;}
 .woocommerce p.stars a:not(:last-child){margin-right:.7rem;}
