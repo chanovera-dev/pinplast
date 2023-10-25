@@ -49,7 +49,8 @@
 /* container aside product */
 .container-aside-product{background-image:var(--background-forms); padding:3rem 0;}
         /* tabs de contenido extra */
-        .tabs.wc-tabs{margin:0; padding:0; list-style:none; display:flex; align-items:center; justify-content:center;}
+        .tabs.wc-tabs{margin:0; padding:0; list-style:none; display:flex; align-items:center; justify-content:center; position: relative; top:2px;}
+        .tabs.wc-tabs .reviews_tab.active a{border-bottom:2px solid #ffd333;}
         .tabs.wc-tabs a{display:flex; align-items:center; padding:0 4.8rem; height:6.8rem; font-size:2rem; font-weight:700; color:#3d464d; border-bottom:2px solid transparent;}
         .tabs.wc-tabs a:hover{background-color:#f2f2f2; border-bottom:2px solid #e0e0e0; color:#3d464d;}
         /* descripción del producto */
