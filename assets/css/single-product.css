@@ -57,6 +57,7 @@
         .woocommerce-Tabs-panel--description > *{line-height:1.7;}
         .woocommerce-Tabs-panel--description > *:not(:last-child){margin-bottom:1.7rem;}
 
+        #comments{display:grid; gap:2rem;}
         #respond > *{margin-bottom:1.6rem;}
 
 /* estrellas */
