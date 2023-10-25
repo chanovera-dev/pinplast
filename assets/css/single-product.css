@@ -66,8 +66,9 @@
 /* productos relacionados */
 .related.products .products{margin:0; padding:0; list-style:none;}
 .related.products .products li{box-shadow:0 0 0 1px #ededed inset;}
-.related.products .products li a{display:grid;}
-.related.products .products li a > *{margin-bottom:1rem;}
+.related.products .products li a{display:grid; margin-bottom:1rem;}
+.related.products .products li a > *:not(:last-child){margin-bottom:1rem;}
+.related.products .products li a .woocommerce-loop-product__title{font-size:1.5rem;}
 .related.products .products li a img{width:60%; height:auto; margin-inline:auto;}
 
 @media(min-width:768px){
