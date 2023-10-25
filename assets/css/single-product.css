@@ -63,6 +63,12 @@
 /* tabs */
 .woocommerce-Tabs-panel{border:2px solid #f0f0f0; padding:2.4rem; border-radius:.2rem;}
 
+/* productos relacionados */
+.related.products .products{display:flex; gap:1rem; padding-bottom:2rem; list-style:none; margin:0; padding: 0 0 2rem 0; overflow-x:scroll;}
+.related.products .products li{box-shadow:0 0 0 1px #ededed inset; padding:1rem; display:grid; gap:2rem;}
+.related.products .products li a{display:grid; gap:2rem;}
+.related.products .products li a img{width:100%; margin-inline:auto;}
+
 @media(min-width:768px){
     /* datos del producto */
     .single-product main .container .section.data-product{grid-template-columns:1fr 1fr;}
