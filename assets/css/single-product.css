@@ -42,7 +42,7 @@
 
     /* agregar al carrito */
     .variations_form.cart{display:grid; justify-content:center;}
-    .cart{display:inline-flex; align-items:center; gap:2rem;}
+    .cart{display:inline-flex; align-items:center; gap:1rem;}
     .woocommerce-variation-add-to-cart{display:flex; gap:2rem;}
         
 
