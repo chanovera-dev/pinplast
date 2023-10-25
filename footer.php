@@ -60,7 +60,7 @@
 
                 echo '</div>
                 <div class="copyright">'.
-                    '<p>©'.date("Y").__(' Pinplast', 'pinplast').' - '.__('Hecha a mano por ', 'pinplast').'<a href="https://www.chanovera.com">Chanovera</a> y <a href="https://peramanzana.com">PeraManzana</a></p>
+                    '<p>©'.date("Y").__(' Pinplast', 'pinplast').' - '.__('Desarrollado y hospedado por ', 'pinplast').'<a href="https://peramanzana.com">PeraManzana</a></p>
                     <div class="payments">
                         <img src="'.get_theme_mod('payments', get_bloginfo('template_url') . '/assets/img/payments.png').'" loading="lazy">
                     </div>
