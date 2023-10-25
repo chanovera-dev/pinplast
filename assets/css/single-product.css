@@ -67,7 +67,7 @@
 .related.products .products{margin:0; padding:0; list-style:none;}
 .related.products .products li{box-shadow:0 0 0 1px #ededed inset;}
 .related.products .products li a{}
-.related.products .products li a img{}
+.related.products .products li a img{width:60%; height:auto; margin-inline:auto;}
 
 @media(min-width:768px){
     /* datos del producto */
