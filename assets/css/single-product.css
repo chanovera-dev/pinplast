@@ -79,6 +79,6 @@
     .single-product main .container .section.data-product{grid-template-columns:1fr 1fr;}
 
     /* productos relacionados */
-    .related.products .products li{max-width:222px;}
+    .related.products .products li{min-width:222px;}
 
 }
