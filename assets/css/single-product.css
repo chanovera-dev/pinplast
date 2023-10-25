@@ -10,7 +10,7 @@
 .woocommerce-breadcrumb a:hover{color:var(--blue);}
 /* galería */
 .woocommerce-product-gallery{position:relative;}
-.wp-post-image{width:100%;}
+.wp-post-image{width:100%; height:auto;}
     /* cinta de oferta */
     .onsale{position:absolute; background-color:red; color:#fff; left:-40px; top:23px; padding:.5rem 5rem; transform:rotate(-45deg); box-shadow:var(--box-shadow-onsale); z-index:2;}
     /* botón zoom */
