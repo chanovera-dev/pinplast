@@ -19,7 +19,7 @@
             </div>
         </div>
     </section>
-    <section id="contact-group" class="container">
+    <section class="container">
         <div class="section wc-tabs_wrapper padding-section">
             <?php do_action( 'woocommerce_after_single_product_summary' );
                 do_action( 'woocommerce_after_main_content' );
