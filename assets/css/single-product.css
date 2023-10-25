@@ -60,6 +60,9 @@
 .woocommerce p.stars a:before{position:relative; padding:8.5px; display:inline-block; transition:all .3s ease;}
 .woocommerce p.stars a:focus{box-shadow:none;}
 
+/* tabs */
+.woocommerce-Tabs-panel{border:2px solid #f0f0f0; padding:2.4rem; border-radius:.2rem;}
+
 @media(min-width:768px){
     /* datos del producto */
     .single-product main .container .section.data-product{grid-template-columns:1fr 1fr;}
