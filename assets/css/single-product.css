@@ -64,7 +64,7 @@
 .woocommerce-Tabs-panel{border:2px solid #f0f0f0; padding:2.4rem; border-radius:.2rem;}
 
 /* productos relacionados */
-.related.products .products{}
+.related.products .products{margin:0; padding:0; list-style:none;}
 .related.products .products li{box-shadow:0 0 0 1px #ededed inset;}
 .related.products .products li a{}
 .related.products .products li a img{}
