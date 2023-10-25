@@ -73,7 +73,7 @@
 .related.products .products li a .woocommerce-loop-product__title{font-size:1.5rem; font-weight:400;}
 .related.products .products li a img{width:60%; height:auto; margin-inline:auto; padding-top:1rem;}
 .related.products .products li a:last-child{margin-bottom:1rem;}
-.related.products .products li .product_type_simple{display:flex; align-items:center; height:2.6rem; padding:0 2rem; background-color:#ffd333; border:1px solid #ffd333; font-weight:700; text-transform:capitalize;}
+.related.products .products li .product_type_simple{display:flex; align-items:center; min-height:2.6rem; padding:0 2rem; background-color:#ffd333; border:1px solid #ffd333; font-weight:700; text-transform:capitalize;}
 @media(min-width:768px){
     /* datos del producto */
     .single-product main .container .section.data-product{grid-template-columns:1fr 1fr;}
