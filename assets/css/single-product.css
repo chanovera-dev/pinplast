@@ -62,6 +62,7 @@
 
 /* tabs */
 .woocommerce-Tabs-panel{border:2px solid #f0f0f0; padding:2.4rem; border-radius:.2rem;}
+.wc-tabs_wrapper{display:grid; gap:3rem;}
 
 /* productos relacionados */
 .related.products{display:grid; gap:2rem;}
