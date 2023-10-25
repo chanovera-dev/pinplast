@@ -42,7 +42,7 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none; margin:0;}
 input[type=number]{-moz-appearance:textfield;}
 .quantity{display:flex; justify-content:center;}
-#input-qty{width:4.1rem; height:4.1rem; border:none; border-radius:0; border-bottom:3px solid transparent; background-color:transparent; color:var(--color-main); padding:0 1rem; margin:0 .7rem; text-align:right; transition:all .3s ease;}
+#input-qty{width:4.1rem; height:4.1rem; font-size:2rem; border:none; border-radius:0; border-bottom:3px solid transparent; background-color:transparent; color:var(--color-main); padding:0 1rem; margin:0 .7rem; text-align:right; transition:all .3s ease;}
 #input-qty:focus{outline:none; border-bottom:3px solid var(--color-link-focus);}
 #button-less,
 #button-plus{
