@@ -26,7 +26,8 @@
     .flex-control-thumbs li img.flex-active{opacity:1;}
 /* sumario */
 .product-summary > *:not(:last-child){margin-bottom:2rem;}
-    
+    /* tiítulo del producto */
+    .product_title{font-size:2.4rem; color:#3d464d; font-weight:700;}
     /* calificación */
     .woocommerce-product-rating{display:flex; align-items:center; gap:2rem;}
         /* calificación con estrellas */
