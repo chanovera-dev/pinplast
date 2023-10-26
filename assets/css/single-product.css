@@ -37,8 +37,8 @@
         /**/
         .woocommerce-review-link{text-decoration:none;}
         /* categorías */
-        .product-meta .posted-in{font-size:0;}
-        .product-meta .posted-in a{
+        .product_meta .posted_in{font-size:0;}
+        .product_meta .posted_in a{
             display: block;
             background: transparent;
             border: 1px solid #e5e5e5;
