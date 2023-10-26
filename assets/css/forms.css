@@ -33,7 +33,7 @@ button.single_add_to_cart_button{
     transition: all .3s ease;
 }
 input[type=submit]:hover,
-button.single_add_to_cart_button:hover{background-color:}
+button.single_add_to_cart_button:hover{background-color:#3d464d;}
 input[type=submit]:active:hover,
 button.single_add_to_cart_button:active:hover{}
 input[type=submit]:active,
