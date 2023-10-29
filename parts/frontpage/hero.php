@@ -14,7 +14,7 @@
             </div>
             <div class="slideshow-buttons-wrapper">
                 <ul class="slideshow-buttons">
-                    <li id="slideshow-button1" class="slideshow-button"></li>
+                    <li id="slideshow-button1" class="slideshow-button active"></li>
                     <li id="slideshow-button2" class="slideshow-button"></li>
                     <li id="slideshow-button3" class="slideshow-button"></li>
                 </ul>
