@@ -3,4 +3,5 @@
 .featured-products-list .products .product{overflow:hidden; border:1px solid #f0f0f0; transition:all .3s ease;}
 .featured-products-list .products .product:hover{border:1px solid #ffd333;}
 .featured-products-list .products .product .woocommerce-LoopProduct-link{display:grid; gap:1.5rem;}
+.featured-products-list .products .product .woocommerce-LoopProduct-link .attachment-woocommerce_thumbnail{width:100%; height:auto; margin-inline:auto;}
 .woocommerce-loop-product__title{font-size:1.5rem; font-weight:400;}
