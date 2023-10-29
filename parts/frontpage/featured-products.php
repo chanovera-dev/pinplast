@@ -2,7 +2,7 @@
     <div class="section padding-section featured-products-section">
         <div class="title-wrapper"><h2 class="title"><?php echo __('Productos destacados', 'pinplast'); ?></h2></div>
     </div>
-    <div class="section padding-section">
+    <div class="section featured-products-list">
     <?php
         // Get featured products
         $args = array(
