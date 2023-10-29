@@ -8,7 +8,7 @@
         $args = array(
             'post_type'      => 'product',
             'posts_per_page' => 10,
-            'meta_key'       => '_featured',
+            //'meta_key'       => '_featured',
             'meta_value'     => 'yes',
         );
 
