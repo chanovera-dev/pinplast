@@ -1,7 +1,7 @@
 /* títulos */
-.title-wrapper{position:relative; border-bottom:1px solid var(--line-color); margin-bottom:2rem;}
+.title-wrapper{position:relative;}
 .title-wrapper .title{display:inline; position:relative;}
-.title-wrapper .title:before{position:absolute; bottom:-4px; left:0; width:100%; height:3px; background-color:var(--color-main); content:'';}
+.title-wrapper .title:before{position:absolute; top:50%; transform:translateY(-50%); left:calc(100% + 1rem); width:12rem; height:2px; background-color:#ebebeb; content:'';}
 /* excepciones */
  .posts .title-wrapper{margin-bottom:0; grid-column:1/-1;}
 
