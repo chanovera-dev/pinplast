@@ -5,21 +5,14 @@
     <div class="section featured-products-list">
     <?php
         // Get featured products
-        // $args = array(
-        //     'post_type'      => 'product',
-        //     'posts_per_page' => 10,
-        //     'meta_key'       => '_featured',
-        //     'meta_value'     => 'yes',
-        // );
-        global $wpdb;
-        $featured_products = $wpdb->get_results(
-            "SELECT post_id
-            FROM {$wpdb->prefix}postmeta
-            WHERE meta_key = '_featured'
-            AND meta_value = 'yes'"
+        $args = array(
+            'post_type'      => 'product',
+            'posts_per_page' => 10,
+            'meta_key'       => '_featured',
+            'meta_value'     => 'yes',
         );
 
-        //$featured_products = wc_get_products($args);
+        $featured_products = wc_get_products($args);
 
         // Display featured products
         if (!empty($featured_products)) {
