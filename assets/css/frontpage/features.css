@@ -1,1 +1,4 @@
 .features-section.padding-section{padding:1.5rem 0;}
+.feature-cell svg{width:4.8rem; height:4.8rem; color:#ffd333;}
+.feature-cell h2{font-size:1.7rem; font-weight:700; line-height:24;}
+.feature-cell p{font-size:1.4rem;}
