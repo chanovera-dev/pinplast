@@ -4,26 +4,24 @@
     </div>
     <div class="section featured-products-list">
     <?php
-        // Get featured products
-        $args = array(
-            'post_type'      => 'product',
-            'posts_per_page' => 10,
-            'meta_key'       => '_featured',
-            'meta_value'     => 'yes',
+        // Conexión a la base de datos de WordPress
+        global $wpdb;
+
+        // Obtener los últimos 10 productos de WooCommerce
+        $productos = $wpdb->get_results(
+            "SELECT * 
+            FROM {$wpdb->prefix}posts 
+            WHERE post_type = 'product' 
+            AND post_status = 'publish' 
+            ORDER BY post_date DESC 
+            LIMIT 10"
         );
 
-        $featured_products = wc_get_products($args);
-
-        // Display featured products
-        if (!empty($featured_products)) {
-            foreach ($featured_products as $product) {
-                echo '<a href="' . esc_url(get_permalink($product->get_id())) . '">';
-                echo '<h2>' . esc_html($product->get_name()) . '</h2>';
-                echo '<p>' . esc_html($product->get_price_html()) . '</p>';
-                echo '</a>';
-            }
-        } else {
-            echo 'No featured products found.';
+        // Mostrar los resultados
+        foreach ($productos as $producto) {
+            echo '<h2>' . $producto->post_title . '</h2>';
+            echo '<p>' . $producto->post_content . '</p>';
+            // Puedes acceder a más información del producto utilizando $producto->ID, $producto->post_meta, etc.
         }
         ?>
     </div>
