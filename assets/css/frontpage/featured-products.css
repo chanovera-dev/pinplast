@@ -5,3 +5,4 @@
 .featured-products-list .products .product .woocommerce-LoopProduct-link{display:grid; gap:1.5rem;}
 .featured-products-list .products .product .woocommerce-LoopProduct-link .attachment-woocommerce_thumbnail{width:100%; height:auto; margin-inline:auto;}
 .woocommerce-loop-product__title{font-size:1.5rem; font-weight:400;}
+.price{margin-top:1.4rem; font-size:2rem; font-weight:700; color:#3d464d;}
