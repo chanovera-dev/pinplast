@@ -12,11 +12,13 @@
                     <h2>Slide 3</h2>
                 </div>
             </div>
-            <ul class="slideshow-buttons">
-                <li id="slideshow-button1" class="shodeshow-button"></li>
-                <li id="slideshow-button2" class="shodeshow-button"></li>
-                <li id="slideshow-button3" class="slideshow-button"></li>
-            </ul>
+            <div class="slideshow-buttons-wrapper">
+                <ul class="slideshow-buttons">
+                    <li id="slideshow-button1" class="shodeshow-button"></li>
+                    <li id="slideshow-button2" class="shodeshow-button"></li>
+                    <li id="slideshow-button3" class="slideshow-button"></li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
