@@ -2,7 +2,7 @@
 .featured-products-list .products{margin:0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(auto-fill, minmax(218px, 1fr)); gap:1rem;}
 .featured-products-list .products .product{overflow:hidden; border:1px solid #f0f0f0; transition:all .3s ease;}
 .featured-products-list .products .product:hover{border:1px solid #ffd333;}
-.featured-products-list .products .product .woocommerce-LoopProduct-link{display:grid; gap:1.5rem; padding:1.5rem;}
+.featured-products-list .products .product .woocommerce-LoopProduct-link{display:flex; gap:1.5rem; padding:1.5rem; min-width:100%;}
 .featured-products-list .products .product .woocommerce-LoopProduct-link .attachment-woocommerce_thumbnail{width:100%; height:auto; margin-inline:auto;}
 .woocommerce-loop-product__title{font-size:1.5rem; font-weight:400;}
 .price{margin-top:1.4rem; font-size:2rem; font-weight:700; color:#3d464d;}
