@@ -1,5 +1,5 @@
 #featured-products{margin-top:5rem;}
-.featured-products-list .products{margin:0; padding:0; list-style:none; display:flex; gap:1rem; overflow-x:scroll; padding-bottom:2rem;}
+.featured-products-list .products{margin:0; padding:0; list-style:none; display:flex; align-items:flex-start; gap:1rem; overflow-x:scroll; padding-bottom:2rem;}
 .featured-products-list .products .product{overflow:hidden; border:1px solid #f0f0f0; min-width:100%; padding:1.5rem; display:grid; place-content:flex-start; gap:1.5rem; transition:all .3s ease;}
 .featured-products-list .products .product:hover{border:1px solid #ffd333;}
 .featured-products-list .products .product .woocommerce-LoopProduct-link{display:grid; gap:1.5rem;}
