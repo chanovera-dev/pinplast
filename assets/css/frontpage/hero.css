@@ -1,6 +1,6 @@
 .hero-section.padding-section{padding:1.5rem 0;}
 .slideshow-wrapper{position:relative; width:100%; height:395px; overflow:hidden;}
-.slideshow-wrapper .slideshow{width:300%; height:100%; display:flex; align-items:center;}
+.slideshow-wrapper .slideshow{width:300%; height:100%; display:flex; align-items:center; transition:all .3s ease;}
 .slideshow-wrapper .slideshow .slide{width:100%; height:100%; background-color:#f6f6f6;}
 .slideshow-wrapper .slideshow-buttons-wrapper{position:absolute; bottom:1.5rem; transform:translateX(-50%); left:50%;}
 .slideshow-wrapper .slideshow-buttons-wrapper .slideshow-buttons{padding:.4rem; background-color:#ffffff;display:flex; gap:1.5rem; margin:0; list-style:none;}
