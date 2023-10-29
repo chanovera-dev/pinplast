@@ -2,13 +2,13 @@
     <div class="section padding-section hero-section">
         <div class="slideshow-wrapper">
             <div class="slideshow">
-                <div class="slide1">
+                <div class="slide slide1">
                     <h2>Slide 1</h2>
                 </div>
-                <div class="slide2">
+                <div class="slide slide2">
                     <h2>Slide 2</h2>
                 </div>
-                <div class="slide3">
+                <div class="slide slide3">
                     <h2>Slide 3</h2>
                 </div>
             </div>
