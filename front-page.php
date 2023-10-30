@@ -7,5 +7,6 @@ echo '<main id="main">';
     include(TEMPLATEPATH . '/parts/frontpage/catalog.php');
     include(TEMPLATEPATH . '/parts/frontpage/bestsellers.php');
     include(TEMPLATEPATH . '/parts/frontpage/categories.php');
+    include(TEMPLATEPATH . '/parts/frontpage/arrivals.php');
 echo '</main>';
 get_footer();

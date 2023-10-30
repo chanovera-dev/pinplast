@@ -40,6 +40,7 @@ function frontpage_styles() {
         wp_enqueue_style( 'catalog-styles', get_template_directory_uri() . '/assets/css/frontpage/catalog.css' );
         wp_enqueue_style( 'bestsellers-styles', get_template_directory_uri() . '/assets/css/frontpage/bestsellers.css' );
         wp_enqueue_style( 'categories-styles', get_template_directory_uri() . '/assets/css/frontpage/categories.css' );
+        wp_enqueue_style( 'arrivals-styles', get_template_directory_uri() . '/assets/css/frontpage/arrivals.css' );
         wp_enqueue_style( 'sections-styles', get_template_directory_uri() . '/assets/css/sections.css' );
         wp_enqueue_style( 'widgets-styles', get_template_directory_uri() . '/assets/css/widgets.css' );
     }
