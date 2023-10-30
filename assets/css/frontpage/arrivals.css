@@ -19,5 +19,4 @@
 @media(min-width:768px){
     .arrivals-list .products{grid-template-columns:repeat(3, 1fr);}
     .arrivals-list .products .product{min-width:222.5px;}
-    .arrivals-list .products .product:nth-child(1){grid-column:1/-1;}
 }
