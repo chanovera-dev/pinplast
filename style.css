@@ -25,6 +25,19 @@ a:hover{color:var(--blue);}
 a:focus{outline:none; box-shadow:var(--link-focus);}
 .container .section{width:var(--breakpoint); margin-inline:auto;}
 img{display:block;}
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #f0f0f0;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid transparent;  /* creates padding around scroll thumb */
+  }
 
 /* ajustes específicos */
 main{}
