@@ -5,6 +5,7 @@
     background-color:#ffd333;
     color:#3d464d;
     font-weight:600;
+    border-radius:.3rem;
     display:inline-flex; align-items:center; height:3.2rem; padding:0 2rem;
     transition:all .3s ease;
 }
