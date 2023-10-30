@@ -29,8 +29,8 @@ img{display:block;}
 /* scrollbar */
 /* Works on Firefox */
 * {
-    scrollbar-width: thin;
-    scrollbar-color: blue orange;
+    scrollbar-width:inherit;
+    scrollbar-color: #f1f1f1 #ffffff;
   }
   
   /* Works on Chrome, Edge, and Safari */
