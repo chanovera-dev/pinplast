@@ -4,7 +4,7 @@
     border:1px solid #ffd333;
     background-color:#ffd333;
     color:#3d464d;
-    font-weight:500;
+    font-weight:600;
     display:inline-flex; align-items:center; height:3.2rem; padding:0 2rem;
     transition:all .3s ease;
 }
@@ -12,4 +12,8 @@
     border:1px solid #3d464d;
     background-color:#3d464d;
     color:#ffffff;
+}
+
+@media(min-width:768px){
+    .catalog-link{height:170px;}
 }
