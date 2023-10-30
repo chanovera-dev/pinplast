@@ -1,5 +1,6 @@
 #catalog-products .padding-section{padding:2.4rem 0;}
-.catalog-link{position:relative; display:grid; gap:1.5rem; place-content:center; justify-content:center; width:100%; height:390px; background-color:#f6f6f6;}
+.catalog-link{position:relative; display:grid; place-content:center; width:100%; height:390px; background-color:#f6f6f6;}
+.catalog-link .tools{text-align:center; display:grid; gap:1.5rem;}
 .catalog-link button{
     margin-top:1.5rem;
     border:1px solid #ffd333;
