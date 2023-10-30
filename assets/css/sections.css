@@ -1,9 +1,10 @@
 /* títulos */
 .title-wrapper{position:relative; overflow:hidden; margin-bottom:2.4rem;}
 .title-wrapper .title{display:inline; position:relative; font-size:2rem; font-weight:700; font-family:"Roboto", "sans-serif";}
-:not(footer) .title-wrapper .title:before{position:absolute; top:50%; transform:translateY(-50%); left:calc(100% + 1.5rem); width:120rem; height:2px; background-color:#ebebeb; content:'';}
+.title-wrapper .title:before{position:absolute; top:50%; transform:translateY(-50%); left:calc(100% + 1.5rem); width:120rem; height:2px; background-color:#ebebeb; content:'';}
 /* excepciones */
  .posts .title-wrapper{margin-bottom:0; grid-column:1/-1;}
+ footer .title-wrapper .title:before{background-color:transparent;}
 
 /* loop de artículos */
 :is(.archive,.search,.home,.blog,.post-template-default) :is(.posts-wrapper,.title-section .title,.content-section,.comments-section){display:grid; gap:5rem;}
