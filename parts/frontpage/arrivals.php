@@ -17,7 +17,7 @@
         <li class="card">
             <a href="<?php echo home_url( '/' ); ?>?add-to-cart=<?php echo $loop->post->ID; ?>&quantity=1" class="learn-more">
                 <?php
-                    if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, array(150,150));
+                    if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, array(88,88));
                     else echo '<img src="'.wc_placeholder_img_src().'" alt="Placeholder" loading="lazy">';
                 ?>  
                 <div class="content">
