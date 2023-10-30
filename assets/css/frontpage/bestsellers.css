@@ -23,7 +23,7 @@
 }
 
 @media(min-width:1024px){
-    .bestsellers-list .products{grid-template-columns:333px 1fr 1fr 1fr;}
+    .bestsellers-list .products{grid-template-columns:333px 1fr 1fr 1fr; align-items:inherit;}
     .bestsellers-list .products .product{min-width:222.5px;}
     .bestsellers-list .products .product:nth-child(1){grid-column:1/2; grid-row:1/3;}
 }
