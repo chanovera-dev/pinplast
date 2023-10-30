@@ -37,6 +37,7 @@ function frontpage_styles() {
         wp_enqueue_script( 'hero-slideshow', get_template_directory_uri() . '/assets/js/hero-slideshow.js', array(), '1.0', true );
         wp_enqueue_style( 'features-styles', get_template_directory_uri() . '/assets/css/frontpage/features.css' );
         wp_enqueue_style( 'featured-products-styles', get_template_directory_uri() . '/assets/css/frontpage/featured-products.css' );
+        wp_enqueue_style( 'catalog-styles', get_template_directory_uri() . '/assets/css/frontpage/catalog.css' );
         wp_enqueue_style( 'sections-styles', get_template_directory_uri() . '/assets/css/sections.css' );
         wp_enqueue_style( 'widgets-styles', get_template_directory_uri() . '/assets/css/widgets.css' );
     }
