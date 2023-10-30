@@ -7,6 +7,7 @@
 .woocommerce-loop-product__title{font-size:1.5rem; font-weight:400;}
 .price{font-size:2rem; font-weight:700; color:#3d464d;}
 .featured-products-list .products .product .product_type_simple{
+    display:none;
     font-size:1.5rem;
     padding:.5rem 1.5rem;
     font-weight:600;
@@ -16,6 +17,7 @@
     margin-right:auto;
     border-radius:.2rem;
 }
+.featured-products-list .products .product:hover .product_type_simple{display:inherit;}
 .featured-products-list .products .product .product_type_simple:hover{
     background-color:#3d464d;
     color:#ffffff;
