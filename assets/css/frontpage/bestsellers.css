@@ -1,5 +1,5 @@
 #bestsellers{margin-top:5rem;}
-.bestsellers-list .products{margin:0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(auto-fill, minmax(212px, 1fr)); align-items:flex-start; gap:1rem; overflow-x:scroll; padding-bottom:2rem;}
+.bestsellers-list .products{margin:0; padding:0; list-style:none; display:grid; align-items:flex-start; gap:1rem; overflow-x:scroll; padding-bottom:2rem;}
 .bestsellers-list .products .product{overflow:hidden; border:1px solid #f0f0f0; min-width:100%; padding:1.5rem; display:grid; place-content:flex-start; transition:all .3s ease;}
 .bestsellers-list .products .product:hover{border:1px solid #ffd333;}
 .bestsellers-list .products .product .woocommerce-LoopProduct-link{display:grid; gap:1.5rem;}
