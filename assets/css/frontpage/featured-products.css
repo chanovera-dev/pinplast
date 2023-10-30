@@ -8,8 +8,8 @@
 .price{font-size:2rem; font-weight:700; color:#3d464d;}
 .featured-products-list .products .product .product_type_simple{
     font-size:1.5rem;
-    padding:.25rem 1rem;
-    font-weight:500;
+    padding:.5rem 1.5rem;
+    font-weight:600;
     background-color:#ffd333;
     transition:all .3s ease;
     color:#3d464d;
