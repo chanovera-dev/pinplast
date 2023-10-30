@@ -2,7 +2,7 @@
     <div class="section padding-section arrivals-section">
         <div class="title-wrapper"><h2 class="title"><?php echo __('Recién llegados', 'pinplast'); ?></h2></div>
     </div>
-    <ul class="section arrival-list">
+    <ul class="section arrivals-list">
     <?php
         $args = array(
             'post_type' => 'product',
