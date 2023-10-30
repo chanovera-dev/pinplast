@@ -43,9 +43,9 @@ img{display:block;}
   }
   
   *::-webkit-scrollbar-thumb {
-    background-color: blue;
+    background-color: #f1f1f1;
     border-radius: 20px;
-    border: 3px solid orange;
+    border: 3px solid #ffffff;
   }
 
 /* ajustes específicos */
