@@ -29,6 +29,7 @@
 }
 
 @media(min-width:1200px){
+    .bestsellers-list .products{grid-template-columns:400px 1fr 1fr 1fr; align-items:inherit;}
     .bestsellers-list .products .product :is(.product_type_simple, .product_type_variable){
         font-size:0;
         padding:0;
