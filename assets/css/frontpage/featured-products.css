@@ -7,15 +7,6 @@
 .woocommerce-loop-product__title{font-size:1.5rem; font-weight:400;}
 .price{font-size:2rem; font-weight:700; color:#3d464d;}
 .featured-products-list .products .product :is(.product_type_simple, .product_type_variable){
-    font-size:0;
-    padding:0;
-    background-color:transparent;
-    transition:all .3s ease;
-    color:transparent;
-    margin-right:auto;
-    border-radius:.2rem;
-}
-.featured-products-list .products .product:hover :is(.product_type_simple, .product_type_variable){
     margin-top:1.5rem;
     font-size:1.5rem;
     padding:.5rem 1.5rem;
@@ -23,10 +14,31 @@
     background-color:#ffd333;
     color:#3d464d;
 }
-.featured-products-list .products .product :is(.product_type_simple:hover, .product_type_variable:hover){
-    background-color:#3d464d;
-    color:#ffffff;
-}
+
 @media(min-width:768px){
     .featured-products-list .products .product{min-width:222.5px;}
+}
+
+@media(min-width:1200px){
+    .featured-products-list .products .product :is(.product_type_simple, .product_type_variable){
+        font-size:0;
+        padding:0;
+        background-color:transparent;
+        transition:all .3s ease;
+        color:transparent;
+        margin-right:auto;
+        border-radius:.2rem;
+    }
+    .featured-products-list .products .product:hover :is(.product_type_simple, .product_type_variable){
+        margin-top:1.5rem;
+        font-size:1.5rem;
+        padding:.5rem 1.5rem;
+        font-weight:600;
+        background-color:#ffd333;
+        color:#3d464d;
+    }
+    .featured-products-list .products .product :is(.product_type_simple:hover, .product_type_variable:hover){
+        background-color:#3d464d;
+        color:#ffffff;
+    }
 }
