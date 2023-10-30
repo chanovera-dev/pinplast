@@ -13,6 +13,7 @@
     font-weight:600;
     background-color:#ffd333;
     color:#3d464d;
+    margin-right:auto;
 }
 
 @media(min-width:768px){
