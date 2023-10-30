@@ -8,5 +8,6 @@ echo '<main id="main">';
     include(TEMPLATEPATH . '/parts/frontpage/bestsellers.php');
     include(TEMPLATEPATH . '/parts/frontpage/categories.php');
     include(TEMPLATEPATH . '/parts/frontpage/arrivals.php');
+    if ( get_posts() == null ) : else: include(TEMPLATEPATH . '/parts/frontpage/blog.php'); endif;
 echo '</main>';
 get_footer();
