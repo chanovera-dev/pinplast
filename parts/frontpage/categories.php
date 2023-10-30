@@ -6,4 +6,4 @@
     <?php echo do_shortcode('[product_categories]'); ?>
 
     </div>
-</section>[featured_products per_page="7" order_by="date" order="desc"]
+</section>
