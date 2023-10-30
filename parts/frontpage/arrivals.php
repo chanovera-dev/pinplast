@@ -22,7 +22,7 @@
                 ?>  
                 <div class="content">
                     <h3 class="title"><?php the_title(); ?></h3>
-                    <?php echo '<span class="price"> From '. $product->get_price_html() .'</span>'; ?>
+                    <?php echo '<span class="price">'. $product->get_price_html() .'</span>'; ?>
                 </div>
             </a>
         </li>
