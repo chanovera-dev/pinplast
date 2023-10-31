@@ -1,7 +1,7 @@
 #blog{padding:5rem 0 6rem;}
 .latest-articles{display:grid; gap:3rem;}
-.latest-articles .article{display:grid; gap:2.2rem; width:100%; height:auto; aspect-ratio:16/9;}
-.latest-articles .article .thumbnail{object-fit:cover;}
+.latest-articles .article{display:grid; gap:2.2rem;}
+.latest-articles .article .thumbnail{object-fit:cover; width:100%; height:auto; aspect-ratio:16/9;}
 .latest-articles .article .content{font-size:1.5rem;}
 .latest-articles .article .content .title{font-size:1.6rem; font-weight:700;}
 .latest-articles .article .content .publicate-date_widget{margin-bottom:1rem; color:#adadad; font-size:1.4rem;}
