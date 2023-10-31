@@ -1,11 +1,12 @@
 #blog{padding:5rem 0 6rem;}
 .latest-articles{display:grid; gap:3rem;}
-.latest-articles .article{display:grid; gap:2.2rem;}
+.latest-articles .article{display:grid; gap:2.2rem; width:100%; height:auto; aspect-ratio:16/9;}
 .latest-articles .article .thumbnail{object-fit:cover;}
 .latest-articles .article .content{font-size:1.5rem;}
 
 @media(min-width:768px){
     .latest-articles .article{grid-template-columns:auto 1fr;}
+    .latest-articles .article .thumbnail{width:240px; height:161px; aspect-ratio:inherit;}
 }
 
 @media(min-width:1024px){
