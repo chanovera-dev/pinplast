@@ -39,10 +39,10 @@
     .slideshow-wrapper .slideshow .slide{position:relative; overflow:hidden; display:grid;}
     .slideshow-wrapper .slideshow .slide .content{align-self:end; max-width:65%;}
     .slideshow-wrapper .slideshow .slide .content button{margin-top:4rem;}
-    .slideshow-wrapper .slideshow .slide .picture-product{position:absolute; bottom:0; right:-40%;}
+    .slideshow-wrapper .slideshow .slide .picture-product{position:absolute; bottom:0; right:-35%;}
 }
 
 @media(min-width:1024px){
-    .hero-section{display:grid; grid-template-columns:255px 1fr 255px; gap:3rem;}
-    .hero-section .slideshow-wrapper{grid-column:2/-1;}
+    .hero-section{display:grid; grid-template-columns:255px 1fr; gap:3rem;}
+    .slideshow-wrapper .slideshow .slide .picture-product{right:-25%;}
 }
