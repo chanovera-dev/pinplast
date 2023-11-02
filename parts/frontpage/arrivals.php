@@ -22,6 +22,7 @@
                     ?>  
                     <div class="content">
                         <h3 class="title"><?php the_title(); ?></h3>
+                        <span class="rating"><?php echo 'Rating: ' . $product_obj->get_average_rating(); ?></span>
                         <?php echo '<span class="price">'. $product->get_price_html() .'</span>'; ?>
                     </div>
                 </a>
