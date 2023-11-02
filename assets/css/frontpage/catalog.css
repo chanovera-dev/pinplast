@@ -1,5 +1,6 @@
 #catalog-products .padding-section{padding:2.4rem 0;}
 .catalog-link{position:relative; display:grid; place-content:center; width:100%; height:390px; background-color:#f6f6f6;}
+.catalog-link:hover{color:#000000;}
 .catalog-link .tools{text-align:center; display:grid;}
 .catalog-link .tools h2{font-weight:700;}
 .catalog-link .tools button{
