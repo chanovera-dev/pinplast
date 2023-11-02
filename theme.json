@@ -724,6 +724,9 @@
 				":hover": {
 					"typography": {
 						"textDecoration": "none"
+					},
+					"color": {
+						"text": "var(--blue)"
 					}
 				},
 				":focus": {
