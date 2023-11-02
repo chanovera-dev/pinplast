@@ -722,11 +722,11 @@
 					"text": "var(--wp--preset--color--contrast)"
 				},
 				":hover": {
-					"typography": {
-						"textDecoration": "none"
-					},
 					"color": {
 						"text": "var(--blue)"
+					},
+					"typography": {
+						"textDecoration": "none"
 					}
 				},
 				":focus": {
