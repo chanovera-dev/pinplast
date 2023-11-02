@@ -3,7 +3,7 @@
         <div class="slideshow-wrapper">
             <div id="slideshow" class="slideshow">
                 <div class="slide slide1">
-                    <h2>Gran selección en artículos de pintura</h2>
+                    <h2 class="title">Gran selección en artículos de pintura</h2>
                     <button>Comprar ahora</button>
                     <img class="picture-product picture-product--1" src="<?php echo get_theme_mod('slide_img1', get_bloginfo('template_url') . '/assets/img/rodillo-y-base.png'); ?>" alt="foto de producto" loading="lazy">
                 </div>
