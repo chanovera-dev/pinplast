@@ -24,9 +24,13 @@
                     ?>  
                     <div class="content">
                         <h3 class="title"><?php the_title(); ?></h3>
-                        <div class="rating">
-                            <?php echo wc_get_rating_html( $average_rating ); ?>
-                        </div>
+                        <?php if ( $average_rating > 0 ) : ?>
+                            <div class="rating">
+                                <?php echo wc_get_rating_html( $average_rating ); ?>
+                            </div>
+                        <?php else : ?>
+                            <span class="no-rating">No hay calificaciones</span>
+                        <?php endif; ?>
                         <?php echo '<span class="price">'. $product->get_price_html() .'</span>'; ?>
                     </div>
                 </a>
