@@ -112,6 +112,49 @@
 				{
 					"fontFace": [
 						{
+							"fontFamily": "Roboto",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/roboto/roboto-regular.woff2"
+							]
+						},
+						{
+							"fontFamily": "Roboto",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/roboto/roboto-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Roboto",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/roboto/roboto-bold.woff2"
+							]
+						},
+						{
+							"fontFamily": "Roboto",
+							"fontStretch": "normal",
+							"fontStyle": "light",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/roboto/roboto-light.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Roboto\", sans-serif",
+					"name": "Roboto",
+					"slug": "roboto"
+				},
+				{
+					"fontFace": [
+						{
 							"fontFamily": "DM Sans",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
