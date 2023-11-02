@@ -4,7 +4,7 @@
             <div id="slideshow" class="slideshow">
                 <div class="slide slide1">
                     <h2>Slide 1</h2>
-                    <img src="<?php echo get_theme_mod('slide_img1', get_bloginfo('template_url') . '/assets/img/rodillo-y-base.png'); ?>" alt="" srcset="">
+                    <img class="picture-product picture-product--1" src="<?php echo get_theme_mod('slide_img1', get_bloginfo('template_url') . '/assets/img/rodillo-y-base.png'); ?>" alt="foto de producto" loading="lazy">
                 </div>
                 <div class="slide slide2">
                     <h2>Slide 2</h2>
