@@ -14,6 +14,7 @@
             $loop = new WP_Query( $args );
             while ( $loop->have_posts() ) : $loop->the_post(); global $product;
             $product_obj = wc_get_product( $loop->post->ID );
+            $average_rating = $product_obj->get_average_rating();
         ?>
             <li class="card">
                 <a href="<?php echo home_url( '/' ); ?>?add-to-cart=<?php echo $loop->post->ID; ?>&quantity=1" class="learn-more">
@@ -23,7 +24,13 @@
                     ?>  
                     <div class="content">
                         <h3 class="title"><?php the_title(); ?></h3>
-                        <span class="rating"><?php echo 'Rating: ' . $product_obj->get_average_rating(); ?></span>
+                        <?php if ( $average_rating > 0 ) : ?>
+                            <div class="rating">
+                                <?php echo wc_get_rating_html( $average_rating ); ?>
+                            </div>
+                        <?php else : ?>
+                            <span class="no-rating">No hay calificaciones</span>
+                        <?php endif; ?>
                         <?php echo '<span class="price">'. $product->get_price_html() .'</span>'; ?>
                     </div>
                 </a>
