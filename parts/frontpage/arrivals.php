@@ -25,11 +25,15 @@
                     <div class="content">
                         <h3 class="title"><?php the_title(); ?></h3>
                         <?php if ( $average_rating > 0 ) : ?>
-                        <div class="rating">
+                        <div class="star-rating">
                             <?php echo wc_get_rating_html( $average_rating ); ?>
+                            <span class="number-rating"><?php echo 'Rating: ' . $product_obj->get_average_rating(); ?></span>
                         </div>
                         <?php else : ?>
-                            <span class="no-rating">No hay calificaciones</span>
+                            <span class="no-rating">
+                                No hay calificaciones
+                                <span class="number-rating"><?php echo 'Rating: ' . $product_obj->get_average_rating(); ?></span>
+                            </span>
                         <?php endif; ?> 
                         <?php echo '<span class="price">'. $product->get_price_html() .'</span>'; ?>
                     </div>
