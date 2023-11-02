@@ -39,7 +39,7 @@
     .slideshow-wrapper .slideshow .slide{position:relative; overflow:hidden; display:grid;}
     .slideshow-wrapper .slideshow .slide .content{align-self:end; max-width:65%;}
     .slideshow-wrapper .slideshow .slide .content button{margin-top:4rem;}
-    .slideshow-wrapper .slideshow .slide .picture-product{position:absolute; bottom:0; right:-30%;}
+    .slideshow-wrapper .slideshow .slide .picture-product{position:absolute; bottom:0; right:-40%;}
 }
 
 @media(min-width:1024px){
