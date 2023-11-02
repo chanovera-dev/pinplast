@@ -740,7 +740,7 @@
 					}
 				},
 				"typography": {
-					"textDecoration": "underline"
+					"textDecoration": "none"
 				}
 			}
 		},
