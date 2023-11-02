@@ -43,6 +43,7 @@
 }
 
 @media(min-width:1024px){
-    .hero-section{display:grid; grid-template-columns:255px 1fr; gap:3rem;}
+    .hero-section{display:grid; grid-template-columns:255px 1fr 255px; gap:3rem;}
+    .hero-section .slideshow-wrapper{grid-column:2/-1;}
     .slideshow-wrapper .slideshow .slide .picture-product{right:-25%;}
 }
