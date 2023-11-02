@@ -13,6 +13,7 @@
             );
             $loop = new WP_Query( $args );
             while ( $loop->have_posts() ) : $loop->the_post(); global $product;
+            $product_obj = wc_get_product( $loop->post->ID );
         ?>
             <li class="card">
                 <a href="<?php echo home_url( '/' ); ?>?add-to-cart=<?php echo $loop->post->ID; ?>&quantity=1" class="learn-more">
