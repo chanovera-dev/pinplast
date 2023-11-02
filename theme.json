@@ -731,7 +731,7 @@
 				},
 				":focus": {
 					"typography": {
-						"textDecoration": "underline dashed"
+						"textDecoration": "none"
 					}
 				},
 				":active": {
