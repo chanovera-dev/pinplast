@@ -5,6 +5,7 @@
                 <div class="slide slide1">
                     <div class="content">
                         <h2 class="title">Gran selección en artículos de pintura</h2>
+                        <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Etiam pharetra laoreet dui quis molestie.</p>
                         <button>Comprar ahora</button>
                     </div>
                     <img class="picture-product picture-product--1" src="<?php echo get_theme_mod('slide_img1', get_bloginfo('template_url') . '/assets/img/rodillo-y-base.png'); ?>" alt="foto de producto" loading="lazy">

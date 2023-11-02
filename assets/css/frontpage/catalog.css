@@ -15,7 +15,7 @@
     transition:all .3s ease;
 }
 .catalog-link .tools button:hover{
-    border:1px solid #3d464d;gap:1rem;
+    border:1px solid #3d464d; gap:1rem;
     background-color:#3d464d;
     color:#ffffff;
 }
