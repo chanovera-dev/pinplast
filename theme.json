@@ -723,7 +723,7 @@
 				},
 				":hover": {
 					"color": {
-						"text": "var(--blue)"
+						"text": "var(--wp--preset--color--vivid-cyan-blue)"
 					},
 					"typography": {
 						"textDecoration": "none"
