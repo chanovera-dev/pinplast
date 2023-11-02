@@ -42,14 +42,7 @@ function theme_colors() {
             .social .menu li a[href*="instagram"]:before{content: ''; background-image: url('<?php echo get_template_directory_uri(); ?>/assets/icons/instagram.svg');}
             .social .menu li a[href*="sites"]:before{content: ''; background-image: url('<?php echo get_template_directory_uri(); ?>/assets/icons/google.svg');}
 
-        </style>
-    <?php
-}
-add_action('wp_head', 'theme_colors');
-
-function theme_fonts() {
-    ?>
-        <style>
+            /* fuentes */
             /* roboto-300 - latin */
             @font-face {
             font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -117,4 +110,4 @@ function theme_fonts() {
         </style>
     <?php
 }
-add_action('wp-head', 'theme_fonts')
+add_action('wp_head', 'theme_colors');
