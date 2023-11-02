@@ -2,8 +2,9 @@
 .slideshow-wrapper{position:relative; width:100%; height:395px; overflow:hidden;}
 .slideshow-wrapper .slideshow{width:300%; height:100%; display:flex; align-items:center; transition:all .3s ease;}
 .slideshow-wrapper .slideshow .slide{width:100%; height:100%; background-color:#f6f6f6; padding:1.5rem;}
-.slideshow-wrapper .slideshow .slide .title{font-size:2.6rem; font-weight:700; color:#3d464d;}
-.slideshow-wrapper .slideshow .slide button{
+.slideshow-wrapper .slideshow .slide .content{text-align:center;}
+.slideshow-wrapper .slideshow .slide .content .title{font-size:2.6rem; font-weight:700; color:#3d464d;}
+.slideshow-wrapper .slideshow .slide .content button{
     margin-top: 1.5rem;
     border: 1px solid #ffd333;
     background-color: #ffd333;
