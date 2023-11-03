@@ -1,4 +1,7 @@
 #arrivals{margin-top:5rem;}
+/* más vendidos */
+#bestsellers .product-list{grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));}
+
 /* Productos */
 .products-section{display:grid; grid-template-columns:repeat(auto-fill, minmax(315px, 1fr)); gap:4rem;}
 .products-section .product-list{gap:0;}
