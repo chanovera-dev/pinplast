@@ -20,7 +20,7 @@
                     <li>
                         <div class="card">
                             <?php
-                                if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, array(88,88));
+                                if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, array(200,200));
                                 else echo '<img src="'.wc_placeholder_img_src().'" alt="Placeholder" loading="lazy">';
                             ?>  
                             <div class="content">
