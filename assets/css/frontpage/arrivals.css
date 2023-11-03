@@ -6,5 +6,5 @@
 .arrivals-list li .content .rating{display:flex; align-items:center; gap:1.5rem; margin:1.5rem 0;}
 .arrivals-list li .content .rating .star-rating{display:flex; align-items:center; gap:.5rem;}
 .arrivals-list li .content .rating .star-rating svg{width:2rem; height:2rem; color:#b3b3b3;}
-.arrivals-list li .content .rating .star-rating svg.bi-star-fill{color:var(--teal);}
+.arrivals-list li .content .rating .star-rating svg.bi-star-fill{color:var(--green);}
 .arrivals-list li .content .rating .number-rating{font-size:1.6rem; color:#b3b3be;}
