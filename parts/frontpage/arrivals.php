@@ -18,27 +18,25 @@
             $average_rating = $product_obj->get_average_rating();
         ?>
             <li class="card">
-                <a href="<?php echo esc_url( $product_permalink ); ?>" class="permalink">
-                    <?php
-                        if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, array(88,88));
-                        else echo '<img src="'.wc_placeholder_img_src().'" alt="Placeholder" loading="lazy">';
-                    ?>  
-                    <div class="content">
-                        <h3 class="title"><?php the_title(); ?></h3>
-                        <?php if ( $average_rating > 0 ) : ?>
-                        <div class="star-rating">
-                            <?php echo wc_get_rating_html( $average_rating ); ?>
-                            <span class="number-rating"><?php echo 'Rating: ' . $product_obj->get_average_rating(); ?></span>
-                        </div>
-                        <?php else : ?>
-                            <span class="no-rating">
-                                No hay calificaciones
-                                <span class="number-rating"><?php echo 'Rating: ' . $product_obj->get_average_rating(); ?></span>
-                            </span>
-                        <?php endif; ?> 
-                        <?php echo '<span class="price">'. $product->get_price_html() .'</span>'; ?>
+                <?php
+                    if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, array(88,88));
+                    else echo '<img src="'.wc_placeholder_img_src().'" alt="Placeholder" loading="lazy">';
+                ?>  
+                <div class="content">
+                    <a href="<?php echo esc_url( $product_permalink ); ?>" class="permalink"><h3 class="title"><?php the_title(); ?></h3></a>
+                    <?php if ( $average_rating > 0 ) : ?>
+                    <div class="star-rating">
+                        <?php echo wc_get_rating_html( $average_rating ); ?>
+                        <span class="number-rating"><?php echo 'Rating: ' . $product_obj->get_average_rating(); ?></span>
                     </div>
-                </a>
+                    <?php else : ?>
+                        <span class="no-rating">
+                            No hay calificaciones
+                            <span class="number-rating"><?php echo 'Rating: ' . $product_obj->get_average_rating(); ?></span>
+                        </span>
+                    <?php endif; ?> 
+                    <?php echo '<span class="price">'. $product->get_price_html() .'</span>'; ?>
+                </div>
             </li>
         <?php endwhile; ?>
         <?php wp_reset_query(); ?>
