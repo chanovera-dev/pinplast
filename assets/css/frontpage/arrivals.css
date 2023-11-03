@@ -4,7 +4,7 @@
 .products-section .product-list{gap:0;}
 .products-section .product-list li:not(:last-child){border-bottom:none;}
 .products-section .product-list li:not(:last-child) .card{border-bottom:2px solid transparent;}
-.products-section .product-list li:not(:last-child):hover .card{border-bottom:2px solid #ffd333;}
+.products-section .product-list li:not(:last-child) .card:hover{border-bottom:2px solid #ffd333;}
 .products-section .product-list li .card{border:1px solid transparent;}
 .products-section .product-list li:hover .card{border:1px solid #ffd333;}
 
