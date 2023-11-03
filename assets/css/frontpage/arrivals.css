@@ -10,8 +10,9 @@
 
 .product-list{margin:0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(auto-fill, minmax(315px, 1fr)); gap:1.5rem;}
 .product-list li{border:1px solid #f0f0f0; transition:all .3s ease;}
-.product-list li .card{padding:1.5rem; display:grid; gap:1.5rem; grid-template-columns:88px 1fr; align-items:center; transition:all .3s ease;}
+.product-list li .card{padding:1.5rem; display:grid; gap:1.5rem; grid-template-columns:88px 1fr; align-items:center; border:1px solid transparent; transition:all .3s ease;}
 .product-list li:hover{border:1px solid #ffd333;}
+.product-list li:hover .card{border:1px solid #ffd333;}
 .product-list li a .title{font-size:1.5rem; font-weight:400;}
 .product-list li .content .rating{display:flex; align-items:center; gap:1.5rem; margin:1.5rem 0;}
 .product-list li .content .rating .star-rating{display:flex; align-items:center; gap:.5rem;}
