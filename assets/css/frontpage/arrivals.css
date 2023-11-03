@@ -1,6 +1,6 @@
 #arrivals{margin-top:5rem;}
 /* Productos */
-.product-section{display:grid; grid-template-columns:repeat(auto-fill, minmax(315px, 1fr)); gap:4rem;}
+.products-section{display:grid; grid-template-columns:repeat(auto-fill, minmax(315px, 1fr)); gap:4rem;}
 
 .product-list{margin:0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(auto-fill, minmax(315px, 1fr)); gap:1.5rem;}
 .product-list li{border:1px solid #f0f0f0; transition:all .3s ease; padding:1.5rem; display:grid; gap:1.5rem; grid-template-columns:88px 1fr; align-items:center;}
