@@ -27,7 +27,7 @@
                     <?php if ( $average_rating > 0 ) : ?>
                     <div class="star-rating">
                         <?php echo wc_get_rating_html( $average_rating ); ?>
-                        <span class="number-rating"><?php echo 'Rating: ' . $product_obj->get_average_rating(); ?></span>
+                        <span class="number-rating"><?php echo $product_obj->get_average_rating() . ' votos'; ?></span>
                     </div>
                     <?php else : ?>
                         <span class="no-rating">
