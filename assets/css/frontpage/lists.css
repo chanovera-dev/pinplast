@@ -52,7 +52,6 @@
     #bestsellers .product-list{grid-template-columns:1fr 187px 187px 187px;}
     #bestsellers .product-list :nth-child(2){grid-row:2/4;}
     #bestsellers .product-list :nth-child(2) .card{grid-template-rows:auto auto auto 1fr;}
-    #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{font-size:1.2rem;}
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1199px){
