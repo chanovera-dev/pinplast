@@ -35,7 +35,7 @@
 .product-list li .content .rating .star-rating svg.bi-star-fill{color:var(--green);}
 .product-list li .content .rating .votes-rating{font-size:1.6rem; color:#b3b3be;}
 
-@media screen and (min-width: 400px) and (max-width: 767px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
     #bestsellers .product-list li:nth-child(1){grid-column:1/-1;}
     #bestsellers .product-list li:nth-child(1) .card{grid-template-columns:auto 1fr; align-items:center;}
 }
