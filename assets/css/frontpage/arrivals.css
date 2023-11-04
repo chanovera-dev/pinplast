@@ -4,6 +4,7 @@
 #bestsellers .product-list li .card{grid-template-columns:1fr; align-items:center;}
 #bestsellers .product-list li .card .wp-post-image{margin-inline:auto;}
 #bestsellers .product-list li .card .add_to_wishlist{font-size:0;}
+#bestsellers .product-list li .card .yith-wcwl-icon.fa.fa-heart-o{font-size:1.6rem;}
 
 /* Productos */
 .products-section{display:grid; grid-template-columns:repeat(auto-fill, minmax(315px, 1fr)); gap:4rem;}
