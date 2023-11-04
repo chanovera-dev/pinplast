@@ -11,7 +11,7 @@
 .product-list li .content .rating .star-rating svg.bi-star-fill{color:var(--green);}
 .product-list li .content .rating .votes-rating{font-size:1.4rem; color:#b3b3be;}
 
-#bestsellers, #categories, #arrivals, #products{margin-top:5rem;}
+#bestsellers, #categories, #arrivals, #blog, #products{margin-top:5rem;}
 
 /* más vendidos */
 #bestsellers .title-wrapper{grid-column:1/-1;}
