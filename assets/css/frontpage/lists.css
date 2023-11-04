@@ -97,7 +97,7 @@
         border-radius:.3rem;
         margin-right:1rem;
     }
-    #bestsellers .product-list :nth-child(2) .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{font-size:1.7rem;}
+    #bestsellers .product-list :nth-child(2) .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{font-size:1.7rem!important;}
     #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .yith-wcwl-add-button .add_to_wishlist{color:#b3b3b3;}
     #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .yith-wcwl-add-button .add_to_wishlist i{font-size:0; margin-right:0;}
     #bestsellers .product-list li:hover .card .add-to-cart_add-to-wishlist--buttons .buttons .yith-wcwl-add-button .add_to_wishlist i{font-size:1.6rem;}
