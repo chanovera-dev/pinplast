@@ -88,7 +88,6 @@
     #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons{display:flex; flex-wrap:wrap; align-items:baseline;}
     #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{font-size:0;}
     #bestsellers .product-list :is(li:hover, :nth-child(2)) .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{
-        font-size:1.3rem;
         padding:.5rem 1rem;
         font-weight:600;
         border:1px solid #ffd333;
