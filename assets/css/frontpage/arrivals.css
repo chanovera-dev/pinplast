@@ -40,6 +40,11 @@
     #bestsellers .product-list li:nth-child(2) .card{grid-template-columns:auto 1fr; align-items:center;}
 }
 
+@media(min-width:1024px){
+    #bestsellers .product-list{grid-template-columns:1fr 222px 222px 222px;}
+    #bestsellers .product-list li:nth-child(2){grid-row:1/3;}
+}
+
 @media(min-width:1200px){
     #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .add_to_cart_button{font-size:0;}
     #bestsellers .product-list li:hover .card .add-to-cart_add-to-wishlist--buttons .add_to_cart_button{
