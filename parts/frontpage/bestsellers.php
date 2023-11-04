@@ -41,7 +41,7 @@
                                 <span class="votes-rating"><?php echo 'Sin votos'; ?></span>
                         </div>
                         <?php endif; ?> 
-                        <?php echo '<span class="price">'. $product->get_price_html() .'</span>'; ?>
+                        <?php echo '<div class="price">'. $product->get_price_html() .'</div>'; ?>
                         <?php woocommerce_template_loop_add_to_cart(); ?>
                     </div>
                 </div>
