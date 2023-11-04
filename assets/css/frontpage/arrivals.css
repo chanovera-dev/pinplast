@@ -28,7 +28,16 @@
 
 
 @media screen and (min-width: 31px) and (max-width: 1199px){
-    
+    /* más vendidos */
+    .add-to-cart_add-to-wishlist--buttons .add_to_cart_button{
+        font-size:1.5rem;
+        padding:.5rem 1.5rem;
+        font-weight:600;
+        border:1px solid #ffd333;
+        background-color:#ffd333;
+        color:#3d464d;
+        border-radius:.3rem;
+    }
 }
 
 @media(min-width:1024px){
