@@ -14,7 +14,7 @@
     border-radius:.3rem;
     background-color:#ffd333;
     color:#3d464d;
-    font-size:1.8rem;  
+    font-size:1.6rem;  
 }
 #bestsellers .product-list li:hover .card .add-to-cart_add-to-wishlist--buttons .add_to_cart_button:hover{background-color:#3d464d; border:1px solid #3d464d; color:#ffffff;}
 #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .add_to_wishlist{font-size:0;}
