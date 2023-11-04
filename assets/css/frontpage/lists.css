@@ -34,7 +34,7 @@
 }
 
 @media(min-width:768px){
-    #bestsellers .product-list li:not(:nth-child(2)) .card{grid-template-rows:1fr auto auto auto;}
+    #bestsellers .product-list li:not(:nth-child(2)) .card{grid-template-rows:1fr auto auto 37px;}
     #bestsellers .product-list li .card .price{font-size:1.5rem;}
     #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{font-size:1rem;}
 }
