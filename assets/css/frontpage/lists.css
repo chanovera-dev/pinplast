@@ -49,6 +49,7 @@
 
 @media(min-width:1024px){
     #bestsellers .product-list{grid-template-columns:1fr 222px 222px 222px;}
+    #bestsellers .product-list :nth-child(2){grid-row:1/3;}
 }
 
 @media screen and (min-width: 31px) and (max-width: 1199px){
