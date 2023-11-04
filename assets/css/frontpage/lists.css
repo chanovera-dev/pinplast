@@ -55,6 +55,10 @@
     #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{font-size:1.2rem;}
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+    .product-list li .content .rating .votes-rating{font-size:0;}
+}
+
 @media screen and (min-width: 31px) and (max-width: 1199px){
     /* más vendidos */
     #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons{display:flex; flex-wrap:wrap; align-items:baseline;}
