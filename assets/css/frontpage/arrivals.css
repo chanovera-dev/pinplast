@@ -42,7 +42,7 @@
 
 @media(min-width:1024px){
     #bestsellers .product-list{grid-template-columns:1fr 222px 222px 222px;}
-    #bestsellers .product-list li:nth-child(2){grid-row:1/3;}
+    #bestsellers .product-list li:nth-child(2){grid-row:2/4;}
 }
 
 @media(min-width:1200px){
