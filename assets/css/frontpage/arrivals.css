@@ -1,7 +1,7 @@
 #arrivals{margin-top:5rem;}
 /* más vendidos */
 #bestsellers .product-list{grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));}
-#bestsellers .product-list li .card{grid-template-columns:1fr; align-items:center;}
+#bestsellers .product-list li .card{grid-template-columns:1fr; align-content:flex-start;}
 #bestsellers .product-list li .card .wp-post-image{margin-inline:auto;}
 #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons{display:inline-flex; flex-wrap:wrap; align-items:baseline; gap:1rem;}
 #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .add_to_cart_button{
