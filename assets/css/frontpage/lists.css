@@ -40,6 +40,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
     #bestsellers .product-list :nth-child(2){grid-column:1/-1;}
+    #bestsellers .product-list :nth-child(2) .card{grid-template-columns:216px 1fr;}
 }
 
 @media screen and (min-width: 31px) and (max-width: 1199px){
