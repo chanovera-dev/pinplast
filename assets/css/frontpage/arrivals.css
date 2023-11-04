@@ -36,8 +36,8 @@
 .product-list li .content .rating .votes-rating{font-size:1.6rem; color:#b3b3be;}
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    #bestsellers.main-content .product-list li:nth-child(1){grid-column:1/-1;}
-    #bestsellers.main-content .product-list li:nth-child(1) .card{grid-template-columns:auto 1fr; align-items:center;}
+    #bestsellers .product-list li:nth-child(2){grid-column:1/-1;}
+    #bestsellers .product-list li:nth-child(2) .card{grid-template-columns:auto 1fr; align-items:center;}
 }
 
 @media(min-width:1200px){
