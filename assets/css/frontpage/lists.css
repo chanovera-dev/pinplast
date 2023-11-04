@@ -49,8 +49,9 @@
 }
 
 @media(min-width:1024px){
-    #bestsellers .product-list{grid-template-columns:1fr 222px 222px 222px;}
+    #bestsellers .product-list{grid-template-columns:1fr 187px 187px 187px;}
     #bestsellers .product-list :nth-child(2){grid-row:2/4;}
+    #bestsellers .product-list :nth-child(2) .card{grid-template-rows:auto auto auto 1fr;}
 }
 
 @media screen and (min-width: 31px) and (max-width: 1199px){
@@ -76,6 +77,7 @@
 
 @media(min-width:1200px){
     /* más vendidos */
+    #bestsellers .product-list{grid-template-columns:1fr 222px 222px 222px;}
     #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons{display:flex; flex-wrap:wrap; align-items:baseline;}
     #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{font-size:0;}
     #bestsellers .product-list li:hover .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{
