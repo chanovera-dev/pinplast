@@ -5,7 +5,18 @@
 #bestsellers .product-list li .card .wp-post-image{margin-inline:auto;}
 #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons{display:inline-flex; flex-wrap:wrap; align-items:baseline; gap:1rem;}
 #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .add_to_cart_button{font-size:0;}
-#bestsellers .product-list li:hover .card .add-to-cart_add-to-wishlist--buttons .add_to_cart_button{font-size:1.6rem;}
+#bestsellers .product-list li:hover .card .add-to-cart_add-to-wishlist--buttons .add_to_cart_button{
+    margin-top:1.5rem;
+    font-size:1.5rem;
+    padding:.5rem 1.5rem;
+    font-weight:600;
+    border:1px solid #ffd333;
+    border-radius:.3rem;
+    background-color:#ffd333;
+    color:#3d464d;
+    font-size:1.8rem;  
+}
+#bestsellers .product-list li:hover .card .add-to-cart_add-to-wishlist--buttons .add_to_cart_button:hover{background-color:#3d464d; border:1px solid #3d464d; color:#ffffff;}
 #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .add_to_wishlist{font-size:0;}
 #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons :is(.yith-wcwl-icon.fa.fa-heart-o, .yith-wcwl-wishlistexistsbrowse .feedback, .yith-wcwl-wishlistexistsbrowse a){font-size:0; color:#b3b3be;}
 #bestsellers .product-list li:hover .card .add-to-cart_add-to-wishlist--buttons :is(.yith-wcwl-icon.fa.fa-heart-o, .yith-wcwl-wishlistexistsbrowse .feedback, .yith-wcwl-wishlistexistsbrowse a){font-size:1.6rem;}
