@@ -3,9 +3,12 @@
 #bestsellers .product-list{grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));}
 #bestsellers .product-list li .card{grid-template-columns:1fr; align-items:center;}
 #bestsellers .product-list li .card .wp-post-image{margin-inline:auto;}
-.add-to-cart_add-to-wishlist--buttons{display:inline-flex; flex-wrap:wrap; align-items:baseline; gap:1rem;}
-#bestsellers .product-list li .card .add_to_wishlist{font-size:0;}
-#bestsellers .product-list li .card .yith-wcwl-icon.fa.fa-heart-o{font-size:1.6rem; color:#b3b3be;}
+#bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons{display:inline-flex; flex-wrap:wrap; align-items:baseline; gap:1rem;}
+#bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .add_to_cart_button{font-size:0;}
+#bestsellers .product-list li:hover .card .add-to-cart_add-to-wishlist--buttons .add_to_cart_button{font-size:1.6rem;}
+#bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .add_to_wishlist{font-size:0;}
+#bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .yith-wcwl-icon.fa.fa-heart-o{font-size:0; color:#b3b3be;}
+#bestsellers .product-list li:hover .card .add-to-cart_add-to-wishlist--buttons .yith-wcwl-icon.fa.fa-heart-o{font-size:1.6rem;}
 
 /* Productos */
 .products-section{display:grid; grid-template-columns:repeat(auto-fill, minmax(315px, 1fr)); gap:4rem;}
