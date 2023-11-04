@@ -1,27 +1,4 @@
-#arrivals{margin-top:5rem;}
-/* más vendidos */
-#bestsellers .product-list{grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));}
-#bestsellers .product-list li .card{grid-template-columns:1fr; align-content:flex-start;}
-#bestsellers .product-list li .card .wp-post-image{margin-inline:auto;}
-#bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons{display:inline-flex; flex-wrap:wrap; align-items:baseline; gap:1rem;}
-#bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .add_to_cart_button{
-    margin-top:1.5rem;
-    font-size:1.5rem;
-    padding:.5rem 1.5rem;
-    font-weight:600;
-    border:1px solid #ffd333;
-    border-radius:.3rem;
-    background-color:#ffd333;
-    color:#3d464d;
-}
-#bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons :is(.yith-wcwl-icon.fa.fa-heart-o, .yith-wcwl-wishlistexistsbrowse .feedback, .yith-wcwl-wishlistexistsbrowse a){font-size:1.3rem; color:#b3b3b3;}
-
-/* Productos */
-.products-section{display:grid; grid-template-columns:repeat(auto-fill, minmax(315px, 1fr)); gap:4rem;}
-.products-section .product-list{gap:0;}
-.products-section .product-list li:not(:last-child){border-bottom:1px solid transparent;}
-.products-section .product-list li:not(:last-child):hover{border-bottom:1px solid #ffd333;}
-
+/* listas */
 .product-list{margin:0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(auto-fill, minmax(315px, 1fr)); gap:1.5rem;}
 .product-list li{border:1px solid #f0f0f0; display:grid; transition:all .3s ease;}
 .product-list li .card{padding:1.5rem; display:grid; gap:1.5rem; grid-template-columns:88px 1fr; align-items:center; border:1px solid transparent; transition:all .3s ease;}
@@ -34,40 +11,30 @@
 .product-list li .content .rating .star-rating svg.bi-star-fill{color:var(--green);}
 .product-list li .content .rating .votes-rating{font-size:1.4rem; color:#b3b3be;}
 
+#bestsellers, #categories, #arrivals, #products{margin-top:5rem;}
+
+/* más vendidos */
+#bestsellers .title-wrapper{grid-column:1/-1;}
+#bestsellers .product-list{grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));}
+#bestsellers .product-list li .card{grid-template-columns:1fr;}
+#bestsellers .product-list li .card .wp-post-image{margin-inline:auto;}
+
+/* Productos */
+.products-section{display:grid; grid-template-columns:repeat(auto-fill, minmax(315px, 1fr)); gap:4rem;}
+.products-section .product-list{gap:0;}
+.products-section .product-list li:not(:last-child){border-bottom:1px solid transparent;}
+.products-section .product-list li:not(:last-child):hover{border-bottom:1px solid #ffd333;}
+
+
+
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    #bestsellers .product-list li:nth-child(2){grid-column:1/-1;}
-    #bestsellers .product-list li:nth-child(2) .card{grid-template-columns:auto 1fr; align-items:center;}
+    
 }
 
 @media(min-width:1024px){
-    #bestsellers .product-list{grid-template-columns:1fr 222px 222px 222px;}
-    #bestsellers .product-list li:nth-child(2){grid-row:2/4;}
-    #bestsellers .product-list li:not(:nth-child(2)) .card{width:222px;}
+
 }
 
 @media(min-width:1200px){
-    #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .add_to_cart_button{
-        margin-top:0;
-        font-size:0;
-        padding:0;
-        font-weight:600;
-        border:none;
-        background-color:transparent;
-        color:transparent;
-    }
-    #bestsellers .product-list li:hover .card .add-to-cart_add-to-wishlist--buttons .add_to_cart_button{
-        margin-top:1.5rem;
-        font-size:1.5rem;
-        padding:.5rem 1.5rem;
-        font-weight:600;
-        border:1px solid #ffd333;
-        border-radius:.3rem;
-        background-color:#ffd333;
-        color:#3d464d;
-    }
-    #bestsellers .product-list li:hover .card .add-to-cart_add-to-wishlist--buttons .add_to_cart_button:hover{background-color:#3d464d; border:1px solid #3d464d; color:#ffffff;}
-    #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .add_to_wishlist{font-size:0;}
-    #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons :is(.yith-wcwl-icon.fa.fa-heart-o, .yith-wcwl-wishlistexistsbrowse .feedback, .yith-wcwl-wishlistexistsbrowse a){font-size:0;}
-    #bestsellers .product-list li:hover .card .add-to-cart_add-to-wishlist--buttons :is(.yith-wcwl-icon.fa.fa-heart-o, .yith-wcwl-wishlistexistsbrowse .feedback, .yith-wcwl-wishlistexistsbrowse a){font-size:1.6rem;}
 
 }
