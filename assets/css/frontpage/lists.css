@@ -54,6 +54,7 @@
     #bestsellers .product-list :nth-child(2) .card{grid-template-rows:auto auto auto 1fr;}
     #bestsellers .product-list :nth-child(2) a .title{font-size:1.7rem;}
     #bestsellers .product-list :nth-child(2) .card .price{font-size:2rem;}
+    #bestsellers .product-list :nth-child(2) .card .add-to-cart_add-to-wishlist--buttons{display:grid; place-content:flex-end;}
 
 }
 
