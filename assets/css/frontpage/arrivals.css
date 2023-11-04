@@ -27,7 +27,7 @@
 
 @media screen and (min-width: 31px) and (max-width: 767px){
     #bestsellers .product-list li .card .wp-post-image{width:100%;}
-    #bestsellers .product-list li .card .price{font-size:1.6rem;}
+    #bestsellers .product-list li .card .price{font-size:2rem;}
     #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{font-size:1.6rem;}
 }
 
