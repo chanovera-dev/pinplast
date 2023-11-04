@@ -54,8 +54,8 @@
     #bestsellers .product-list :nth-child(2) .card{grid-template-rows:auto auto auto 1fr;}
     #bestsellers .product-list :nth-child(2) a .title{font-size:1.7rem;}
     #bestsellers .product-list :nth-child(2) .card .price{font-size:2rem;}
-    #bestsellers .product-list :nth-child(2) .card .add-to-cart_add-to-wishlist--buttons{height:100%; display:grid; place-content:flex-end;}
-
+    #bestsellers .product-list :nth-child(2) .card .add-to-cart_add-to-wishlist--buttons{height:100%; display:grid; align-items:flex-end;}
+    #bestsellers .product-list :nth-child(2) .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{font-size:1.7rem;}
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1199px){
