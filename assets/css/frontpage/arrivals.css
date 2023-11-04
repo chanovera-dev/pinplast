@@ -16,7 +16,7 @@
 /* más vendidos */
 #bestsellers .title-wrapper{grid-column:1/-1;}
 #bestsellers .product-list{grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));}
-#bestsellers .product-list li .card{grid-template-columns:1fr; grid-template-rows:1fr auto 1fr;}
+#bestsellers .product-list li .card{grid-template-columns:1fr;}
 #bestsellers .product-list li .card .wp-post-image{margin-inline:auto; width:100%; height:auto;}
 #bestsellers .product-list li .card .price{font-size:1.5rem;}
 
@@ -26,7 +26,9 @@
 .products-section .product-list li:not(:last-child){border-bottom:1px solid transparent;}
 .products-section .product-list li:not(:last-child):hover{border-bottom:1px solid #ffd333;}
 
-
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    #bestsellers .product-list{}
+}
 
 @media screen and (min-width: 31px) and (max-width: 1199px){
     /* más vendidos */
