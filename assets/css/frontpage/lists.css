@@ -83,7 +83,7 @@
     #bestsellers .product-list{grid-template-columns:1fr 222px 222px 222px;}
     #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons{display:flex; flex-wrap:wrap; align-items:baseline;}
     #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{font-size:0;}
-    #bestsellers .product-list li:hover .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{
+    #bestsellers .product-list :is(li:hover, :nth-child(2)) .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{
         font-size:1.3rem;
         padding:.5rem 1rem;
         font-weight:600;
