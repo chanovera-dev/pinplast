@@ -29,7 +29,7 @@
 
 @media screen and (min-width: 31px) and (max-width: 1199px){
     /* más vendidos */
-    .add-to-cart_add-to-wishlist--buttons .add_to_cart_button{
+    #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .add_to_cart_button{
         font-size:1.5rem;
         padding:.5rem 1.5rem;
         font-weight:600;
