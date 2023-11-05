@@ -32,6 +32,11 @@ img{display:block; height:auto;}
     .header-content .site-brand{position:relative; bottom:.5rem; margin-right:auto; z-index:3;}
     .header-content .site-brand .custom-logo-link:focus{outline:none;}
     .header-content .site-brand .custom-logo-link .custom-logo{width:13rem; transition:all .3s ease;}
+    /* carrito y whishlist */
+    .lists{display:flex; gap:2rem;}
+    .lists li{position:relative; display:flex; height:2rem;}
+    .lists li svg{width:2rem; height:2rem; color:var(--color-header);}
+    .lists li .counter{position:absolute; top:-.5rem; right:-1rem; text-align:center; width:1.5rem; height:1.5rem; background-color:var(--background-color-body); border-radius:50%; font-size:1rem; color:var(--color-body);}
 
 @media screen and (min-width: 31px) and (max-width: 767px){
     /* searchform */
