@@ -16,3 +16,16 @@ function myFunction(x) {
         }, 300);
     }
 }
+
+// muestra y oculta el cuadro de búsqueda
+let searchButton = document.getElementById('bi-search');
+let searchButtonClose = document.getElementById('bi-x-circle');
+let searchForm = document.getElementById('searchform');
+
+searchButton.addEventListener('click', function() {  
+    searchForm.classList.add('active');
+});
+
+searchButtonClose.addEventListener('click', function() {  
+    searchForm.classList.remove('active');
+});

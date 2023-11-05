@@ -55,10 +55,10 @@
                         );
                     }
 
-                    echo '</div>'
-                '</div>'
+                    echo '</div>
+                </div>
 
-                '</div>
+                </div>
                 <div class="copyright">'.
                     '<p>©'.date("Y").__(' Pinplast', 'pinplast').' - '.__('Desarrollado y hospedado por ', 'pinplast').'<a href="https://peramanzana.com">PeraManzana</a></p>
                     <div class="payments">
