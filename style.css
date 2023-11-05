@@ -56,7 +56,7 @@ img{display:block; height:auto;}
 }
 
 @media screen and (min-width: 31px) and (max-width: 1023px){
-    body.menu-active{position:relative;}
+    body.menu-active{position:relative; overflow:hidden;}
     body.menu-active:before{position:absolute; content:''; width:100%; height:100svh; background-color:hsla(206, 12%, 27%, 0.92); z-index:2;
         animation-name:animation-menu; animation-direction:normal; animation-duration:.3s; animation-timing-function:ease; animation-iteration-count:1;
     }
