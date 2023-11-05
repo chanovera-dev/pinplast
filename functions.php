@@ -24,3 +24,5 @@ register_nav_menus(
 // ANEXOS
 // Anexo para establecer las fuentes
 require_once(get_template_directory() . '/functions/fonts.php');
+// Anexo para establecer los colores
+require_once(get_template_directory() . '/functions/colors.php');
