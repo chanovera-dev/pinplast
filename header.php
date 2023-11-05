@@ -15,7 +15,7 @@ echo '<!DOCTYPE html>
                 include(TEMPLATEPATH . '/parts/header/menu-button.php');
                 include(TEMPLATEPATH . '/parts/header/brand.php');
                 get_search_form();
-                include(TEMPLATEPATH . '/parts/header/header-cart.php');
+                include(TEMPLATEPATH . '/parts/header/lists.php');
             echo '</section>
             <section id="desktop-header" class="header-content section">';
             include(TEMPLATEPATH . '/parts/header/top-bar.php');
