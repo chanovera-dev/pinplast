@@ -5,8 +5,8 @@ function theme_pinplast_custom_colors() {
         <style>
             :root{
                 --background-color-body:#fff;
-                --color-body:#000;
-                --color-body--links:#1a66ff;
+                --color-text:#000;
+                --color-links:#1a66ff;
             }
         </style>
     <?php
