@@ -20,7 +20,7 @@ body,header,main,footer,section,aside,article,div,nav,input,textarea,ul,ol,li,fi
 body{margin:0; display:block; height:100%; font-size:1.6rem; font-family:'Roboto'; font-weight:400; line-height:1.5; background-color:var(--background-color-body); color:var(--color-body); backface-visibility:hidden; overflow-y:scroll;}
 :is(header,footer,section,div,article) :is(div,h1,h2,h3,h4,h5,h6,p,span,li,a,figure,blockquote,figcaption){margin:0;}
 :is(header,footer,aside,.resume-content) :is(ol,ul){margin:0; padding:0; list-style:none;}
-a{color:var(--color-links); transition:all .3s ease;}
+a{color:var(--color-links); text-decoration:none; transition:all .3s ease;}
 a:hover{color:var(--color-links);}
 a:focus{outline:none; box-shadow:var(--link-focus);}
 .container .section{width:var(--breakpoint); margin-inline:auto;}
