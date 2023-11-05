@@ -3,7 +3,7 @@
         array(
             'container' => 'nav',
             'container_id' => 'menu-mobile--wrapper',
-            'container_class' => 'mobile', 
+            'container_class' => 'menu-mobile--wrapper', 
             'theme_location' => 'mobile',
         ) 
     );
