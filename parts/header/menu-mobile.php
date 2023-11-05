@@ -5,6 +5,7 @@
                 'container' => 'nav', 
                 'container_class' => 'mobile', 
                 'theme_location' => 'mobile',
+                'menu_id' => 'menu-mobile',
             ) 
         );
     echo '</div>';
