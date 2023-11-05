@@ -12,6 +12,7 @@ function theme_pinplast_custom_colors() {
                 /* cabecera */
                 --color-header:#3d464d;
                 --border-color:#ebebeb;
+                --menu-mobile--button__active:#999;
             }
         </style>
     <?php
