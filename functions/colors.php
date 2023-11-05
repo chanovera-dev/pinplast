@@ -7,6 +7,7 @@ function theme_pinplast_custom_colors() {
                 --background-color-body:#fff;
                 --color-text:#000;
                 --color-links:#1a66ff;
+                --link-focus:0 0 0 .1rem #ffc107;
             }
         </style>
     <?php
