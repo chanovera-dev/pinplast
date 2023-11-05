@@ -10,14 +10,14 @@ echo '<!DOCTYPE html>
     echo '</head>
     <body id="body" '; body_class(); echo '>
         <header class="container main-header">
-            <section id="responsive-header" class="header-content">';
+            <section id="responsive-header" class="section header-content">';
                 include(TEMPLATEPATH . '/parts/header/menu-mobile.php');
                 include(TEMPLATEPATH . '/parts/header/menu-button.php');
                 include(TEMPLATEPATH . '/parts/header/brand.php');
                 get_search_form();
                 include(TEMPLATEPATH . '/parts/header/lists.php');
             echo '</section>
-            <section id="desktop-header" class="header-content section">';
+            <section id="desktop-header" class="section header-content">';
             include(TEMPLATEPATH . '/parts/header/top-bar.php');
             include(TEMPLATEPATH . '/parts/header/middle-bar.php');
             include(TEMPLATEPATH . '/parts/header/bottom-bar.php');
