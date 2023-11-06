@@ -22,7 +22,7 @@ function pinplast_theme_custom_breakpoints() {
 
             @media(min-width:1024px){
                 :root{
-                    --main-padding-top:19rem;
+                    --main-padding-top:21.2rem;
                 }
             }
 

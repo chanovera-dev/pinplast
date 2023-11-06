@@ -221,7 +221,7 @@ footer .social{margin-top:.8rem;}
         .customer-service p span{font-size:2.2rem; font-weight:700; color:var(--color-header);}
         /* bottom bar */
         .bottom-bar-wrapper{background-color:var(--yellow);}
-        .bottom-bar{display:grid; gap:3rem; grid-template-columns:255px 1fr auto; height:6.1rem; align-items:center;}
+        .bottom-bar{display:grid; gap:3rem; grid-template-columns:255px 1fr auto; height:6rem; align-items:center;}
         .bottom-bar ul{display:flex; align-items:center; gap:2rem;}
         .bottom-bar ul li a{font-weight:700;}
 
