@@ -26,6 +26,9 @@ a:focus{outline:none; box-shadow:var(--link-focus);}
 .container .section{width:var(--breakpoint); margin-inline:auto;}
 img{display:block; height:auto;}
 
+/* ajustes específicos */
+#main{padding-top:var(--main-padding-top);}
+
 /* cabecera */
 #desktop-header{display:none;}
 #main-header{position:fixed; width:100%; z-index:3;}
