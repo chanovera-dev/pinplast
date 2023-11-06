@@ -49,6 +49,7 @@ footer ul li a{display:inline-flex; align-items:center; gap:.7rem; font-size:1.5
 /* Boletín de noticias */
 .newsletter{font-size:1.5rem;}
 .tnp-subscription form{display:grid!important; grid-template-columns:1fr auto; align-items:flex-end!important; gap:1rem!important;}
+.tnp-subscription form .tnp-field label{text-align:left;}
 .tnp-subscription form input[type=email]{border:1px solid var(--border-color)!important; border-radius:.3rem!important; background-color:var(--background-color-input)!important;}
 .tnp-subscription form input[type=email]:focus{border:1px solid var(--blue)!important; box-shadow:var(--box-shadow-input-focus)!important;}
 .tnp-subscription input.tnp-submit{background-color:var(--yellow)!important; color:var(--color-body)!important; font-weight:700!important; border-radius:.3rem!important; display:flex; align-items:center; height:4rem!important; padding:0 2rem!important; text-transform:capitalize!important;}
