@@ -103,7 +103,6 @@ searchButtonClose.addEventListener('click', function() {
 
 
 // detecta el scroll en el sitio
-/*
 const body = document.body;
 const header = document.querySelector(".main-header");
 const menu = document.querySelector(".main-header .menu");
