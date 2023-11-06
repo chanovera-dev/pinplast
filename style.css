@@ -44,7 +44,7 @@ img{display:block; height:auto;}
 .footer-content{display:grid; gap:2.5rem;}
 .menus{display:grid; gap:2.5rem; grid-template-columns:1fr 1fr;}
 footer h2{font-size:2rem; font-weight:700; margin-bottom:2rem;}
-footer ul li{position:relative; display:flex; align-items:center; line-height:1.8; font-size:1.5rem;}
+footer ul li{position:relative; display:flex; align-items:center; height:2.8rem; line-height:1.8; font-size:1.5rem;}
 footer ul li a{display:inline-flex; align-items:center; gap:.7rem; font-size:1.5rem; color:var(--color-body);}
 /* Boletín de noticias */
 .newsletter{font-size:1.5rem;}
