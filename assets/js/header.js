@@ -31,12 +31,12 @@ searchButtonClose.addEventListener('click', function() {
 });
 
 /* cerrar menú si se presiona cualquier parte de la página */
-let main = document.querySelector("main");
+let body = document.getElementById("body");
 
-if(main.addEventListener){
+if(body.addEventListener){
     let nav = document.getElementById("menu-mobile--wrapper");
-    var button = document.querySelector(".btn-menu .bars");
-    main.addEventListener('click', function(){
+    let button = document.querySelector(".btn-menu .bars");
+    body.addEventListener('click', function(){
         if(document.querySelector(".menu-mobile--wrapper.active")){
             nav.classList.remove('active');
             button.classList.remove('change');
