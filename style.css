@@ -191,6 +191,8 @@ footer .social{margin-top:.8rem;}
         .top-bar ul{display:flex; align-items:center; gap:1.6rem;}
         .top-bar ul li a{font-size:1.6rem; color:var(--color-top-bar-text); transition:all .3s ease;}
         .top-bar ul li a:hover{color:var(--color-links);}
+        .top-bar ul li.menu-item-has-children a{}
+        .top-bar ul li.menu-item-has-children a:hover{background-color:rgba(0,0,0,.5);}
 
     /* footer */
     .footer-content{display:grid; grid-template-columns:1fr 1fr 1fr; gap:5rem;}
