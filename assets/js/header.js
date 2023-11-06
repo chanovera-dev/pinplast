@@ -3,7 +3,7 @@ function myFunction(x) {
     let nav = document.getElementById("menu-mobile--wrapper");
     let body = document.getElementById("body");
     let header = document.getElementById("main-header");
-    let main = document.getElementById("#main");
+    let main = document.getElementById("main");
     x.classList.toggle("change");
 
     if (!nav.classList.contains("active")) {
