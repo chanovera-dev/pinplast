@@ -24,11 +24,12 @@ let main = document.getElementById("main");
 main.addEventListener("click", function() {
     // Obtén referencia al botón del menú (suponiendo que su id sea "menu-button")
     let menuButton = document.querySelector(".menu-mobile--button");
+    let menuOpen = document.querySelector(".bars.change");
     let nav = document.getElementById("menu-mobile--wrapper");
     // Llama a la función myFunction y pasa el botón del menú como argumento
     if(nav.classList.contains("active")){
         myFunction(menuButton);
-        menuButton.classList.remove("change");
+        menuOpen.classList.remove("change");
     }
 });
 
