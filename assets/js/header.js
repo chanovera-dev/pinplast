@@ -64,6 +64,7 @@ footer.addEventListener("click", function() {
 
 let BotonSubMenu = document.querySelectorAll(".menu-item-has-children a");
 let SubMenu = document.querySelectorAll(".menu-item-has-children .sub-menu");
+let iconSubMenu = document.querySelectorAll(".menu-item-has-children a:after");
 
 BotonSubMenu.forEach(function(boton) {
     boton.addEventListener("click", function(event) {
@@ -74,6 +75,7 @@ BotonSubMenu.forEach(function(boton) {
         let parentItem = this.parentElement;
         let subMenu = parentItem.querySelector(".sub-menu");
         subMenu.classList.toggle("open");
+        iconSubMenu.classList.toggle("open");
     });
 });
 
