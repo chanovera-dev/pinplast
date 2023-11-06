@@ -65,9 +65,18 @@ footer.addEventListener("click", function() {
 let BotonSubMenu = document.querySelectorAll(".menu-item-has-children a");
 let SubMenu = document.querySelectorAll(".menu-item-has-children .sub-menu");
 
-BotonSubMenu.addEventListener("click", function() {
-    SubMenu.classList.add("open");
+BotonSubMenu.forEach(function(boton) {
+    boton.addEventListener("click", function(event) {
+        // Evita que el enlace se comporte como un enlace normal
+        event.preventDefault();
+        
+        // Agrega la clase "open" a los elementos del submenú correspondientes
+        let parentItem = this.parentElement;
+        let subMenu = parentItem.querySelector(".sub-menu");
+        subMenu.classList.toggle("open");
+    });
 });
+
 
 // muestra y oculta el cuadro de búsqueda
 let searchButton = document.getElementById('bi-search');
