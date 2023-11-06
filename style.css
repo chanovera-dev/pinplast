@@ -225,6 +225,7 @@ footer .social{margin-top:.8rem;}
         .bottom-bar ul{display:flex; align-items:center; gap:2rem;}
         .bottom-bar ul li a{font-weight:700; color:var(--color-header);}
         .bottom-bar .primary{overflow:hidden;}
+        .bottom-bar .primary ul{display:inline-box;}
 
     /* footer */
     .footer-content{display:grid; grid-template-columns:1fr 1fr 1fr; gap:5rem;}
