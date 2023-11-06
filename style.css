@@ -28,7 +28,7 @@ img{display:block; height:auto;}
 
 /* cabecera */
 #desktop-header{display:none;}
-#main-header{position:fixed; width:100%;}
+#main-header{position:fixed; width:100%; z-index:3;}
 #responsive-header{position:relative;}
     /* marca */
     .header-content .site-brand{position:relative; bottom:.5rem; margin-right:auto; z-index:3;}
