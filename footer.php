@@ -2,8 +2,7 @@
         echo '<footer id="main-footer" class="container">
             <section class="section footer-content">
                 <aside>
-                    <h2>'._('Contacto', 'pinplast').'</h2>
-                    <p>'._('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in feugiat lorem. Pellentque ac placerat tellus.', 'pinplast').'</p>';
+                    <h2>'._('Contacto', 'pinplast').'</h2>';
                     include(TEMPLATEPATH . '/parts/widgets/address.php');
                 echo '</aside>
                 <div class="menus">';
