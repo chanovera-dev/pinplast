@@ -37,10 +37,18 @@ if(body.addEventListener){
     let nav = document.getElementById("menu-mobile--wrapper");
     let button = document.querySelector(".btn-menu .bars");
     body.addEventListener('click', function(){
-        if(document.querySelector(".menu-mobile--wrapper.active")){
-            nav.classList.remove('active');
-            button.classList.remove('change');
+        if (!nav.classList.contains("active")) {
+            nav.classList.add("active");
+            body.classList.add("menu-active");
+            button.classList.add("change");
+        } else {
+            nav.classList.remove("active");
+            body.classList.add("menu-inactive");
+            button.classList.remove("change");
+            setTimeout(function() {
+                body.classList.remove("menu-inactive");
+                body.classList.remove("menu-active");
+            }, 300);
         }
-        
    });
 }
