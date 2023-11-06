@@ -25,7 +25,9 @@ main.addEventListener("click", function() {
     // Obtén referencia al botón del menú (suponiendo que su id sea "menu-button")
     let menuButton = document.querySelector(".menu-mobile--button");
     // Llama a la función myFunction y pasa el botón del menú como argumento
-    myFunction(menuButton);
+    if(nav.classList.contains("active")){
+        myFunction(menuButton);
+    }
 });
 
 // muestra y oculta el cuadro de búsqueda
