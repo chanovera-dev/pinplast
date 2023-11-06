@@ -19,7 +19,7 @@ echo '<!DOCTYPE html>
                     include(TEMPLATEPATH . '/parts/header/lists.php');
                 echo '</section>';
             echo '</section>
-            <section id="desktop-header" class="section header-content">';
+            <section id="desktop-header" class="header-content">';
             include(TEMPLATEPATH . '/parts/header/top-bar.php');
             include(TEMPLATEPATH . '/parts/header/middle-bar.php');
             include(TEMPLATEPATH . '/parts/header/bottom-bar.php');
