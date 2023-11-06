@@ -64,11 +64,11 @@ img{display:block; height:auto;}
     #main-header.menu-inactive:before{position:absolute; content:''; width:100%; height:5.4rem; background-color:hsla(206, 12%, 27%, 0); z-index:2;
         animation-name:animation-menu-inactive; animation-direction:normal; animation-duration:.3s; animation-timing-function:ease; animation-iteration-count:1;
     }
-    #main.menu-active{position:relative; overflow:hidden;}
-    #main.menu-active:before{position:absolute; content:''; width:100%; height:100%; background-color:hsla(206, 12%, 27%, 0.92); z-index:2;
+    :is(#main, #main-footer).menu-active{position:relative; overflow:hidden;}
+    :is(#main, #main-footer).menu-active:before{position:absolute; content:''; width:100%; height:100%; background-color:hsla(206, 12%, 27%, 0.92); z-index:2;
         animation-name:animation-menu; animation-direction:normal; animation-duration:.3s; animation-timing-function:ease; animation-iteration-count:1;
     }
-    #main.menu-inactive:before{position:absolute; content:''; width:100%; height:100%; background-color:hsla(206, 12%, 27%, 0); z-index:2;
+    :is(#main, #main-footer).menu-inactive:before{position:absolute; content:''; width:100%; height:100%; background-color:hsla(206, 12%, 27%, 0); z-index:2;
         animation-name:animation-menu-inactive; animation-direction:normal; animation-duration:.3s; animation-timing-function:ease; animation-iteration-count:1;
     }
     @keyframes animation-menu{
@@ -95,7 +95,7 @@ img{display:block; height:auto;}
     .menu-mobile--button .bars.change :is(.bar1, .bar2, .bar3){background-color:var(--menu-mobile--button__active);}
     /* menú */
     .main-header{position:relative;}
-    .menu-mobile--wrapper{position:absolute; top:0; left:-100%; width:100%; max-width:290px; height:100svh; background-color:var(--background-color-body); transition:all .3s ease; z-index:2;}
+    .menu-mobile--wrapper{position:absolute; top:0; left:-100%; width:100%; max-width:290px; height:100svh; background-color:var(--background-color-body); transition:all .3s ease; z-index:3;}
     .menu-mobile--wrapper > ul{width:100%; max-width:290px; overflow:hidden; height:100svh; background-color:var(--background-color-body); margin-top:6.9rem;}
     .menu-mobile--wrapper > ul{overflow-y:scroll; height:100%;}
     .menu-mobile--wrapper.active{left:0;}
