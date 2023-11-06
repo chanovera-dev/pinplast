@@ -23,7 +23,7 @@ let body = document.getElementById("body");
 // Agrega un evento de click al elemento body
 body.addEventListener("click", function() {
     // Obtén referencia al botón del menú (suponiendo que su id sea "menu-button")
-    let menuButton = document.getElementById("menu-button");
+    let menuButton = document.querySelector(".menu-mobile--button");
     // Llama a la función myFunction y pasa el botón del menú como argumento
     myFunction(menuButton);
 });
