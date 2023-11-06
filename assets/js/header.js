@@ -62,6 +62,11 @@ footer.addEventListener("click", function() {
     }
 });
 
+let BotonSubMenu = document.querySelector(".menu-item-has-children a");
+BotonSubMenu.addEventListener("click", function() {
+    console.log("elemento seleccionado");
+});
+
 // muestra y oculta el cuadro de búsqueda
 let searchButton = document.getElementById('bi-search');
 let searchButtonClose = document.getElementById('bi-x-circle');
