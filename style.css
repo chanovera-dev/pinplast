@@ -87,8 +87,8 @@ img{display:block; height:auto;}
     .menu-mobile--button .bars.change :is(.bar1, .bar2, .bar3){background-color:var(--menu-mobile--button__active);}
     /* menú */
     .main-header{position:relative;}
-    .menu-mobile--wrapper{position:absolute; top:0; left:-100%; width:100%; max-width:290px; height:100svh; transition:all .3s ease; z-index:2;}
-    .menu-mobile--wrapper > ul{width:100%; max-width:290px; overflow:hidden; height:100svh; background-color:var(--background-color-body); padding-top:6.9rem;}
+    .menu-mobile--wrapper{position:absolute; top:0; left:-100%; width:100%; max-width:290px; height:100svh; background-color:var(--background-color-body); transition:all .3s ease; z-index:2;}
+    .menu-mobile--wrapper > ul{width:100%; max-width:290px; overflow:hidden; height:100svh; background-color:var(--background-color-body); margin-top:6.9rem;}
     .menu-mobile--wrapper > ul{overflow-y:scroll; height:100%;}
     .menu-mobile--wrapper.active{left:0;}
     .menu-mobile--wrapper > ul li:not(:last-child){border-bottom:1px solid var(--border-color);}
