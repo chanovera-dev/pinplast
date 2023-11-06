@@ -185,6 +185,12 @@ footer .social{margin-top:.8rem;}
     /* header */
     #responsive-header{display:none;}
     #desktop-header{display:inherit;}
+        /* top bar */
+        .top-bar-wrapper{background-color:var(--background-color--submenu); height:32px; display:flex; align-items:center;}
+        .top-bar{display:flex; align-items:center; justify-content:space-between;}
+        .top-bar ul{display:flex; align-items:center; gap:1.6rem;}
+        .top-bar ul li a{font-size:14px; color:var(--color-top-bar-text); transition:all .3s ease;}
+        .top-bar ul li a:hover{color:var(--color-links);}
 
     /* footer */
     .footer-content{display:grid; grid-template-columns:1fr 1fr 1fr; gap:5rem;}

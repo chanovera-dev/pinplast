@@ -19,6 +19,8 @@ function theme_pinplast_custom_colors() {
                 --border-color:#ebebeb;
                 --menu-mobile--button__active:#999;
                 --background-color--submenu:#f7f7f7;
+                    /* top-bar */
+                    --color-top-bar-text:#737373;
 
                 /* formularios */
                 --background-color-input:#fff;
