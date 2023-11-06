@@ -137,7 +137,7 @@ footer .social{margin-top:.8rem;}
     .menu-mobile--button .bars.change .bar3{transform:translateY(-3px) rotate(90deg); width:1.8rem;}
     .menu-mobile--button .bars.change :is(.bar1, .bar2, .bar3){background-color:var(--menu-mobile--button__active);}
     /* menú */
-    .main-header{position:relative;}
+    .main-header{}
     .menu-mobile--wrapper{position:absolute; top:0; left:-100%; width:100%; max-width:290px; height:100svh; background-color:var(--background-color-body); transition:all .3s ease; z-index:3;}
     .menu-mobile--wrapper > ul{width:100%; max-width:290px; overflow:hidden; height:100svh; background-color:var(--background-color-body); margin-top:6.9rem;}
     .menu-mobile--wrapper > ul{overflow-y:scroll; height:100%;}
