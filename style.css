@@ -210,7 +210,7 @@ footer .social{margin-top:.8rem;}
         .searchform .searchform-wrapper #activate-search svg{width:2rem; height:2rem; padding:1.1rem; color:var(--attenuated-icon);}
         .searchform .searchform-wrapper #activate-search svg.bi-x-circle{display:none;}
         .searchform .searchform-wrapper input[type=text]{height:4.2rem; width:100%; padding:0; border:3px solid #e3e3e3; padding:0 4.2rem 0 1rem; border-radius:.3rem; background-color:rgba(255,255,255,.5); font-size:1.6rem;}
-        .searchform .searchform-wrapper input[type=text]:focus{border:3px solid var(--yellow);}
+        .searchform .searchform-wrapper input[type=text]:focus{border:3px solid #ffd333;}
         .searchform .searchform-wrapper input[type=text]::placeholder{color:var(--attenuated-text);}
         .searchform .searchform-wrapper input[type=text]:focus::placeholder{color:var(--attenuated-text);}
         /* customer service */
