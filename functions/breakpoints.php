@@ -20,6 +20,12 @@ function pinplast_theme_custom_breakpoints() {
                 }
             }
 
+            @media(min-width:1024px){
+                :root{
+                    --main-padding:19rem;
+                }
+            }
+
             @media(min-width:1200px){
                 :root{
                     --breakpoint:min(100% - 3rem, 1110px);
