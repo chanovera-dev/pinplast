@@ -145,7 +145,7 @@ footer .social{margin-top:.8rem;}
     .menu-mobile--wrapper > ul li:not(:last-child){border-bottom:1px solid var(--border-color);}
     .menu-mobile--wrapper > ul li.menu-item-has-children > a{position:relative; display:inline-flex; align-items:center; gap:.7rem; width:100%;}
     .menu-mobile--wrapper > ul li.menu-item-has-children > a:after{position:absolute; right:2rem; padding:8px; display:inline-block; transition:all .3s ease;}
-    .menu-mobile--wrapper > ul li.menu-item-has-children > a.open:after{transform:rotate(180deg);}
+    /* .menu-mobile--wrapper > ul li.menu-item-has-children > a.open:after{transform:rotate(180deg);} */
     .menu-mobile--wrapper > ul li ul.sub-menu li{border-bottom:none;}
     .menu-mobile--wrapper > ul li a{display:flex; align-items:center; padding:0 2rem; height:4.8rem; color:var(--color-header);}
     .menu-mobile--wrapper > ul li ul.sub-menu li a{height:0; background-color:transparent; color:transparent; transition:all .3s ease;}
