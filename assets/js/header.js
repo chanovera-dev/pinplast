@@ -62,11 +62,10 @@ footer.addEventListener("click", function() {
     }
 });
 
-
 let BotonSubMenu = document.querySelectorAll(".menu-item-has-children a");
 let SubMenu = document.querySelectorAll(".menu-item-has-children .sub-menu");
 
-BotonSubMenu.forEach(function(boton, index) {
+BotonSubMenu.forEach(function(boton) {
     boton.addEventListener("click", function(event) {
         // Evita que el enlace se comporte como un enlace normal
         event.preventDefault();
@@ -76,18 +75,14 @@ BotonSubMenu.forEach(function(boton, index) {
         let subMenu = parentItem.querySelector(".sub-menu");
         subMenu.classList.toggle("open");
 
-        // Obtiene el índice del elemento de BotonSubMenu que ha sido clicado
-        let clickedIndex = Array.from(BotonSubMenu).indexOf(boton);
-
-        // Verifica si el elemento correspondiente en SubMenu tiene la clase "open"
-        // y aplica la clase "open" a los elementos de BotonSubMenu solo si está abierto
-        if (SubMenu[clickedIndex].classList.contains("open")) {
-            boton.classList.add("open");
-        } else {
-            boton.classList.remove("open");
-        }
+        // Agrega la clase "open" a los elementos de iconSubMenu
+        BotonSubMenu.forEach(function(icon) {
+            icon.classList.toggle("open");
+        });
     });
 });
+
+
 
 
 // muestra y oculta el cuadro de búsqueda
