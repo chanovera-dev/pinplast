@@ -75,7 +75,6 @@ BotonSubMenu.forEach(function(boton) {
         let parentItem = this.parentElement;
         let subMenu = parentItem.querySelector(".sub-menu");
         subMenu.classList.toggle("open");
-        iconSubMenu.classList.toggle("open");
     });
 });
 
