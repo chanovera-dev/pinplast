@@ -192,9 +192,9 @@ footer .social{margin-top:.8rem;}
         .top-bar ul li a{font-size:1.6rem; color:var(--color-top-bar-text); transition:all .3s ease;}
         .top-bar ul li a:hover{color:var(--color-links);}
         .top-bar ul li.menu-item-has-children{position:relative;}
-        .top-bar ul li.menu-item-has-children > a{height:3.4rem; position:relative; display:inline-flex; align-items:center; gap:.7rem; padding:0 .7rem;}
+        .top-bar ul li.menu-item-has-children > a{height:3.4rem; position:relative; display:inline-flex; align-items:center; gap:.7rem; padding:0 1rem;}
         .top-bar ul li.menu-item-has-children > a:after{position:relative; padding:8px; display:inline-block; transition:all .3s ease;}
-        .top-bar ul li.menu-item-has-children > a:hover{background-color:rgba(0,0,0,.9);}
+        .top-bar ul li.menu-item-has-children > a:hover{background-color:rgba(0,0,0,.09);}
         .top-bar ul li ul.sub-menu{position:absolute; right:0; top:3.4rem; display:grid;}
 
     /* footer */
