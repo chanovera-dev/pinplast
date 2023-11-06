@@ -38,6 +38,30 @@ img{display:block; height:auto;}
     .lists li svg{width:2rem; height:2rem; color:var(--color-header);}
     .lists li .counter{position:absolute; top:-.5rem; right:-1rem; text-align:center; width:1.5rem; height:1.5rem; background-color:var(--background-color-body); border-radius:50%; font-size:1rem; color:var(--color-body);}
 
+/* footer */
+#main-footer{padding-top:4.8rem; border-top:1px solid var(--border-color); margin-top:1.6rem;}
+.footer-content{display:grid; gap:2.5rem;}
+.menus{display:grid; gap:2.5rem; grid-template-columns:1fr 1fr;}
+footer h2{font-size:2rem; font-weight:700;}
+footer ul li{position:relative; display:flex; align-items:center; line-height:1.8; font-size:1.5rem;}
+footer ul li a{display:inline-flex; align-items:center; gap:.7rem; font-size:1.5rem;}
+.newsletter{font-size:1.5rem;}
+.tnp-subscription form{display:grid!important; grid-template-columns:1fr auto; align-items:flex-end!important; gap:1rem!important;}
+.tnp-subscription form input[type=email]{border:1px solid var(--border-color)!important; border-radius:.3rem!important; background-color:var(--background-color-input)!important;}
+.tnp-subscription form input[type=email]:focus{border:1px solid var(--blue)!important; box-shadow:var(--box-shadow-input-focus)!important;}
+.tnp-subscription input.tnp-submit{background-color:var(--yellow)!important; color:var(--color-body)!important; font-weight:700!important; border-radius:.3rem!important; display:flex; align-items:center; height:4rem!important; padding:0 2rem!important; text-transform:capitalize!important;}
+footer .social{margin-top:.8rem;}
+.social .menu{display:flex; align-items:center; gap:.7rem;}
+.social .menu li a{display:inline-flex; align-items:center; gap:0; height:3.4rem; padding: 0 .9rem; border-radius:1.7rem; font-size:0;}
+.social .menu li a:before{position:relative; padding:.8rem; display:inline-block;}
+.social .menu li a[href*="facebook"]{background-color:#3c5a99;}
+.social .menu li a[href*="twitter"]{background-color:#00a2e8;}
+.social .menu li a[href*="youtube"]{background-color:#e52e2e;}
+.social .menu li a[href*="instagram"]{background-color:#815dc7;}
+.social .menu li a[href*="sites"]{background-color:#e52e2e;}
+.copyright{font-size:1.5rem; grid-column:1/-1; text-align:center; border-top:1px solid var(--border-color);}
+.copyright p a{color:var(--color-links);}
+
 @media screen and (min-width: 31px) and (max-width: 767px){
     /* searchform */
     .searchform{width:2rem; transition:all .3s ease;}

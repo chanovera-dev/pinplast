@@ -10,6 +10,7 @@ function theme_pinplast_custom_colors() {
                 --attenuated-icon:#b3b3b3;
                 --attenuated-line:#b3b3b3;
                 --color-links:#1a66ff;
+                --blue:#ffc107;
                 --yellow:#ffd333;
                 --link-focus:0 0 0 .1rem #ffc107;
 
@@ -21,6 +22,7 @@ function theme_pinplast_custom_colors() {
 
                 /* formularios */
                 --background-color-input:#fff;
+                --box-shadow-input-focus:0 0 0 .3rem #007bff7d;
             }
         </style>
     <?php
