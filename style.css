@@ -202,7 +202,7 @@ footer .social{margin-top:.8rem;}
         .top-bar ul li ul.sub-menu.open li a{height:3rem; color:var(--color-body);}
         .top-bar ul li ul.sub-menu.open li a:hover{background-color:rgba(0,0,0,.08);}
         /* middle bar */
-        .middle-bar{display:grid; gap:3rem; grid-template-columns:255px 1fr 255px; height:112px; align-items:center;}
+        .middle-bar{display:grid; gap:3rem; grid-template-columns:255px 1fr 255px; height:12rem; align-items:center;}
         /* marca */
         .header-content .site-brand .custom-logo-link .custom-logo{position:relative; top:.8rem; width:19.5rem;}
         /* searchform */
