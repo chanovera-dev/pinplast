@@ -80,11 +80,9 @@ BotonSubMenu.forEach(function(boton) {
         subMenu.classList.toggle("open");
 
         // Agrega la clase "open" a los elementos de iconSubMenu
-        /*
         BotonSubMenu.forEach(function(icon) {
             icon.classList.toggle("open");
         });
-        */
     });
 });
 
