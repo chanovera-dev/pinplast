@@ -69,25 +69,22 @@ footer.addEventListener("click", function() {
 let BotonSubMenu = document.querySelectorAll(".menu-item-has-children a");
 let SubMenu = document.querySelectorAll(".menu-item-has-children .sub-menu");
 
-BotonSubMenu.forEach(function(boton, index) {
-    // Asigna un atributo de datos para establecer la relación con el elemento de SubMenu correspondiente
-    boton.setAttribute("data-index", index);
-
+BotonSubMenu.forEach(function(boton) {
     boton.addEventListener("click", function(event) {
         // Evita que el enlace se comporte como un enlace normal
         event.preventDefault();
+        
+        // Agrega la clase "open" a los elementos del submenú correspondientes
+        let parentItem = this.parentElement;
+        let subMenu = parentItem.querySelector(".sub-menu");
+        subMenu.classList.toggle("open");
 
-        // Obtiene el índice del elemento de BotonSubMenu que ha sido clicado
-        let clickedIndex = this.getAttribute("data-index");
-
-        // Agrega la clase "open" al SubMenu correspondiente
-        SubMenu[clickedIndex].classList.toggle("open");
-
-        // Agrega la clase "open" al elemento de BotonSubMenu correspondiente
-        this.classList.toggle("open");
+        // Agrega la clase "open" a los elementos de iconSubMenu
+        BotonSubMenu.forEach(function(icon) {
+            icon.classList.toggle("open");
+        });
     });
 });
-
 
 
 
