@@ -2,7 +2,7 @@
 function myFunction(x) {
     let nav = document.getElementById("menu-mobile--wrapper");
     let body = document.getElementById("body");
-    let header = document.getElementById("main-header");
+    let header = document.getElementById("responsive-header");
     let main = document.getElementById("main");
     let footer = document.getElementById("main-footer");
     x.classList.toggle("change");
