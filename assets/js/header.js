@@ -17,6 +17,17 @@ function myFunction(x) {
     }
 }
 
+// Obtén referencia al elemento body
+let body = document.getElementById("body");
+
+// Agrega un evento de click al elemento body
+body.addEventListener("click", function() {
+    // Obtén referencia al botón del menú (suponiendo que su id sea "menu-button")
+    let menuButton = document.getElementById("menu-button");
+    // Llama a la función myFunction y pasa el botón del menú como argumento
+    myFunction(menuButton);
+});
+
 // muestra y oculta el cuadro de búsqueda
 let searchButton = document.getElementById('bi-search');
 let searchButtonClose = document.getElementById('bi-x-circle');
@@ -29,26 +40,3 @@ searchButton.addEventListener('click', function() {
 searchButtonClose.addEventListener('click', function() {  
     searchForm.classList.remove('active');
 });
-
-/* cerrar menú si se presiona cualquier parte de la página */
-let body = document.getElementById("body");
-
-if(body.addEventListener){
-    let nav = document.getElementById("menu-mobile--wrapper");
-    let button = document.querySelector(".btn-menu .bars");
-    body.addEventListener('click', function(){
-        if (!nav.classList.contains("active")) {
-            nav.classList.add("active");
-            body.classList.add("menu-active");
-            button.classList.add("change");
-        } else {
-            nav.classList.remove("active");
-            body.classList.add("menu-inactive");
-            button.classList.remove("change");
-            setTimeout(function() {
-                body.classList.remove("menu-inactive");
-                body.classList.remove("menu-active");
-            }, 300);
-        }
-   });
-}
