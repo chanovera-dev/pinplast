@@ -80,9 +80,11 @@ BotonSubMenu.forEach(function(boton) {
         subMenu.classList.toggle("open");
 
         // Agrega la clase "open" a los elementos de iconSubMenu
+        /*
         BotonSubMenu.forEach(function(icon) {
             icon.classList.toggle("open");
         });
+        */
     });
 });
 
@@ -103,6 +105,7 @@ searchButtonClose.addEventListener('click', function() {
 
 
 // detecta el scroll en el sitio
+/*
 const body = document.body;
 const header = document.querySelector(".main-header");
 const menu = document.querySelector(".main-header .menu");
