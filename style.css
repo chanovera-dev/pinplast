@@ -92,6 +92,7 @@ footer .social{margin-top:.8rem;}
     :is(#main, #main-footer).menu-active:before{position:absolute; top:0; left:0; content:''; width:100%; height:100%; background-color:hsla(206, 12%, 27%, 0.92); z-index:2;
         animation-name:animation-menu; animation-direction:normal; animation-duration:.3s; animation-timing-function:ease; animation-iteration-count:1;
     }
+    #main-footer.menu-active:before{top:-1px;}
     :is(#main, #main-footer).menu-inactive:before{position:absolute; top:0; left:0; content:''; width:100%; height:100%; background-color:hsla(206, 12%, 27%, 0); z-index:2;
         animation-name:animation-menu-inactive; animation-direction:normal; animation-duration:.3s; animation-timing-function:ease; animation-iteration-count:1;
     }
