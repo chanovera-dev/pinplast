@@ -9,7 +9,7 @@ echo '<!DOCTYPE html>
         wp_head();
     echo '</head>
     <body id="body" '; body_class(); echo '>
-        <header class="container main-header">
+        <header id="main-header" class="container main-header">
             <section id="responsive-header" class="section header-content">';
                 include(TEMPLATEPATH . '/parts/header/menu-mobile.php');
                 include(TEMPLATEPATH . '/parts/header/menu-button.php');
