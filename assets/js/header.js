@@ -28,6 +28,7 @@ main.addEventListener("click", function() {
     // Llama a la función myFunction y pasa el botón del menú como argumento
     if(nav.classList.contains("active")){
         myFunction(menuButton);
+        menuButton.classList.remove("change");
     }
 });
 
