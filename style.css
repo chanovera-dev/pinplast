@@ -139,8 +139,9 @@ footer .social{margin-top:.8rem;}
     .menu-mobile--wrapper > ul{overflow-y:scroll; height:100%;}
     .menu-mobile--wrapper.active{left:0;}
     .menu-mobile--wrapper > ul li:not(:last-child){border-bottom:1px solid var(--border-color);}
+    .menu-mobile--wrapper > ul li.menu-item-has-children{position:relative;}
     .menu-mobile--wrapper > ul li.menu-item-has-children > a{display:inline-flex; align-items:center; gap:.7rem;}
-    .menu-mobile--wrapper > ul li.menu-item-has-children > a:after{position:relative; padding:8px; display:inline-block;}
+    .menu-mobile--wrapper > ul li.menu-item-has-children > a:after{position:absolute; right:0; padding:8px; display:inline-block;}
     .menu-mobile--wrapper > ul li a{display:flex; align-items:center; padding:0 2rem; height:4.8rem; color:var(--color-header);}
     .menu-mobile--wrapper > ul li ul.sub-menu{border-top:1px solid var(--border-color);}
     .menu-mobile--wrapper > ul li ul.sub-menu li a{height:4rem; font-size:1.4rem; background-color:var(--background-color--submenu); color:var(--color-header);}
