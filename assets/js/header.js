@@ -64,7 +64,7 @@ footer.addEventListener("click", function() {
 
 let BotonSubMenu = document.querySelectorAll(".menu-item-has-children a");
 let SubMenu = document.querySelectorAll(".menu-item-has-children .sub-menu");
-let iconSubMenu = document.querySelectorAll(".menu-item-has-children a:after");
+let iconSubMenu = document.querySelectorAll(".menu-item-has-children a");
 
 BotonSubMenu.forEach(function(boton) {
     boton.addEventListener("click", function(event) {
