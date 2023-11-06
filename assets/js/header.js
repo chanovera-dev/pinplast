@@ -1,14 +1,17 @@
 /* arreglo del botón del menú y del menú */
 function myFunction(x) {
     let nav = document.getElementById("menu-mobile--wrapper");
+    let body = document.getElementById("body");
     let header = document.getElementById("main-header");
     x.classList.toggle("change");
 
     if (!nav.classList.contains("active")) {
         nav.classList.add("active");
+        body.classList.add("menu-active");
         header.classList.add("menu-active");
     } else {
         nav.classList.remove("active");
+        body.classList.remove("menu-active");
         header.classList.add("menu-inactive");
         setTimeout(function() {
             header.classList.remove("menu-inactive");
