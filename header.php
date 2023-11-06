@@ -10,15 +10,13 @@ echo '<!DOCTYPE html>
     echo '</head>
     <body id="body" '; body_class(); echo '>
         <header id="main-header" class="container main-header">
-            <div class="responsive-header-wrapper">
-                <section id="responsive-header" class="section header-content">';
-                    include(TEMPLATEPATH . '/parts/header/menu-mobile.php');
-                    include(TEMPLATEPATH . '/parts/header/menu-button.php');
-                    include(TEMPLATEPATH . '/parts/header/brand.php');
-                    get_search_form();
-                    include(TEMPLATEPATH . '/parts/header/lists.php');
-                echo '</section>
-            </div>
+            <section id="responsive-header" class="section header-content">';
+                include(TEMPLATEPATH . '/parts/header/menu-mobile.php');
+                include(TEMPLATEPATH . '/parts/header/menu-button.php');
+                include(TEMPLATEPATH . '/parts/header/brand.php');
+                get_search_form();
+                include(TEMPLATEPATH . '/parts/header/lists.php');
+            echo '</section>
             <section id="desktop-header" class="section header-content">';
             include(TEMPLATEPATH . '/parts/header/top-bar.php');
             include(TEMPLATEPATH . '/parts/header/middle-bar.php');
