@@ -46,6 +46,22 @@ main.addEventListener("click", function() {
     }
 });
 
+// Obtén referencia al elemento body
+let footer = document.getElementById("main-footer");
+
+// Agrega un evento de click al elemento body
+footer.addEventListener("click", function() {
+    // Obtén referencia al botón del menú (suponiendo que su id sea "menu-button")
+    let menuButton = document.querySelector(".menu-mobile--button");
+    let menuOpen = document.querySelector(".bars.change");
+    let nav = document.getElementById("menu-mobile--wrapper");
+    // Llama a la función myFunction y pasa el botón del menú como argumento
+    if(nav.classList.contains("active")){
+        myFunction(menuButton);
+        menuOpen.classList.remove("change");
+    }
+});
+
 // muestra y oculta el cuadro de búsqueda
 let searchButton = document.getElementById('bi-search');
 let searchButtonClose = document.getElementById('bi-x-circle');
