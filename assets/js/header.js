@@ -62,9 +62,11 @@ footer.addEventListener("click", function() {
     }
 });
 
-let BotonSubMenu = document.querySelector(".menu-item-has-children a");
+let BotonSubMenu = document.querySelectorAll(".menu-item-has-children a");
+let SubMenu = document.querySelectorAll(".menu-item-has-children .sub-menu");
+
 BotonSubMenu.addEventListener("click", function() {
-    console.log("elemento seleccionado");
+    SubMenu.classList.add("open");
 });
 
 // muestra y oculta el cuadro de búsqueda
