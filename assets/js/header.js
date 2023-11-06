@@ -29,3 +29,18 @@ searchButton.addEventListener('click', function() {
 searchButtonClose.addEventListener('click', function() {  
     searchForm.classList.remove('active');
 });
+
+/* cerrar menú si se presiona cualquier parte de la página */
+let main = document.querySelector("main");
+
+if(main.addEventListener){
+    let nav = document.getElementById("menu-mobile--wrapper");
+    var button = document.querySelector(".btn-menu .bars");
+    main.addEventListener('click', function(){
+        if(document.querySelector(".menu-mobile--wrapper.active")){
+            nav.classList.remove('active');
+            button.classList.remove('change');
+        }
+        
+   });
+}
