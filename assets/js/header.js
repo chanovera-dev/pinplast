@@ -30,6 +30,8 @@ function myFunction(x) {
     }
 }
 
+
+
 // Obtén referencia al elemento body
 let main = document.getElementById("main");
 
@@ -62,6 +64,8 @@ footer.addEventListener("click", function() {
     }
 });
 
+
+
 let BotonSubMenu = document.querySelectorAll(".menu-item-has-children a");
 let SubMenu = document.querySelectorAll(".menu-item-has-children .sub-menu");
 
@@ -81,7 +85,6 @@ BotonSubMenu.forEach(function(boton) {
         });
     });
 });
-
 
 
 
