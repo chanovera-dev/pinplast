@@ -18,10 +18,10 @@ function myFunction(x) {
 }
 
 // Obtén referencia al elemento body
-let body = document.getElementById("body");
+let main = document.getElementById("main");
 
 // Agrega un evento de click al elemento body
-body.addEventListener("click", function() {
+main.addEventListener("click", function() {
     // Obtén referencia al botón del menú (suponiendo que su id sea "menu-button")
     let menuButton = document.querySelector(".menu-mobile--button");
     // Llama a la función myFunction y pasa el botón del menú como argumento
