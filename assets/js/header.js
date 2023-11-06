@@ -2,27 +2,17 @@
 function myFunction(x) {
     let nav = document.getElementById("menu-mobile--wrapper");
     let header = document.getElementById("main-header");
-    let main = document.getElementById("main");
-    let footer = document.getElementById("main-footer");
     x.classList.toggle("change");
 
     if (!nav.classList.contains("active")) {
         nav.classList.add("active");
         header.classList.add("menu-active");
-        main.classList.add("menu-active");
-        footer.classList.add("menu-active");
     } else {
         nav.classList.remove("active");
         header.classList.add("menu-inactive");
-        main.classList.add("menu-inactive");
-        footer.classList.add("menu-inactive");
         setTimeout(function() {
             header.classList.remove("menu-inactive");
             header.classList.remove("menu-active");
-            main.classList.remove("menu-inactive");
-            main.classList.remove("menu-active");
-            footer.classList.remove("menu-inactive");
-            footer.classList.remove("menu-active");
         }, 300);
     }
 }
