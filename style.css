@@ -237,7 +237,7 @@ footer .social{margin-top:.8rem;}
         .bottom-bar .primary ul li ul.sub-menu.open li a{height:3rem; color:var(--color-body);}
         .bottom-bar .primary ul li ul.sub-menu:hover li a{height:3rem; color:var(--color-body);}
         .bottom-bar .primary ul li ul.sub-menu li a:hover{background-color:rgba(0,0,0,.08);}
-
+        
     /* footer */
     .footer-content{display:grid; grid-template-columns:1fr 1fr 1fr; gap:5rem;}
 }
