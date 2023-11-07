@@ -4,7 +4,8 @@ function pinplast_theme_custom_icons() {
     ?>
         <style>
             /* iconos en el menú */
-            header ul li.menu-item-has-children > a:after{content: ''; background-image: url('<?php echo get_template_directory_uri(); ?>/assets/icons/chevron.svg');}
+            #responsive-header ul li.menu-item-has-children > a:after{content: ''; background-image: url('<?php echo get_template_directory_uri(); ?>/assets/icons/chevron.svg');}
+            .top-bar ul li.menu-item-has-children > a:after{content: ''; background-image: url('<?php echo get_template_directory_uri(); ?>/assets/icons/chevron-min.svg');}
             
             /* iconos de redes sociales */
             .social .menu li a[href*="facebook"]:before{content: ''; background-image: url('<?php echo get_template_directory_uri(); ?>/assets/icons/facebook.svg');}
