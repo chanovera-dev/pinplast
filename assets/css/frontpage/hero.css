@@ -1,7 +1,7 @@
 .hero-section.padding-section{padding:1.5rem 0;}
 .slideshow-wrapper{position:relative; width:100%; height:395px; overflow:hidden;}
 .slideshow-wrapper .slideshow{width:300%; height:100%; display:flex; align-items:center; transition:all .3s ease;}
-.slideshow-wrapper .slideshow .slide{width:100%; height:100%; background-color:#f6f6f6; padding:3rem 1.5rem 5rem; display:grid;}
+.slideshow-wrapper .slideshow .slide{width:100%; height:100%; background-color:#f6f6f6; padding:2.7rem 1.5rem 5rem; display:grid;}
 .slideshow-wrapper .slideshow .slide .content .title{font-size:2.6rem; font-weight:700; color:#3d464d; margin-bottom:2rem;}
 .slideshow-wrapper .slideshow .slide .content button{
     margin-top: 1.5rem;
