@@ -242,7 +242,7 @@ footer .social{margin-top:.8rem;}
     .footer-content{display:grid; grid-template-columns:1fr 1fr 1fr; gap:5rem;}
 }
 
-@media(min-width:1366px){
+@media(min-width:1200px){
     .top-bar{height:3.5rem;}
     .middle-bar{height:11.6rem;}
     .bottom-bar{height:6rem;}
