@@ -34,7 +34,7 @@ img{display:block; height:auto;}
 #main-header{position:fixed; top:0; width:100%; z-index:3; backface-visibility:hidden; transform:translate3d(0, 0, 0); transition:all .25s ease-in-out;}
 #responsive-header{position:relative;}
 /* scroll actions */    
-.scroll-down #main-header{transform:translate3d(0, -100%, 0); transition:all .3s ease-in-out;}
+.scroll-down #main-header{transform:translate3d(0, var(--body-header), 0); transition:all .3s ease-in-out;}
 .scroll-up #main-header{transform:none; transition:all .3s ease-in-out}
     /* marca */
     .header-content .site-brand{position:relative; bottom:.5rem; margin-right:auto; z-index:3;}
@@ -237,6 +237,7 @@ footer .social{margin-top:.8rem;}
         .bottom-bar .primary ul li ul.sub-menu.open li a{height:3rem; color:var(--color-body);}
         .bottom-bar .primary ul li ul.sub-menu:hover li a{height:3rem; color:var(--color-body);}
         .bottom-bar .primary ul li ul.sub-menu li a:hover{background-color:rgba(0,0,0,.08);}
+
     /* footer */
     .footer-content{display:grid; grid-template-columns:1fr 1fr 1fr; gap:5rem;}
 }

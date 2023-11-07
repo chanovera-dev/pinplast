@@ -6,6 +6,7 @@ function pinplast_theme_custom_breakpoints() {
             :root{
                 --breakpoint:min(100% - 3rem, 576px);
                 --main-padding-top:5.4rem;
+                --body-header:100%;
             }
 
             @media(min-width:768px){
@@ -23,6 +24,7 @@ function pinplast_theme_custom_breakpoints() {
             @media(min-width:1024px){
                 :root{
                     --main-padding-top:21.2rem;
+                    --body-header:6rem;
                 }
             }
 
