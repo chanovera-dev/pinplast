@@ -88,6 +88,28 @@ BotonSubMenu.forEach(function(boton) {
 
 
 
+let BotonSubMenuPrimary = document.querySelectorAll("#menu-primary .menu-item-has-children a");
+let SubMenuPrimary = document.querySelectorAll("#menu-primary .menu-item-has-children .sub-menu");
+
+BotonSubMenuPrimary.forEach(function(botonPrimary) {
+    botonPrimary.addEventListener("mouseover", function(event) {
+        // Evita que el enlace se comporte como un enlace normal
+        event.preventDefault();
+        
+        // Agrega la clase "open" a los elementos del submenú correspondientes
+        let parentItem = this.parentElement;
+        let subMenu = parentItem.querySelector(".sub-menu");
+        subMenu.classList.toggle("open");
+
+        // Agrega la clase "open" a los elementos de iconSubMenu
+        BotonSubMenu.forEach(function(icon) {
+            icon.classList.toggle("open");
+        });
+    });
+});
+
+
+
 // muestra y oculta el cuadro de búsqueda
 let searchButton = document.getElementById('bi-search');
 let searchButtonClose = document.getElementById('bi-x-circle');
