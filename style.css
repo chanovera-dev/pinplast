@@ -225,8 +225,9 @@ footer .social{margin-top:.8rem;}
         .bottom-bar ul{display:flex; align-items:center; gap:2rem;}
         .bottom-bar ul li a{font-weight:700; color:var(--color-header);}
         .bottom-bar .primary{overflow:hidden;}
-        .bottom-bar .primary ul{display:-webkit-inline-box; gap:2.8rem;}
-
+        .bottom-bar .primary ul{display:-webkit-inline-box; gap:0;}
+        .bottom-bar .primary ul li a{display:inline-flex; align-items:center; height:4.2rem; padding:0 1.4rem; border-radius:.3rem; transition:all .3s ease;}
+        .bottom-bar .primary ul li a:hover{background-color:rgba(255,255,255,.5);}
     /* footer */
     .footer-content{display:grid; grid-template-columns:1fr 1fr 1fr; gap:5rem;}
 }
