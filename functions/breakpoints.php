@@ -29,7 +29,7 @@ function pinplast_theme_custom_breakpoints() {
 
             @media(min-width:1024px){
                 :root{
-                    --main-padding-top:21.2rem;
+                    --main-padding-top:19rem;
                     --scroll-up-header:-151px;
                 }
             }
@@ -37,6 +37,12 @@ function pinplast_theme_custom_breakpoints() {
             @media(min-width:1200px){
                 :root{
                     --breakpoint:min(100% - 3rem, 1110px);
+                }
+            }
+
+            @media(min-width:1366px){
+                :root{
+                    --main-padding-top:21.2rem;
                 }
             }
         </style>
