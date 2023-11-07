@@ -53,4 +53,6 @@
 
 @media(min-width:1200px){
     .slideshow-wrapper{height:437px;}
+    .slideshow-wrapper .slideshow .slide .content .excerpt{font-size:2rem;}
+    .slideshow-wrapper .slideshow .slide .content button{margin-top:4.7rem;}
 }

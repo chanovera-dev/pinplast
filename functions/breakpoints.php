@@ -38,6 +38,7 @@ function pinplast_theme_custom_breakpoints() {
                 :root{
                     --breakpoint:min(100% - 3rem, 1110px);
                     --main-padding-top:21.2rem;
+                    --font-size-title-slide:3.3rem;
                 }
             }
         </style>
