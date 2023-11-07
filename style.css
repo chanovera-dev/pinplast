@@ -224,7 +224,6 @@ footer .social{margin-top:.8rem;}
         .bottom-bar{display:grid; gap:3rem; grid-template-columns:242px 1fr 6rem; height:6rem; align-items:center;}
         .bottom-bar ul{display:flex; align-items:center; gap:2rem;}
         .bottom-bar ul li a{font-weight:700; color:var(--color-header);}
-        .bottom-bar .primary{overflow:hidden;}
         .bottom-bar .primary ul{display:-webkit-inline-box; gap:0;}
         .bottom-bar .primary ul li a{display:inline-flex; align-items:center; height:4.2rem; padding:0 1.3rem; border-radius:.3rem; transition:all .3s ease;}
         .bottom-bar .primary ul li a:hover{background-color:rgba(255,255,255,.5);}
