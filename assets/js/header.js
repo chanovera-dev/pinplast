@@ -99,11 +99,23 @@ BotonSubMenuPrimary.forEach(function(botonPrimary) {
         // Agrega la clase "open" a los elementos del submenú correspondientes
         let parentItem = this.parentElement;
         let subMenu = parentItem.querySelector(".sub-menu");
-        subMenu.classList.toggle("open");
+        subMenu.classList.add("open");
 
         // Agrega la clase "open" a los elementos de iconSubMenu
         BotonSubMenu.forEach(function(icon) {
-            icon.classList.toggle("open");
+            icon.classList.add("open");
+        });
+    });
+
+    botonPrimary.addEventListener("mouseout", function(event) {
+        // Remueve la clase "open" cuando se retira el mouse del enlace
+        let parentItem = this.parentElement;
+        let subMenu = parentItem.querySelector(".sub-menu");
+        subMenu.classList.remove("open");
+
+        // Remueve la clase "open" de los elementos de iconSubMenu
+        BotonSubMenu.forEach(function(icon) {
+            icon.classList.remove("open");
         });
     });
 });
