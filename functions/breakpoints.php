@@ -24,7 +24,7 @@ function pinplast_theme_custom_breakpoints() {
             @media(min-width:1024px){
                 :root{
                     --main-padding-top:21.2rem;
-                    --scroll-up-header:151px;
+                    --scroll-up-header:-151px;
                 }
             }
 
