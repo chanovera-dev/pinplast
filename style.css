@@ -187,7 +187,7 @@ footer .social{margin-top:.8rem;}
     #desktop-header{display:inherit;}
         /* top bar */
         .top-bar-wrapper{background-color:var(--background-color--submenu); display:flex; align-items:center;}
-        .top-bar{display:flex; align-items:center; justify-content:space-between; height:3.5rem;}
+        .top-bar{display:flex; align-items:center; justify-content:space-between; height:3.2rem;}
         .top-bar ul{display:flex; align-items:center; gap:1.6rem;}
         .top-bar ul li a{font-size:1.6rem; color:var(--color-top-bar-text); transition:all .3s ease;}
         .top-bar ul li a:hover{color:var(--color-links);}
@@ -202,7 +202,7 @@ footer .social{margin-top:.8rem;}
         .top-bar ul li ul.sub-menu.open li a{height:3rem; color:var(--color-body);}
         .top-bar ul li ul.sub-menu.open li a:hover{background-color:rgba(0,0,0,.08);}
         /* middle bar */
-        .middle-bar{display:grid; gap:3rem; grid-template-columns:255px 1fr 255px; height:11.6rem; align-items:center; background-color:var(--background-color-body);}
+        .middle-bar{display:grid; gap:3rem; grid-template-columns:255px 1fr 255px; height:10.4rem; align-items:center; background-color:var(--background-color-body);}
         /* marca */
         .header-content .site-brand .custom-logo-link .custom-logo{position:relative; top:.8rem; width:19.5rem;}
         /* searchform */
@@ -240,4 +240,9 @@ footer .social{margin-top:.8rem;}
         
     /* footer */
     .footer-content{display:grid; grid-template-columns:1fr 1fr 1fr; gap:5rem;}
+}
+
+@media(min-width:1366px){
+    .top-bar{height:3.5rem;}
+    .middle-bar{height:11.6rem;}
 }
