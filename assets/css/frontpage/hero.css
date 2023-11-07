@@ -39,9 +39,8 @@
 @media(min-width:768px){
     .slideshow-wrapper .slideshow .slide{position:relative; overflow:hidden; display:grid;}
     .slideshow-wrapper .slideshow .slide .content{align-self:end; max-width:65%;}
-    .slideshow-wrapper .slideshow .slide .content .title{}
     .slideshow-wrapper .slideshow .slide .content button{margin-top:4rem;}
-    .slideshow-wrapper .slideshow .slide .picture-product{position:absolute; bottom:0; right:-35%;}
+    .slideshow-wrapper .slideshow .slide .picture-product{position:absolute; bottom:5rem; right:-30%;}
 }
 
 @media(min-width:1024px){
