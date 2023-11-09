@@ -12,6 +12,7 @@ function theme_pinplast_custom_colors() {
                 --color-links:#1a66ff;
                 --blue:#ffc107;
                 --yellow:#ffd333;
+                --green:#28a745;
                 --link-focus:0 0 0 .1rem #ffc107;
 
                 /* cabecera */
@@ -21,6 +22,9 @@ function theme_pinplast_custom_colors() {
                 --background-color--submenu:#f7f7f7;
                     /* top-bar */
                     --color-top-bar-text:#737373;
+
+                /* listas de productos */
+                --border-product:#f0f0f0;
 
                 /* formularios */
                 --background-color-input:#fff;
