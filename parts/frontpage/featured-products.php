@@ -1,13 +1,11 @@
 <section id="featured-products" class="container main-content">
-    <div class="section padding-section featured-products-section">
-        <div class="title-wrapper"><h2 class="title"><?php echo __('Productos destacados', 'pinplast'); ?></h2></div>
-    </div>
     <ul class="section featured-products-lists product-list">
+        <div class="title-wrapper"><h2 class="title"><?php echo __('Productos destacados', 'pinplast'); ?></h2></div>
         <?php
             $args = array(
                 'post_type' => 'product',
                 'post_status' => 'publish',
-                'posts_per_page' => 6,
+                'posts_per_page' => 7,
                 'orderby' => 'date',
                 'order'   => 'DESC'
             );
