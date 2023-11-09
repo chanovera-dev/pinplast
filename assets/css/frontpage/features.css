@@ -1,4 +1,4 @@
-.features-section.padding-section{padding:1.5rem 0; margin-bottom:4rem;}
+.features-section.padding-section{padding:1.5rem 0; margin-bottom:4.5rem;}
 .table-features{width:100%; border:1px solid var(--border-product); border-collapse:collapse;}
 .feature-cell{display:grid; grid-template-columns:4.8rem 1fr; height:8.5rem; padding:0 2.4rem; place-content:center; gap:0 2.4rem; border:1px solid var(--border-product);}
 .feature-cell svg{width:4.8rem; height:4.8rem; color:var(--yellow); grid-column:1/2; grid-row:1/3;}
