@@ -29,14 +29,15 @@ function pinplast_theme_custom_breakpoints() {
 
             @media(min-width:1024px){
                 :root{
+                    --breakpoint:min(100% - 3rem, 1110px);
                     --main-padding-top:19rem;
                     --scroll-up-header:-151px;
                 }
             }
 
-            @media(min-width:1200px){
+            @media(min-width:1140px){
                 :root{
-                    --breakpoint:min(100% - 3rem, 1110px);
+                    --breakpoint:min(100% - 3rem, 1140px);
                     --main-padding-top:21.2rem;
                     --font-size-title-slide:3.3rem;
                 }

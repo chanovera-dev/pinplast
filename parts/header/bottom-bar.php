@@ -1,7 +1,7 @@
 <?php
 echo '<div class="bottom-bar-wrapper">
     <section class="section bottom-bar">';
-        echo '<div></div>';
+        echo '<div class=""></div>';
         wp_nav_menu(
             array(
                 'container' => 'nav', 
