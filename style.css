@@ -222,7 +222,7 @@ footer .social{margin-top:.8rem;}
         /* bottom bar */
         .bottom-bar-wrapper{background-color:var(--yellow);}
         .bottom-bar{display:grid; gap:3rem; grid-template-columns:242px 1fr 6rem; height:5.4rem; align-items:center;}
-        .bottom-bar .departments-button{background-color:var(--color-header); color:#fff; font-weight:700; font-size:1.7rem; display:inline-flex; align-items:center; gap:1rem; width:100%; height:4.2rem; border:none; padding:0 1rem;}
+        .bottom-bar .departments-button{background-color:var(--color-header); color:#fff; font-weight:700; font-size:1.7rem; display:inline-flex; align-items:center; gap:1.5rem; width:100%; height:4.2rem; border:none; padding:0 1.5rem;}
         .bottom-bar .departments-button .menu-mobile--button{position:relative; display:grid; place-content:center;}
         .bottom-bar .departments-button .menu-mobile--button .bars{display:inline-block; width:1.8rem; height:1.8rem; transition:all .3s ease;}
         .bottom-bar .departments-button .menu-mobile--button .bars :is(.bar1, .bar2, .bar3){width:1.8rem; height:.2rem; transition:.4s; background-color:rgba(255,255,255,.5);}
