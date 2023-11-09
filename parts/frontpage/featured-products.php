@@ -1,5 +1,5 @@
 <section id="featured-products" class="container main-content">
-    <ul class="section featured-products-lists product-list">
+    <ul class="section featured-products-list product-list">
         <div class="title-wrapper"><h2 class="title"><?php echo __('Productos destacados', 'pinplast'); ?></h2></div>
         <?php
             $args = array(

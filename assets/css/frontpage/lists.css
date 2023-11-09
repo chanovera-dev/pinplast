@@ -16,4 +16,4 @@
 .product-list li .content .rating .star-rating svg.bi-star-fill{color:var(--green);}
 .product-list li .content .rating .votes-rating{font-size:1.4rem; color:var(--attenuated-text);}
 
-.featured-product-list{display:grid; grid-template-columns:repeat(4, 1fr); gap:1.5rem;}
+.featured-products-list{display:grid; grid-template-columns:repeat(4, 1fr); gap:1.5rem;}
