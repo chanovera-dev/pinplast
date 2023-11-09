@@ -5,6 +5,7 @@
 .product-list{margin:0; padding:0; list-style:none; /*display:grid; grid-template-columns:repeat(auto-fill, minmax(315px, 1fr)); gap:1.5rem;*/}
 .product-list li{border:1px solid var(--border-product); display:grid; transition:all .3s ease;}
 .product-list li .card{padding:1.5rem; display:grid; border:1px solid transparent; transition:all .3s ease;}
+.product-list li .card .wp-image{width:100%;}
 .product-list li .card > *:not(:last-child){margin-bottom:1.5rem;}
 .product-list li:hover{border:1px solid var(--yellow);}
 .product-list li:hover .card{border:1px solid var(--yellow);}
@@ -14,3 +15,5 @@
 .product-list li .content .rating .star-rating svg{width:2rem; height:2rem; color:var(--attenuated-icon);}
 .product-list li .content .rating .star-rating svg.bi-star-fill{color:var(--green);}
 .product-list li .content .rating .votes-rating{font-size:1.4rem; color:var(--attenuated-text);}
+
+.featured-product-list{display:grid; grid-template-columns:repeat(4, 1fr); gap:1.5rem;}

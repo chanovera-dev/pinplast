@@ -5,7 +5,7 @@
             $args = array(
                 'post_type' => 'product',
                 'post_status' => 'publish',
-                'posts_per_page' => 7,
+                'posts_per_page' => 4,
                 'orderby' => 'date',
                 'order'   => 'DESC'
             );
