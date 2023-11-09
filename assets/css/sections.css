@@ -1,4 +1,4 @@
 /* títulos */
 .title-wrapper{position:relative; overflow:hidden; margin-bottom:2rem;}
 .title-wrapper .title{display:inline; position:relative; font-size:2rem; font-weight:700;}
-.title-wrapper .title:before{position:absolute; top:50%; transform:translateY(-50%); left:calc(100% + 1.5rem); width:120rem; height:2px; background-color:var(--attenuated-line); content:'';}
+.title-wrapper .title:before{position:absolute; top:50%; transform:translateY(-50%); left:calc(100% + 1.5rem); width:120rem; height:3px; background-color:var(--attenuated-line); content:'';}
