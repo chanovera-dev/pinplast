@@ -4,7 +4,7 @@ echo '<div class="bottom-bar-wrapper">
         echo '<div class="">
             <button class="departments-button">
                 <div class="menu-mobile--button">
-                    <div class="bars" onclick="myFunction(this)">
+                    <div class="bars">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
