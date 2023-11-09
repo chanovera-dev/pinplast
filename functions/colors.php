@@ -8,7 +8,7 @@ function theme_pinplast_custom_colors() {
                 --color-text:#000;
                 --attenuated-text:#b3b3b3;
                 --attenuated-icon:#b3b3b3;
-                --attenuated-line:#b3b3b3;
+                --attenuated-line:#ebebeb;
                 --color-links:#1a66ff;
                 --blue:#ffc107;
                 --yellow:#ffd333;
