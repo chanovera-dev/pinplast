@@ -3,10 +3,12 @@ echo '<div class="bottom-bar-wrapper">
     <section class="section bottom-bar">';
         echo '<div class="">
             <button class="departments-button">
-                <div class="bars">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
+                <div class="menu-mobile--button">
+                    <div class="bars" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
                 </div>
                 Comprar por categoría
             </button>
