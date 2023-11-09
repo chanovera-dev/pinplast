@@ -11,6 +11,8 @@ function frontpage_styles() {
         wp_enqueue_style( 'features-styles', get_template_directory_uri() . '/assets/css/frontpage/features.css' );
         /* featured products */
         wp_enqueue_style( 'lists-styles', get_template_directory_uri() . '/assets/css/frontpage/lists.css' );
+        /* sections */
+        wp_enqueue_style( 'sections-styles', get_template_directory_uri() . '/assets/css/sections.css' );
         /* widgets */
         wp_enqueue_style( 'widgets-styles', get_template_directory_uri() . '/assets/css/widgets.css' );
     }
