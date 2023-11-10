@@ -43,7 +43,7 @@
 .yith-wcwl-wishlistexistsbrowse a{display:none;}
 
 @media(min-width:768px){
-    .product-list li:not(:nth-child(2)) .card{grid-template-rows:1fr auto auto 37px;}
+    .product-list li .card{grid-template-rows:1fr auto auto 37px;}
 }
 
 @media(min-width:1024px){
