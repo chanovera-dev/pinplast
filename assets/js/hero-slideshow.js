@@ -75,3 +75,53 @@ function updateSlideshow() {
     currentImageIndex++;
     updateSlideshow();
   });
+
+
+
+  const slideshowContainerArrivals = document.getElementById('arrivals-list');
+const prevButtonArrivals = document.getElementById('backward-button__arrivals');
+const nextButtonArrivals = document.getElementById('forward-button__arrivals');
+let currentImageIndexArrivals = 0;
+
+function updateSlideshowArrivals() {
+    const translateX = -12.5 * currentImageIndex;
+    slideshowContainer.style.transform = `translateX(${translateX}%)`;
+
+    if (currentImageIndex === 0) {
+      prevButton.disabled = true;
+      prevButton.classList.add('disable');
+    } else {
+      prevButton.disabled = false;
+      prevButton.classList.remove('disable');
+    }
+
+    switch (true) {
+        case window.innerWidth >= 1024:
+            numero = 4;
+            break;
+        case window.innerWidth >= 768:
+            numero = 5;
+            break;
+        default:
+            numero = 7;
+            break;
+    }
+      
+    if (currentImageIndex === numero) {
+        nextButton.disabled = true;
+        nextButton.classList.add('disable');
+    } else {
+        nextButton.disabled = false;
+        nextButton.classList.remove('disable');
+    }
+  }
+
+  prevButton.addEventListener('click', () => {
+    currentImageIndex--;
+    updateSlideshowArrivals();
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentImageIndex++;
+    updateSlideshowArrivals();
+  });
