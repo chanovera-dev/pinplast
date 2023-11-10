@@ -29,39 +29,49 @@ button3.addEventListener('click', function(){
 
 
 const slideshowContainer = document.getElementById('featured-products-list');
-  const prevButton = document.getElementById('backward-button__featured-products');
-  const nextButton = document.getElementById('forward-button__featured-products');
-  let currentImageIndex = 0;
+const prevButton = document.getElementById('backward-button__featured-products');
+const nextButton = document.getElementById('forward-button__featured-products');
+let currentImageIndex = 0;
 
-  function updateSlideshow() {
-    const translateX = -12.5 * currentImageIndex;
-    slideshowContainer.style.transform = `translateX(${translateX}%)`;
+function updateSlideshow() {
+const translateX = -12.5 * currentImageIndex;
+slideshowContainer.style.transform = `translateX(${translateX}%)`;
 
-    if (currentImageIndex === 0) {
-      prevButton.disabled = true;
-    } else {
-      prevButton.disabled = false;
-    }
+if (currentImageIndex === 0) {
+    prevButton.disabled = true;
+    const lastImage = slideshowContainer.lastElementChild;
+    slideshowContainer.insertBefore(lastImage, slideshowContainer.firstElementChild);
+    currentImageIndex = 1;
+} else {
+    prevButton.disabled = false;
+}
 
-    if (currentImageIndex === 7) {
-      nextButton.disabled = true;
-    } else {
-      nextButton.disabled = false;
-    }
-  }
+if (currentImageIndex === 8) {
+    nextButton.disabled = true;
+    const firstImage = slideshowContainer.firstElementChild;
+    slideshowContainer.appendChild(firstImage);
+    currentImageIndex = 7;
+} else {
+    nextButton.disabled = false;
+}
+}
 
-  prevButton.addEventListener('click', () => {
-    currentImageIndex--;
-    if (currentImageIndex < 0) {
-      currentImageIndex = 7;
-    }
-    updateSlideshow();
-  });
-  
-  nextButton.addEventListener('click', () => {
-    currentImageIndex++;
-    if (currentImageIndex > 7) {
-      currentImageIndex = 0;
-    }
-    updateSlideshow();
-  });
+prevButton.addEventListener('click', () => {
+currentImageIndex--;
+if (currentImageIndex < 0) {
+    currentImageIndex = 7;
+    const lastImage = slideshowContainer.lastElementChild;
+    slideshowContainer.insertBefore(lastImage, slideshowContainer.firstElementChild);
+}
+updateSlideshow();
+});
+
+nextButton.addEventListener('click', () => {
+currentImageIndex++;
+if (currentImageIndex > 8) {
+    currentImageIndex = 0;
+    const firstImage = slideshowContainer.firstElementChild;
+    slideshowContainer.appendChild(firstImage);
+}
+updateSlideshow();
+});
