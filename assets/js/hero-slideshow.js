@@ -46,7 +46,7 @@ let currentImageIndex = 0;
     switch (true) {
         case window.innerWidth >= 1024:
             // Resolución mayor a 1024 y 768
-            numero = 3;
+            numero = 4;
             break;
         case window.innerWidth >= 768:
             // Resolución mayor a 768 pero menor o igual a 1024
