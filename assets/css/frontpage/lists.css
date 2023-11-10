@@ -55,7 +55,7 @@
 
 /* bestsellers */
 .bestsellers-list{gap:1.5rem;}
-.bestsellers-list li .card{grid-template-rows:1fr auto auto 37px;}
+/* .bestsellers-list li .card{grid-template-rows:1fr auto auto 37px;} */
 .bestsellers-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{font-size:1.4rem;}
 
 @media(min-width:768px){
