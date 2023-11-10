@@ -78,7 +78,7 @@ function updateSlideshow() {
 
 
 
-  const slideshowContainerArrivals = document.getElementById('arrivals-list');
+const slideshowContainerArrivals = document.getElementById('arrivals-list');
 const prevButtonArrivals = document.getElementById('backward-button__arrivals');
 const nextButtonArrivals = document.getElementById('forward-button__arrivals');
 let currentImageIndexArrivals = 0;
@@ -88,11 +88,11 @@ function updateSlideshowArrivals() {
     slideshowContainer.style.transform = `translateX(${translateX}%)`;
 
     if (currentImageIndex === 0) {
-      prevButton.disabled = true;
-      prevButton.classList.add('disable');
+      prevButtonArrivals.disabled = true;
+      prevButtonArrivals.classList.add('disable');
     } else {
-      prevButton.disabled = false;
-      prevButton.classList.remove('disable');
+      prevButtonArrivals.disabled = false;
+      prevButtonArrivals.classList.remove('disable');
     }
 
     switch (true) {
@@ -108,20 +108,20 @@ function updateSlideshowArrivals() {
     }
       
     if (currentImageIndex === numero) {
-        nextButton.disabled = true;
-        nextButton.classList.add('disable');
+        nextButtonArrivals.disabled = true;
+        nextButtonArrivals.classList.add('disable');
     } else {
-        nextButton.disabled = false;
-        nextButton.classList.remove('disable');
+        nextButtonArrivals.disabled = false;
+        nextButtonArrivals.classList.remove('disable');
     }
   }
 
-  prevButton.addEventListener('click', () => {
+  prevButtonArrivals.addEventListener('click', () => {
     currentImageIndex--;
     updateSlideshowArrivals();
   });
 
-  nextButton.addEventListener('click', () => {
+  nextButtonArrivals.addEventListener('click', () => {
     currentImageIndex++;
     updateSlideshowArrivals();
   });
