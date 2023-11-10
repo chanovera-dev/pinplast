@@ -12,7 +12,7 @@
     </div>
       <div class="section"> 
         <div class="featured-products-wrapper">
-            <ul class="featured-products-list product-list">       
+            <ul id="featured-products-list" class="featured-products-list product-list">       
                 <?php
                     $args = array(
                         'post_type' => 'product',

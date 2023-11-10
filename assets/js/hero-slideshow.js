@@ -25,3 +25,37 @@ button3.addEventListener('click', function(){
     button1.classList.remove('active');
     button2.classList.remove('active');
 });
+
+
+
+const slideshowContainer = document.getElementById('featured-products-list');
+  const prevButton = document.getElementById('backward-button__featured-products');
+  const nextButton = document.getElementById('forward-button__featured-products');
+  let currentImageIndex = 0;
+
+  function updateSlideshow() {
+    const translateX = -12.5 * currentImageIndex;
+    slideshowContainer.style.transform = `translateX(${translateX}%)`;
+
+    if (currentImageIndex === 0) {
+      prevButton.disabled = true;
+    } else {
+      prevButton.disabled = false;
+    }
+
+    if (currentImageIndex === 2) {
+      nextButton.disabled = true;
+    } else {
+      nextButton.disabled = false;
+    }
+  }
+
+  prevButton.addEventListener('click', () => {
+    currentImageIndex--;
+    updateSlideshow();
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentImageIndex++;
+    updateSlideshow();
+  });
