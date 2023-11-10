@@ -100,7 +100,7 @@ function updateSlideshowArrivals() {
             numero = 4;
             break;
         case window.innerWidth >= 768:
-            numero = 5;
+            numero = 4;
             break;
         default:
             numero = 5;
