@@ -134,7 +134,7 @@ const nextButtonBlog = document.getElementById('forward-button__blog');
 let currentImageIndexBlog = 0;
 
 function updateSlideshowBlog() {
-    const translateX = -25 * currentImageIndexBlog;
+    const translateX = -16.6666 * currentImageIndexBlog;
     slideshowContainerBlog.style.transform = `translateX(${translateX}%)`;
 
     if (currentImageIndexBlog === 0) {
