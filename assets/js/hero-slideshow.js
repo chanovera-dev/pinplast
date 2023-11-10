@@ -103,7 +103,7 @@ function updateSlideshowArrivals() {
             numero = 5;
             break;
         default:
-            numero = 7;
+            numero = 6;
             break;
     }
       
