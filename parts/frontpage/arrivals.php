@@ -1,6 +1,6 @@
 <section id="arrivals" class="container main-content">
     <div class="title-wrapper section">
-        <h2 class="title"><?php echo __('Productos destacados', 'pinplast'); ?></h2>
+        <h2 class="title"><?php echo __('Recién llegados', 'pinplast'); ?></h2>
         <div class="slideshow-buttons__arrivals">
             <button id="backward-button__arrivals" class="arrivals--button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
