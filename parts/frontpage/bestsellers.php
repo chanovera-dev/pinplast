@@ -1,6 +1,6 @@
 <section id="bestsellers" class="container main-content">
     <div class="title-wrapper section"><h2 class="title"><?php echo __('Más vendidos', 'pinplast'); ?></h2></div>
-    <div class="section product-list">
+    <div class="section bestsellers-list product-list">
         <?php
             $args = array(
                 'post_type' => 'product',
