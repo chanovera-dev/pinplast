@@ -15,7 +15,7 @@
 .product-list li .card .content .rating .star-rating{display:flex; align-items:center; gap:.5rem;}
 .product-list li .card .content .rating .star-rating svg{width:2rem; height:2rem; color:var(--attenuated-icon);}
 .product-list li .card .content .rating .star-rating svg.bi-star-fill{color:var(--green);}
-.product-list li .card .content .rating .votes-rating{font-size:1.4rem; color:var(--attenuated-text);}
+.product-list li .card .content .rating .votes-rating{font-size:1.2rem; color:var(--attenuated-text);}
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons{display:flex; flex-wrap:wrap; align-items:baseline;}
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{
     padding:.5rem 1rem;
