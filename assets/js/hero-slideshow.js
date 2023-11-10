@@ -43,7 +43,7 @@ const slideshowContainer = document.getElementById('featured-products-list');
       prevButton.disabled = false;
     }
 
-    if (currentImageIndex === 2) {
+    if (currentImageIndex === 7) {
       nextButton.disabled = true;
     } else {
       nextButton.disabled = false;
