@@ -71,6 +71,7 @@
 .arrivals--button.disable:hover{background-color:#f2f2f2; color:#999;}
 
 /* blog */
+.blog-list{margin:0; padding:0; list-style:none;}
 #blog{margin:5rem 0;}
 .blog-list .post{display:grid; gap:2.2rem;}
 .blog-list .post .thumbnail{object-fit:cover; width:100%; height:auto; aspect-ratio:16/9;}
@@ -88,6 +89,7 @@
 @media(min-width:768px){
     .featured-products-list{width:266%; gap:1.5rem;}
     .arrivals-list{width:300%; gap:1.5rem;}
+    .blog-list{width:300%; gap:3rem;}
     .blog-list .post{grid-template-columns:auto 1fr;}
     .blog-list .post .thumbnail{width:240px; height:161px; aspect-ratio:inherit;}
 }
