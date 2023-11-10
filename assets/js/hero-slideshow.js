@@ -84,7 +84,7 @@ const nextButtonArrivals = document.getElementById('forward-button__arrivals');
 let currentImageIndexArrivals = 0;
 
 function updateSlideshowArrivals() {
-    const translateX = -12.5 * currentImageIndexArrivals;
+    const translateX = -15 * currentImageIndexArrivals;
     slideshowContainerArrivals.style.transform = `translateX(${translateX}%)`;
 
     if (currentImageIndexArrivals === 0) {
