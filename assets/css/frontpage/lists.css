@@ -36,6 +36,7 @@
     border-radius:.3rem;
     margin-right:1rem;
 }
+.product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button.product_type_variable{font-size:1rem;}
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .yith-wcwl-add-button .add_to_wishlist{color:var(--attenuated-text);}
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .yith-wcwl-add-button .add_to_wishlist i{font-size:1.6rem; margin-right:0;}
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .yith-wcwl-add-button .add_to_wishlist span{font-size:0;}
