@@ -72,7 +72,7 @@
 
 @media screen and (min-width:768px) and (max-width:1199px){
     #bestsellers .product-list li .content .rating .votes-rating{display:none;}
-    #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button.product_type_variable{font-size:.9rem;}
+    #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{font-size:.9rem;}
 }
 
 @media(min-width:1024px){
