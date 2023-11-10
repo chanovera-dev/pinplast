@@ -87,7 +87,7 @@ function updateSlideshowArrivals() {
     const translateX = -12.5 * currentImageIndexArrivals;
     slideshowContainerArrivals.style.transform = `translateX(${translateX}%)`;
 
-    if (currentImageIndex === 0) {
+    if (currentImageIndexArrivals === 0) {
       prevButtonArrivals.disabled = true;
       prevButtonArrivals.classList.add('disable');
     } else {
@@ -107,7 +107,7 @@ function updateSlideshowArrivals() {
             break;
     }
       
-    if (currentImageIndex === numero) {
+    if (currentImageIndexArrivals === numero) {
         nextButtonArrivals.disabled = true;
         nextButtonArrivals.classList.add('disable');
     } else {
