@@ -76,7 +76,9 @@
 .blog-list .post{display:grid; gap:2.2rem;}
 .blog-list .post .thumbnail{object-fit:cover; width:100%; height:auto; aspect-ratio:16/9;}
 .blog-list .post .content{font-size:1.5rem;}
-.blog-list .post .content .title{font-size:1.6rem; font-weight:700;}
+.blog-list .post .content .permalink{color:var(--color-text); transition:all .3s ease;}
+.blog-list .post .content .permalink:hover{color:var(--color-links);}
+.blog-list .post .content .permalink .title{font-size:1.7rem; font-weight:700;}
 .blog-list .post .content .publicate-date_widget{margin-bottom:1rem; color:#adadad; font-size:1.4rem;}
 .blog-wrapper{width:100%; position:relative; overflow:hidden;}
 .blog-list{width:600%; display:grid; grid-template-columns:repeat(6, 1fr); transition:all .3s ease;}
