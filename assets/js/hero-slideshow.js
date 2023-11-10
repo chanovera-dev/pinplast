@@ -39,8 +39,10 @@ let currentImageIndex = 0;
 
     if (currentImageIndex === 0) {
       prevButton.disabled = true;
+      prevButton.classList.add('disable');
     } else {
       prevButton.disabled = false;
+      prevButton.classList.remove('disable');
     }
 
     switch (true) {
@@ -60,8 +62,10 @@ let currentImageIndex = 0;
       
     if (currentImageIndex === numero) {
     nextButton.disabled = true;
+    nextButton.classList.add('disable');
     } else {
     nextButton.disabled = false;
+    nextButton.classList.remove('disable');
     }
   }
 

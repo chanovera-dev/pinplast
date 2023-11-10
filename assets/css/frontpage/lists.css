@@ -48,7 +48,9 @@
 .featured-products-list{width:800%; display:grid; grid-template-columns:repeat(8, 1fr); transition:all .3s ease;}
 .slideshow-buttons__featured-products{position:absolute; top:50%; transform:translateY(-50%); right:0; display:flex; gap:2px; padding-left:2rem; background-color:var(--background-color-body);}
 .featured-products--button{display:grid; place-content:center; width:2.7rem; height:2.9rem; background-color:#f2f2f2; color:#999; border:none;}
-.featured-products--button:hover{background-color:var(--yellow);}
+.featured-products--button:hover{background-color:var(--yellow); color:var(--color-text);}
+.featured-products--button.disable{opacity:.5;}
+.featured-products--button.disable:hover{background-color:#f2f2f2; color:#999;}
 
 @media(min-width:768px){
     .featured-products-list{width:266%; gap:1.5rem;}
