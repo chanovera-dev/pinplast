@@ -6,7 +6,8 @@ function frontpage_styles() {
         wp_dequeue_style( 'wp-block-library' );
         /* hero section */
         wp_enqueue_style( 'frontpage-styles', get_template_directory_uri() . '/assets/css/frontpage/hero.css' );
-        wp_enqueue_script( 'hero-slideshow', get_template_directory_uri() . '/assets/js/hero-slideshow.js', array(), '1.0', true );
+        /* slideshows */
+        wp_enqueue_script( 'frontpage-slideshows', get_template_directory_uri() . '/assets/js/frontpage-slideshows.js', array(), '1.0', true );
         /* features */
         wp_enqueue_style( 'features-styles', get_template_directory_uri() . '/assets/css/frontpage/features.css' );
         /* featured products */
