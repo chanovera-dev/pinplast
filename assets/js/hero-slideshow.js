@@ -52,10 +52,16 @@ const slideshowContainer = document.getElementById('featured-products-list');
 
   prevButton.addEventListener('click', () => {
     currentImageIndex--;
+    if (currentImageIndex < 0) {
+      currentImageIndex = 7;
+    }
     updateSlideshow();
   });
-
+  
   nextButton.addEventListener('click', () => {
     currentImageIndex++;
+    if (currentImageIndex > 7) {
+      currentImageIndex = 0;
+    }
     updateSlideshow();
   });
