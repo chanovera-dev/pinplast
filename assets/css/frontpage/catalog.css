@@ -1,0 +1,25 @@
+#catalog-products .padding-section{padding:2.4rem 0;}
+.catalog-link{position:relative; display:grid; place-content:center; width:100%; height:390px; background-color:#f6f6f6;}
+.catalog-link:hover{color:#000000;}
+.catalog-link .tools{text-align:center; display:grid;}
+.catalog-link .tools h2{font-weight:700;}
+.catalog-link .tools button{
+    margin-top:1.5rem;
+    border:1px solid #ffd333;
+    background-color:#ffd333;
+    color:#3d464d;
+    font-weight:600;
+    border-radius:.3rem;
+    display:inline-flex; align-items:center; height:3.2rem; padding:0 2rem;
+    margin-inline:auto;
+    transition:all .3s ease;
+}
+.catalog-link .tools button:hover{
+    border:1px solid #3d464d; gap:1rem;
+    background-color:#3d464d;
+    color:#ffffff;
+}
+
+@media(min-width:768px){
+    .catalog-link{height:170px;}
+}
