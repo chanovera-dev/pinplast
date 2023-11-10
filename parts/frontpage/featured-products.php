@@ -2,12 +2,12 @@
     <div class="title-wrapper section">
         <h2 class="title"><?php echo __('Productos destacados', 'pinplast'); ?></h2>
         <div class="slideshow-buttons__featured-products">
-            <div id="backward-button__featured-products" class="featured-products--button">
+            <button id="backward-button__featured-products" class="featured-products--button">
 
-            </div>
-            <div id="forward-button__featured-products" class="featured-products--button">
+            </button>
+            <button id="forward-button__featured-products" class="featured-products--button">
 
-            </div>
+            </button>
         </div>
     </div>
       <div class="section"> 
