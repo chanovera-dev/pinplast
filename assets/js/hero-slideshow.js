@@ -33,45 +33,42 @@ const prevButton = document.getElementById('backward-button__featured-products')
 const nextButton = document.getElementById('forward-button__featured-products');
 let currentImageIndex = 0;
 
-function updateSlideshow() {
-const translateX = -12.5 * currentImageIndex;
-slideshowContainer.style.transform = `translateX(${translateX}%)`;
+  function updateSlideshow() {
+    const translateX = -12.5 * currentImageIndex;
+    slideshowContainer.style.transform = `translateX(${translateX}%)`;
 
-if (currentImageIndex === 0) {
-    prevButton.disabled = true;
-    const lastImage = slideshowContainer.lastElementChild;
-    slideshowContainer.insertBefore(lastImage, slideshowContainer.firstElementChild);
-    currentImageIndex = 1;
-} else {
-    prevButton.disabled = false;
-}
+    if (currentImageIndex === 0) {
+      prevButton.disabled = true;
+    } else {
+      prevButton.disabled = false;
+    }
 
-if (currentImageIndex === 8) {
-    nextButton.disabled = true;
-    const firstImage = slideshowContainer.firstElementChild;
-    slideshowContainer.appendChild(firstImage);
-    currentImageIndex = 7;
-} else {
-    nextButton.disabled = false;
-}
-}
+    if (window.innerWidth >= 1024) {
+        if (window.innerWidth >= 768) {
+          // Resolución mayor a 1024 y 768
+          numero = 3;
+        } else {
+          // Resolución mayor a 768 pero menor o igual a 1024
+          numero = 5;
+        }
+      } else {
+        // Resolución menor o igual a 768
+        numero = 7;
+      }
+      
+      if (currentImageIndex === numero) {
+        nextButton.disabled = true;
+      } else {
+        nextButton.disabled = false;
+      }
+  }
 
-prevButton.addEventListener('click', () => {
-currentImageIndex--;
-if (currentImageIndex < 0) {
-    currentImageIndex = 7;
-    const lastImage = slideshowContainer.lastElementChild;
-    slideshowContainer.insertBefore(lastImage, slideshowContainer.firstElementChild);
-}
-updateSlideshow();
-});
+  prevButton.addEventListener('click', () => {
+    currentImageIndex--;
+    updateSlideshow();
+  });
 
-nextButton.addEventListener('click', () => {
-currentImageIndex++;
-if (currentImageIndex > 8) {
-    currentImageIndex = 0;
-    const firstImage = slideshowContainer.firstElementChild;
-    slideshowContainer.appendChild(firstImage);
-}
-updateSlideshow();
-});
+  nextButton.addEventListener('click', () => {
+    currentImageIndex++;
+    updateSlideshow();
+  });
