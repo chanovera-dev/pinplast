@@ -50,6 +50,10 @@
 .featured-products--button{display:grid; place-content:center; width:2.7rem; height:2.9rem; background-color:#f2f2f2; color:#999;}
 .featured-products--button:hover{background-color:var(--yellow);}
 
+@media(min-width:768px){
+    .featured-products-list{width:266%; gap:1.5rem;}
+}
+
 @media(min-width:1024px){
-    .featured-products-list{display:grid; grid-template-columns:repeat(4, 1fr); gap:1.5rem;}
+    .featured-products-list{width:200%;}
 }
