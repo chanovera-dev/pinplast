@@ -44,7 +44,7 @@ let currentImageIndex = 0;
     }
 
     if (window.innerWidth >= 1024) {
-        if (window.innerWidth >= 768) {
+        if (window.innerWidth >= 767) {
           // Resolución mayor a 1024 y 768
           numero = 3;
         } else {
