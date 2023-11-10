@@ -84,8 +84,8 @@ const nextButtonArrivals = document.getElementById('forward-button__arrivals');
 let currentImageIndexArrivals = 0;
 
 function updateSlideshowArrivals() {
-    const translateX = -12.5 * currentImageIndex;
-    slideshowContainer.style.transform = `translateX(${translateX}%)`;
+    const translateX = -12.5 * currentImageIndexArrivals;
+    slideshowContainerArrivals.style.transform = `translateX(${translateX}%)`;
 
     if (currentImageIndex === 0) {
       prevButtonArrivals.disabled = true;
@@ -117,11 +117,11 @@ function updateSlideshowArrivals() {
   }
 
   prevButtonArrivals.addEventListener('click', () => {
-    currentImageIndex--;
+    currentImageIndexArrivals--;
     updateSlideshowArrivals();
   });
 
   nextButtonArrivals.addEventListener('click', () => {
-    currentImageIndex++;
+    currentImageIndexArrivals++;
     updateSlideshowArrivals();
   });
