@@ -97,7 +97,7 @@ function updateSlideshowArrivals() {
 
     switch (true) {
         case window.innerWidth >= 1024:
-            numero = 4;
+            numero = 3;
             break;
         case window.innerWidth >= 768:
             numero = 4;
