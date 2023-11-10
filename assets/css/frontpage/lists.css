@@ -68,10 +68,12 @@
     .bestsellers-list :nth-child(1) .card .wp-post-image{grid-column:1/2; grid-row:1/3; margin-bottom:0;}
     .bestsellers-list :nth-child(1) .card .content{grid-column:2/3; grid-row:1/2;}
     .bestsellers-list :nth-child(1) .card .add-to-cart_add-to-wishlist--buttons{grid-column:2/3; grid-row:2/3;}
-    #bestsellers .product-list li .content .rating .votes-rating{display:none;}
-    #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button.product_type_variable{font-size:1rem;}
 }
 
+@media screen and (min-width:768px) and (max-width:1199px){
+    #bestsellers .product-list li .content .rating .votes-rating{display:none;}
+    #bestsellers .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button.product_type_variable{font-size:.9rem;}
+}
 
 @media(min-width:1024px){
     .featured-products-list{width:200%;}
