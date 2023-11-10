@@ -72,7 +72,7 @@
 
 @media(min-width:768px){
     .featured-products-list{width:266%; gap:1.5rem;}
-    .arrivals-list{width:200%; gap:1.5rem;}
+    .arrivals-list{width:300%; gap:1.5rem;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
@@ -90,7 +90,7 @@
 
 @media(min-width:1024px){
     .featured-products-list{width:200%;}
-    .arrivals-list{width:300%;}
+    .arrivals-list{width:200%;}
     .bestsellers-list{grid-template-columns:1fr 187px 187px 187px;}
     .bestsellers-list :nth-child(1){grid-row:1/3;}
     .bestsellers-list :nth-child(1) .card{grid-template-rows:auto auto auto 1fr;}
