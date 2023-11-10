@@ -45,7 +45,7 @@
 
 /* featured products */
 .featured-products-wrapper{width:100%; position:relative; overflow:hidden;}
-.featured-products-list{width:700%; display:grid; grid-template-columns:repeat(7, 1fr); transition:all .3s ease;}
+.featured-products-list{width:800%; display:grid; grid-template-columns:repeat(8, 1fr); transition:all .3s ease;}
 
 @media(min-width:1024px){
     .featured-products-list{display:grid; grid-template-columns:repeat(4, 1fr); gap:1.5rem;}
