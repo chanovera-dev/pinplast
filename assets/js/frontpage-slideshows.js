@@ -129,7 +129,7 @@ function updateSlideshowArrivals() {
 
 
 const slideshowContainerBlog = document.getElementById('blog-list');
-const prevButtonblog = document.getElementById('backward-button__blog');
+const prevButtonBlog = document.getElementById('backward-button__blog');
 const nextButtonBlog = document.getElementById('forward-button__blog');
 let currentImageIndexBlog = 0;
 
