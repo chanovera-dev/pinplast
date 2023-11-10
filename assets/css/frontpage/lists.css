@@ -80,3 +80,7 @@
 @media screen and (min-width: 1024px) and (max-width: 1199px){
     .product-list li .content .rating .votes-rating{font-size:0;}
 }
+
+@media(min-width:1200px){
+    #bestsellers .product-list{grid-template-columns:1fr 222px 222px 222px;}
+}
