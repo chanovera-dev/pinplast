@@ -43,24 +43,26 @@ let currentImageIndex = 0;
       prevButton.disabled = false;
     }
 
-    if (window.innerWidth >= 1024) {
-        if (window.innerWidth >= 767) {
-          // Resolución mayor a 1024 y 768
-          numero = 3;
-        } else {
-          // Resolución mayor a 768 pero menor o igual a 1024
-          numero = 5;
-        }
-      } else {
-        // Resolución menor o igual a 768
-        numero = 7;
-      }
+    switch (true) {
+        case window.innerWidth >= 1024:
+            // Resolución mayor a 1024 y 768
+            numero = 3;
+            break;
+        case window.innerWidth >= 768:
+            // Resolución mayor a 768 pero menor o igual a 1024
+            numero = 5;
+            break;
+        default:
+            // Resolución menor o igual a 768
+            numero = 7;
+            break;
+    }
       
-      if (currentImageIndex === numero) {
-        nextButton.disabled = true;
-      } else {
-        nextButton.disabled = false;
-      }
+    if (currentImageIndex === numero) {
+    nextButton.disabled = true;
+    } else {
+    nextButton.disabled = false;
+    }
   }
 
   prevButton.addEventListener('click', () => {
