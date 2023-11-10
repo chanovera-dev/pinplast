@@ -55,6 +55,7 @@
 
 /* bestsellers */
 .bestsellers-list{gap:1.5rem;}
+.product-list li .card{grid-template-rows:1fr auto auto 37px;}
 
 @media(min-width:768px){
     .featured-products-list{width:266%; gap:1.5rem;}
