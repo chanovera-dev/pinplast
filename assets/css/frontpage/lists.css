@@ -70,4 +70,9 @@
 
 @media(min-width:1024px){
     .featured-products-list{width:200%;}
+    .bestsellers-list{grid-template-columns:1fr 187px 187px 187px;}
+    .bestsellers-list :nth-child(1){grid-row:2/4;}
+    .bestsellers-list :nth-child(1) .card{grid-template-rows:auto auto auto 1fr;}
+    .bestsellers-list :nth-child(1) a .title{font-size:1.7rem;}
+    .bestsellers-list :nth-child(1) .card .price{font-size:2rem;}
 }
