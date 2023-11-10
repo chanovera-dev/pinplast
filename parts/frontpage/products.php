@@ -2,7 +2,7 @@
     <div class="section products-section">
         <div class="top-rated-products">
             <div class="title-wrapper"><h2 class="title"><?php echo __('Mejor calificados', 'pinplast'); ?></h2></div>
-            <ul class="top-rated arrivals-list product-list">
+            <ul class="top-rated product-list">
                 <?php
                     $args = array(
                         'post_type' => 'product',
@@ -53,7 +53,7 @@
         </div>
         <div class="special-offers-products">
             <div class="title-wrapper"><h2 class="title"><?php echo __('Ofertas especiales', 'pinplast'); ?></h2></div>
-            <ul class="special-offers arrivals-list product-list">
+            <ul class="special-offers product-list">
                 <?php
                     $args = array(
                         'post_type' => 'product',
@@ -104,7 +104,7 @@
         </div>
         <div class="bestsellers-products">
             <div class="title-wrapper"><h2 class="title"><?php echo __('Más vendidos', 'pinplast'); ?></h2></div>
-            <ul class="bestsellers arrivals-list product-list">
+            <ul class="bestsellers product-list">
                 <?php
                     $args = array(
                         'post_type' => 'product',
