@@ -16,7 +16,7 @@
     </div>
       <div class="section"> 
         <div class="latest-sales-wrapper">
-            <ul id="latest-sales-list" class="latest-sales-list posts-list">       
+            <ul id="latest-sales-list" class="latest-sales-list product-list">       
                 <?php
                     $args = array(
                         'post_type' => 'product',
