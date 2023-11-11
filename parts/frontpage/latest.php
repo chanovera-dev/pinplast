@@ -58,6 +58,14 @@
                                 </div>
                                 <?php endif; ?> 
                                 <?php echo '<div class="price">'. $product->get_price_html() .'</div>'; ?>
+                                <div class="add-to-cart_add-to-wishlist--buttons">
+                                    <div class="buttons">
+                                        <?php
+                                            woocommerce_template_loop_add_to_cart();
+                                            echo do_shortcode('[yith_wcwl_add_to_wishlist]');
+                                        ?>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </li>
