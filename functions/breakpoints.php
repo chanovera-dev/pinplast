@@ -54,7 +54,7 @@ function pinplast_theme_custom_breakpoints() {
                         
                         if ($secondary_menu || $tertiary_menu) {
                             echo '--main-padding-top:21.2rem;'.
-                            '--scroll-up-header:-13.6rem;';
+                            '--scroll-up-header:-15rem;';
                         } else {
                             echo '--main-padding-top:21.2rem;'.
                             '--scroll-up-header:-10.4rem;';
