@@ -5,7 +5,7 @@ echo '<main id="main">
     <div class="container">
         <section class="section padding-section">'.
             the_title('<h2 class="title">', '</h2>').
-            the_content();
+            the_content().
         '</section>
     </div>
 </main>';
