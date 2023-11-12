@@ -1,5 +1,5 @@
 .about-us__image{height:var(--height-header--nosotros);}
-.nosotros-section{position:relative; top:var(--top-content-nosotros); background-color:white; padding:var(--padding-content-nosotros); border-radius:.6rem .6rem 0 0;}
+.nosotros-section{position:relative; top:var(--top-content-nosotros); background-color:white; padding:var(--padding-content-nosotros); padding-bottom:0; border-radius:.6rem .6rem 0 0;}
 .nosotros-section .title{text-align:center; margin-bottom:2rem; font-size:3.6rem; font-weight:700; color:var(--color-header);}
 @media(min-width:1200px){
     .page-template-nosotros .container .nosotros-section{width:min(100% - 3rem, 92rem);}
