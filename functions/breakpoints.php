@@ -57,7 +57,7 @@ function pinplast_theme_custom_breakpoints() {
                             '--scroll-up-header:-15rem;';
                         } else {
                             echo '--main-padding-top:21.2rem;'.
-                            '--scroll-up-header:-10.4rem;';
+                            '--scroll-up-header:-11.6rem;';
                         }
                     ?>
                     --font-size-title-slide:3.3rem;
