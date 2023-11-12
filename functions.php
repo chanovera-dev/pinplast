@@ -49,3 +49,14 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 // Delimita el tamaño del excerpt 
 function limite_excerpt($limite) { return 25; }
 add_filter ('excerpt_length', 'limite_excerpt', 999);
+
+// Agrega soporte para los siguientes componentes
+function theme_support(){
+    // Carga el título de la página en el head
+    add_theme_support( 'title-tag' );
+    // Permite agregar un logo personalizado al sitio
+    add_theme_support( 'custom-logo' );  
+    // Activa las miniaturas en los artículos en portada
+    add_theme_support( 'post-thumbnails' );  
+}
+add_action( 'after_setup_theme', 'theme_support' );
