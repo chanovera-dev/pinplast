@@ -49,6 +49,7 @@ function pinplast_theme_custom_breakpoints() {
                         }
                     ?>
                     --height-header--nosotros:50rem;
+                    --padding-content-nosotros:7.5rem 9.2rem;
                 }
             }
 
