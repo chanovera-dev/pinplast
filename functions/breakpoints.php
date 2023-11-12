@@ -11,6 +11,7 @@ function pinplast_theme_custom_breakpoints() {
                 --line-height-title-slide:1.3;
                 --margin-bottom-title-slide:2rem;
                 --height-header--nosotros:33rem;
+                --top-content-nosotros:-29rem;
             }
 
             @media(min-width:768px){
@@ -20,6 +21,7 @@ function pinplast_theme_custom_breakpoints() {
                     --line-height-title-slide:1.1;
                     --margin-bottom-title-slide:1.5rem;
                     --height-header--nosotros:46rem;
+                    --top-content-nosotros:-38rem;
                 }
             }
 
