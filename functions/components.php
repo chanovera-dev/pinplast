@@ -23,3 +23,11 @@ function frontpage_styles() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'frontpage_styles' );
+
+// Estilos para el template de la página Nosotros
+function nosotros_styles() {
+    if ( is_page_template('nosotros.php') ) {
+        wp_enqueue_style( 'nosotros-styles', get_template_directory_uri() . '/assets/css/nosotros.css' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'nosotros_styles' );

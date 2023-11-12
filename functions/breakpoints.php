@@ -10,6 +10,7 @@ function pinplast_theme_custom_breakpoints() {
                 --font-size-title-slide:2.6rem;
                 --line-height-title-slide:1.3;
                 --margin-bottom-title-slide:2rem;
+                --height-header--nosotros:33rem;
             }
 
             @media(min-width:768px){
@@ -18,6 +19,7 @@ function pinplast_theme_custom_breakpoints() {
                     --font-size-title-slide:3rem;
                     --line-height-title-slide:1.1;
                     --margin-bottom-title-slide:1.5rem;
+                    --height-header--nosotros:46rem;
                 }
             }
 
@@ -42,6 +44,7 @@ function pinplast_theme_custom_breakpoints() {
                             '--scroll-up-header:-10.4rem;';
                         }
                     ?>
+                    --height-header--nosotros:50rem;
                 }
             }
 
