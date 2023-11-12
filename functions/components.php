@@ -18,8 +18,6 @@ function frontpage_styles() {
         wp_enqueue_style( 'categories-styles', get_template_directory_uri() . '/assets/css/frontpage/categories.css' );
         /* sections */
         wp_enqueue_style( 'sections-styles', get_template_directory_uri() . '/assets/css/sections.css' );
-        /* widgets */
-        wp_enqueue_style( 'widgets-styles', get_template_directory_uri() . '/assets/css/widgets.css' );
     }
 }
 add_action( 'wp_enqueue_scripts', 'frontpage_styles' );

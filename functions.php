@@ -12,6 +12,8 @@ add_action( 'wp_enqueue_scripts', 'load_parts_header' );
 function load_parts_footer(){
     // JS de efectos en la cabecera
     wp_enqueue_script( 'header-scripts', get_template_directory_uri() . '/assets/js/header.js', array(), '1.0', true );
+    /* widgets */
+    wp_enqueue_style( 'widgets-styles', get_template_directory_uri() . '/assets/css/widgets.css' );
 }
 add_action( 'get_footer', 'load_parts_footer' );
 
