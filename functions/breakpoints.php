@@ -30,7 +30,17 @@ function pinplast_theme_custom_breakpoints() {
             @media(min-width:1024px){
                 :root{
                     --breakpoint:min(100% - 3rem, 1110px);
-                    --main-padding-top:19rem;
+                    <?php
+                    $secondary_menu = wp_get_nav_menu_items('secondary');
+                    $tertiary_menu = wp_get_nav_menu_items('tertiary');
+                    
+                    if ($secondary_menu || $tertiary_menu) {
+                        echo '--main-padding-top:19rem;';
+                    } else {
+                        echo '--main-padding-top:15.8rem;';
+                    }
+                ?>
+                    
                     --scroll-up-header:-151px;
                 }
             }
