@@ -29,3 +29,12 @@ function nosotros_styles() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'nosotros_styles' );
+
+// componentes para las páginas de tipo 'page'
+function page_styles() {
+    if ( is_page() ) {
+        wp_dequeue_style( 'wp-block-library' );
+        wp_enqueue_style( 'page-styles', get_template_directory_uri() . '/assets/css/page.css' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'page_styles' );
