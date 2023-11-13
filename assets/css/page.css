@@ -7,7 +7,7 @@
 .border-section{border:2px solid #f0f0f0; border-radius:2px;}
 
 /* contenido */
-.content-section{padding:26px 20px 40px;}
+.content-section{padding:26px 20px 40px; margin-bottom:6rem;}
 .content-section > *:not(:last-child){margin:0 0 2rem;}
 .content-section h2{margin:6rem 0 2rem!important; font-size:3.2rem;  color:var(--color-header);}
 .content-section p{color:var(--color-header); line-height:1.6;}
