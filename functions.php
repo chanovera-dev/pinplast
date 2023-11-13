@@ -80,7 +80,7 @@ function get_breadcrumb() {
                 
             }
     } elseif (is_page()) {
-        echo " / ";
+        echo " > "; the_title('<p>', '</p>');
     } elseif (is_search()) {
         echo "";
     }
