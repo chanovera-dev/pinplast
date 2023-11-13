@@ -1,2 +1,3 @@
 .content-section > *:not(:last-child){margin:0 0 2rem;}
 .content-section h2{margin:6rem 0 2rem!important; font-size:3.2rem;  color:var(--color-header);}
+.content-section p{color:var(--color-header); line-height:1.6;}
