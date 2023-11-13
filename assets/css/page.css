@@ -13,6 +13,6 @@
 .content-section p{color:var(--color-header); line-height:1.6;}
 .content-section ul li{color:var(--color-header);}
 
-@media(min-width:768px){.content-section:{padding:45px 35px 60px;}}
-@media(min-width:1024px){.content-section:{padding:75px 110px 110px;}}
-@media(min-width:1200px){.content-section:{padding:85px 200px 120px;}}
+@media(min-width:768px){.content-section{padding:45px 35px 60px;}}
+@media(min-width:1024px){.content-section{padding:75px 110px 110px;}}
+@media(min-width:1200px){.content-section{padding:85px 200px 120px;}}
