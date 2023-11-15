@@ -6,6 +6,7 @@
 .border-section h2{font-size:2.6rem; margin-bottom:2.4rem; color:var(--color-header);}
 .border-section ul{margin:0; padding:0; list-style:none;}
 .border-section ul li{color:var(--color-header);}
+.border-section p{margin-top:1.6rem;}
 
 @media(min-width:768px){
     .page-template-contact iframe{height:44rem;}
