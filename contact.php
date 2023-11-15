@@ -15,7 +15,7 @@
                 <div>
                     <h2>'.__('Nuestra dirección', 'pinplast').'</h2>
                     <ul>
-                        <li>'.echo get_theme_mod('address_line1', 'Urano # 26').', '.get_theme_mod('address_line2', 'entre Progreso y Acapulco.').'. '.get_theme_mod('address_line3', 'Fracc. Jardines de Mocambo.').'</li>
+                        <li>'; echo get_theme_mod('address_line1', 'Urano # 26'); echo ', '; echo get_theme_mod('address_line2', 'entre Progreso y Acapulco.'); echo '. '; echo get_theme_mod('address_line3', 'Fracc. Jardines de Mocambo.'); echo '</li>
                         <li></li>
                         <li></li>
                     </ul>
