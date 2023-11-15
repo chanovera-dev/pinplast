@@ -23,12 +23,12 @@ function frontpage_styles() {
 add_action( 'wp_enqueue_scripts', 'frontpage_styles' );
 
 // Estilos para el template de la página Nosotros
-function nosotros_styles() {
-    if ( is_page_template('nosotros.php') ) {
-        wp_enqueue_style( 'nosotros-styles', get_template_directory_uri() . '/assets/css/nosotros.css' );
+function background_header_styles() {
+    if ( is_page_template('page-with-background-header.php') ) {
+        wp_enqueue_style( 'background-header-styles', get_template_directory_uri() . '/assets/css/background-header.css' );
     }
 }
-add_action( 'wp_enqueue_scripts', 'nosotros_styles' );
+add_action( 'wp_enqueue_scripts', 'background_header_styles' );
 
 // componentes para las páginas de tipo 'page'
 function page_styles() {
