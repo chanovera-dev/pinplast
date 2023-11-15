@@ -3,6 +3,9 @@
 .breadcrumbs{padding:1.6rem 0 0;}
 .main-content .title{font-size:3.6rem; font-weight:700; color:var(--color-header); margin-bottom:3.2rem;}
 .border-section{padding:2.2rem;}
+.border-section h2{font-size:2.6rem; margin-bottom:2.4rem; color:var(--color-header);}
+.border-section ul{margin:0; padding:0; list-style:none;}
+.border-section ul li{color:var(--color-header);}
 
 @media(min-width:768px){
     .page-template-contact iframe{height:44rem;}
