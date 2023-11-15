@@ -1,4 +1,4 @@
-<?php /* Template name: Nosotros */
+<?php /* Template name: Contenedor reducido con background solapado por contenido */
 get_header();
 echo '<main id="main">
     <div class="container about-us__image"></div>
