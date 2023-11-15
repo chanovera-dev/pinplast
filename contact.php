@@ -25,7 +25,7 @@
                         <li>'; echo get_theme_mod('schedule2', 'Sábados de 9:00 a 14:00 hrs'); echo '</li>
                     </ul>
                 </div>
-                <div></div>';
+                <div>'; the_content(); echo'</div>';
             echo '</div>
         </section>
     </main>';
