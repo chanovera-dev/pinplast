@@ -15,7 +15,7 @@
                 <div>
                     <h2>'.__('Nuestra dirección', 'pinplast').'</h2>
                     <ul>
-                        <li>'; echo get_theme_mod('address_line1', 'Urano # 26'); echo ', '; echo get_theme_mod('address_line2', 'entre Progreso y Acapulco.'); echo '. '; echo get_theme_mod('address_line3', 'Fracc. Jardines de Mocambo.'); echo '</li>
+                        <li>'; echo get_theme_mod('address_line1', 'Urano # 26'); echo ', '; echo get_theme_mod('address_line2', 'entre Progreso y Acapulco.'); echo get_theme_mod('address_line3', 'Fracc. Jardines de Mocambo.'); echo '</li>
                         <li>Correo: '; echo get_theme_mod('email_office', 'pinplast@hotmail.com'); echo '</li>
                         <li>Números telefónicos: '; echo get_theme_mod('office_phone_number1', '2299216844'); echo ', '; echo get_theme_mod('office_phone_number2', '2299222433'); echo '</li>
                     </ul>
