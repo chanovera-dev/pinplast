@@ -7,28 +7,28 @@
                 echo '</aside>
                 <div class="menus">';
                     echo '<div>';
-                        $menu_id = get_nav_menu_locations()[ 'footer1' ];
+                        $menu_id = get_nav_menu_locations()[ 'information' ];
                         $menu = wp_get_nav_menu_object( $menu_id );
                         $items = wp_get_nav_menu_items( $menu_id );
                         echo '<div class="title-wrapper"><h2 class="title">' . $menu->name . '</h2></div>';
                         wp_nav_menu(
                             array(
                                 'container' => 'nav', 
-                                'container_class' => 'footer1', 
-                                'theme_location' => 'footer1',
+                                'container_class' => 'information', 
+                                'theme_location' => 'information',
                             ) 
                         ); 
                     echo '</div>';
                     echo '<div>';
-                        $menu_id = get_nav_menu_locations()[ 'footer2' ];
+                        $menu_id = get_nav_menu_locations()[ 'most-viewed' ];
                         $menu = wp_get_nav_menu_object( $menu_id );
                         $items = wp_get_nav_menu_items( $menu_id );
                         echo '<div class="title-wrapper"><h2 class="title">' . $menu->name . '</h2></div>';
                         wp_nav_menu(
                             array(
                                 'container' => 'nav', 
-                                'container_class' => 'footer2', 
-                                'theme_location' => 'footer2',
+                                'container_class' => 'most-viewed', 
+                                'theme_location' => 'most-viewed',
                             ) 
                         ); 
                     echo '</div>';
