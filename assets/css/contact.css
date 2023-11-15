@@ -1,13 +1,13 @@
-iframe{height:30rem;}
+.page-template-contact iframe{height:30rem; margin-bottom:0;}
 
 @media(min-width:768px){
-    iframe{height:44rem;}
+    .page-template-contact iframe{height:44rem;}
 }
 
 @media(min-width:1024px){
-    iframe{height:50rem;}
+    .page-template-contact iframe{height:50rem;}
 }
 
 @media(min-width:1200px){
-    iframe{height:60rem;}
+    .page-template-contact iframe{height:60rem;}
 }
