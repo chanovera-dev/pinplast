@@ -46,6 +46,9 @@ img{display:block; height:auto;}
     .lists li svg{width:2rem; height:2rem; color:var(--color-header);}
     .lists li .counter{position:absolute; top:-.5rem; right:-1rem; text-align:center; width:1.5rem; height:1.5rem; background-color:var(--background-color-body); border-radius:50%; font-size:1rem; color:var(--color-body);}
 
+
+iframe{width:100%; margin-bottom:6rem;}
+
 /* footer */
 #main-footer{padding-top:4.8rem; border-top:1px solid var(--border-color); transition:all .3s ease;}
 #main-footer.menu-active{border-top:1px solid hsla(206, 12%, 27%, 0.92);}
