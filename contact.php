@@ -15,14 +15,14 @@
                 <div>
                     <h2>'.__('Nuestra dirección', 'pinplast').'</h2>
                     <ul>
-                        <li>'; echo get_theme_mod('address_line1', 'Urano # 26'); echo ', '; echo get_theme_mod('address_line2', 'entre Progreso y Acapulco.'); echo get_theme_mod('address_line3', 'Fracc. Jardines de Mocambo.'); echo '</li>
-                        <li>Correo: '; echo get_theme_mod('email_office', 'pinplast@hotmail.com'); echo '</li>
-                        <li>Números telefónicos: '; echo get_theme_mod('office_phone_number1', '2299216844'); echo ', '; echo get_theme_mod('office_phone_number2', '2299222433'); echo '</li>
+                        <li><p>'; echo get_theme_mod('address_line1', 'Urano # 26'); echo ', '; echo get_theme_mod('address_line2', 'entre Progreso y Acapulco.'); echo get_theme_mod('address_line3', 'Fracc. Jardines de Mocambo.'); echo '</p></li>
+                        <li><p>Correo: '; echo get_theme_mod('email_office', 'pinplast@hotmail.com'); echo '</p></li>
+                        <li><p>Números telefónicos: '; echo get_theme_mod('office_phone_number1', '2299216844'); echo ', '; echo get_theme_mod('office_phone_number2', '2299222433'); echo '</p></li>
                     </ul>
                     <p><strong>'.__('Horario de servicio', 'pinplast').'</strong></p>
                     <ul>
-                        <li>'; echo get_theme_mod('schedule1', 'Lu - Vi de 9:00 a 18:00 hrs'); echo '</li>
-                        <li>'; echo get_theme_mod('schedule2', 'Sábados de 9:00 a 14:00 hrs'); echo '</li>
+                        <li><p>'; echo get_theme_mod('schedule1', 'Lu - Vi de 9:00 a 18:00 hrs'); echo '</p></li>
+                        <li><p>'; echo get_theme_mod('schedule2', 'Sábados de 9:00 a 14:00 hrs'); echo '</p></li>
                     </ul>
                 </div>
                 <div><h2>'.__('Escríbenos', 'pinplast').'</h2>'; the_content(); echo'</div>';
