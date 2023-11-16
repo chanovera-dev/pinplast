@@ -25,7 +25,7 @@ register_nav_menus(
         'secondary' => __( 'Secondary', 'pinplast' ),
         'tertiary' => __( 'Tertiary', 'pinplast' ),
         'information' => __( 'Information', 'pinplast' ),
-        'mostviewed' => __( 'Most viewed', 'pinplast' ),
+        'most-viewed' => __( 'Most viewed', 'pinplast' ),
         'social' => __( 'Social', 'pinplast' ), 
     ) 
 );
