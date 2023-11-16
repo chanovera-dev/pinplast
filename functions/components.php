@@ -43,6 +43,8 @@ add_action( 'wp_enqueue_scripts', 'page_styles' );
 function contact_styles() {
     if ( is_page_template('contact.php') ) {
         wp_enqueue_style( 'contact-styles', get_template_directory_uri() . '/assets/css/contact.css' );
+        /* forms */
+        wp_enqueue_style( 'forms-styles', get_template_directory_uri() . '/assets/css/forms.css' );
     }
 }
 add_action( 'wp_enqueue_scripts', 'contact_styles' );
