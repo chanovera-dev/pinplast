@@ -61,7 +61,7 @@ input[type=number]{-moz-appearance:textfield;}
 #button-plus:focus{outline:none;}
 
 /* contact-form 7 */
-.wpcf7-form{position:relative; display:grid; gap:1rem 2.7rem;}
+.wpcf7-form{position:relative; display:grid; gap:2.7rem 1rem;}
 .border-section .wpcf7-form p{margin-top:0;}
 .wpcf7-form p:has(label) label:has(span){display:grid; gap:.5rem;}
 .wpcf7 form .wpcf7-response-output{margin: 0; border-radius:0.4rem; padding:1rem; background-color:#ffb900; color:#000;}
