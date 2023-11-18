@@ -85,3 +85,14 @@ function get_breadcrumb() {
         echo "";
     }
 }
+
+// desactiva polyfill
+function deregister_polyfill(){
+    wp_deregister_script( 'wp-polyfill' );
+    wp_deregister_script( 'regenerator-runtime' );
+  }
+  add_action( 'wp_enqueue_scripts', 'deregister_polyfill');
+
+// deshabilita contact form 7 en todas las páginas
+add_filter( 'wpcf7_load_js', '__return_false' );
+add_filter( 'wpcf7_load_css', '__return_false' );
