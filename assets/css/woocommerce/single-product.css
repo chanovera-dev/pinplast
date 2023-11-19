@@ -31,9 +31,9 @@
 /* sumario */
 .product_title{color:var(--color-header); margin-bottom:2rem;}
 /* calificación */
-.woocommerce-product-rating{display:flex; align-items:center; gap:1.5rem;}
+.woocommerce-product-rating{display:flex; align-items:center; gap:1.5rem; margin-bottom:1.6rem;}
 .woocommerce-product-rating .star-rating{display:flex; align-items:center; gap:.5rem;}
 .woocommerce-product-rating .star-rating svg{width:2rem; height:2rem; color:var(--attenuated-icon);}
 .woocommerce-product-rating .star-rating svg.bi-star-fill{color:var(--green);}
 /* descripción corta */
-.woocommerce-product-details__short-description{padding-bottom:2rem; margin-bottom:2rem; border-bottom:1px solid var(--attenuated-line);}
+.woocommerce-product-details__short-description{padding-bottom:1.6rem; margin-bottom:1.6rem; border-bottom:1px solid var(--attenuated-line);}
