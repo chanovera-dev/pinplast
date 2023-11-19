@@ -46,3 +46,7 @@
 @media(min-width:1024px){
     .data-product{grid-template-columns:1fr 1fr;}
 }
+
+@media(min-width:1200px){
+    .product_title{font-size:3.6rem;}
+}
