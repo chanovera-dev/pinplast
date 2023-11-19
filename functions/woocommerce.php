@@ -85,3 +85,19 @@ function wcc_change_breadcrumb_delimiter( $defaults ) {
 </svg>';
 	return $defaults;
 }
+
+/**
+ * Add a container around WooCommerce flex-control-nav
+ */
+function custom_wc_flex_control_nav_container() {
+    echo '<div class="custom-flex-control-nav-container">';
+}
+add_action('woocommerce_before_show_product_images', 'custom_wc_flex_control_nav_container', 20);
+
+/**
+ * Close the container after WooCommerce flex-control-nav
+ */
+function custom_wc_flex_control_nav_container_close() {
+    echo '</div>';
+}
+add_action('woocommerce_after_show_product_images', 'custom_wc_flex_control_nav_container_close', 20);
