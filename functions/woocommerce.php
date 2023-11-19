@@ -86,12 +86,9 @@ function wcc_change_breadcrumb_delimiter( $defaults ) {
 	return $defaults;
 }
 
-function custom_wc_flex_control_nav_container() {
-    echo '<div class="custom-flex-control-nav-container">';
+// Mueve el precio debajo del título del producto
+function move_price_below_title() {
+    remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
+    add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 20);
 }
-add_action('woocommerce_before_single_product_image_thumbnail_html', 'custom_wc_flex_control_nav_container', 20);
-
-function custom_wc_flex_control_nav_container2() {
-    echo '</div>';
-}
-add_action('woocommerce_after_single_product_image_thumbnail_html', 'custom_wc_flex_control_nav_container2', 20);
+add_action('init', 'move_price_below_title');
