@@ -49,7 +49,6 @@
                             ?>
                         </figure>
                     </div>
-                ?>
             </div>
             <div class="product-summary">
                 <?php 
