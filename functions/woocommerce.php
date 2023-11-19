@@ -89,4 +89,9 @@ function wcc_change_breadcrumb_delimiter( $defaults ) {
 function custom_wc_flex_control_nav_container() {
     echo '<div class="custom-flex-control-nav-container">';
 }
-add_action('woocommerce_single_product_image_thumbnail_html', 'custom_wc_flex_control_nav_container', 20);
+add_action('woocommerce_before_single_product_image_thumbnail_html', 'custom_wc_flex_control_nav_container', 20);
+
+function custom_wc_flex_control_nav_container2() {
+    echo '</div>';
+}
+add_action('woocommerce_after_single_product_image_thumbnail_html', 'custom_wc_flex_control_nav_container2', 20);
