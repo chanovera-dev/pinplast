@@ -37,7 +37,7 @@ function custom_wc_get_star_rating_html($html, $rating, $count = 0) {
 }
 
 //Disable all woocommerce stylesheets
-add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+//add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
 function disable_wp_blocks() {
 	$wstyles = array("wc-blocks-style","wc-blocks-style-active-filters","wc-blocks-style-add-to-cart-form","wc-blocks-packages-style","wc-blocks-style-all-products","wc-blocks-style-all-reviews","wc-blocks-style-attribute-filter","wc-blocks-style-breadcrumbs","wc-blocks-style-catalog-sorting","wc-blocks-style-customer-account","wc-blocks-style-featured-category","wc-blocks-style-featured-product","wc-blocks-style-mini-cart","wc-blocks-style-price-filter","wc-blocks-style-product-add-to-cart","wc-blocks-style-product-button","wc-blocks-style-product-categories","wc-blocks-style-product-image","wc-blocks-style-product-image-gallery","wc-blocks-style-product-query","wc-blocks-style-product-results-count","wc-blocks-style-product-reviews","wc-blocks-style-product-sale-badge","wc-blocks-style-product-search","wc-blocks-style-product-sku","wc-blocks-style-product-stock-indicator","wc-blocks-style-product-summary","wc-blocks-style-product-title","wc-blocks-style-rating-filter","wc-blocks-style-reviews-by-category","wc-blocks-style-reviews-by-product","wc-blocks-style-product-details","wc-blocks-style-single-product","wc-blocks-style-stock-filter","wc-blocks-style-cart","wc-blocks-style-checkout","wc-blocks-style-mini-cart-contents","classic-theme-styles-inline");
@@ -85,14 +85,3 @@ function wcc_change_breadcrumb_delimiter( $defaults ) {
 </svg>';
 	return $defaults;
 }
-
-// crea un contenedor para el visor de miniaturas de woocommerce
-function custom_wc_flex_control_nav_container() {
-    echo '<div class="custom-flex-control-nav-container">';
-}
-add_action('woocommerce_before_single_product', 'custom_wc_flex_control_nav_container', 20);
-
-function custom_wc_flex_control_nav_container_close() {
-    echo '</div>';
-}
-add_action('woocommerce_after_single_product', 'custom_wc_flex_control_nav_container_close', 20);
