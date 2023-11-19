@@ -35,3 +35,53 @@ function custom_wc_get_star_rating_html($html, $rating, $count = 0) {
     $html .= '</span>';
     return $html;
 }
+
+//Disable all woocommerce stylesheets
+add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+
+function disable_wp_blocks() {
+	$wstyles = array("wc-blocks-style","wc-blocks-style-active-filters","wc-blocks-style-add-to-cart-form","wc-blocks-packages-style","wc-blocks-style-all-products","wc-blocks-style-all-reviews","wc-blocks-style-attribute-filter","wc-blocks-style-breadcrumbs","wc-blocks-style-catalog-sorting","wc-blocks-style-customer-account","wc-blocks-style-featured-category","wc-blocks-style-featured-product","wc-blocks-style-mini-cart","wc-blocks-style-price-filter","wc-blocks-style-product-add-to-cart","wc-blocks-style-product-button","wc-blocks-style-product-categories","wc-blocks-style-product-image","wc-blocks-style-product-image-gallery","wc-blocks-style-product-query","wc-blocks-style-product-results-count","wc-blocks-style-product-reviews","wc-blocks-style-product-sale-badge","wc-blocks-style-product-search","wc-blocks-style-product-sku","wc-blocks-style-product-stock-indicator","wc-blocks-style-product-summary","wc-blocks-style-product-title","wc-blocks-style-rating-filter","wc-blocks-style-reviews-by-category","wc-blocks-style-reviews-by-product","wc-blocks-style-product-details","wc-blocks-style-single-product","wc-blocks-style-stock-filter","wc-blocks-style-cart","wc-blocks-style-checkout","wc-blocks-style-mini-cart-contents","classic-theme-styles-inline");
+	
+	foreach ($wstyles as $wstyle){
+	 wp_deregister_style($wstyle);  
+	}
+	
+	$wscripts = array("wc-blocks-middleware","wc-blocks-data-store");
+	 foreach ($wscripts as $wscript){
+	 wp_deregister_script($wscript);  
+	}
+}
+add_action( "init", "disable_wp_blocks",100 );
+
+// deshabilita woocommerce en todas las páginas excepto en páginas de woocommerce
+add_action( 'wp_enqueue_scripts', 'disable_woocommerce_loading_css_js' );
+function disable_woocommerce_loading_css_js() {
+    // Check if WooCommerce plugin is active
+    if( function_exists( 'is_woocommerce' ) ){
+        // Check if it's any of WooCommerce page
+        if(! is_woocommerce() && ! is_cart() && ! is_checkout() ) {         
+            
+            ## Dequeue WooCommerce styles
+            wp_dequeue_style('woocommerce-layout'); 
+            wp_dequeue_style('woocommerce-general'); 
+            wp_dequeue_style('woocommerce-smallscreen');     
+            ## Dequeue WooCommerce scripts
+            wp_dequeue_script('wc-cart-fragments');
+            wp_dequeue_script('woocommerce'); 
+            wp_dequeue_script('wc-add-to-cart'); 
+        
+            wp_deregister_script( 'js-cookie' );
+            wp_dequeue_script( 'js-cookie' );
+        }
+    }    
+}
+
+// cambia el separador del breadcrumbs de woocommerce
+add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_delimiter' );
+function wcc_change_breadcrumb_delimiter( $defaults ) {
+	// Change the breadcrumb delimeter from '/' to '>'
+	$defaults['delimiter'] = '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>';
+	return $defaults;
+}
