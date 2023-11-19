@@ -35,7 +35,7 @@ function pinplast_theme_custom_breakpoints() {
 
             @media(min-width:1024px){
                 :root{
-                    --breakpoint:min(100% - 3rem, 1110px);
+                    --breakpoint:min(100% - 3rem, 960px);
                     <?php
                         $secondary_menu = wp_get_nav_menu_items('secondary');
                         $tertiary_menu = wp_get_nav_menu_items('tertiary');
@@ -55,7 +55,7 @@ function pinplast_theme_custom_breakpoints() {
 
             @media(min-width:1140px){
                 :root{
-                    --breakpoint:min(100% - 3rem, 1230px);
+                    --breakpoint:min(100% - 3rem, 1110px);
                     <?php
                         $secondary_menu = wp_get_nav_menu_items('secondary');
                         $tertiary_menu = wp_get_nav_menu_items('tertiary');
@@ -69,6 +69,12 @@ function pinplast_theme_custom_breakpoints() {
                         }
                     ?>
                     --font-size-title-slide:3.3rem;
+                }
+            }
+
+            @media(min-width:1200px){
+                :root{
+                    --breakpoint:min(100% - 3rem, 1230px);
                 }
             }
         </style>
