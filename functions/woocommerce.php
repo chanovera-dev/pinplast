@@ -86,16 +86,16 @@ function wcc_change_breadcrumb_delimiter( $defaults ) {
 	return $defaults;
 }
 
-// Mueve el precio debajo del título del producto
-function move_price_below_title() {
-    remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
-    add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 21);
-}
-add_action('init', 'move_price_below_title');
-
-// Sube de lugar product_meta arriba del resumen del producto
-function move_product_meta_above_summary() {
+// Sube de lugar product_meta
+function subir_metadatos() {
     remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
     add_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 20);
 }
-add_action('init', 'move_product_meta_above_summary');
+add_action('init', 'subir_metadatos');
+
+// Mueve el precio debajo
+function mover_precio_debajo() {
+    remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
+    add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 21);
+}
+add_action('init', 'mover_precio_debajo');
