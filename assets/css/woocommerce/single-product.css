@@ -18,3 +18,8 @@
     max-width: none;
     max-height: none;
 }
+/* icono de zoom en la galería | mirar en icons.php también */
+.woocommerce-product-gallery__trigger img{opacity:0}
+.woocommerce-product-gallery__trigger{background-size:contain;}
+.woocommerce-product-gallery__trigger:before{opacity:0;}
+.woocommerce-product-gallery__trigger:after{opacity:0;}
