@@ -85,3 +85,14 @@ function wcc_change_breadcrumb_delimiter( $defaults ) {
 </svg>';
 	return $defaults;
 }
+
+// crea un contenedor para el visor de miniaturas de woocommerce
+function custom_wc_flex_control_nav_container() {
+    echo '<div class="custom-flex-control-nav-container">';
+}
+add_action('woocommerce_before_single_product', 'custom_wc_flex_control_nav_container', 20);
+
+function custom_wc_flex_control_nav_container_close() {
+    echo '</div>';
+}
+add_action('woocommerce_after_single_product', 'custom_wc_flex_control_nav_container_close', 20);
