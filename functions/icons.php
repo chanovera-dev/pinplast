@@ -16,7 +16,7 @@ function pinplast_theme_custom_icons() {
             .social .menu li a[href*="sites"]:before{content: ''; background-image: url('<?php echo get_template_directory_uri(); ?>/assets/icons/google.svg');}
 
             /* iconos de woocommerce */
-            .woocommerce-product-gallery__trigger{background:url(<?php echo get_template_directory_uri(); ?>/assets/icons/zoom-in.svg);}
+            .woocommerce-product-gallery__trigger:before{background:url(<?php echo get_template_directory_uri(); ?>/assets/icons/zoom-in.svg);}
         </style>
     <?php
 }
