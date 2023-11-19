@@ -89,13 +89,13 @@ function wcc_change_breadcrumb_delimiter( $defaults ) {
 // Mueve el precio debajo del título del producto
 function move_price_below_title() {
     remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
-    add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 20);
+    add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 21);
 }
 add_action('init', 'move_price_below_title');
 
 // Sube de lugar product_meta arriba del resumen del producto
 function move_product_meta_above_summary() {
     remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
-    add_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 19);
+    add_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 20);
 }
 add_action('init', 'move_product_meta_above_summary');
