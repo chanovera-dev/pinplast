@@ -48,5 +48,5 @@
 }
 
 @media(min-width:1200px){
-    .product_title{font-size:3.6rem;}
+    .product_title{font-size:3.6rem; margin-bottom:3rem;}
 }
