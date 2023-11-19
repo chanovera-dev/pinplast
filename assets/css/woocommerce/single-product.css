@@ -32,6 +32,6 @@
 .product_title{color:var(--color-header); margin-bottom:2rem;}
 /* calificación */
 .woocommerce-product-rating{display:flex; align-items:center; gap:1.5rem;}
-.star-rating{display:flex; align-items:center; gap:.5rem;}
-.star-rating svg{width:2rem; height:2rem; color:var(--attenuated-icon);}
-.star-rating svg.bi-star-fill{color:var(--green);}
+.woocommerce-product-rating .star-rating{display:flex; align-items:center; gap:.5rem;}
+.woocommerce-product-rating .star-rating svg{width:2rem; height:2rem; color:var(--attenuated-icon);}
+.woocommerce-product-rating .star-rating svg.bi-star-fill{color:var(--green);}
