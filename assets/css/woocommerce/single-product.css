@@ -44,5 +44,5 @@
 }
 
 @media(min-width:1024px){
-    .data-product{grid-template-columns:441px 1fr;}
+    .data-product{grid-template-columns:1fr 1fr;}
 }
