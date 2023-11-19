@@ -85,3 +85,8 @@ function wcc_change_breadcrumb_delimiter( $defaults ) {
 </svg>';
 	return $defaults;
 }
+
+function custom_wc_flex_control_nav_container() {
+    echo '<div class="custom-flex-control-nav-container">';
+}
+add_action('woocommerce_single_product_image_thumbnail_html', 'custom_wc_flex_control_nav_container', 20);
