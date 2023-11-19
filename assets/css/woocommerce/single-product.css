@@ -4,7 +4,7 @@
 .woocommerce-breadcrumb a:hover{color:var(--color-links);}
 
 /* galería */
-.woocommerce-product-gallery{border:2px solid #f2f2f2;}
+.woocommerce-product-gallery{border:2px solid #f2f2f2; opacity:1; transition:opacity 0.25s ease-in-out 0s;}
 .woocommerce-product-gallery__image{position:relative; overflow:hidden;}
 .woocommerce img, .woocommerce-page img{height:auto; max-width:100%;}
 .woocommerce-product-gallery__image .zoomImg{
