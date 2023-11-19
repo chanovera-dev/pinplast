@@ -38,3 +38,7 @@
 /* descripción corta */
 .woocommerce-product-details__short-description{padding-bottom:1.6rem; margin-bottom:1.6rem; border-bottom:1px solid var(--attenuated-line);}
 .woocommerce-product-details__short-description p{color:var(--color-header);}
+
+@media(min-width:768px){
+    .data-product{display:grid; gap:3rem; grid-template-columns:284px 1fr;}
+}
