@@ -32,3 +32,4 @@
 .product_title{color:var(--color-header); margin-bottom:2rem;}
 /* calificación */
 .woocommerce-product-rating{display:flex; align-items:center; gap:1.5rem;}
+.star-rating{display:flex; align-items:center; gap:.5rem;}
