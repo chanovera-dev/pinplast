@@ -96,6 +96,6 @@ add_action('init', 'move_price_below_title');
 // Sube de lugar product_meta arriba del resumen del producto
 function move_product_meta_above_summary() {
     remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
-    add_action('woocommerce_before_single_product', 'woocommerce_template_single_meta', 10);
+    add_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 19);
 }
 add_action('init', 'move_product_meta_above_summary');
