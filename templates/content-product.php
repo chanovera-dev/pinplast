@@ -10,7 +10,7 @@
     <section class="container container-data-product">
         <div class="section padding-section data-product">
             <div class="product-gallery">
-                <?php wc_get_template('single-product/product-thumbnails.php');  ?>
+                <?php do_action( 'woocommerce_before_single_product_summary' ); ?>
             </div>
             <div class="product-summary">
                 <?php 
