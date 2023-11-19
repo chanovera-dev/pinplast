@@ -44,6 +44,8 @@
 .product_meta{display:inline-flex; gap:0 3rem; flex-wrap:wrap; margin-bottom:2rem; color:var(--attenuated-text);}
 .product_meta a{color:var(--green); transition:all .3s ease;}
 .product_meta a:hover{color:var(--color-links);}
+/* precio */
+.price{font-weight:2.8rem; font-weight:700; color:var(--color-header); margin:1.8rem 0 1.4rem;}
 
 @media(min-width:768px){
     .data-product{display:grid; gap:3rem; grid-template-columns:284px 1fr;}
