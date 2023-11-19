@@ -29,4 +29,4 @@
 .flex-control-nav li img.flex-active{border:2px solid var(--yellow);}
 
 /* sumario */
-.product_title{color:var(--color-header);}
+.product_title{color:var(--color-header); margin-bottom:2rem;}
