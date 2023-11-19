@@ -4,6 +4,7 @@
 .woocommerce-breadcrumb a:hover{color:var(--color-links);}
 
 /* galería */
+.product-gallery{overflow:hidden;}
 .woocommerce-product-gallery{position:relative; opacity:1; transition:opacity 0.25s ease-in-out 0s;}
 .woocommerce-product-gallery .flex-viewport{border:2px solid #f2f2f2;}
 .woocommerce-product-gallery__image{position:relative; overflow:hidden;}
