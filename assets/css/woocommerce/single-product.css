@@ -4,7 +4,8 @@
 .woocommerce-breadcrumb a:hover{color:var(--color-links);}
 
 /* galería */
-.woocommerce-product-gallery{position:relative; border:2px solid #f2f2f2; opacity:1; transition:opacity 0.25s ease-in-out 0s;}
+.woocommerce-product-gallery{position:relative; opacity:1; transition:opacity 0.25s ease-in-out 0s;}
+.woocommerce-product-gallery .flex-viewport{border:2px solid #f2f2f2;}
 .woocommerce-product-gallery__image{position:relative; overflow:hidden;}
 .woocommerce img, .woocommerce-page img{height:auto; max-width:100%;}
 .woocommerce-product-gallery__image .zoomImg{
@@ -21,3 +22,5 @@
 /* icono de zoom en la galería | mirar en icons.php también */
 .woocommerce-product-gallery__trigger{position:relative; display:grid; place-content:center; width:3.5rem; height:3.5rem; font-size:0;}
 .woocommerce-product-gallery__trigger:before{position:relative; content:''; display:block; width:2.2rem; height:2.2rem;}
+/* miniaturas de fotos */
+.flex-control-nav{}
