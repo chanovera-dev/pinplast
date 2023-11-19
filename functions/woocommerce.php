@@ -1,5 +1,9 @@
 <?php
 
+// Anexos
+// Estilos particulares para los templates
+require_once(get_template_directory() . '/functions/woocommerce/woocommerce-components.php');
+
 // mostrar el contenido del carrito con Ajax
 add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
 function woocommerce_header_add_to_cart_fragment( $fragments ) {
