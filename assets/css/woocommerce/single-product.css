@@ -33,3 +33,5 @@
 /* calificación */
 .woocommerce-product-rating{display:flex; align-items:center; gap:1.5rem;}
 .star-rating{display:flex; align-items:center; gap:.5rem;}
+.star-rating svg{width:2rem; height:2rem; color:var(--attenuated-icon);}
+.star-rating svg.bi-star-fill{color:var(--green);}
