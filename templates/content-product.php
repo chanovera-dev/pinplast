@@ -9,7 +9,7 @@
     </section>
     <section class="container container-data-product">
         <div class="section padding-section data-product">
-            <div class="product-galery">
+            <div class="product-gallery">
                 <?php do_action( 'woocommerce_before_single_product_summary' ); ?>
             </div>
             <div class="product-summary">
