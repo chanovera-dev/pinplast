@@ -50,6 +50,8 @@
 .variations_form.cart{display:grid; justify-content:center;}
 .cart{display:inline-flex; align-items:center; gap:1rem;}
 .woocommerce-variation-add-to-cart{display:flex; gap:2rem;}
+/* wishlist */
+.yith-wcwl-add-button{display:inline-flex; align-items:center; justify-content:center; width:4.6rem; height:4.6rem; background-color:var(--attenuated-line); border-radius:.2rem;}
 
 @media(min-width:768px){
     .data-product{display:grid; gap:3rem; grid-template-columns:284px 1fr;}
