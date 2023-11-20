@@ -53,7 +53,7 @@
 /* wishlist */
 .yith-wcwl-add-to-wishlist{display:inline-flex; margin-top:0; margin-top:0; position:relative; top:-2px; margin-left:.6rem;}
 .yith-wcwl-add-button{display:grid; place-content:center; width:4.6rem; height:4.6rem; background-color:var(--attenuated-line); border-radius:.2rem;}
-.yith-wcwl-add-button i{color:var(--color-header); margin-right:0;}
+.yith-wcwl-add-button i{color:var(--color-header); margin-right:0!important;}
 
 @media(min-width:768px){
     .data-product{display:grid; gap:3rem; grid-template-columns:284px 1fr;}
