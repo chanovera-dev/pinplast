@@ -54,7 +54,6 @@
 .yith-wcwl-add-to-wishlist{display:inline-flex; margin-top:0; margin-top:0; position:relative; top:-3px; margin-left:.6rem;}
 .yith-wcwl-add-button,
 .yith-wcwl-wishlistexistsbrowse{display:grid; place-content:center; width:4.6rem; height:4.6rem; background-color:var(--attenuated-line); border-radius:.2rem;}
-.yith-wcwl-wishlistexistsbrowse .feedback{display:none;}
 .yith-wcwl-add-button > a i{color:var(--color-header); margin-right:0!important;}
 
 @media(min-width:768px){
