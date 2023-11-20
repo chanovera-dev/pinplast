@@ -1,4 +1,4 @@
-<?php
+<?php /* Template name: Tienda */
     get_header();
     echo '<main id="main">';
     if ( have_posts() ){  
