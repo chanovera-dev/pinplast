@@ -22,10 +22,11 @@ button.single_add_to_cart_button{
     text-transform:lowercase;
     height:4.6rem;
     padding:0 2.4rem;
-    border: 1px solid #ffd333;
-    background-color: #ffd333;
-    color: #000000;
-    font-size: 2rem;
+    border: 1px solid var(--yellow);
+    background-color: var(--yellow);
+    color:var(--color-header);
+    font-size: 1.8rem;
+    border-radius:.2rem;
     text-transform:capitalize;
     font-weight:500;
     font-family: var(--wp--preset--font-family--system-font);
