@@ -25,7 +25,7 @@ button.single_add_to_cart_button{
     border: 1px solid var(--yellow);
     background-color: var(--yellow);
     color:var(--color-header);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     border-radius:.2rem;
     text-transform:capitalize;
     font-weight:500;
