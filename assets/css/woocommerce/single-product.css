@@ -41,7 +41,7 @@
 .woocommerce-product-details__short-description{padding-bottom:1.6rem; margin-bottom:1.6rem; border-bottom:1px solid var(--attenuated-line);}
 .woocommerce-product-details__short-description p{color:var(--color-header);}
 /* metadatos */
-.product_meta{display:inline-flex; gap:0 3rem; flex-wrap:wrap; margin-bottom:2rem; color:var(--attenuated-text);}
+.product_meta{display:inline-flex; gap:0 2rem; flex-wrap:wrap; margin-bottom:2rem; color:var(--attenuated-text);}
 .product_meta a{color:var(--green); transition:all .3s ease;}
 .product_meta a:hover{color:var(--color-links);}
 /* precio */
