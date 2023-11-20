@@ -54,27 +54,27 @@ function disable_wp_blocks() {
 add_action( "init", "disable_wp_blocks",100 );
 
 // deshabilita woocommerce en todas las páginas excepto en páginas de woocommerce
-add_action( 'wp_enqueue_scripts', 'disable_woocommerce_loading_css_js' );
-function disable_woocommerce_loading_css_js() {
-    // Check if WooCommerce plugin is active
-    if( function_exists( 'is_woocommerce' ) ){
-        // Check if it's any of WooCommerce page
-        if(! is_woocommerce() && ! is_cart() && ! is_checkout() ) {         
+// add_action( 'wp_enqueue_scripts', 'disable_woocommerce_loading_css_js' );
+// function disable_woocommerce_loading_css_js() {
+//     // Check if WooCommerce plugin is active
+//     if( function_exists( 'is_woocommerce' ) ){
+//         // Check if it's any of WooCommerce page
+//         if(! is_woocommerce() && ! is_cart() && ! is_checkout() ) {         
             
-            ## Dequeue WooCommerce styles
-            wp_dequeue_style('woocommerce-layout'); 
-            wp_dequeue_style('woocommerce-general'); 
-            wp_dequeue_style('woocommerce-smallscreen');     
-            ## Dequeue WooCommerce scripts
-            wp_dequeue_script('wc-cart-fragments');
-            wp_dequeue_script('woocommerce'); 
-            wp_dequeue_script('wc-add-to-cart'); 
+//             ## Dequeue WooCommerce styles
+//             wp_dequeue_style('woocommerce-layout'); 
+//             wp_dequeue_style('woocommerce-general'); 
+//             wp_dequeue_style('woocommerce-smallscreen');     
+//             ## Dequeue WooCommerce scripts
+//             wp_dequeue_script('wc-cart-fragments');
+//             wp_dequeue_script('woocommerce'); 
+//             wp_dequeue_script('wc-add-to-cart'); 
         
-            wp_deregister_script( 'js-cookie' );
-            wp_dequeue_script( 'js-cookie' );
-        }
-    }    
-}
+//             wp_deregister_script( 'js-cookie' );
+//             wp_dequeue_script( 'js-cookie' );
+//         }
+//     }    
+// } 
 
 // cambia el separador del breadcrumbs de woocommerce
 add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_delimiter' );
