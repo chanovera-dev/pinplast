@@ -32,9 +32,9 @@
             ?>  
             <div class="content">
                 <a href="<?php echo esc_url( get_permalink( $loop->post->ID ) ); ?>" class="permalink"><h3 class="title"><?php the_title(); ?></h3></a>
-                <?php if ( $average_rating > 0 ) : ?>
+                <?php if ( wc_get_product( $loop->post->ID )->get_average_rating() > 0 ) : ?>
                 <div class="rating">
-                    <?php echo wc_get_rating_html( $average_rating ); ?>
+                    <?php echo wc_get_rating_html( wc_get_product( $loop->post->ID )->get_average_rating() ); ?>
                     <span class="votes-rating"><?php echo $rating_count . ' votos'; ?></span>
                 </div>
                 <?php else : ?>
