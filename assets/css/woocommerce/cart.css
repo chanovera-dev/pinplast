@@ -40,7 +40,7 @@ article .woocommerce{display:grid; gap:40px;}
 /* ajustes de las tablas */
 table{
     background-color:var(--bgcolor-input);
-    border:1px solid var(--bcolor-input);
+    border:1px solid gray;
     border-radius:8px;
     width:100%;
     border-collapse:separate;
