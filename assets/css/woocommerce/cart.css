@@ -3,6 +3,8 @@
 .woocommerce-breadcrumb a{color:var(--color-text); transition:all .3s ease;}
 .woocommerce-breadcrumb a:hover{color:var(--color-links);}
 
+.product-cart{margin-bottom:6rem;}
+
 /* ajustes de los inputs, botones, etc */
 article input{height:36.14px; padding:0 15px; background-color:var(--bgcolor-input); color:var(--color-text);}
 article input:not([type=checkbox]),
@@ -40,7 +42,7 @@ article .woocommerce{display:grid; gap:40px;}
 /* ajustes de las tablas */
 table{
     background-color:var(--bgcolor-input);
-    border:1px solid var(--attenuated-text);
+    border:1px solid var(--attenuated-line);
     width:100%;
     border-collapse:separate;
     text-align:left;
