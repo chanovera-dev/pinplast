@@ -15,3 +15,7 @@
 .error404 .searchform .searchform-wrapper input[type=text]:focus{background-color:rgba(255,255,255,1);}
 .error404 .searchform .searchform-wrapper input[type=text]::placeholder{color:var(--attenuated-text);}
 .error404 .searchform .searchform-wrapper input[type=text]:focus::placeholder{color:var(--color-text);}
+
+@media(min-width:768px){
+    .error404 .content-section h1{font-size:6rem;}
+}
