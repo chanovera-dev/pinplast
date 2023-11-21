@@ -74,7 +74,7 @@ table tbody tr:last-child{background-color:rgba(0, 0, 0, .025);}
 
 /* carrito vacio */
 .cart-empty,
-.return-to-shop{width:min(100%, 300px); margin-inline:auto; text-align:center;}
+.return-to-shop{width:min(100%, 300px); margin-inline:auto; text-align:center; margin-top:2.4rem;}
 
 @media(min-width:768px){
     main .container .section h1{font-size:3.6rem;}
