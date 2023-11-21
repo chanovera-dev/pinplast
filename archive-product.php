@@ -1,8 +1,20 @@
 <?php /* Template name: Tienda */
     get_header();
     echo '<main id="main">';
-    if ( have_posts() ){  
-        echo '<section class="container main-content"><div class="section padding-section archive-products">';
+    if ( have_posts() ){
+        echo 
+        '<section class="container">';
+            do_action( 'woocommerce_before_single_product' );
+            echo
+        '</section>
+        <section class="container">
+            <div class="section">';
+                woocommerce_breadcrumb();
+                echo '
+            </div>
+        </section>';
+        echo 
+        '<section class="container main-content"><div class="section padding-section archive-products">';
         while( have_posts() ){         
             the_post();
             get_template_part( 'templates/content', 'products' );          
