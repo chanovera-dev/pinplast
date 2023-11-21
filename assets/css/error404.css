@@ -6,15 +6,15 @@
 .error404 .content-section a:hover{background-color:var(--colo-header); color:#f0f0f0;}
 
 /* searchform */
-.error404 .searchform{width:min(100%, 48rem); height:3.6rem; margin-inline:auto; margin-bottom:3rem;}
-.error404 .searchform .searchform-wrapper{position:relative; display:inherit;}
-.error404 .searchform .searchform-wrapper #activate-search{height:5.4rem; position:absolute; top:0; right:0;}
-.error404 .searchform .searchform-wrapper #activate-search svg{width:2rem; height:2rem; padding:.8rem; color:var(--attenuated-icon);}
-.error404 .searchform .searchform-wrapper #activate-search svg.bi-x-circle{display:none;}
-.error404 .searchform .searchform-wrapper input[type=text]{height:3.6rem; width:100%; padding:0; color:var(--attenuated-text); border:1px solid var(--attenuated-text); padding:0 3.6rem 0 1rem; border-radius:.3rem; background-color:rgba(255,255,255,.5);}
-.error404 .searchform .searchform-wrapper input[type=text]:focus{background-color:rgba(255,255,255,1);}
-.error404 .searchform .searchform-wrapper input[type=text]::placeholder{color:var(--attenuated-text);}
-.error404 .searchform .searchform-wrapper input[type=text]:focus::placeholder{color:var(--color-text);}
+.error404 .content-section .searchform {width:min(100%, 48rem); height:3.6rem; margin-inline:auto; margin-bottom:3rem;}
+.error404 .content-section .searchform  .searchform-wrapper{position:relative; display:inherit;}
+.error404 .content-section .searchform  .searchform-wrapper #activate-search{height:5.4rem; position:absolute; top:0; right:0;}
+.error404 .content-section .searchform  .searchform-wrapper #activate-search svg{width:2rem; height:2rem; padding:.8rem; color:var(--attenuated-icon);}
+.error404 .content-section .searchform  .searchform-wrapper #activate-search svg.bi-x-circle{display:none;}
+.error404 .content-section .searchform  .searchform-wrapper input[type=text]{height:3.6rem; width:100%; padding:0; color:var(--attenuated-text); border:1px solid var(--attenuated-text); padding:0 3.6rem 0 1rem; border-radius:.3rem; background-color:rgba(255,255,255,.5);}
+.error404 .content-section .searchform  .searchform-wrapper input[type=text]:focus{background-color:rgba(255,255,255,1);}
+.error404 .content-section .searchform  .searchform-wrapper input[type=text]::placeholder{color:var(--attenuated-text);}
+.error404 .content-section .searchform  .searchform-wrapper input[type=text]:focus::placeholder{color:var(--color-text);}
 
 @media(min-width:768px){
     .error404 .content-section h1{font-size:6rem;}
