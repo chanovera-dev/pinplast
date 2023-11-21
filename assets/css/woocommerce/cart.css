@@ -77,7 +77,7 @@ table tbody tr:last-child{background-color:rgba(0, 0, 0, .025);}
 @media(min-width:768px){
     .product-thumbnail{display:inherit!important;}
     .product-thumbnail img{width:32px;}
-    .woocommerce-cart-form__contents thead{display:inherit; border-bottom:1px solid var(--bcolor-input); width:100%;}
+    .woocommerce-cart-form__contents thead{display:inherit; border-bottom:1px solid var(--attenuated-line); background-color:rgba(0, 0, 0, .025); width:100%;}
     .woocommerce-cart-form__contents :is(thead, tbody) :is(th, td){text-align:left;}
     .woocommerce-cart-form__contents :is(thead, tbody) tr{display:grid; grid-template-columns:40px 1fr 1fr 1fr 1fr 1fr;}
     .woocommerce-cart-form__contents tbody tr:last-child{grid-template-columns:1fr;}
