@@ -7,7 +7,7 @@
 article input{height:36.14px; padding:0 15px; background-color:var(--bgcolor-input); color:var(--color-text);}
 article input:not([type=checkbox]),
 textarea{box-shadow:none!important; border-radius:5px!important; border:1px solid var(--bcolor-input)!important;}
-button, .button{
+.product-cart button, .product-cart .button{
     display:flex; align-items:center; justify-content:center; 
     height:36.14px; 
     padding:0 15px; 
@@ -17,19 +17,19 @@ button, .button{
     color:var(--color-header)!important;
     transition:all .3s ease;
 }
-button:hover, .button:hover{background-color:var(--color-emphasis); opacity:.8;}
-input#submit.disabled, 
-input#submit:disabled, 
-input#submit:disabled[disabled],
-a.button.disabled, 
-a.button:disabled, 
-a.button:disabled[disabled], 
-button.button.disabled, 
-button.button:disabled, 
-button.button:disabled[disabled], 
-input.button.disabled, 
-input.button:disabled, 
-input.button:disabled[disabled]{cursor:not-allowed; opacity:.5;}
+.product-cart button:hover, .product-cart .button:hover{background-color:var(--color-emphasis); opacity:.8;}
+.product-cart input#submit.disabled, 
+.product-cart input#submit:disabled, 
+.product-cart input#submit:disabled[disabled],
+.product-cart a.button.disabled, 
+.product-cart a.button:disabled, 
+.product-cart a.button:disabled[disabled], 
+.product-cart button.button.disabled, 
+.product-cart button.button:disabled, 
+.product-cart button.button:disabled[disabled], 
+.product-cart input.button.disabled, 
+.product-cart input.button:disabled, 
+.product-cart input.button:disabled[disabled]{cursor:not-allowed; opacity:.5;}
 
 /* ajustes de la página */
 main {background-color:var(--bgcolor-section1)!important;}
