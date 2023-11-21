@@ -9,5 +9,5 @@
 .product-list{gap:1.5rem;}
 
 @media(min-width:1200px){
-    .woocommerce-shop .product-list{grid-template-columns:repeat(4, 1fr);}
+    :is(.woocommerce-shop, .woocommerce-page) .product-list{grid-template-columns:repeat(4, 1fr);}
 }
