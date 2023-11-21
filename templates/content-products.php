@@ -18,9 +18,8 @@
     defined( 'ABSPATH' ) || exit;
 
     global $product;
-    $product_obj = wc_get_product( $loop->post->ID );
-    $average_rating = $product_obj->get_average_rating();
-    $rating_count = $product_obj->get_rating_count();
+    $average_rating = $product->get_average_rating();
+    $rating_count = $product->get_rating_count();
 
     // Ensure visibility.
     if ( empty( $product ) || ! $product->is_visible() ) {
