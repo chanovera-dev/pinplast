@@ -14,12 +14,9 @@
             </div>
         </section>';
         echo 
-        '<section class="container main-content"><ul class="section padding-section product-list">';
-        while( have_posts() ){         
-            the_post();
-            get_template_part( 'templates/content', 'products' );          
-        }
-        echo '</ul>';      
+        '<section class="container main-content"><div class="section padding-section product-list">';
+        echo do_shortcode('[woocommerce_cart]');
+        echo '</div>';      
     } else {
         echo '<section class="container"><div class="section">' . '<p>' . __('Actualmente no hay artículos en esta tienda', 'pinplast') . '</p>' . '</div>';
     }
