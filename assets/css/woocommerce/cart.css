@@ -1,3 +1,8 @@
+/* breadcrumb */
+.woocommerce-breadcrumb{display:inline-flex; align-items:center; flex-wrap:wrap; gap:0 .7rem; color:var(--attenuated-text); padding:1.6rem 0 3.2rem;}
+.woocommerce-breadcrumb a{color:var(--color-text); transition:all .3s ease;}
+.woocommerce-breadcrumb a:hover{color:var(--color-links);}
+
 /* ajustes de los inputs, botones, etc */
 article input{height:36.14px; padding:0 15px; background-color:var(--bgcolor-input); color:var(--color-text);}
 article input:not([type=checkbox]),
