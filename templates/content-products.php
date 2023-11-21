@@ -18,11 +18,7 @@
     defined( 'ABSPATH' ) || exit;
 
     global $product;
-    $product_permalink = get_permalink( $loop->post->ID );
-    $product_obj = wc_get_product( $loop->post->ID );
-    $average_rating = $product_obj->get_average_rating();
-    $rating_count = $product_obj->get_rating_count();
-    
+
     // Ensure visibility.
     if ( empty( $product ) || ! $product->is_visible() ) {
         return;
@@ -35,7 +31,7 @@
                 else echo '<img src="'.wc_placeholder_img_src().'" alt="Placeholder" loading="lazy">';
             ?>  
             <div class="content">
-                <a href="<?php echo esc_url( $product_permalink ); ?>" class="permalink"><h3 class="title"><?php the_title(); ?></h3></a>
+                <a href="<?php echo esc_url( get_permalink( $loop->post->ID ) ); ?>" class="permalink"><h3 class="title"><?php the_title(); ?></h3></a>
                 <?php if ( $average_rating > 0 ) : ?>
                 <div class="rating">
                     <?php echo wc_get_rating_html( $average_rating ); ?>
