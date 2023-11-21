@@ -1,4 +1,4 @@
-.error404 .content-section{text-align:center;}
+.error404 .content-section{text-align:center;margin-bottom:6rem;}
 .error404 .content-section h1{margin:4rem 0 3.2rem; font-size:5rem; color:var(--attenuated-line);}
 .error404 .content-section h2{margin-bottom:3rem; font-size:3.6rem; color:var(--color-header);}
 .error404 .content-section p{color:var(--color-header); margin-bottom:2rem;}
