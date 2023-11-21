@@ -1,3 +1,5 @@
+#main{margin-bottom:6rem;}
+
 /* breadcrumb */
 .woocommerce-breadcrumb{display:inline-flex; align-items:center; flex-wrap:wrap; gap:0 .7rem; color:var(--attenuated-text); padding:1.6rem 0 3.2rem;}
 .woocommerce-breadcrumb a{color:var(--color-text); transition:all .3s ease;}
