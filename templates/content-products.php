@@ -24,7 +24,7 @@
         return;
     }
     ?>
-    <article <?php wc_product_class( '', $product ); ?>>
+    <li <?php wc_product_class( '', $product ); ?>>
         <div class="card">
             <?php
                 if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, array(200,200));
@@ -60,4 +60,4 @@
                 </div>
             </div>
         </div>
-    </article>
+    </li>
