@@ -65,3 +65,11 @@ function page404_styles() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'page404_styles' );
+
+// Estilos para la página cart
+function cart_styles() {
+    if ( is_page_template('cart.php') ) {
+        wp_enqueue_style( 'cart-styles', get_template_directory_uri() . '/assets/css/woocommerce/cart.css' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'cart_styles' );
