@@ -12,8 +12,8 @@ button, .button{
     height:36.14px; 
     padding:0 15px; 
     border-radius:5px!important; 
-    background-color:var(--color-emphasis); 
-    color:#fff!important;
+    background-color:var(--yellow); 
+    color:var(--color-header)!important;
     transition:all .3s ease;
 }
 button:hover, .button:hover{background-color:var(--color-emphasis); opacity:.8;}
