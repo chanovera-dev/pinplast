@@ -18,7 +18,6 @@
     defined( 'ABSPATH' ) || exit;
 
     global $product;
-    $product_permalink = get_permalink( $loop->post->ID );
     $product_obj = wc_get_product( $loop->post->ID );
     $average_rating = $product_obj->get_average_rating();
     $rating_count = $product_obj->get_rating_count();
