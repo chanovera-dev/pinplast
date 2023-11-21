@@ -3,10 +3,6 @@
     
     echo 
     '<main id="main">
-        <section class="container">';
-            do_action( 'woocommerce_before_single_product' );
-            echo
-        '</section>
         <section class="container">
             <div class="section">';
                 woocommerce_breadcrumb();
