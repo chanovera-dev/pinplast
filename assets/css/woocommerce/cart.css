@@ -11,8 +11,9 @@ button, .button{
     display:flex; align-items:center; justify-content:center; 
     height:36.14px; 
     padding:0 15px; 
-    border-radius:5px!important; 
-    background-color:var(--yellow); 
+    border-radius:2px!important; 
+    background-color:var(--yellow);
+    border:1px solid var(--yellow);
     color:var(--color-header)!important;
     transition:all .3s ease;
 }
