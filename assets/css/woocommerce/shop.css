@@ -7,5 +7,5 @@
 .product-list{gap:1.5rem;}
 
 @media(min-width:1200px){
-    .product-list{grid-template-columns:repeat(4, 1fr);}
+    .woocommerce-shop .product-list{grid-template-columns:repeat(4, 1fr);}
 }
