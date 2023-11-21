@@ -25,19 +25,39 @@
     }
     ?>
     <article <?php wc_product_class( '', $product ); ?>>
-        <?php
-            echo '<div class="content-wrapper">';
-            if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, array(150,200)); else echo '<img src="'.wc_placeholder_img_src().'" alt="Placeholder" />'; // Imagen del producto
-                the_title('<h3 class="title">', '</h3>'); // Título del producto
-                echo '<div class="excerpt-wrapper">' . apply_filters( 'woocommerce_short_description', $product->post->post_excerpt ) . '</div>'; // Descripción corta del producto
-            echo '</div>';
-            do_action( 'woocommerce_after_shop_loop_item_title' ); // Contiene woocommerce_template_loop_rating, woocommerce_show_product_loop_sale_flash, woocommerce_template_loop_price | Rating, Saldos y Precios
-            echo '<div class="button-cart-wrapper">'; 
-                woocommerce_template_loop_add_to_cart( $loop->post, $product );
-            echo '</div>';
-            echo '<a class="link-to-product" href="' . get_permalink( $loop->post->ID ) . '" class="permalink" title="' . esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID) . '">';
-                echo __('Saber más');
-                echo '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg>';
-            echo '</a>'; // Enlace al producto
-        ?>
+        <div class="card">
+            <?php
+                if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, array(200,200));
+                else echo '<img src="'.wc_placeholder_img_src().'" alt="Placeholder" loading="lazy">';
+            ?>  
+            <div class="content">
+                <a href="<?php echo esc_url( $product_permalink ); ?>" class="permalink"><h3 class="title"><?php the_title(); ?></h3></a>
+                <?php if ( $average_rating > 0 ) : ?>
+                <div class="rating">
+                    <?php echo wc_get_rating_html( $average_rating ); ?>
+                    <span class="votes-rating"><?php echo $rating_count . ' votos'; ?></span>
+                </div>
+                <?php else : ?>
+                    <div class="rating">
+                        <div class="star-rating" role="img" aria-label="Valorado en 0 de 5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path></svg>
+                        </div>
+                        <span class="votes-rating"><?php echo '0 votos'; ?></span>
+                </div>
+                <?php endif; ?> 
+                <?php echo '<div class="price">'. $product->get_price_html() .'</div>'; ?>
+            </div>
+            <div class="add-to-cart_add-to-wishlist--buttons">
+                <div class="buttons">
+                    <?php
+                        woocommerce_template_loop_add_to_cart();
+                        echo do_shortcode('[yith_wcwl_add_to_wishlist]');
+                    ?>
+                </div>
+            </div>
+        </div>
     </article>
