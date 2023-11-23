@@ -40,7 +40,6 @@ table tbody tr td:not(.product-remove, .actions):before{content:'';}
     background-color:var(--yellow);
     border:1px solid var(--yellow);
     color:var(--color-header)!important;
-    margin-inline:auto;
     transition:all .3s ease;
 }
 .product-cart button:hover, .product-cart .button:hover{background-color:var(--color-header); border:1px solid var(--color-header); color:#fff!important;}
