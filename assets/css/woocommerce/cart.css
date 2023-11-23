@@ -22,7 +22,7 @@ table :is(thead, tbody) :is(th, td){padding:9px 12px; box-sizing:border-box; tex
 table thead{display:none;}
 table tbody tr{display:grid;}
 table tbody th{display:none;}
-table td{border-bottom:1px solid var(--attenuated-line); color:var(--color-text);}
+table tr:not(:last-child){border-bottom:1px solid var(--attenuated-line); color:var(--color-text);}
 table td a{color:var(--color-text); transition:all .3s ease;}
 table td a:hover{color:var(--color-links);}
 table tbody tr:last-child{background-color:rgba(0, 0, 0, .025);}
@@ -92,7 +92,7 @@ table tbody tr td.product-quantity .quantity input[type=number].qty:focus{outlin
     /* ajustes de la tabla */
     table tbody tr:not(:last-child){border-bottom:1px solid var(--attenuated-line);}
     table tbody tr td{border-bottom:none;}
-    
+
     .woocommerce-cart-form__contents thead{display:inherit; border-bottom:1px solid var(--attenuated-line); background-color:rgba(0, 0, 0, .025); width:100%;}
     .woocommerce-cart-form__contents :is(thead, tbody) :is(th, td){text-align:left;}
     .woocommerce-cart-form__contents :is(thead, tbody) tr{display:grid; grid-template-columns:40px 1fr 1fr 1fr 1fr 1fr; align-items:center;}
