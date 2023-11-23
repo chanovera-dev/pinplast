@@ -26,6 +26,7 @@ table td{border-bottom:1px solid var(--attenuated-line); color:var(--color-text)
 table td a{color:var(--color-text); transition:all .3s ease;}
 table td a:hover{color:var(--color-links);}
 table tbody tr:last-child{background-color:rgba(0, 0, 0, .025);}
+td:not(.product-remove, .actions):before{content:attr(data-title) ": "; font-weight:700; float:left;}
 /* td's */
 table tbody tr td.product-remove a{font-size:2.8rem; color:var(--attenuated-text);}
 table tbody tr td.product-quantity .quantity .screen-reader-text{display:none;}
@@ -84,7 +85,7 @@ table tbody tr td.product-quantity .quantity input[type=number].qty{width:100%;}
 .shipping-calculator-form{display:grid; gap:18px;}
 .shipping-calculator-form input{width:100%;}
 .shipping-calculator-form .button{margin-left:auto;}
-.select2-results__option{color:#111;}
+.select2-resutable tbody tr td:not(.product-remove, .actions):before{content:attr(data-title) ": "; font-weight:700; float:left;}lts__option{color:#111;}
 .cart-collaterals{display:grid; align-items:flex-start; gap:30px;}
 .cart-collaterals > div{display:grid; gap:20px;}
 .cart-collaterals > div h2{font-size:30px;}
