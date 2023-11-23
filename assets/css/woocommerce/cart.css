@@ -24,7 +24,7 @@ table tbody tr{display:grid;}
 table tbody th{display:none;}
 table td{border-bottom:1px solid var(--attenuated-line); color:var(--color-text);}
 table td:not(.product-remove, .actions):before{content:attr(data-title) ": "; font-weight:700; float:left;}
-table td a{color:var(--color-header); transition:all .3s ease;}
+table td a{color:var(--color-text); transition:all .3s ease;}
 table td a:hover{color:var(--color-links);}
 table tbody tr:last-child{background-color:rgba(0, 0, 0, .025);}
 /* td's */
