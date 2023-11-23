@@ -90,8 +90,6 @@ table tbody tr td.product-quantity .quantity input[type=number].qty:focus{outlin
     /* cabecera de la tabla */
     table thead tr th.product-remove .screen-reader-text{display:none;}
     /* ajustes de la tabla */
-    table tbody tr:not(:last-child){border-bottom:1px solid var(--attenuated-line);}
-    table tbody tr td{border-bottom:none;}
 
     .woocommerce-cart-form__contents thead{display:inherit; border-bottom:1px solid var(--attenuated-line); background-color:rgba(0, 0, 0, .025); width:100%;}
     .woocommerce-cart-form__contents :is(thead, tbody) :is(th, td){text-align:left;}
