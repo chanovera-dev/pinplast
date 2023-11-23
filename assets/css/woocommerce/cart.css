@@ -34,7 +34,7 @@ table tbody tr td:not(.product-remove, .actions):before{content:'';}
 /* botones */
 .product-cart button, .product-cart .button{
     display:inline-flex; align-items:center; justify-content:center; 
-    height:3.8px; 
+    height:3.8rem; 
     padding:0 15px; 
     border-radius:2px!important; 
     background-color:var(--yellow);
@@ -55,7 +55,7 @@ table tbody tr td:not(.product-remove, .actions):before{content:'';}
 .product-cart button.button:disabled[disabled], 
 .product-cart input.button.disabled, 
 .product-cart input.button:disabled, 
-.product-cart input.button:disabled[disabled]{cursor:not-allowed; background-color:#f0f0f0; color:var(--attenuated-text);}
+.product-cart input.button:disabled[disabled]{cursor:not-allowed; background-color:#f0f0f0; border:1px solid #f0f0f0; color:var(--attenuated-text);}
 
 .qty{width:80px;}
 .actions{display:grid; gap:9px;}
