@@ -32,7 +32,7 @@ table tbody tr td.product-remove a{font-size:2.8rem; color:var(--attenuated-text
 table tbody tr td.product-quantity .quantity .screen-reader-text{display:none;}
 table tbody tr td:not(.product-remove, .actions):before{content:'';}
 /* entrada de cantidad */
-
+table tbody tr td.product-quantity .quantity{width:flex; align-items:center; width:11rem; height:3.8rem; border:1px solid var(--attenuated-text);}
 /* botones */
 .product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) button, 
 .product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) .button{
