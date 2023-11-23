@@ -34,8 +34,8 @@ table tbody tr td:not(.product-remove, .actions):before{content:'';}
 /* entrada de cantidad */
 
 /* botones */
-.product-cart :is(.coupon, .actions) button, 
-.product-cart :is(.coupon, .actions) .button{
+.product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) button, 
+.product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) .button{
     display:inline-flex; align-items:center; justify-content:center; 
     height:3.8rem; 
     padding:0 15px;
@@ -47,20 +47,20 @@ table tbody tr td:not(.product-remove, .actions):before{content:'';}
     font-weight:700;
     transition:all .3s ease;
 }
-.product-cart :is(.coupon, .actions) button:hover, 
-.product-cart :is(.coupon, .actions) .button:hover{background-color:var(--color-header); border:1px solid var(--color-header); color:#fff!important;}
-.product-cart :is(.coupon, .actions) input#submit.disabled, 
-.product-cart :is(.coupon, .actions) input#submit:disabled, 
-.product-cart :is(.coupon, .actions) input#submit:disabled[disabled],
-.product-cart :is(.coupon, .actions) a.button.disabled, 
-.product-cart :is(.coupon, .actions) a.button:disabled, 
-.product-cart :is(.coupon, .actions) a.button:disabled[disabled], 
-.product-cart :is(.coupon, .actions) button.button.disabled, 
-.product-cart :is(.coupon, .actions) button.button:disabled, 
-.product-cart :is(.coupon, .actions) button.button:disabled[disabled], 
-.product-cart :is(.coupon, .actions) input.button.disabled, 
-.product-cart :is(.coupon, .actions) input.button:disabled, 
-.product-cart :is(.coupon, .actions) input.button:disabled[disabled]{cursor:not-allowed; background-color:#f0f0f0; border:1px solid #f0f0f0; color:var(--attenuated-text)!important;}
+.product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) button:hover, 
+.product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) .button:hover{background-color:var(--color-header); border:1px solid var(--color-header); color:#fff!important;}
+.product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) input#submit.disabled, 
+.product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) input#submit:disabled, 
+.product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) input#submit:disabled[disabled],
+.product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) a.button.disabled, 
+.product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) a.button:disabled, 
+.product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) a.button:disabled[disabled], 
+.product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) button.button.disabled, 
+.product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) button.button:disabled, 
+.product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) button.button:disabled[disabled], 
+.product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) input.button.disabled, 
+.product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) input.button:disabled, 
+.product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) input.button:disabled[disabled]{cursor:not-allowed; background-color:#f0f0f0; border:1px solid #f0f0f0; color:var(--attenuated-text)!important;}
 
 .qty{width:80px;}
 .actions{display:grid; gap:9px;}
