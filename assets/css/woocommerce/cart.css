@@ -69,6 +69,7 @@ table tbody tr td:not(.product-remove, .actions):before{content:'';}
 .coupon input.input-text:focus{outline:none; border:1px solid var(--yellow);}
 .coupon label{display:none;}
 /* botón finalizar compra */
+.product-cart .wc-proceed-to-checkout{margin-top:2rem;}
 .product-cart .wc-proceed-to-checkout .button{width: 100% !important;}
 
 /*
