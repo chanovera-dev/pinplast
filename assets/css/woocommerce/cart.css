@@ -71,6 +71,8 @@ table tbody tr td.product-quantity .quantity input[type=number].qty:focus{outlin
 .coupon input.input-text{border:1px solid var(--attenuated-line); padding: 0 1rem; transition:all .3s ease;}
 .coupon input.input-text:focus{outline:none; border:1px solid var(--yellow);}
 .coupon label{display:none;}
+
+.cart-collaterals{margin-top:2rem;}
 /* botón finalizar compra */
 .product-cart .wc-proceed-to-checkout{margin-top:2rem;}
 .product-cart .wc-proceed-to-checkout .button{width: 100% !important;}
