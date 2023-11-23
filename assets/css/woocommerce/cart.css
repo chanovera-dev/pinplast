@@ -74,6 +74,7 @@ table tbody tr td.product-quantity .quantity input[type=number].qty:focus{outlin
 /* tabla de totales */
 .cart-collaterals{margin-top:5rem; padding:2rem; border:1px solid var(--attenuated-line);}
 .cart-collaterals .cart_totals h2{color:var(--color-header); margin-bottom: 3rem;}
+.cart-collaterals .cart_totals table{border:none;}
 
 /* botón finalizar compra */
 .product-cart .wc-proceed-to-checkout{margin-top:2rem;}
