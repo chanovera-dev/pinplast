@@ -77,6 +77,7 @@ table tbody tr td.product-quantity .quantity input[type=number].qty:focus{outlin
 .cart-collaterals .cart_totals table{border:none;}
 .cart-collaterals .cart_totals table td{border-bottom:none;}
 .cart-collaterals .cart_totals table tbody tr:last-child{background-color:rgba(0, 0, 0, 0); font-size:2.4rem;}
+.cart-collaterals .cart_totals table tbody tr :is(td:before, .woocommerce-Price-amount){font-weight:500;}
 /* botón finalizar compra */
 .product-cart .wc-proceed-to-checkout{margin-top:2rem;}
 .product-cart .wc-proceed-to-checkout .button{width: 100% !important;}
