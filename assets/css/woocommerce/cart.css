@@ -34,7 +34,7 @@ table tbody tr td.product-quantity .quantity .screen-reader-text{display:none;}
 /* entrada de cantidad */
 table tbody tr td.product-quantity .quantity{display:flex; align-items:center; justify-content:space-between; width:11rem; height:3.8rem; margin-left:auto; border:1px solid var(--attenuated-text);}
 table tbody tr td.product-quantity .quantity button{width:2.4rem; height:100%; border:none; background-color:transparent; color:var(--attenuated-text); font-size:2rem;}
-table tbody tr td.product-quantity .quantity input[type=number].qty{width:5rem; height:100%; border:none; font-size:1.6rem;}
+table tbody tr td.product-quantity .quantity input[type=number].qty{width:5rem; height:100%; border:none; font-size:1.6rem; text-align:center;}
 table tbody tr td.product-quantity .quantity input[type=number].qty:focus{outline:none;}
 /* botones */
 .product-cart :is(.coupon, .actions, .wc-proceed-to-checkout) button, 
