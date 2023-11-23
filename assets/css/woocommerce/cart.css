@@ -91,6 +91,8 @@ table tbody tr td.product-quantity .quantity input[type=number].qty:focus{outlin
     /* cabecera de la tabla */
     table thead tr th.product-remove .screen-reader-text{display:none;}
     /* ajustes de la tabla */
+    table{border:1px solid var(--attenuated-line);}
+    table tbody tr{border:none; margin-bottom:0;}
     table tbody tr td{border-bottom:none;}
     table tbody tr td.product-name{text-align:left;}
 
