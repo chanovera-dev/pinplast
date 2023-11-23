@@ -83,6 +83,20 @@ table tbody tr td.product-quantity .quantity input[type=number].qty:focus{outlin
 .product-cart .wc-proceed-to-checkout{margin-top:2rem;}
 .product-cart .wc-proceed-to-checkout .button{width: 100% !important;}
 
+@media(min-width:768px){
+    main .container .section h1{font-size:3.6rem;}
+    .product-thumbnail{display:inherit!important;}
+    .product-thumbnail img{width:32px;}
+    .woocommerce-cart-form__contents thead{display:inherit; border-bottom:1px solid var(--attenuated-line); background-color:rgba(0, 0, 0, .025); width:100%;}
+    .woocommerce-cart-form__contents :is(thead, tbody) :is(th, td){text-align:left;}
+    .woocommerce-cart-form__contents :is(thead, tbody) tr{display:grid; grid-template-columns:40px 1fr 1fr 1fr 1fr 1fr;}
+    .woocommerce-cart-form__contents tbody tr:last-child{grid-template-columns:1fr;}
+    .woocommerce-cart-form__contents tbody tr:last-child td{grid-template-columns:300px 1fr;}
+    .woocommerce-cart-form__contents tbody tr:last-child td button{margin-left:auto;}
+    .woocommerce-cart-form__contents tbody td:not(.product-remove, .actions):before{content:""; font-weight:700; float:left;}
+    .cart-collaterals{grid-template-columns:1fr 300px;}
+    .cart_totals{grid-column:2/-1;}
+}
 /*
 .qty{width:80px;}
 .actions{display:grid; gap:9px;}
