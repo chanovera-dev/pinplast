@@ -75,6 +75,7 @@ table tbody tr td.product-quantity .quantity input[type=number].qty:focus{outlin
 .cart-collaterals{margin-top:5rem; padding:2rem; border:1px solid var(--attenuated-line);}
 .cart-collaterals .cart_totals h2{color:var(--color-header); margin-bottom: 3rem;}
 .cart-collaterals .cart_totals table{border:none;}
+.cart-collaterals .cart_totals table tr{border:none;}
 .cart-collaterals .cart_totals table td{border-bottom:none;}
 .cart-collaterals .cart_totals table tbody tr:last-child{background-color:rgba(0, 0, 0, 0); font-size:2.4rem;}
 .cart-collaterals .cart_totals table tbody tr td:not(.product-thumbnail, .product-remove, .actions):before{font-weight:500;}
