@@ -36,10 +36,10 @@ textarea{box-shadow:none!important; border-radius:5px!important; border:1px soli
 .product-cart input.button:disabled[disabled]{cursor:not-allowed; opacity:.5;}
 
 /* ajustes de la página */
-main {background-color:var(--bgcolor-section1)!important;}
+main {background-color:var(--background-color-body)!important;}
 article{width:min(100%, 1024px); margin-inline:auto;}
 article .woocommerce{display:grid; gap:40px;}
-.product-thumbnail{display:none!important;}
+/* .product-thumbnail{display:none!important;} */
 
 /* ajustes de las tablas */
 table{
