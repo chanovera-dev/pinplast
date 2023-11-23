@@ -4,9 +4,17 @@
 .woocommerce-breadcrumb a:hover{color:var(--color-links);}
 main .container .section h1{font-size:3rem; color:var(--color-header); padding-bottom:3.2rem;}
 
+/* mensaje de carrito vacio */ 
+.cart-empty,
+.return-to-shop{width:min(100%, 300px); margin-inline:auto; text-align:center; margin-top:2.4rem;}
+
+/* separación con el footer */
 .product-cart{margin-bottom:6rem;}
 
-/* ajustes de los inputs, botones, etc */
+/* tabla */
+
+
+/* ajustes de los inputs, botones, etc *
 article input{height:36.14px; padding:0 15px; background-color:var(--bgcolor-input); color:var(--color-text);}
 article input:not([type=checkbox]),
 textarea{box-shadow:none!important; border-radius:5px!important; border:1px solid var(--bcolor-input)!important;}
@@ -35,13 +43,13 @@ textarea{box-shadow:none!important; border-radius:5px!important; border:1px soli
 .product-cart input.button:disabled, 
 .product-cart input.button:disabled[disabled]{cursor:not-allowed; opacity:.5;}
 
-/* ajustes de la página */
+/* ajustes de la página *
 main {background-color:var(--background-color-body)!important;}
 article{width:min(100%, 1024px); margin-inline:auto;}
 article .woocommerce{display:grid; gap:40px;}
 /* .product-thumbnail{display:none!important;} */
 
-/* ajustes de las tablas */
+/* ajustes de las tablas *
 table{
     background-color:var(--bgcolor-input);
     border:1px solid var(--attenuated-line);
@@ -72,9 +80,7 @@ table tbody tr:last-child{background-color:rgba(0, 0, 0, .025);}
 .cart-collaterals > div h2{font-size:30px;}
 .cross-sells{grid-template-columns:repeat(auto-fill, minmax(218px, 1fr));}
 
-/* carrito vacio */
-.cart-empty,
-.return-to-shop{width:min(100%, 300px); margin-inline:auto; text-align:center; margin-top:2.4rem;}
+
 
 @media(min-width:768px){
     main .container .section h1{font-size:3.6rem;}
