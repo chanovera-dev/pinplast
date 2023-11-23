@@ -39,8 +39,8 @@ table tbody tr td:not(.product-remove, .actions):before{content:'';}
 .quantity input[type=number]{-moz-appearance:textfield;}
 .quantity .input-text{width:4.1rem; height:4.1rem; font-size:2rem; border:none; border-radius:0; border-bottom:3px solid transparent; background-color:transparent; color:var(--color-main); padding:0 1rem; margin:0 .7rem; text-align:right; transition:all .3s ease;}
 .quantity .input-text:focus{outline:none; border-bottom:3px solid var(--color-link-focus);}
-#button-less,
-#button-plus{
+.quantity button,
+.quantity button{
     display:grid; place-content:center; 
     width:2.4rem; height:4.4rem;
     font-size:2rem; 
@@ -49,8 +49,8 @@ table tbody tr td:not(.product-remove, .actions):before{content:'';}
     background-color:transparent;
     transition:all .3s ease;
 }
-#button-less:focus, 
-#button-plus:focus{outline:none;}
+.quantity button:focus, 
+.quantity button:focus{outline:none;}
 /* botones */
 .product-cart button, .product-cart .button{
     display:inline-flex; align-items:center; justify-content:center; 
