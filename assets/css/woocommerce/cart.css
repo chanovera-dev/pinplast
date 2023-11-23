@@ -109,6 +109,10 @@ table tbody tr td.product-quantity .quantity input[type=number].qty:focus{outlin
     
     .cart_totals{grid-column:2/-1;}
 }
+
+@media(min-width:1024px){
+    .cart-collaterals{width:44.6rem;}
+}
 /*
 .qty{width:80px;}
 .actions{display:grid; gap:9px;}
