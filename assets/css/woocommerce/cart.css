@@ -27,6 +27,8 @@ table td:not(.product-remove, .actions):before{content:attr(data-title) ": "; fo
 table td a{color:var(--color-header); transition:all .3s ease;}
 table td a:hover{color:var(--color-links);}
 table tbody tr:last-child{background-color:rgba(0, 0, 0, .025);}
+/* td's */
+table tbody tr td.product-remove a{font-size:2rem;}
 .qty{width:80px;}
 .actions{display:grid; gap:9px;}
 .coupon{display:grid; grid-template-columns:1fr 1fr; gap:9px;}
