@@ -12,7 +12,35 @@ main .container .section h1{font-size:3rem; color:var(--color-header); padding-b
 .product-cart{margin-bottom:6rem;}
 
 /* tabla */
-
+table{
+    background-color:var(--bgcolor-input);
+    border:1px solid var(--attenuated-line);
+    width:100%;
+    border-collapse:separate;
+    text-align:left;
+}
+table :is(thead, tbody) :is(th, td){padding:9px 12px; box-sizing:border-box; text-align:right;}
+table thead{display:none;}
+table tbody tr{display:grid;}
+table tbody th{display:none;}
+table td{border-bottom:1px solid var(--attenuated-line);}
+table td:not(.product-remove, .actions):before{content:attr(data-title) ": "; font-weight:700; float:left;}
+table tbody tr:last-child{background-color:rgba(0, 0, 0, .025);}
+.qty{width:80px;}
+.actions{display:grid; gap:9px;}
+.coupon{display:grid; grid-template-columns:1fr 1fr; gap:9px;}
+.coupon input{font-size:16px; width:100%;}
+.coupon label{display:none;}
+#shipping_method{margin:0; margin-bottom:9px; list-style:none;}
+.woocommerce-shipping-totals td > *{margin-bottom:9px;}
+.shipping-calculator-form{display:grid; gap:18px;}
+.shipping-calculator-form input{width:100%;}
+.shipping-calculator-form .button{margin-left:auto;}
+.select2-results__option{color:#111;}
+.cart-collaterals{display:grid; align-items:flex-start; gap:30px;}
+.cart-collaterals > div{display:grid; gap:20px;}
+.cart-collaterals > div h2{font-size:30px;}
+.cross-sells{grid-template-columns:repeat(auto-fill, minmax(218px, 1fr));}
 
 /* ajustes de los inputs, botones, etc *
 article input{height:36.14px; padding:0 15px; background-color:var(--bgcolor-input); color:var(--color-text);}
