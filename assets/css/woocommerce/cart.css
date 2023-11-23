@@ -13,14 +13,13 @@ main .container .section h1{font-size:3rem; color:var(--color-header); padding-b
 
 /* tabla */
 table{
-    border:1px solid var(--attenuated-line);
     width:100%;
     border-collapse:separate;
     text-align:left;
 }
 table :is(thead, tbody) :is(th, td){padding:9px 12px; box-sizing:border-box; text-align:right;}
 table thead{display:none;}
-table tbody tr{display:grid;}
+table tbody tr{display:grid; border:1px solid var(--attenuated-line); margin-bottom:2rem;}
 table tbody th{display:none;}
 table tr:not(:last-child){border-bottom:1px solid var(--attenuated-line); color:var(--color-text);}
 table td a{color:var(--color-text); transition:all .3s ease;}
