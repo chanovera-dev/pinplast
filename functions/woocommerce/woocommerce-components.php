@@ -43,6 +43,8 @@ add_action( 'wp_enqueue_scripts', 'cart_styles' );
 function checkout_styles() {
     if ( is_page_template('checkout.php') ) {
         wp_enqueue_style( 'checkout-styles', get_template_directory_uri() . '/assets/css/woocommerce/checkout.css' );
+        /* estilos css para los formularios */
+        wp_enqueue_style( 'forms-styles', get_template_directory_uri() . '/assets/css/forms.css' ); 
     }
 }
 add_action( 'wp_enqueue_scripts', 'checkout_styles' );
