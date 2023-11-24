@@ -57,7 +57,9 @@
                 <div class="buttons">
                     <?php
                         woocommerce_template_loop_add_to_cart();
-                        echo do_shortcode('[yith_wcwl_add_to_wishlist]');
+                        if (is_plugin_active('yith-woocommerce-wishlist/init.php')) {
+                            echo do_shortcode('[yith_wcwl_add_to_wishlist]');
+                        } else {}    
                     ?>
                 </div>
             </div>
