@@ -94,6 +94,7 @@
 .latest-sales-list :is(li:hover, li:hover .card){border:none;}
 .latest-sales-list li .card{display:grid; gap:1.5rem; grid-template-columns:200px 1fr; align-items:center; grid-template-rows:auto; border:none; padding:0;}
 .latest-sales-list li .card .wp-post-image{margin:0;}
+.latest-sales-list li .card .add-to-cart_add-to-wishlist--buttons{margin-top:2rem;}
 .slideshow-buttons__latest-sales{position:absolute; top:50%; transform:translateY(-50%); right:0; display:flex; gap:2px; padding-left:2rem; background-color:var(--background-color-body);}
 .latest-sales--button{display:grid; place-content:center; width:2.7rem; height:2.9rem; background-color:#f2f2f2; color:#999; border:none; transition:all .3s ease;}
 .latest-sales--button:hover{background-color:var(--yellow); color:var(--color-text);}
