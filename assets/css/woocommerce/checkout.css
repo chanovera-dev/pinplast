@@ -4,3 +4,5 @@
 .woocommerce-breadcrumb a:hover{color:var(--color-links);}
 
 main .container .section h1{font-size:3rem; color:var(--color-header); padding-bottom:3.2rem;}
+
+.woocommerce-checkout{margin-bottom:6rem;}
