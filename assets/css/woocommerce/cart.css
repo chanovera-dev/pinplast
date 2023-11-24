@@ -104,7 +104,7 @@ table tbody tr td.product-quantity .quantity input[type=number].qty:focus{outlin
 
     .woocommerce-cart-form__contents thead{display:inherit; border-bottom:1px solid var(--attenuated-line); background-color:rgba(0, 0, 0, .025); width:100%;}
     .woocommerce-cart-form__contents :is(thead, tbody) :is(th, td){text-align:left;}
-    .woocommerce-cart-form__contents :is(thead, tbody) tr{display:grid; grid-template-columns:40px 104px 1fr 115px 154px 123px; align-items:center;}
+    .woocommerce-cart-form__contents :is(thead, tbody) tr{display:grid; grid-template-columns:40px 104px 1fr 115px 134px 123px; align-items:center;}
     .woocommerce-cart-form__contents tbody tr:last-child{grid-template-columns:1fr;}
     .woocommerce-cart-form__contents tbody tr:last-child td{grid-template-columns:300px 1fr;}
     .woocommerce-cart-form__contents tbody tr:last-child td button{margin-left:auto;}
