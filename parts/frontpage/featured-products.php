@@ -1,23 +1,18 @@
 <?php
-// Obtener el número total de productos
-$total_productos = wc_get_product_count();
+// Obtener productos
+$productos = wc_get_products(array('limit' => -1));
 
-// Verificar si no hay productos disponibles
-if ($total_productos === 0) {
+// Verificar si no hay productos
+if (empty($productos)) {
     echo '<p>No hay productos disponibles en este momento. ¡Vuelve pronto!</p>';
 } else {
     // Aquí puedes mostrar los productos, por ejemplo, utilizando un bucle para recorrerlos
     // y mostrar su información.
-    // Ejemplo de bucle para mostrar productos:
-    /*
-    $productos = wc_get_products(array('limit' => -1));
-
     foreach ($productos as $producto) {
         echo '<h2>' . $producto->get_name() . '</h2>';
         echo '<p>' . $producto->get_price_html() . '</p>';
         // Puedes agregar más detalles según tus necesidades.
     }
-    */
 }
 ?>
 
