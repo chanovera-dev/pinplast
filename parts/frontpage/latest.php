@@ -23,7 +23,9 @@
                         'post_status' => 'publish',
                         'posts_per_page' => 6,
                         'orderby' => 'date',
-                        'order'   => 'DESC'
+                        'order'   => 'DESC',
+                        'meta_query' => WC()->query->get_meta_query(),
+                        'post__in' => array_merge(array(0), wc_get_product_ids_on_sale())
                     );
                     $loop = new WP_Query( $args );
                     while ( $loop->have_posts() ) : $loop->the_post(); global $product;
