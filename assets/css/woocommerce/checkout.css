@@ -17,7 +17,7 @@ abbr[title]{color:red; text-decoration:none;}
 #order_review{padding:3rem; border:1px solid var(--attenuated-line);}
 .shop_table.woocommerce-checkout-review-order-table{width:100%;}
 .shop_table.woocommerce-checkout-review-order-table :is(th, td, tr){height:6rem; text-align:left; border-bottom:1px solid var(--attenuated-line);}
-.shop_table.woocommerce-checkout-review-order-table td:last-child{text-align:right;}
+.shop_table.woocommerce-checkout-review-order-table :is(.product-total, td:last-child){text-align:right;}
 .shop_table.woocommerce-checkout-review-order-table tfoot tr:last-child :is(th, td){border-bottom:none; font-size:3rem;}
 
 @media(min-width:1024px){
