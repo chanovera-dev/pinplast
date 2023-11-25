@@ -19,7 +19,7 @@ abbr[title]{color:red; text-decoration:none;}
 .shop_table.woocommerce-checkout-review-order-table :is(th, td, tr){height:6rem; text-align: left;}
 
 @media(min-width:1024px){
-    main .woocommerce-checkout{grid-template-columns:1fr 1fr; grid-template-rows:auto 1fr;}
+    main .woocommerce-checkout{grid-template-columns:1fr 98.5rem; grid-template-rows:auto 1fr;}
     #customer_details{grid-column:1/2; grid-row:1/3;}
     #order_review_heading{grid-column:2/3;}
     #order_review{grid-column:2/3; align-self:baseline;}
