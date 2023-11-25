@@ -1,7 +1,16 @@
 <?php
-
+// Obtener productos vendidos
 $total_products_sold = get_total_products_sold();
-echo 'Total Products Sold: ' . $total_products_sold;
+
+// Verificar si no hay productos
+if ($total_products_sold > 0) {
+    echo '
+    <div class="container">
+        <section class="section padding-section">
+            <p>'.esc_html__('Aún no se han vendido productos', 'pinplast').'</p>
+        </section>
+    </div>';
+} else {}
 ?>
 <section id="bestsellers" class="container main-content">
     <div class="title-wrapper section"><h2 class="title"><?php echo __('Más vendidos', 'pinplast'); ?></h2></div>
