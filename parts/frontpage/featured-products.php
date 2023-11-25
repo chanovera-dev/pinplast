@@ -35,7 +35,13 @@ if (empty($productos_destacados)) {
                 <ul id="featured-products-list" class="featured-products-list product-list">       
                     <?php
                         $args = array(
-                            'featured' => true,
+                            'post_type' => 'product',
+                            'post_status' => 'publish',
+                            'tax_query' => array(
+                                array(
+                                    'featured' => 'true',
+                                ),
+                            ),
                             'posts_per_page' => 8,
                             'orderby' => 'date',
                             'order'   => 'DESC'
