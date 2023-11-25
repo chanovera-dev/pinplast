@@ -3,17 +3,14 @@
     <div class="section bestsellers-list product-list">
         <?php
             $args = array(
-                'posts_per_page' => 7,
                 'post_type' => 'product',
-                'post_status' => 'publish',
-                'ignore_sticky_posts'   => 1,
                 'meta_key' => 'total_sales',
                 'orderby' => 'meta_value_num',
-                'order' => 'DESC',
-        
+                'posts_per_page' => 7,
             );
             $loop = new WP_Query( $args );
             while ( $loop->have_posts() ) : $loop->the_post(); global $product;
+            
             $product_permalink = get_permalink( $loop->post->ID );
             $product_obj = wc_get_product( $loop->post->ID );
             $average_rating = $product_obj->get_average_rating();
