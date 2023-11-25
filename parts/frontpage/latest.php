@@ -7,7 +7,7 @@ if ($count_sales === 0) {
     echo '
     <div class="container">
         <section class="section padding-section">
-            <p>'.esc_html__('Actualmente no hay ofertas.', 'pinplast').'</p>
+            <p>'.esc_html__('Actualmente no hay promociones.', 'pinplast').'</p>
         </section>
     </div>';
 } else {}
