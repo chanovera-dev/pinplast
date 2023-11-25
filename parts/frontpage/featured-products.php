@@ -48,7 +48,7 @@ if (empty($productos_destacados)) {
                             'orderby' => 'date',
                             'order'   => 'DESC'
                         );
-                        $loop = new WP_Query( $args );
+                        $loop = new wc_get_products( $args );
                         while ( $loop->have_posts() ) : $loop->the_post(); global $product;
                         $product_permalink = get_permalink( $loop->post->ID );
                         $product_obj = wc_get_product( $loop->post->ID );
