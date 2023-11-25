@@ -3,7 +3,7 @@
 $total_products_sold = get_total_products_sold();
 
 // Verificar si no hay productos
-if ($total_products_sold > 0) {
+if ($total_products_sold === 0) {
     echo '
     <div class="container">
         <section class="section padding-section">
