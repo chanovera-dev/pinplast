@@ -1,3 +1,14 @@
+<?php
+// Obtén el número total de productos en la tienda
+$total_productos = wc_get_product_count();
+
+// Verifica si hay productos
+if ($total_productos > 0) {
+    echo 'Hay productos en la tienda.';
+} else {
+    echo 'No hay productos en la tienda.';
+}
+?>
 <section id="featured-products" class="container main-content">
     <div class="title-wrapper section">
         <h2 class="title"><?php echo __('Productos destacados', 'pinplast'); ?></h2>
