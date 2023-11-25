@@ -34,14 +34,15 @@ if (empty($productos_destacados)) {
             <div class="featured-products-wrapper">
                 <ul id="featured-products-list" class="featured-products-list product-list">       
                     <?php
-                        $query = new WC_Product_Query( array(
-                            'limit' => 10,
+                        $args = array(
+                            'post_type' => 'product',
+                            'post_status' => 'publish',
+                            'posts_per_page' => 8,
                             'orderby' => 'date',
-                            'order' => 'DESC',
-                            'return' => 'ids',
-                        ) );
-                        $products = $query->get_products();
-                        while ( $products->have_posts() ) : $products->the_post(); global $product;
+                            'order'   => 'DESC'
+                        );
+                        $loop = new WP_Query( $args );
+                        while ( $loop->have_posts() ) : $loop->the_post(); global $product;
                         $product_permalink = get_permalink( $loop->post->ID );
                         $product_obj = wc_get_product( $loop->post->ID );
                         $average_rating = $product_obj->get_average_rating();
