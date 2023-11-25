@@ -1,3 +1,17 @@
+<?php
+// Obtener ofertas
+$count_sales = get_onsale_products_count();
+
+// Verificar si no hay productos
+if ($count_sales === 0) {
+    echo '
+    <div class="container">
+        <section class="section padding-section">
+            <p>'.esc_html__('Actualmente no hay ofertas.', 'pinplast').'</p>
+        </section>
+    </div>';
+} else {}
+?>
 <section id="latest-sales" class="container main-content">
     <div class="title-wrapper section">
         <h2 class="title"><?php echo __('Últimas promociones', 'pinplast'); ?></h2>

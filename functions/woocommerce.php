@@ -130,3 +130,23 @@ function get_total_products_sold() {
 
     return $total_sold;
 }
+
+// saber la cantidad de 'sales'
+function get_onsale_products_count() {
+    global $wpdb;
+
+    // SQL query for counting products that are on sale
+    $result = $wpdb->get_col( "
+        SELECT COUNT(p.ID)
+        FROM {$wpdb->prefix}posts as p
+        INNER JOIN {$wpdb->prefix}postmeta as pm ON p.ID = pm.post_id
+        WHERE p.post_type LIKE '%product%'
+        AND p.post_status LIKE 'publish'
+        AND pm.meta_key LIKE '_stock_status'
+        AND pm.meta_value LIKE '_on_sale'
+    " );
+
+    return reset($result);
+}
+
+add_action('woocommerce_before_single_product_summary', 'get_onsale_products_count');
