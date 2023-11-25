@@ -37,7 +37,7 @@ if (empty($productos_destacados)) {
                         $args = array(
                             'post_type' => 'product',
                             'post_status' => 'publish',
-                            'tax_quey' => array(
+                            'tax_query' => array(
                                 'featured' => 'true',
                             ),
                             'posts_per_page' => 8,
