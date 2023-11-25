@@ -13,6 +13,7 @@ main .woocommerce-checkout{display:grid; gap:5rem; margin-bottom:6rem;}
 #customer_details .col-2 h3{font-size:3rem; margin-bottom:3rem;}
 #order_comments_field label{color:var(--attenuated-text);}
 #order_review{padding:3rem; border:1px solid var(--attenuated-line);}
+abbr{color:red;}
 
 @media(min-width:1024px){
     main .woocommerce-checkout{grid-template-columns:1fr 1fr; grid-template-rows:auto 1fr;}
