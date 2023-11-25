@@ -3,7 +3,8 @@ get_header();
 echo '<main id="main">';
     include(TEMPLATEPATH . '/parts/frontpage/hero.php');
     include(TEMPLATEPATH . '/parts/frontpage/features.php');
-    if (wc_get_product_count() > 0) {
+    $total_productos = wc_get_product_count();
+    if ($total_productos > 0) {
         echo 'Hay productos en la tienda.';
     } else {
         echo 'No hay productos en la tienda.';
