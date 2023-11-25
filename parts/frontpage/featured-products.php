@@ -34,13 +34,6 @@ if (empty($productos_destacados)) {
             <div class="featured-products-wrapper">
                 <ul id="featured-products-list" class="featured-products-list product-list">       
                     <?php
-                        $tax_query[] = array(
-                            'taxonomy' => 'product_visibility',
-                            'field'    => 'name',
-                            'terms'    => 'featured',
-                            'operator' => 'IN', // or 'NOT IN' to exclude feature products
-                        );
-
                         $args = array(
                             'post_type' => 'product',
                             'post_status' => 'publish',
