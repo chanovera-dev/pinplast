@@ -37,6 +37,7 @@ if (empty($productos_destacados)) {
                         $args = array(
                             'post_type' => 'product',
                             'post_status' => 'publish',
+                            'featured' => 'true',
                             'posts_per_page' => 8,
                             'orderby' => 'date',
                             'order'   => 'DESC'
