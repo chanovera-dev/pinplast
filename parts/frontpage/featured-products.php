@@ -38,6 +38,7 @@ if (empty($productos_destacados)) {
                             'post_type' => 'product',
                             'post_status' => 'publish',
                             'featured' => 'true',
+                            'key' => '_featured',
                             'posts_per_page' => 8,
                             'orderby' => 'date',
                             'order'   => 'DESC'
