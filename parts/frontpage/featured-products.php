@@ -1,19 +1,27 @@
 <?php
-// Obtener productos
-$productos = wc_get_products(array('limit' => -1));
+// Obtener productos destacados
+$productos_destacados = wc_get_products(array(
+    'limit' => -1,
+    'meta_query' => array(
+        array(
+            'key' => '_featured',
+            'value' => 'yes',
+        ),
+    ),
+));
 
 // Verificar si no hay productos
 if (empty($productos)) {
     echo '
     <div class="container">
         <section class="section padding-section">
-            <p>'.esc_html__('No hay productos disponibles en este momento. ¡Vuelve pronto!', 'pinplast').'</p>
+            <p>'.esc_html__('No hay productos destacados en este momento. ¡Vuelve pronto!', 'pinplast').'</p>
         </section>
     </div>';
 } else { ?>
     <div id="featured-products" class="container main-content">
         <div class="title-wrapper section">
-            <h2 class="title"><?php echo __('Productos destacados', 'pinplast'); ?></h2>
+            <h2 class="title"><?php echo esc_html__('Productos destacados', 'pinplast'); ?></h2>
             <div class="slideshow-buttons__featured-products">
                 <button id="backward-button__featured-products" class="featured-products--button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
@@ -67,7 +75,7 @@ if (empty($productos)) {
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path></svg>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path></svg>
                                             </div>
-                                            <span class="votes-rating"><?php echo '0 votos'; ?></span>
+                                            <span class="votes-rating"><?php echo esc_html__('0 votos', 'pinplast'); ?></span>
                                     </div>
                                     <?php endif; ?> 
                                     <?php echo '<div class="price">'. $product->get_price_html() .'</div>'; ?>
