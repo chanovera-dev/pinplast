@@ -35,7 +35,7 @@ if (empty($productos_destacados)) {
                 <ul id="featured-products-list" class="featured-products-list product-list">       
                     <?php
                         $args = array(
-                            'featured' => 'true',
+                            'featured' => true,
                             'posts_per_page' => 8,
                             'orderby' => 'date',
                             'order'   => 'DESC'
