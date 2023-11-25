@@ -148,5 +148,3 @@ function get_onsale_products_count() {
 
     return reset($result);
 }
-
-add_action('woocommerce_before_single_product_summary', 'get_onsale_products_count');
