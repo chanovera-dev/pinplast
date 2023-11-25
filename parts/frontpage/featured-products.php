@@ -4,7 +4,8 @@ $productos = wc_get_products(array('limit' => -1));
 
 // Verificar si no hay productos
 if (empty($productos)) {
-    echo '<p>No hay productos disponibles en este momento. ¡Vuelve pronto!</p>';
+    echo 
+    '<section class="section"><p>No hay productos disponibles en este momento. ¡Vuelve pronto!</p></section>';
 } else {
     // Aquí puedes mostrar los productos, por ejemplo, utilizando un bucle para recorrerlos
     // y mostrar su información.
