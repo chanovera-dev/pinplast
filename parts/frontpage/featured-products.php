@@ -4,7 +4,7 @@ $productos_destacados = wc_get_products(array(
     'limit' => -1,
     'meta_query' => array(
         array(
-            'key' => '_featured',
+            'key' => '_featured_products',
             'value' => 'yes',
         ),
     ),
