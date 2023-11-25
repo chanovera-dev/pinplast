@@ -46,7 +46,14 @@ if (empty($productos_destacados)) {
                             'post_status' => 'publish',
                             'key' => '_featured',
                             'featured' => true,
-                            'tax_query' => $tax_query,
+                            'tax_query' => array(
+                                array(
+                                    'taxonomy' => 'product_visibility',
+                                    'field'    => 'name',
+                                    'terms'    => 'featured',
+                                    'operator' => 'IN', 
+                                ),
+                            ),
                             'posts_per_page' => 8,
                             'orderby' => 'date',
                             'order'   => 'DESC'
