@@ -1,5 +1,6 @@
 /* secciones */
 .title-wrapper{grid-column:1/-1;}
+.padding-section{padding:5rem 0;}
 
 /* listas */
 .product-list{margin:0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(auto-fill, minmax(218px, 1fr));}

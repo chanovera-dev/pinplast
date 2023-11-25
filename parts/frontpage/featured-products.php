@@ -6,7 +6,7 @@ $productos = wc_get_products(array('limit' => -1));
 if (empty($productos)) {
     echo '
     <div class="container">
-        <section class="section">
+        <section class="section padding-section">
             <p>'.esc_html__('No hay productos disponibles en este momento. ¡Vuelve pronto!', 'pinplast').'</p>
         </section>
     </div>';
