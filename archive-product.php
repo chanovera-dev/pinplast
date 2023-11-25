@@ -21,7 +21,7 @@
         }
         echo '</ul>';      
     } else {
-        echo '<section class="container"><div class="section">' . '<p>' . __('Actualmente no hay artículos en esta tienda', 'pinplast') . '</p>' . '</div>';
+        echo '<section class="container"><div class="section">' . '<p>' . esc_html__('Actualmente no hay artículos en esta tienda', 'pinplast') . '</p>' . '</div>';
     }
     echo '</section></main>';
     get_footer();

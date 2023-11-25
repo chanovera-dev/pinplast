@@ -3,11 +3,14 @@
     <div class="section bestsellers-list product-list">
         <?php
             $args = array(
+                'posts_per_page' => 7,
                 'post_type' => 'product',
                 'post_status' => 'publish',
-                'posts_per_page' => 7,
-                'orderby' => 'date',
-                'order'   => 'DESC'
+                'ignore_sticky_posts'   => 1,
+                'meta_key' => 'total_sales',
+                'orderby' => 'meta_value_num',
+                'order' => 'DESC',
+        
             );
             $loop = new WP_Query( $args );
             while ( $loop->have_posts() ) : $loop->the_post(); global $product;
