@@ -1,14 +1,12 @@
 <?php
 // Obtener productos destacados
-$productos_destacados = wc_get_products(array(
-    'limit' => -1,
-    'meta_query' => array(
-        array(
-            'key' => '_featured',
-            'value' => 'yes',
-        ),
-    ),
-));
+$productos_destacados = array(
+    'post_type'           => 'product',
+    'posts_per_page'      => $products,
+    'orderby'             => $orderby,
+    'order'               => $order == 'asc' ? 'asc' : 'desc',
+    'post__in'            => wc_get_featured_product_ids(),
+);
 
 // Verificar si no hay productos
 if (empty($productos_destacados)) {
