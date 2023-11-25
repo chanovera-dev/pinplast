@@ -4,8 +4,10 @@ $productos_destacados = wc_get_products(array(
     'limit' => -1,
     'meta_query' => array(
         array(
-            'terms' => 'featured',
-            'value' => 'yes',
+            'taxonomy' => 'product_visibility',
+            'field'    => 'name',
+            'terms'    => 'featured',
+            'operator' => 'IN',
         ),
     ),
 ));
