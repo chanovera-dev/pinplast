@@ -4,16 +4,14 @@ $productos_destacados = wc_get_products(array(
     'limit' => -1,
     'meta_query' => array(
         array(
-            'taxonomy' => 'product_visibility',
-            'field'    => 'name',
-            'terms'    => 'featured',
-            'operator' => 'IN',
+            'key' => '_featured',
+            'value' => 'yes',
         ),
     ),
 ));
 
 // Verificar si no hay productos
-if (empty($productos)) {
+if (empty($productos_destacados)) {
     echo '
     <div class="container">
         <section class="section padding-section">
