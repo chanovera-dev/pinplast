@@ -37,18 +37,11 @@ if (empty($productos_destacados)) {
                         $args = array(
                             'post_type' => 'product',
                             'post_status' => 'publish',
-                            'tax_query' => array(
-                                array(
-                                    'taxonomy' => 'product_visibility',
-                                    'field'    => 'name',
-                                    'terms'    => 'featured',
-                                ),
-                            ),
                             'posts_per_page' => 8,
                             'orderby' => 'date',
                             'order'   => 'DESC'
                         );
-                        $loop = new wc_get_products( $args );
+                        $loop = new WP_Query( $args );
                         while ( $loop->have_posts() ) : $loop->the_post(); global $product;
                         $product_permalink = get_permalink( $loop->post->ID );
                         $product_obj = wc_get_product( $loop->post->ID );
