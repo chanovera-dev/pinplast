@@ -107,3 +107,26 @@ function mover_precio_debajo() {
     add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 21);
 }
 add_action('init', 'mover_precio_debajo');
+
+// Saber la cantidad de productos vendidos
+function get_total_products_sold() {
+    $args = array(
+        'post_type'      => 'product',
+        'posts_per_page' => -1,
+    );
+
+    $products = new WP_Query($args);
+
+    $total_sold = 0;
+
+    if ($products->have_posts()) {
+        while ($products->have_posts()) {
+            $products->the_post();
+            $product_id = get_the_ID();
+            $total_sold += get_post_meta($product_id, '_wc_total_sales', true);
+        }
+        wp_reset_postdata();
+    }
+
+    return $total_sold;
+}

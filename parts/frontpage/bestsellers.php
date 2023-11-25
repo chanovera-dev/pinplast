@@ -1,3 +1,8 @@
+<?php
+
+$total_products_sold = get_total_products_sold();
+echo 'Total Products Sold: ' . $total_products_sold;
+?>
 <section id="bestsellers" class="container main-content">
     <div class="title-wrapper section"><h2 class="title"><?php echo __('Más vendidos', 'pinplast'); ?></h2></div>
     <div class="section bestsellers-list product-list">
@@ -10,7 +15,7 @@
             );
             $loop = new WP_Query( $args );
             while ( $loop->have_posts() ) : $loop->the_post(); global $product;
-            
+
             $product_permalink = get_permalink( $loop->post->ID );
             $product_obj = wc_get_product( $loop->post->ID );
             $average_rating = $product_obj->get_average_rating();
