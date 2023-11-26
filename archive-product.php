@@ -19,7 +19,8 @@
             the_post();
             get_template_part( 'templates/content', 'products' );          
         }
-        echo '</ul>';      
+        echo '</ul>';
+        the_posts_pagination();    
     } else {
         echo '<section class="container"><div class="section">' . '<p>' . esc_html__('Actualmente no hay artículos en esta tienda', 'pinplast') . '</p>' . '</div>';
     }
