@@ -132,19 +132,32 @@ function get_total_products_sold() {
 }
 
 // saber la cantidad de 'sales'
-function get_onsale_products_count() {
-    global $wpdb;
+function get_total_onsale() {
+    $args = array(
+        'post_type'      => 'product',
+        'posts_per_page' => -1,
+        'meta_query'     => array(
+            array(
+                'key'     => '_sale_price',
+                'value'   => 0,
+                'compare' => '>',
+                'type'    => 'NUMERIC',
+            ),
+        ),
+    );
 
-    // SQL query for counting products that are on sale
-    $result = $wpdb->get_col( "
-        SELECT COUNT(p.ID)
-        FROM {$wpdb->prefix}posts as p
-        INNER JOIN {$wpdb->prefix}postmeta as pm ON p.ID = pm.post_id
-        WHERE p.post_type LIKE '%product%'
-        AND p.post_status LIKE 'publish'
-        AND pm.meta_key LIKE '_stock_status'
-        AND pm.meta_value LIKE '_on_sale'
-    " );
+    $products = new WP_Query($args);
 
-    return reset($result);
+    $total_sold = 0;
+
+    if ($products->have_posts()) {
+        while ($products->have_posts()) {
+            $products->the_post();
+            $product_id = get_the_ID();
+            $total_sold += get_post_meta($product_id, '_wc_total_sales', true);
+        }
+        wp_reset_postdata();
+    }
+
+    return $total_sold;
 }

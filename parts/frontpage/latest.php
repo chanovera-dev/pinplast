@@ -1,6 +1,6 @@
 <?php
 // Obtener ofertas
-$count_sales = get_onsale_products_count();
+$count_sales = get_total_onsale();
 
 // Verificar si no hay productos
 if ($count_sales === 0) {
