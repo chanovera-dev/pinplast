@@ -7,7 +7,11 @@ function frontpage_styles() {
         /* hero section */
         wp_enqueue_style( 'frontpage-styles', get_template_directory_uri() . '/assets/css/frontpage/hero.css' );
         /* slideshows */
-        wp_enqueue_script( 'frontpage-slideshows', get_template_directory_uri() . '/assets/js/frontpage-slideshows.js', array(), '1.0', true );
+        wp_enqueue_script( 'slideshow-hero', get_template_directory_uri() . '/assets/js/slideshow-hero.js', array(), '1.0', true );
+        wp_enqueue_script( 'slideshow-featured-products', get_template_directory_uri() . '/assets/js/featured-products-slideshow.js', array(), '1.0', true );
+        wp_enqueue_script( 'slideshow-arrivals', get_template_directory_uri() . '/assets/js/arrivals-slideshow.js', array(), '1.0', true );
+        wp_enqueue_script( 'slideshow-blog', get_template_directory_uri() . '/assets/js/blog-slideshow.js', array(), '1.0', true );
+        wp_enqueue_script( 'slideshow-latest-sales', get_template_directory_uri() . '/assets/js/latest-sales-slideshows.js', array(), '1.0', true );
         /* features */
         wp_enqueue_style( 'features-styles', get_template_directory_uri() . '/assets/css/frontpage/features.css' );
         /* featured products */
