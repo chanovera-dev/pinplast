@@ -20,13 +20,18 @@
                 the_post();
                 get_template_part( 'templates/content', 'products' );          
             }
-        echo
-        '</ul>';
+            echo
+            '</ul>';
+            echo '
+            <section class="section">';
+                the_posts_pagination();
+            echo '
+            </section>';
             
         } else {
             echo '<section class="container"><div class="section">' . '<p>' . esc_html__('Actualmente no hay artículos en esta tienda', 'pinplast') . '</p>' . '</div>';
         }
-        the_posts_pagination();
+        
         echo 
         '</section>
     </main>';
