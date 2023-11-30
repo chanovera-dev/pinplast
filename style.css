@@ -35,3 +35,7 @@ img{display:block; height:auto;}
     .header-content .site-brand .custom-logo-link:focus{outline:none;}
     .header-content .site-brand .custom-logo-link .custom-logo{width:13rem; transition:all .3s ease;}
     /* carrito | wishlist */
+    .attachment-list{display:flex; gap:2rem;}
+    .attachment-list li{position:relative; display:flex; height:2rem;}
+    .attachment-list li svg{width:2.2rem; height:2.2rem; fill:var(--color-header);}
+    .attachment-list li .counter{position:absolute; top:-.5rem; right:-1rem; text-align:center; width:1.5rem; height:1.5rem; background-color:var(--background-color-body); border-radius:50%; font-size:1rem; color:var(--color-body);}

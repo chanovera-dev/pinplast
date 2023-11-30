@@ -1,5 +1,5 @@
 <?php
-echo '<ul class="lists">';
+echo '<ul class="attachment-list">';
     if (is_plugin_active('yith-woocommerce-wishlist/init.php')) {
         echo 
         '<li>'.
