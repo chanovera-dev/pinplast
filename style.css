@@ -17,7 +17,7 @@ Tags:
 /* ajustes globales */
 html{font-size:62.5%; scroll-behavior:smooth;}
 *, :before, :after{box-sizing:border-box; margin:0;}
-body{font-size:1.6rem;}
+body{font-size:1.6rem; position:relative;}
 :is(header,footer,aside,.resume-content) :is(ol,ul){margin:0; padding:0; list-style:none;}
 a{transition:all .3s ease; border-radius:.2rem;}
 a:focus{outline:none; box-shadow:var(--wp--preset--color--link-focus);}
@@ -25,7 +25,9 @@ img{display:block; height:auto;}
 .container .section{width:var(--breakpoint); margin-inline:auto;}
 
 /* cabecera */
-
+#desktop-header{display:none;}
+#main-header{position:sticky; top:0; width:100%; z-index:3; backface-visibility:hidden; transform:translate3d(0, 0, 0); transition:all .25s ease-in-out;}
+#responsive-header{position:relative;}
     /* scroll */
 
     /* marca */
