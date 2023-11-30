@@ -4,7 +4,7 @@
             <tr>
                 <td class="feature-cell">
                 <svg width="48px" height="48px">
-                                    <use xlink:href="<?php echo get_template_directory_uri(); ?>assets/img/sprite.svg#fi-free-delivery-48"></use>
+                                    <use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#fi-free-delivery-48"></use>
                                 </svg>
                     <h2>Entrega a domicilio</h2>
                     <p>Ordenes mayores a $1,000.00</p>
