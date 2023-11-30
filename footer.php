@@ -65,7 +65,8 @@
                     </div>
                 </div>
             </section>
-        </footer>';
+        </footer>
+        <script>svg4everybody(); // run it now or whenever you are ready</script>';
         wp_footer();
     echo '</body>
 </html>';
