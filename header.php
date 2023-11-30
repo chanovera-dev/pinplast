@@ -2,7 +2,7 @@
 
 echo '
 <!DOCTYPE html>
-<html '; language_attributes(); echo '>
+<html '.language_attributes(). '>
     <head>
         <meta charset="'; bloginfo( 'charset' ); echo '">
         <meta name="description" content="'; bloginfo( 'description' ); echo '">
