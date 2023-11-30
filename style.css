@@ -43,7 +43,7 @@ img{display:block; height:auto;}
     /* carrito y whishlist */
     .lists{display:flex; gap:2rem;}
     .lists li{position:relative; display:flex; height:2rem;}
-    .lists li svg{width:2rem; height:2rem; color:var(--color-header);}
+    .lists li svg{width:2.2rem; height:2.2rem; fill:var(--color-header);}
     .lists li .counter{position:absolute; top:-.5rem; right:-1rem; text-align:center; width:1.5rem; height:1.5rem; background-color:var(--background-color-body); border-radius:50%; font-size:1rem; color:var(--color-body);}
 
 
