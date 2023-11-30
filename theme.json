@@ -10,6 +10,11 @@
         "color": {
             "palette": [
                 {
+					"color": "#3d464d",
+					"name": "Base",
+					"slug": "base"
+				},
+                {
                     "color": "#1a66ff",
 					"name": "Links",
 					"slug": "links"
@@ -124,6 +129,10 @@
         }
     },
     "styles": {
+        "color": {
+			"background": "var(--wp--preset--color--base)",
+			"text": "var(--wp--preset--color--base)"
+		},
         "typography": {
             "fontFamily": "var(--wp--preset--font-family--body)",
             "fontSize": "var(--wp--preset--font-size--medium)",
