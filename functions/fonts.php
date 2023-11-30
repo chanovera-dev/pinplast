@@ -73,7 +73,7 @@ function theme_pinplast_custom_fonts() {
             src:
                     url('<?php echo get_template_directory_uri(); ?>/assets/fonts/stroyka/stroyka.ttf') format('truetype'),
                     url('<?php echo get_template_directory_uri(); ?>/assets/fonts/stroyka/stroyka.woff') format('woff'),
-                    url('<?php echo get_template_directory_uri(); ?>/assets/fonts/stroyka/stroyka.svg#stroyka') format('svg');
+                    url('<?php echo get_template_directory_uri(); ?>/assets/img/stroyka.svg#stroyka') format('svg');
             font-weight: normal;
             font-style: normal;
             }
