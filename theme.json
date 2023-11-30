@@ -121,22 +121,15 @@
 			"fontWeight": "400",
 			"lineHeight": "1.55"
         },
-        "blocks": {
-            "core/navigation": {
-				"elements": {
-					"link": {
-						":hover": {
-							"typography": {
-								"textDecoration": "none"
-							}
-						},
-						"typography": {
-							"textDecoration": "none"
-						}
+        "elements": {
+            "link": {
+				":hover": {
+					"typography": {
+						"textDecoration": "none"
 					}
 				},
-				"typography": {
-					"fontWeight": "500"
+				"color": {
+					"text": "var(--wp--preset--color--contrast)"
 				}
 			}
         }
