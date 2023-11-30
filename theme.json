@@ -123,6 +123,11 @@
         },
         "elements": {
             "link": {
+                ":any-link": {
+                    "typography": {
+                        "textDecoration": "none"
+                    }
+                },
 				":hover": {
 					"typography": {
 						"textDecoration": "none"
