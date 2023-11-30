@@ -6,6 +6,16 @@
 		"clients-section"
 	],
     "settings": {
+        "appearanceTools": true,
+        "color": {
+            "palette": [
+                {
+                    "color": "#1a66ff",
+					"name": "Links",
+					"slug": "links"
+                }
+            ]
+        },
         "typography": {
             "fluid": false,
             "fontFamilies": [
@@ -134,7 +144,7 @@
 					}
 				},
 				"color": {
-					"text": "var(--wp--preset--color--contrast)"
+					"text": "var(--wp--preset--color--links)"
 				}
 			}
         }
