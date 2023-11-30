@@ -7,3 +7,6 @@ function load_parts_header() {
     wp_enqueue_style( 'global' );
 }
 add_action( 'wp_enqueue_scripts', 'load_parts_header' );
+
+// Anexo para establecer los breakpoints
+require_once(get_template_directory() . '/functions/breakpoints.php');
