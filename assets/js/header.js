@@ -162,3 +162,7 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = currentScroll;
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    svg4everybody();
+});

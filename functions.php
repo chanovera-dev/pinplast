@@ -100,3 +100,9 @@ function deregister_polyfill(){
 // deshabilita contact form 7 en todas las páginas
 add_filter( 'wpcf7_load_js', '__return_false' );
 add_filter( 'wpcf7_load_css', '__return_false' );
+
+function enqueue_svg4everybody() {
+    wp_enqueue_script('svg4everybody', get_template_directory_uri() . '/assets/js/svg4everybody.min.js', array(), '1.0', true);
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_svg4everybody');
