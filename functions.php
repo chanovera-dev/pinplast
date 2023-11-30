@@ -23,3 +23,5 @@ add_action( 'get_footer', 'load_parts_footer' );
 
 // Anexo para establecer los breakpoints
 require_once(get_template_directory() . '/functions/breakpoints.php');
+// Anexo para definir el contador de la lista de deseos
+require_once(get_template_directory() . '/functions/wishlist.php');
