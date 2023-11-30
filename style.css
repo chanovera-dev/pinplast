@@ -58,15 +58,18 @@ img{display:block; height:auto;}
     }
 
     @media screen and (min-width: 768px) and (max-width: 1023px){
-        /* searchform */
-        .searchform{width:100%; height:3.6rem;}
-        .searchform .searchform-wrapper{position:relative; display:inherit;}
-        .searchform .searchform-wrapper #activate-search{height:5.4rem; position:absolute; top:0; right:0;}
-        .searchform .searchform-wrapper #activate-search svg{width:2rem; height:2rem; padding:.8rem; color:var(--wp--preset--color--attenuated);}
-        .searchform .searchform-wrapper #activate-search svg.bi-x-circle{display:none;}
-        .searchform .searchform-wrapper input[type=text]{height:3.6rem; width:100%; padding:0; border:none; padding:0 3.6rem 0 1rem; border-radius:.3rem; background-color:rgba(255,255,255,.5);}
-        .searchform .searchform-wrapper input[type=text]:focus{background-color:rgba(255,255,255,1);}
-        .searchform .searchform-wrapper input[type=text]::placeholder{color:var(--wp--preset--color--background);}
-        .searchform .searchform-wrapper input[type=text]:focus::placeholder{color:var(--wp--preset--color--attenuated);}
+        /* cabecera */
+        .main-header{box-shadow:0 1px rgba(0, 0, 0, 0.04), inset 0 -1px rgba(0, 0, 0, 0.04);}
+        .header-content{display:flex; gap:2rem; align-items:center; justify-content:space-between; height:5.4rem;}
+            /* searchform */
+            .searchform{width:100%; height:3.6rem;}
+            .searchform .searchform-wrapper{position:relative; display:inherit;}
+            .searchform .searchform-wrapper #activate-search{height:5.4rem; position:absolute; top:0; right:0;}
+            .searchform .searchform-wrapper #activate-search svg{width:2rem; height:2rem; padding:.8rem; color:var(--wp--preset--color--attenuated);}
+            .searchform .searchform-wrapper #activate-search svg.bi-x-circle{display:none;}
+            .searchform .searchform-wrapper input[type=text]{height:3.6rem; width:100%; padding:0; border:none; padding:0 3.6rem 0 1rem; border-radius:.3rem; background-color:rgba(255,255,255,.5);}
+            .searchform .searchform-wrapper input[type=text]:focus{background-color:rgba(255,255,255,1);}
+            .searchform .searchform-wrapper input[type=text]::placeholder{color:var(--wp--preset--color--background);}
+            .searchform .searchform-wrapper input[type=text]:focus::placeholder{color:var(--wp--preset--color--attenuated);}
     }
     
