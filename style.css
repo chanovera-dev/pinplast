@@ -26,7 +26,7 @@ img{display:block; height:auto;}
 
 /* cabecera */
 #desktop-header{display:none;}
-#main-header{position:sticky; top:0; width:100%; z-index:3; backface-visibility:hidden; transform:translate3d(0, 0, 0); transition:all .25s ease-in-out;}
+#main-header{position:sticky; width:100%; background-color:var(--wp--preset--color--yellow); z-index:3; transition:all .3s ease-in-out;}
 #responsive-header{position:relative;}
     /* scroll */
 
