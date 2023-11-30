@@ -1,0 +1,41 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json", 
+	"version": 2,
+	"patterns": [
+		"three-columns-of-services",
+		"clients-section"
+	],
+    "settings": {
+        "typography": {
+            "fluid": false,
+            "fontFamilies": [
+                {
+                    "fontFace": [
+                        {
+							"fontFamily": "Roboto",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": ["file:./assets/fonts/Roboto/roboto-v30-latin-regular.woff2"]
+						}
+                    ],
+                    "fontFamily": "\"Roboto\", sans-serif",
+					"name": "Inter",
+					"slug": "body"
+                },
+                {
+					"fontFamily": "roboto, noto, arial, sans-serif",
+					"name": "System Sans-serif",
+					"slug": "system-sans-serif"
+				}
+            ]
+        }
+    },
+    "styles": {
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--body)",
+			"fontStyle": "normal",
+			"fontWeight": "400",
+			"lineHeight": "1.55"
+        }
+    }
+}
