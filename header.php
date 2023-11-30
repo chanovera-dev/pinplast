@@ -11,15 +11,16 @@ echo '
         wp_head();
     echo '
     </head>
-    <body id="body" '; body_class(); echo '>
+    <body id="body" '; body_class(); echo '>';
+    include(TEMPLATEPATH . '/parts/header/menu-mobile.php');    
+    echo '
         <header id="main-header" class="container main-header">
             <section id="responsive-header">';
-                include(TEMPLATEPATH . '/parts/header/menu-mobile.php');
                 echo '<section class="section header-content">';
                     include(TEMPLATEPATH . '/parts/header/menu-button.php');
                     include(TEMPLATEPATH . '/parts/header/brand.php');
                     get_search_form();
-                    include(TEMPLATEPATH . '/parts/header/lists.php');
+                    include(TEMPLATEPATH . '/parts/header/attachments.php');
                 echo '</section>';
             echo '</section>
             <section id="desktop-header" class="header-content">';
