@@ -67,6 +67,16 @@ function theme_pinplast_custom_fonts() {
             font-weight: 700;
             src: url('<?php echo get_template_directory_uri(); ?>/assets/fonts/roboto/roboto-v30-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
             }
+            /* Stroyka */
+            @font-face {
+            font-family: 'stroyka';
+            src:
+                    url('<?php echo get_template_directory_uri(); ?>/assets/fonts/stroyka/stroyka.ttf') format('truetype'),
+                    url('<?php echo get_template_directory_uri(); ?>/assets/fonts/stroyka/stroyka.woff') format('woff'),
+                    url('<?php echo get_template_directory_uri(); ?>/assets/fonts/stroyka/stroyka.svg#stroyka') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            }
         </style>
     <?php
 }
