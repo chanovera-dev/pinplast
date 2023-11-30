@@ -182,6 +182,13 @@
 						"textDecoration": "none"
 					}
 				},
+				":focus": {
+					"outline": {
+						"offset": "0",
+						"width": "0",
+						"style": "solid"
+					}
+				},
 				"color": {
 					"text": "var(--wp--preset--color--links)"
 				}
