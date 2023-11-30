@@ -68,8 +68,5 @@ img{display:block; height:auto;}
         .searchform .searchform-wrapper input[type=text]:focus{background-color:rgba(255,255,255,1);}
         .searchform .searchform-wrapper input[type=text]::placeholder{color:var(--wp--preset--color--background);}
         .searchform .searchform-wrapper input[type=text]:focus::placeholder{color:var(--wp--preset--color--attenuated);}
-    
-        /* footer */
-        .footer-content{grid-template-columns:1fr 1fr;}
     }
     
