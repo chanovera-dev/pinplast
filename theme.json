@@ -15,9 +15,29 @@
 					"slug": "background"
 				},
                 {
+					"color": "#ffd333",
+					"name": "Yellow",
+					"slug": "yellow"
+				},
+                {
+					"color": "#28a745",
+					"name": "Green",
+					"slug": "green"
+				},
+                {
 					"color": "#3d464d",
 					"name": "Text",
 					"slug": "text"
+				},
+                {
+					"color": "#b3b3b3",
+					"name": "Attenuated",
+					"slug": "attenuated"
+				},
+                {
+					"color": "#ebebeb",
+					"name": "Line",
+					"slug": "line"
 				},
                 {
                     "color": "#1a66ff",
