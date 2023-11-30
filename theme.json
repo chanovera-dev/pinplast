@@ -48,6 +48,11 @@
                     "color": "#1a66ff",
 					"name": "Links",
 					"slug": "links"
+                },
+				{
+                    "color": "0 0 0 .1rem #ffc107",
+					"name": "link-focus",
+					"slug": "link-focus"
                 }
             ]
         },
@@ -187,8 +192,7 @@
 						"offset": "0",
 						"width": "0",
 						"style": "solid"
-					},
-					"css": "& {box-shadow:0 0 0 .1rem #ffc107;}"
+					}
 				},
 				"color": {
 					"text": "var(--wp--preset--color--links)"
