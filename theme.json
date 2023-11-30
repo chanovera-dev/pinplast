@@ -40,6 +40,11 @@
 					"slug": "line"
 				},
                 {
+					"color": "#f0f0f0",
+					"name": "Border",
+					"slug": "border"
+				},
+                {
                     "color": "#1a66ff",
 					"name": "Links",
 					"slug": "links"
