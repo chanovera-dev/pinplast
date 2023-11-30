@@ -5,13 +5,13 @@ if ( defined( 'YITH_WCWL' ) && ! function_exists( 'yith_wcwl_get_items_count' ) 
     function yith_wcwl_get_items_count() {
       ob_start();
       ?>
-        <svg width="20px" height="20px">
-            <use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#heart-20"></use>
-        </svg>
         <a href="<?php echo esc_url( YITH_WCWL()->get_wishlist_url() ); ?>" class="counter">
-          <span class="yith-wcwl-items-count">
-            <?php echo esc_html( yith_wcwl_count_all_products() ); ?>
-          </span>
+            <svg width="20px" height="20px">
+                <use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#heart-20"></use>
+            </svg>
+            <span class="yith-wcwl-items-count">
+                <?php echo esc_html( yith_wcwl_count_all_products() ); ?>
+            </span>
         </a>
       <?php
       return ob_get_clean();
