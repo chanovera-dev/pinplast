@@ -50,7 +50,7 @@
 					"slug": "links"
                 },
 				{
-                    "color": "0 0 0 .1rem var(--wp--preset--color--text)",
+                    "color": "0 0 0 .2rem var(--wp--preset--color--text)",
 					"name": "link-focus",
 					"slug": "link-focus"
                 }

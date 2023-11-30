@@ -19,5 +19,5 @@ html{font-size:62.5%; scroll-behavior:smooth;}
 *, :before, :after{box-sizing:border-box; margin:0;}
 body{font-size:1.6rem;}
 :is(header,footer,aside,.resume-content) :is(ol,ul){margin:0; padding:0; list-style:none;}
-a{transition:all .3s ease;}
+a{transition:all .3s ease; border-radius:.3rem;}
 a:focus{outline:none; box-shadow:var(--wp--preset--color--link-focus);}
