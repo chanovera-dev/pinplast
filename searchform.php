@@ -2,17 +2,16 @@
 	<div class="searchform">
 		<input type="text" value="" name="s" id="s" class="input-search" placeholder="<?= __('Buscar', 'pinplast'); ?>">
         <div  id="search-buttons">
-            <button id="open-searchbar--button">
+            <div id="open-searchbar--button">
                 <svg width="20px" height="20px">
                     <use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#search-20"></use>
                 </svg>
-            </button>
-            <button id="close-searchbar--button">
+            </div>
+            <div id="close-searchbar--button">
                 <svg width="20px" height="20px">
                     <use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#cross-20"></use>
                 </svg>
-            </button>
-            
+            </div>  
         </div>
 	</div>
 </form>
