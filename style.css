@@ -33,6 +33,9 @@ img{display:block; height:auto;}
     .header-content .site-brand{position:relative; bottom:.5rem; margin-right:auto; z-index:3;}
     .header-content .site-brand .custom-logo-link:focus{outline:none;}
     .header-content .site-brand .custom-logo-link .custom-logo{width:13rem; transition:all .3s ease;}
+    /* botón del menú */
+    .menu-mobile--button{display:grid; width:3.6rem; height:3.6rem; border-radius:.3rem; place-content:center; transition:all .3s ease;}
+    .menu-mobile--button:hover{background-color:rgba(255,255,255,.5); cursor:pointer;}
     /* wishlist | carrito */
     .attachment-list{display:flex;}
     .attachment-list li .counter{position:relative; display:grid; place-content:center; width:4rem; height:3.6rem; border-radius:.3rem;}
