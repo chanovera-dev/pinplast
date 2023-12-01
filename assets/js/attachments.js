@@ -8,23 +8,37 @@ const pie = document.getElementById('main-footer');
 
 openMobileMenuButton.addEventListener("click", function() {
   menuMobile.classList.add('open');
+  cabecera.classList.add('menu-mobile-open');
+  contenido.classList.add('menu-mobile-open');
+  pie.classList.add('menu-mobile-open');
 });
 
 closeMobileMenuButton.addEventListener("click", function() {
   menuMobile.classList.remove('open');
+  cabecera.classList.remove('menu-mobile-open');
+  contenido.classList.remove('menu-mobile-open');
+  pie.classList.remove('menu-mobile-open');
 });
 
 contenido.addEventListener("click", function() {
   if (menuMobile.classList.contains('open')) {
-    closeMobileMenuButton.click(); // Simula un clic en el botón de cerrar el menú
+    closeMobileMenuButton.click();
+    cabecera.classList.remove('menu-mobile-open');
+    contenido.classList.remove('menu-mobile-open');
+    pie.classList.remove('menu-mobile-open');
   }
 });
 
 pie.addEventListener("click", function() {
   if (menuMobile.classList.contains('open')) {
-    closeMobileMenuButton.click(); // Simula un clic en el botón de cerrar el menú
+    closeMobileMenuButton.click();
+    cabecera.classList.remove('menu-mobile-open');
+    contenido.classList.remove('menu-mobile-open');
+    pie.classList.remove('menu-mobile-open');
   }
 });
+
+
 
 /* carga en svg4anybody después de que ha cargado todo el sitio */
 document.addEventListener('DOMContentLoaded', function() {
