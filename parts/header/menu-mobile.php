@@ -1,14 +1,14 @@
 <?php
     echo '
-    <div id="mobile-container" class="mobile-container">';
+    <div id="menu-mobile--wrapper" class="menu-mobile--wrapper">';
         $menu_id = get_nav_menu_locations()[ 'mobile' ];
         $menu = wp_get_nav_menu_object( $menu_id );
         $items = wp_get_nav_menu_items( $menu_id );
         echo '
-        <div class="title-wrapper">
-            <p class="title"><b>' . $menu->name . '</b></p>
+        <div class="name-menu--wrapper">
+            <p class="name-menu"><b>' . $menu->name . '</b></p>
             <button id="close-menu-mobile">
-            <svg width="20px" height="20px" id="close-searchbar--button">
+            <svg width="20px" height="20px">
                 <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#cross-20"></use>
             </svg>
             </button>
@@ -16,6 +16,8 @@
         wp_nav_menu(
             array(
                 'container' => 'nav',
+                'container_id' => 'menu-mobile',
+                'container_class' => 'menu-mobile', 
                 'theme_location' => 'mobile',
             ) 
         );
