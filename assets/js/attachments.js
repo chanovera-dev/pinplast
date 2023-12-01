@@ -16,18 +16,21 @@ closeMobileMenuButton.addEventListener("click", function() {
 
 cabecera.addEventListener("click", function() {
   if(menuMobile.contains.classList('open')){
+    myFunction(closeMobileMenuButton);
     menuMobile.classList.remove('open');
   }
 });
 
 contenido.addEventListener("click", function() {
   if(menuMobile.contains.classList('open')){
+    myFunction(closeMobileMenuButton);
     menuMobile.classList.remove('open');
   }
 });
 
 pie.addEventListener("click", function() {
   if(menuMobile.contains.classList('open')){
+    myFunction(closeMobileMenuButton);
     menuMobile.classList.remove('open');
   }
 });
