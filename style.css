@@ -51,11 +51,11 @@ img{display:block; height:auto;}
     /* caja de busqueda · activa */
     #responsive-header .searchform-wrapper.active{position:absolute; top:0; left:0; width:100%; height:100%; border-radius:0; background-color:var(--wp--preset--color--background); box-shadow:0 1px 7px rgba(0, 0, 0, 0.25); z-index:4;}
     #responsive-header .searchform-wrapper.active .searchform{position:relative; justify-content:flex-start;}
-        /* botones */
+        /* botones · activo */
         #responsive-header .searchform-wrapper.active .searchform #search-buttons{position:absolute; top:0; right:0; display:flex; padding:1.7rem; gap:3rem;}
-        #responsive-header .searchform-wrapper.active .searchform #search-buttons:hover{cursor:pointer;}
         #responsive-header .searchform-wrapper.active .searchform #search-buttons svg{fill:var(--wp--preset--color--attenuated);}
         #responsive-header .searchform-wrapper.active .searchform #search-buttons svg#close-searchbar--button{display:inherit;}
+        #responsive-header .searchform-wrapper.active .searchform #search-buttons svg#close-searchbar--button:hover{cursor:pointer;}
         /* input · activo */
         #responsive-header .searchform-wrapper.active .searchform input[type=text]{width:min(100% - 5.4rem); height:5.4rem; border-right:1px solid var(--wp--preset--color--border); background-color:var(--wp--preset--color--background); padding:0 5.4rem 0 1rem; font-family:'Roboto'; font-size:1.6rem;}
         #responsive-header .searchform-wrapper.active .searchform input[type=text]:focus{outline:none; border:none; border-right:1px solid var(--wp--preset--color--border);}
