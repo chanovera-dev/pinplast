@@ -44,14 +44,21 @@ img{display:block; height:auto;}
     #responsive-header .searchform-wrapper:hover{background-color:rgba(255,255,255,.5); cursor:pointer;}
     #responsive-header .searchform-wrapper .searchform{display:flex; align-items:center; justify-content:center;}
         /* botones */
-        #search-buttons svg{fill:var(--wp--preset--color--text);}
-        #search-buttons svg#close-searchbar--button{display:none;}
+        #responsive-header .searchform-wrapper .searchform #search-buttons svg{fill:var(--wp--preset--color--text);}
+        #responsive-header .searchform-wrapper .searchform #search-buttons svg#close-searchbar--button{display:none;}
         /* input */
         #responsive-header .searchform-wrapper .searchform input[type=text]{height:3.6rem; width:0; padding:0; border:none; border-radius:0; background-color:transparent;}
     /* caja de busqueda · activa */
     #responsive-header .searchform-wrapper.active{position:absolute; top:0; left:0; width:100%; height:100%; border-radius:0; background-color:var(--wp--preset--color--background); box-shadow:0 1px 7px rgba(0, 0, 0, 0.25); z-index:4;}
     #responsive-header .searchform-wrapper.active .searchform{position:relative;}
-    /* wishlist | carrito */
+        /* botones */
+        #responsive-header .searchform-wrapper.active .searchform #search-buttons{position:absolute; top:0; right:0; display:flex;}
+        #responsive-header .searchform-wrapper.active .searchform #search-buttons svg#open-searchbar--button{display:none;}
+        #responsive-header .searchform-wrapper.active .searchform #search-buttons svg#close-searchbar--button{display:inherit; fill:var(--wp--preset--color--attenuated);}
+        /* input · activo */
+        #responsive-header .searchform-wrapper.active .searchform input[type=text]{width:min(100% - 5.4rem); border-right:1px solid var(--wp--preset--color--border); background-color:var(--wp--preset--color--background); padding:0 5.4rem 0 1rem; font-family:'Roboto'; font-size:1.6rem;}
+        #responsive-header .searchform-wrapper.active .searchform input[type=text]:focus{outline:none; border:none;}
+        /* wishlist | carrito */
     .attachment-list{display:flex;}
     .attachment-list li .counter{position:relative; display:grid; place-content:center; width:4rem; height:3.6rem; border-radius:.3rem;}
     .attachment-list li .counter:hover{background-color:rgba(255,255,255,.5);}
