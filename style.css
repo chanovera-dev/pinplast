@@ -25,7 +25,7 @@ img{display:block; height:auto;}
 .container .section{width:var(--breakpoint); margin-inline:auto;}
 
 /* cabecera */
-#main-header{position:sticky; top:0; background-color:var(--wp--preset--color--yellow); transform:translate3d(0, 0, 0);}
+#main-header{position:sticky; top:0; background-color:var(--wp--preset--color--yellow); transform:translate3d(0, 0, 0); z-index:1;}
 /* responsive */
 #responsive-header .header-content{display:flex; align-items:center; height:5.4rem;}
 #responsive-header .header-content .site-brand{margin-left:1.5rem;}
