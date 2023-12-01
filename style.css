@@ -82,7 +82,7 @@ img{display:block; height:auto;}
     #responsive-header .searchform-wrapper:hover{background-color:rgba(255,255,255,.5);}
     #responsive-header .searchform-wrapper .searchform{display:flex; align-items:center; justify-content:center;}
         /* botones */
-        #responsive-header .searchform-wrapper .searchform #search-buttons div{display:grid; place-content:center; transition:all .3s ease;}
+        #responsive-header .searchform-wrapper .searchform #search-buttons div{transition:all .3s ease;}
         #responsive-header .searchform-wrapper .searchform #search-buttons div:hover{cursor:pointer;}
         #responsive-header .searchform-wrapper .searchform #search-buttons div svg{fill:var(--wp--preset--color--text);}
         #responsive-header .searchform-wrapper .searchform #search-buttons #close-searchbar--button{display:none;}
@@ -93,7 +93,7 @@ img{display:block; height:auto;}
     #responsive-header .searchform-wrapper.active .searchform{position:relative; justify-content:flex-start;}
         /* botones · activo */
         #responsive-header .searchform-wrapper.active .searchform #search-buttons{position:absolute; top:0; right:0; display:flex;}
-        #responsive-header .searchform-wrapper.active .searchform #search-buttons div{width:5.4rem; height:5.4rem;}
+        #responsive-header .searchform-wrapper.active .searchform #search-buttons div{width:5.4rem; height:5.4rem; display:grid; place-content:center;}
         #responsive-header .searchform-wrapper.active .searchform #search-buttons div svg{fill:var(--wp--preset--color--attenuated);}
         #responsive-header .searchform-wrapper.active .searchform #search-buttons #close-searchbar--button{display:inherit; transition:all .3s ease;}
         #responsive-header .searchform-wrapper.active .searchform #search-buttons #close-searchbar--button:hover{cursor:pointer; color:var(--wp--preset--color--text);}
