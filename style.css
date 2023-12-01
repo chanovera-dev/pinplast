@@ -23,3 +23,10 @@ a{transition:all .3s ease; border-radius:.2rem;}
 a:focus{outline:none; box-shadow:var(--wp--preset--color--link-focus);}
 img{display:block; height:auto;}
 .container .section{width:var(--breakpoint); margin-inline:auto;}
+
+/* cabecera */
+
+    /* marca */
+    .header-content .site-brand{position:relative; bottom:.5rem; margin-right:auto; z-index:3;}
+    .header-content .site-brand .custom-logo-link:focus{outline:none;}
+    .header-content .site-brand .custom-logo-link .custom-logo{width:13rem; transition:all .3s ease;}
