@@ -144,3 +144,19 @@ if (window.innerWidth < 767) {
       item.appendChild(button);
     });
   });
+
+  function toggleMenu(button) {
+    // Encuentra el elemento ul más cercano
+    var ulElement = button.nextElementSibling;
+
+    // Togglea la clase 'open' en el elemento ul
+    if (ulElement.classList.contains('open')) {
+      ulElement.classList.remove('open');
+    } else {
+      ulElement.classList.add('open');
+    }
+
+    // Gira el SVG 180 grados
+    var svgElement = button.querySelector('.rotate');
+    svgElement.classList.toggle('rotated');
+  }
