@@ -24,6 +24,7 @@ function pinplast_theme_custom_breakpoints() {
                 :root{
                     --breakpoint:min(100% - 3rem, 930px);
                 }
+                #responsive-header{display:none;}
             }
 
             @media(min-width:1199px){
