@@ -1,5 +1,10 @@
 /* arreglo del botón del menú y del menú */
+const openMobileMenuButton = document.getElementById('open-menu-mobile--button');
+const menuMobile = document.getElementById('menu-mobile--wrapper')
 
+openMobileMenuButton.addEventListener("click", function() {
+  menuMobile.classList.add('open');
+});
 
 
 /* carga en svg4anybody después de que ha cargado todo el sitio */
