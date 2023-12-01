@@ -150,6 +150,9 @@ if (window.innerWidth < 767) {
     // Encuentra el elemento ul con la clase 'sub-menu' más cercano
     var subMenu = button.closest('li').querySelector('.sub-menu');
 
-    // Toggle de la clase 'open'
+    // Toggle de la clase 'open' en el menú desplegable
     subMenu.classList.toggle('open');
+
+    // Toggle de la clase 'rotate' en el botón
+    button.classList.toggle('rotate');
   }
