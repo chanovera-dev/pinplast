@@ -84,6 +84,9 @@ img{display:block; height:auto;}
         0%  {background-color:hsla(206, 12%, 27%, 0.92);}
         100%{background-color:hsla(206, 12%, 27%, 0);}
     }
+/* desktop */
+.top-bar-wrapper{background-color:var(--wp--preset--color--top-bar);}
+.top-bar ul li a{display:flex; align-items:center; height:3.2rem; color:var(--wp--preset--color--top-bar-color);}
 
 #main{position:relative;}
 
