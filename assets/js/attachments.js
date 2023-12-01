@@ -109,24 +109,27 @@ if (window.innerWidth < 767) {
 
 
 
-// Obtén todos los elementos <li> con la clase 'menu-item-has-children'
-var elementosConChildren = document.querySelectorAll('.menu-item-has-children');
+// Selecciona todos los elementos li con la clase 'menu-item-has-children'
+var menuItems = document.querySelectorAll('.menu-item-has-children');
 
-// Crea un nuevo elemento SVG
-var svgElemento = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-svgElemento.setAttribute('class', 'mobile-links__item-arrow');
-svgElemento.setAttribute('width', '12');
-svgElemento.setAttribute('height', '7');
+// Itera sobre cada elemento li
+menuItems.forEach(function(menuItem) {
+    // Encuentra el botón dentro del elemento li
+    var button = menuItem.querySelector('button');
 
-// Crea un nuevo elemento <use> dentro del SVG
-var useElemento = document.createElementNS('http://www.w3.org/2000/svg', 'use');
-useElemento.setAttribute('xlink:href', 'https://2023.pinplast.com.mx/wp-content/themes/pinplast/assets/img/sprite.svg#arrow-rounded-down-12x7');
+    // Crea un nuevo elemento svg
+    var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('class', 'mobile-links__item-arrow');
+    svg.setAttribute('width', '12px');
+    svg.setAttribute('height', '7px');
 
-// Agrega el <use> al SVG
-svgElemento.appendChild(useElemento);
+    // Crea el elemento use dentro del svg y establece el atributo xlink:href
+    var use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+    use.setAttribute('xlink:href', 'https://2023.pinplast.com.mx/wp-content/themes/pinplast/assets/img/sprite.svg#arrow-rounded-down-12x7');
 
-// Itera sobre cada elemento y agrega el elemento SVG al final de su contenido
-elementosConChildren.forEach(function(elemento) {
-  // Agrega el elemento SVG al final del contenido del <li>
-  elemento.appendChild(svgElemento.cloneNode(true)); // Clona el elemento SVG para evitar problemas de referencia
+    // Agrega el elemento use al svg
+    svg.appendChild(use);
+
+    // Agrega el svg al final del botón sin borrar el contenido existente
+    button.appendChild(svg);
 });
