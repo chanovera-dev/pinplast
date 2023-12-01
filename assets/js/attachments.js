@@ -93,14 +93,16 @@ window.addEventListener("scroll", () => {
 
 
 // muestra y oculta el cuadro de búsqueda
-let searchbarButtonOpen = document.getElementById('open-searchbar--button');
-let searchbarButtonClose = document.getElementById('close-searchbar--button');
-let searchForm = document.getElementById('searchform-wrapper');
+if (window.innerWidth < 767) {
+  let searchbarButtonOpen = document.getElementById('open-searchbar--button');
+  let searchbarButtonClose = document.getElementById('close-searchbar--button');
+  let searchForm = document.getElementById('searchform-wrapper');
 
-searchbarButtonOpen.addEventListener('click', function() {  
-    searchForm.classList.add('active');
-});
+  searchbarButtonOpen.addEventListener('click', function() {  
+      searchForm.classList.add('active');
+  });
 
-searchbarButtonClose.addEventListener('click', function() {  
-    searchForm.classList.remove('active');
-});
+  searchbarButtonClose.addEventListener('click', function() {  
+      searchForm.classList.remove('active');
+  });
+}
