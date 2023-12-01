@@ -3,7 +3,7 @@
 		<input type="text" value="" name="s" id="s" class="input-search" placeholder="<?= __('Buscar', 'pinplast') ?>">
     <div  id="activate-search">
     <svg width="20px" height="20px">
-        <use xlink:href="<?php get_template_directory_uri()?>/assets/img/sprite.svg#search-20"></use>
+        <use xlink:href="<?php get_template_directory_uri(); ?>/assets/img/sprite.svg#search-20"></use>
     </svg>
           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi-x-circle" id="bi-x-circle"viewBox="0 0 16 16">
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
