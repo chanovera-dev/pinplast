@@ -5,6 +5,7 @@ function pinplast_theme_custom_breakpoints() {
         <style>
             :root{
                 --breakpoint:min(100% - 3rem, 575px);
+                --scroll-up-header:0;
             }
 
             @media(min-width:576px){
