@@ -41,7 +41,7 @@ img{display:block; height:auto;}
     #responsive-header .searchform-wrapper .searchform{display:flex; align-items:center;}
         /* botones */
         #search-buttons svg{fill:var(--wp--preset--color--text);}
-        #search-buttons svg.bi-x-circle{display:none;}
+        #search-buttons svg#close-searchbar--button{display:none;}
         /* input */
         #responsive-header .searchform-wrapper .searchform input[type=text]{height:3.6rem; width:0; padding:0; border:none; border-radius:0; background-color:transparent;}
     /* wishlist | carrito */
