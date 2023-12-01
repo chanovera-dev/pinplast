@@ -55,7 +55,7 @@ img{display:block; height:auto;}
     /* listas del menú */
     #menu-mobile ul{margin:0; padding:0; list-style:none;}
     #menu-mobile ul li{border-bottom:1px solid var(--wp--preset--color--border);}
-    #menu-mobile ul li a{padding:1.2rem 2rem;}
+    #menu-mobile ul li a{padding:1.2rem 2rem; color:var(--wp--preset--color--text);}
     /* menu mobile · abierto */
     .menu-mobile--wrapper.open{left:0;}
     :is(#main-header, #main, #main-footer).menu-mobile-open:before{
