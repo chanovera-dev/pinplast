@@ -14,12 +14,6 @@ closeMobileMenuButton.addEventListener("click", function() {
   menuMobile.classList.remove('open');
 });
 
-cabecera.addEventListener("click", function() {
-  if (menuMobile.classList.contains('open')) {
-    closeMobileMenuButton.click(); // Simula un clic en el botón de cerrar el menú
-  }
-});
-
 contenido.addEventListener("click", function() {
   if (menuMobile.classList.contains('open')) {
     closeMobileMenuButton.click(); // Simula un clic en el botón de cerrar el menú
