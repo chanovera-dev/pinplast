@@ -2,6 +2,7 @@
 const openMobileMenuButton = document.getElementById('open-menu-mobile--button');
 const closeMobileMenuButton = document.getElementById('close-menu-mobile');
 const menuMobile = document.getElementById('menu-mobile--wrapper')
+const cuerpo = document.getElementById('body');
 const cabecera = document.getElementById('main-header');
 const contenido = document.getElementById('main');
 const pie = document.getElementById('main-footer');
@@ -11,6 +12,7 @@ openMobileMenuButton.addEventListener("click", function() {
   cabecera.classList.add('menu-mobile-open');
   contenido.classList.add('menu-mobile-open');
   pie.classList.add('menu-mobile-open');
+  cuerpo.style.overflow = 'hidden';
 });
 
 closeMobileMenuButton.addEventListener("click", function() {
@@ -18,6 +20,7 @@ closeMobileMenuButton.addEventListener("click", function() {
   cabecera.classList.remove('menu-mobile-open');
   contenido.classList.remove('menu-mobile-open');
   pie.classList.remove('menu-mobile-open');
+  cuerpo.style.overflow = 'inherit';
 });
 
 contenido.addEventListener("click", function() {
@@ -26,6 +29,7 @@ contenido.addEventListener("click", function() {
     cabecera.classList.add('menu-mobile-close');
     contenido.classList.add('menu-mobile-close');
     pie.classList.add('menu-mobile-close');
+    cuerpo.style.overflow = 'inherit';
       setTimeout(function() {
         cabecera.classList.remove('menu-mobile-open');
         contenido.classList.remove('menu-mobile-open');
@@ -43,6 +47,7 @@ pie.addEventListener("click", function() {
     cabecera.classList.add('menu-mobile-close');
     contenido.classList.add('menu-mobile-close');
     pie.classList.add('menu-mobile-close');
+    cuerpo.style.overflow = 'inherit';
       setTimeout(function() {
         cabecera.classList.remove('menu-mobile-open');
         contenido.classList.remove('menu-mobile-open');
