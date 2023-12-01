@@ -147,9 +147,9 @@ if (window.innerWidth < 767) {
   });
 
   function toggleSubMenu(button) {
-    // Encuentra el elemento ul más cercano al botón
-    var closestUl = button.closest('.mobile-links__item-toggle').querySelector('.sub-menu');
+    // Encuentra el elemento ul con la clase 'sub-menu' más cercano
+    var subMenu = button.closest('li').querySelector('.sub-menu');
 
-    // Toggle de la clase 'open' en el elemento ul
-    closestUl.classList.toggle('open');
+    // Toggle de la clase 'open'
+    subMenu.classList.toggle('open');
   }
