@@ -146,18 +146,10 @@ if (window.innerWidth < 767) {
     });
   });
 
-  function toggleMenu(button) {
-    // Encuentra el elemento ul más cercano
-    var ulElement = button.nextElementSibling;
+  function toggleSubMenu(button) {
+    // Encuentra el elemento ul más cercano al botón
+    var closestUl = button.closest('.mobile-links__item').querySelector('.sub-menu');
 
-    // Togglea la clase 'open' en el elemento ul
-    if (ulElement.classList.contains('open')) {
-      ulElement.classList.remove('open');
-    } else {
-      ulElement.classList.add('open');
-    }
-
-    // Gira el SVG 180 grados
-    var svgElement = button.querySelector('.rotate');
-    svgElement.classList.toggle('rotated');
+    // Toggle de la clase 'open' en el elemento ul
+    closestUl.classList.toggle('open');
   }
