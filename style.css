@@ -25,7 +25,7 @@ img{display:block; height:auto;}
 .container .section{width:var(--breakpoint); margin-inline:auto;}
 
 /* cabecera */
-
+#main-header{position:sticky; background-color:var(--wp--preset--color--yellow);}
     /* marca */
     .header-content .site-brand{position:relative; bottom:.5rem; margin-right:auto; z-index:3;}
     .header-content .site-brand .custom-logo-link:focus{outline:none;}
