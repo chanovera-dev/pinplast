@@ -39,10 +39,12 @@ img{display:block; height:auto;}
     /* botón del menú */
     .open-menu-mobile--button{display:grid; width:3.6rem; height:3.6rem; border-radius:.3rem; place-content:center; transition:all .3s ease;}
     .open-menu-mobile--button:hover{background-color:rgba(255,255,255,.5); cursor:pointer;}
+    .open-menu-mobile--button svg{fill:var(--wp--preset--color--text);}
     /* wishlist | carrito */
     .attachment-list{display:flex;}
     .attachment-list li .counter{position:relative; display:grid; place-content:center; width:4rem; height:3.6rem; border-radius:.3rem;}
     .attachment-list li .counter:hover{background-color:rgba(255,255,255,.5);}
+    .attachment-list li .counter svg{fill:var(--wp--preset--color--text);}
     .attachment-list li .counter .wrapper{position:absolute; top:0; right:0;}
     .attachment-list li .counter .wrapper .number{display:grid; width:1.5rem; height:1.5rem; place-content:center; background-color:var(--wp--preset--color--background); border-radius:50%; color:var(--wp--preset--color--text); font-size:1rem;}
     /* menu mobile · cerrado */
