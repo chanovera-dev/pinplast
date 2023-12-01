@@ -2,6 +2,9 @@
 const openMobileMenuButton = document.getElementById('open-menu-mobile--button');
 const closeMobileMenuButton = document.getElementById('close-menu-mobile');
 const menuMobile = document.getElementById('menu-mobile--wrapper')
+const cabecera = document.getElementById('main-header');
+const contenido = document.getElementById('main');
+const pie = document.getElementById('main-footer');
 
 openMobileMenuButton.addEventListener("click", function() {
   menuMobile.classList.add('open');
@@ -10,6 +13,25 @@ openMobileMenuButton.addEventListener("click", function() {
 closeMobileMenuButton.addEventListener("click", function() {
   menuMobile.classList.remove('open');
 });
+
+cabecera.addEventListener("click", function() {
+  if(menuMobile.contains.classList('open')){
+    menuMobile.classList.remove('open');
+  }
+});
+
+contenido.addEventListener("click", function() {
+  if(menuMobile.contains.classList('open')){
+    menuMobile.classList.remove('open');
+  }
+});
+
+pie.addEventListener("click", function() {
+  if(menuMobile.contains.classList('open')){
+    menuMobile.classList.remove('open');
+  }
+});
+
 
 
 /* carga en svg4anybody después de que ha cargado todo el sitio */
