@@ -25,7 +25,10 @@ img{display:block; height:auto;}
 .container .section{width:var(--breakpoint); margin-inline:auto;}
 
 /* cabecera */
-#main-header{position:sticky; top:0; background-color:var(--wp--preset--color--yellow);}
+#main-header{position:sticky; top:0; background-color:var(--wp--preset--color--yellow); transform:translate3d(0, 0, 0);}
+/* scroll actions */    
+.scroll-down #main-header{transform:translate3d(0, -100%, 0); transition:all .3s ease-in-out;}
+.scroll-up #main-header{transform:translate3d(0, var(--scroll-up-header), 0); transition:all .3s ease-in-out}
     /* marca */
     .header-content .site-brand{position:relative; bottom:.5rem; margin-right:auto; z-index:3;}
     .header-content .site-brand .custom-logo-link:focus{outline:none;}
