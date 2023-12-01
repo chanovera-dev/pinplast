@@ -23,18 +23,34 @@ closeMobileMenuButton.addEventListener("click", function() {
 contenido.addEventListener("click", function() {
   if (menuMobile.classList.contains('open')) {
     closeMobileMenuButton.click();
-    cabecera.classList.remove('menu-mobile-open');
-    contenido.classList.remove('menu-mobile-open');
-    pie.classList.remove('menu-mobile-open');
+    cabecera.classList.add('menu-mobile-close');
+    contenido.classList.add('menu-mobile-close');
+    pie.classList.add('menu-mobile-close');
+      setTimeout(function() {
+        cabecera.classList.remove('menu-mobile-open');
+        contenido.classList.remove('menu-mobile-open');
+        pie.classList.remove('menu-mobile-open');
+        cabecera.classList.remove('menu-mobile-close');
+        contenido.classList.remove('menu-mobile-close');
+        pie.classList.remove('menu-mobile-close');
+    }, 300); 
   }
 });
 
 pie.addEventListener("click", function() {
   if (menuMobile.classList.contains('open')) {
     closeMobileMenuButton.click();
-    cabecera.classList.remove('menu-mobile-open');
-    contenido.classList.remove('menu-mobile-open');
-    pie.classList.remove('menu-mobile-open');
+    cabecera.classList.add('menu-mobile-close');
+    contenido.classList.add('menu-mobile-close');
+    pie.classList.add('menu-mobile-close');
+      setTimeout(function() {
+        cabecera.classList.remove('menu-mobile-open');
+        contenido.classList.remove('menu-mobile-open');
+        pie.classList.remove('menu-mobile-open');
+        cabecera.classList.remove('menu-mobile-close');
+        contenido.classList.remove('menu-mobile-close');
+        pie.classList.remove('menu-mobile-close');
+    }, 300);
   }
 });
 
