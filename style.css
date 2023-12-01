@@ -82,8 +82,9 @@ img{display:block; height:auto;}
     #responsive-header .searchform-wrapper:hover{background-color:rgba(255,255,255,.5); cursor:pointer;}
     #responsive-header .searchform-wrapper .searchform{display:flex; align-items:center; justify-content:center;}
         /* botones */
-        #responsive-header .searchform-wrapper .searchform #search-buttons svg{fill:var(--wp--preset--color--text);}
-        #responsive-header .searchform-wrapper .searchform #search-buttons svg#close-searchbar--button{display:none;}
+        #responsive-header .searchform-wrapper .searchform #search-buttons button{border:none; background-color:none;}
+        #responsive-header .searchform-wrapper .searchform #search-buttons button svg{fill:var(--wp--preset--color--text);}
+        #responsive-header .searchform-wrapper .searchform #search-buttons #close-searchbar--button{display:none;}
         /* input */
         #responsive-header .searchform-wrapper .searchform input[type=text]{height:3.6rem; width:0; padding:0; border:none; border-radius:0; background-color:transparent;}
     /* caja de busqueda · activa */
@@ -92,8 +93,8 @@ img{display:block; height:auto;}
         /* botones · activo */
         #responsive-header .searchform-wrapper.active .searchform #search-buttons{position:absolute; top:0; right:0; display:flex; padding:1.7rem; gap:3rem;}
         #responsive-header .searchform-wrapper.active .searchform #search-buttons svg{fill:var(--wp--preset--color--attenuated);}
-        #responsive-header .searchform-wrapper.active .searchform #search-buttons svg#close-searchbar--button{display:inherit; transition:all .3s ease;}
-        #responsive-header .searchform-wrapper.active .searchform #search-buttons svg#close-searchbar--button:hover{cursor:pointer; color:var(--wp--preset--color--text);}
+        #responsive-header .searchform-wrapper.active .searchform #search-buttons #close-searchbar--button{display:inherit; transition:all .3s ease;}
+        #responsive-header .searchform-wrapper.active .searchform #search-buttons #close-searchbar--button:hover{cursor:pointer; color:var(--wp--preset--color--text);}
         /* input · activo */
         #responsive-header .searchform-wrapper.active .searchform input[type=text]{width:min(100% - 5.4rem); height:5.4rem; border-right:1px solid var(--wp--preset--color--border); background-color:var(--wp--preset--color--background); padding:0 5.4rem 0 1rem; font-family:'Roboto'; font-size:1.6rem;}
         #responsive-header .searchform-wrapper.active .searchform input[type=text]:focus{outline:none; border:none; border-right:1px solid var(--wp--preset--color--border);}
