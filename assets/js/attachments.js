@@ -1,9 +1,14 @@
 /* arreglo del botón del menú y del menú */
 const openMobileMenuButton = document.getElementById('open-menu-mobile--button');
+const closeMobileMenuButton = document.getElementById('close-menu-mobile');
 const menuMobile = document.getElementById('menu-mobile--wrapper')
 
 openMobileMenuButton.addEventListener("click", function() {
   menuMobile.classList.add('open');
+});
+
+closeMobileMenuButton.addEventListener("click", function() {
+  menuMobile.classList.remove('open');
 });
 
 
