@@ -148,7 +148,7 @@ if (window.innerWidth < 767) {
 
   function toggleSubMenu(button) {
     // Encuentra el elemento ul más cercano al botón
-    var closestUl = button.closest('.mobile-links__item').querySelector('.sub-menu');
+    var closestUl = button.closest('.mobile-links__item-toggle').querySelector('.sub-menu');
 
     // Toggle de la clase 'open' en el elemento ul
     closestUl.classList.toggle('open');
