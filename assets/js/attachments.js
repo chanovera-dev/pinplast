@@ -114,9 +114,9 @@ var menuItems = document.querySelectorAll('.menu-item-has-children');
 
 // Itera sobre cada elemento li
 menuItems.forEach(function(menuItem) {
-    // Encuentra el botón dentro del elemento li
-    var button = menuItem.querySelector('button');
-
+    // Crea un nuevo elemento button
+    var button = document.createElement('button');
+    
     // Crea un nuevo elemento svg
     var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svg.setAttribute('class', 'mobile-links__item-arrow');
@@ -130,6 +130,9 @@ menuItems.forEach(function(menuItem) {
     // Agrega el elemento use al svg
     svg.appendChild(use);
 
-    // Agrega el svg al final del botón sin borrar el contenido existente
+    // Agrega el svg al botón sin borrar el contenido existente
     button.appendChild(svg);
+
+    // Agrega el botón al final del contenido del elemento li
+    menuItem.appendChild(button);
 });
