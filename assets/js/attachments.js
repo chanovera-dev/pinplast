@@ -120,7 +120,7 @@ svgElemento.setAttribute('height', '7');
 
 // Crea un nuevo elemento <use> dentro del SVG
 var useElemento = document.createElementNS('http://www.w3.org/2000/svg', 'use');
-useElemento.setAttribute('xlink:href', '<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#arrow-rounded-down-12x7');
+useElemento.setAttribute('xlink:href', 'https://2023.pinplast.com.mx/wp-content/themes/pinplast/assets/img/sprite.svg#arrow-rounded-down-12x7');
 
 // Agrega el <use> al SVG
 svgElemento.appendChild(useElemento);
