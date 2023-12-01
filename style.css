@@ -58,7 +58,8 @@ img{display:block; height:auto;}
         /* sub menú */
         #menu-mobile > ul li.menu-item-has-children{position:relative;}
         #menu-mobile > ul li.menu-item-has-children .mobile-links__item-toggle{position:absolute; top:0; right:0; width:4.8rem; height:4.8rem; background-color:var(--wp--preset--color--background); border:none; border-left:1px solid var(--wp--preset--color--border); border-bottom:1px solid var(--wp--preset--color--border); border-radius:0;}
-        #menu-mobile > ul li.menu-item-has-children > ul.sub-menu li a{font-size:1.4rem; background-color:#f7f7f7; height:4rem; opacity:1;}
+        #menu-mobile > ul li.menu-item-has-children > ul.sub-menu li a{font-size:0; background-color:#f7f7f7; height:0; opacity:0; transition:all .3s ease;}
+        #menu-mobile > ul li.menu-item-has-children > ul.sub-menu.open li a{font-size:1.4rem; height:4rem; opacity:1;}
     /* menu mobile · abierto */
     .menu-mobile--wrapper.open{left:0;}
     :is(#main-header, #main, #main-footer).menu-mobile-open:before{
