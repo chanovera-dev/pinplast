@@ -6,7 +6,7 @@ if (window.innerWidth < 991) {
   const cuerpo = document.getElementById('body');
   const cabecera = document.getElementById('main-header');
   const contenido = document.getElementById('main');
-  let pie = document.getElementById('main-footer');
+  const pie = document.getElementById('main-footer');
 
   openMobileMenuButton.addEventListener("click", function() {
     menuMobile.classList.add('open');
@@ -41,25 +41,25 @@ if (window.innerWidth < 991) {
       }, 300); 
     }
   });
-}
 
-pie.addEventListener("click", function() {
-  if (menuMobile.classList.contains('open')) {
-    closeMobileMenuButton.click();
-    cabecera.classList.add('menu-mobile-close');
-    contenido.classList.add('menu-mobile-close');
-    pie.classList.add('menu-mobile-close');
-    cuerpo.style.overflow = 'inherit';
-      setTimeout(function() {
-        cabecera.classList.remove('menu-mobile-open');
-        contenido.classList.remove('menu-mobile-open');
-        pie.classList.remove('menu-mobile-open');
-        cabecera.classList.remove('menu-mobile-close');
-        contenido.classList.remove('menu-mobile-close');
-        pie.classList.remove('menu-mobile-close');
-    }, 300);
-  }
-});
+  pie.addEventListener("click", function() {
+    if (menuMobile.classList.contains('open')) {
+      closeMobileMenuButton.click();
+      cabecera.classList.add('menu-mobile-close');
+      contenido.classList.add('menu-mobile-close');
+      pie.classList.add('menu-mobile-close');
+      cuerpo.style.overflow = 'inherit';
+        setTimeout(function() {
+          cabecera.classList.remove('menu-mobile-open');
+          contenido.classList.remove('menu-mobile-open');
+          pie.classList.remove('menu-mobile-open');
+          cabecera.classList.remove('menu-mobile-close');
+          contenido.classList.remove('menu-mobile-close');
+          pie.classList.remove('menu-mobile-close');
+      }, 300);
+    }
+  });  
+}
 
 
 
