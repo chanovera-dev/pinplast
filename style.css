@@ -73,7 +73,14 @@ img{display:block; height:auto;}
     .menu-mobile--wrapper .name-menu--wrapper #close-menu-mobile:hover svg{fill:var(--wp--preset--color--text);}
     /* menu mobile · abierto */
     .menu-mobile--wrapper.open{left:0;}
-    #main-header.menu-mobile-open:before, #main.menu-mobile-open:before, #main-footer.menu-mobile-open:before{position:absolute; content:''; top:0; left:0; width:100%; height:100%; background-color:hsla(206, 12%, 27%, 0.92);}
+    :is(#main-header, #main, #main-footer).menu-mobile-open:before{
+        position:absolute; top:0; left:0; content:''; width:100%; height:100%; background-color:hsla(206, 12%, 27%, 0.92); z-index:2;
+        animation-name:animation-open-menu-mobile; animation-direction:normal; animation-duration:.3s; animation-timing-function:ease; animation-iteration-count:1;
+    }
+    @keyframes animation-open-menu-mobile{
+        0%  {background-color:hsla(206, 12%, 27%, 0);}
+        100%{background-color:hsla(206, 12%, 27%, 0.92);}
+    }
 
 #main{position:relative;}
 
