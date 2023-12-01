@@ -1,0 +1,3 @@
+<svg class="mobile-links__item-arrow" width="12px" height="7px">
+    <use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#arrow-rounded-down-12x7"></use>
+</svg>
