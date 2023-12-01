@@ -35,3 +35,5 @@ img{display:block; height:auto;}
     .header-content .site-brand .custom-logo-link .custom-logo{width:13rem; transition:all .3s ease;}
     /* wishlist | carrito */
     .attachment-list{display:flex;}
+    .attachment-list li .counter{display:grid; place-content:center; width:4rem; height:3.6rem; border-radius:.3rem;}
+    .attachment-list li .counter:hover{background-color:rgba(255,255,255,.5);}
