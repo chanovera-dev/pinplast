@@ -109,30 +109,32 @@ if (window.innerWidth < 767) {
 
 
 
-// Selecciona todos los elementos li con la clase 'menu-item-has-children'
-var menuItems = document.querySelectorAll('.menu-item-has-children');
+document.addEventListener('DOMContentLoaded', function() {
+  // Selecciona todos los elementos li con la clase 'menu-item-has-children'
+  var menuItems = document.querySelectorAll('.menu-item-has-children');
 
-// Itera sobre cada elemento li
-menuItems.forEach(function(menuItem) {
-    // Crea un nuevo elemento button
-    var button = document.createElement('button');
-    
-    // Crea un nuevo elemento svg
-    var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    svg.setAttribute('class', 'mobile-links__item-arrow');
-    svg.setAttribute('width', '12px');
-    svg.setAttribute('height', '7px');
+  // Itera sobre cada elemento li
+  menuItems.forEach(function(menuItem) {
+      // Crea un nuevo elemento button
+      var button = document.createElement('button');
+      
+      // Crea un nuevo elemento svg
+      var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      svg.setAttribute('class', 'mobile-links__item-arrow');
+      svg.setAttribute('width', '12px');
+      svg.setAttribute('height', '7px');
 
-    // Crea el elemento use dentro del svg y establece el atributo xlink:href
-    var use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
-    use.setAttribute('xlink:href', 'https://2023.pinplast.com.mx/wp-content/themes/pinplast/assets/img/sprite.svg#arrow-rounded-down-12x7');
+      // Crea el elemento use dentro del svg y establece el atributo xlink:href
+      var use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+      use.setAttribute('xlink:href', 'https://2023.pinplast.com.mx/wp-content/themes/pinplast/assets/img/sprite.svg#arrow-rounded-down-12x7');
 
-    // Agrega el elemento use al svg
-    svg.appendChild(use);
+      // Agrega el elemento use al svg
+      svg.appendChild(use);
 
-    // Agrega el svg al botón sin borrar el contenido existente
-    button.appendChild(svg);
+      // Agrega el svg al botón sin borrar el contenido existente
+      button.appendChild(svg);
 
-    // Agrega el botón al final del contenido del elemento li
-    menuItem.appendChild(button);
+      // Agrega el botón al final del contenido del elemento li
+      menuItem.appendChild(button);
+  });
 });
