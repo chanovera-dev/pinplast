@@ -75,7 +75,7 @@ img{display:block; height:auto;}
 
 #main-footer{position: relative;}
 
-@media(max-width:768px){
+@media(max-width:767px){
     /* cabecera · caja de búsqueda */
     /* caja de búsqueda · inactiva */
     #responsive-header .searchform-wrapper{width:4rem; height:3.6rem; border-radius:.3rem; transition:all .3s ease;}
