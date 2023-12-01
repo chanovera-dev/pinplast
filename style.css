@@ -53,6 +53,7 @@ img{display:block; height:auto;}
     #responsive-header .searchform-wrapper.active .searchform{position:relative; justify-content:flex-start;}
         /* botones */
         #responsive-header .searchform-wrapper.active .searchform #search-buttons{position:absolute; top:0; right:0; display:flex; padding:1.7rem; gap:3rem;}
+        #responsive-header .searchform-wrapper.active .searchform #search-buttons:hover{cursor:pointer;}
         #responsive-header .searchform-wrapper.active .searchform #search-buttons svg{fill:var(--wp--preset--color--attenuated);}
         #responsive-header .searchform-wrapper.active .searchform #search-buttons svg#close-searchbar--button{display:inherit;}
         /* input · activo */
