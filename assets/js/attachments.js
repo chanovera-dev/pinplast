@@ -120,6 +120,7 @@ if (window.innerWidth < 767) {
       var button = document.createElement('button');
       // Agregar la clase 'mobile-links__item-toggle' al botón
       button.classList.add('mobile-links__item-toggle');
+      button.setAttribute('onclick', 'toggleMenu(this)');
       
       // Crear el elemento SVG
       var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
