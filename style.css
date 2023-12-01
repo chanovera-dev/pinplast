@@ -100,7 +100,7 @@ img{display:block; height:auto;}
 
 @media(min-width:768px){
     /* cabecera · caja de búsqueda */
-    #responsive-header .searchform-wrapper{width:100%; height:3.6rem;}
+    #responsive-header .searchform-wrapper{width:100%; height:3.6rem; padding:0 1.5rem;}
     #responsive-header .searchform-wrapper .searchform{position:relative; display:inherit;}
     #responsive-header .searchform-wrapper .searchform #search-buttons{height:3.6rem; position:absolute; top:0; right:0;}
     #responsive-header .searchform-wrapper .searchform #search-buttons svg#open-searchbar--button{fill:var(--wp--preset--color--attenuated); transition:all .3s ease;}
