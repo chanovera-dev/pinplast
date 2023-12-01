@@ -21,6 +21,21 @@ add_action( 'get_footer', 'load_parts_footer' );
 
 
 
+// Registro de menús
+register_nav_menus( 
+    array(
+        'mobile' => __( 'Mobile', 'pinplast' ),
+        'primary' => __( 'Primary', 'pinplast' ),
+        'secondary' => __( 'Secondary', 'pinplast' ),
+        'tertiary' => __( 'Tertiary', 'pinplast' ),
+        'information' => __( 'Information', 'pinplast' ),
+        'most-viewed' => __( 'Most viewed', 'pinplast' ),
+        'social' => __( 'Social', 'pinplast' ), 
+    ) 
+);
+
+
+
 // Anexo para establecer los breakpoints
 require_once(get_template_directory() . '/functions/breakpoints.php');
 // Anexo para definir el contador de la lista de deseos
