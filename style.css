@@ -27,7 +27,7 @@ img{display:block; height:auto;}
 /* cabecera */
 #main-header{position:sticky; top:0; background-color:var(--wp--preset--color--yellow); transform:translate3d(0, 0, 0);}
 /* responsive */
-#responsive-header .header-content{display:flex; align-items:center;}
+#responsive-header .header-content{display:flex; align-items:center; height:5.4rem;}
 /* scroll actions */    
 .scroll-down #main-header{transform:translate3d(0, -100%, 0); transition:all .3s ease-in-out;}
 .scroll-up #main-header{transform:translate3d(0, var(--scroll-up-header), 0); transition:all .3s ease-in-out}
