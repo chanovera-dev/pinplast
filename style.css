@@ -85,6 +85,7 @@ img{display:block; height:auto;}
         #responsive-header .searchform-wrapper .searchform #search-buttons div{transition:all .3s ease;}
         #responsive-header .searchform-wrapper .searchform #search-buttons div:hover{cursor:pointer;}
         #responsive-header .searchform-wrapper .searchform #search-buttons div svg{fill:var(--wp--preset--color--text);}
+        #responsive-header .searchform-wrapper .searchform #search-buttons #open-searchbar--button{width:4rem; height:3.6rem; display:grid; place-content:center;}
         #responsive-header .searchform-wrapper .searchform #search-buttons #close-searchbar--button{display:none;}
         /* input */
         #responsive-header .searchform-wrapper .searchform input[type=text]{height:3.6rem; width:0; padding:0; border:none; border-radius:0; background-color:transparent;}
