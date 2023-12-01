@@ -86,7 +86,8 @@ img{display:block; height:auto;}
     }
 /* desktop */
 .top-bar-wrapper{background-color:var(--wp--preset--color--top-bar);}
-.top-bar ul li a{display:flex; align-items:center; height:3.2rem; color:var(--wp--preset--color--top-bar-color);}
+.top-bar ul{display:flex;}
+.top-bar ul li a{display:flex; align-items:center; height:3.2rem; color:var(--wp--preset--color--top-bar-color); padding:0 1rem;}
 
 #main{position:relative;}
 
