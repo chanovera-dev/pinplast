@@ -4,7 +4,15 @@
         $menu_id = get_nav_menu_locations()[ 'mobile' ];
         $menu = wp_get_nav_menu_object( $menu_id );
         $items = wp_get_nav_menu_items( $menu_id );
-        echo '<div class="title-wrapper"><h2 class="title">' . $menu->name . '</h2></div>';
+        echo '
+        <div class="title-wrapper">
+            <h2 class="title">' . $menu->name . '</h2>
+            <button id="close-menu-mobile">
+            <svg width="20px" height="20px" id="close-searchbar--button">
+                <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#cross-20"></use>
+            </svg>
+            </button>
+        </div>';
         wp_nav_menu(
             array(
                 'container' => 'nav',
