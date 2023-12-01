@@ -6,7 +6,7 @@ if (window.innerWidth < 991) {
   const cuerpo = document.getElementById('body');
   const cabecera = document.getElementById('main-header');
   const contenido = document.getElementById('main');
-  const pie = document.getElementById('main-footer');
+  let pie = document.getElementById('main-footer');
 
   openMobileMenuButton.addEventListener("click", function() {
     menuMobile.classList.add('open');
