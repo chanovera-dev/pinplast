@@ -6,7 +6,7 @@
         $items = wp_get_nav_menu_items( $menu_id );
         echo '
         <div class="title-wrapper">
-            <h2 class="title">' . $menu->name . '</h2>
+            <p class="title"><b>' . $menu->name . '</b></p>
             <button id="close-menu-mobile">
             <svg width="20px" height="20px" id="close-searchbar--button">
                 <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#cross-20"></use>
