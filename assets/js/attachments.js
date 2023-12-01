@@ -147,15 +147,11 @@ if (window.innerWidth < 767) {
   });
 
   function toggleMenu(button) {
-    // Encuentra el elemento ul más cercano
+    // Encuentra el elemento ul más cercano con la clase 'sub-menu'
     var ulElement = button.nextElementSibling;
 
     // Togglea la clase 'open' en el elemento ul
-    if (ulElement.classList.contains('open')) {
-      ulElement.classList.remove('open');
-    } else {
-      ulElement.classList.add('open');
-    }
+    ulElement.classList.toggle('open');
 
     // Gira el SVG 180 grados
     var svgElement = button.querySelector('.rotate');
