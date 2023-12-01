@@ -28,7 +28,7 @@ img{display:block; height:auto;}
 #main-header{position:sticky; top:0; background-color:var(--wp--preset--color--yellow); transform:translate3d(0, 0, 0);}
 /* responsive */
 #responsive-header .header-content{display:flex; align-items:center; height:5.4rem;}
-#responsive-header .header-content .site-brand{margin-left:2rem;}
+#responsive-header .header-content .site-brand{margin-left:1.5rem;}
 /* scroll actions */    
 .scroll-down #main-header{transform:translate3d(0, -100%, 0); transition:all .3s ease-in-out;}
 .scroll-up #main-header{transform:translate3d(0, var(--scroll-up-header), 0); transition:all .3s ease-in-out}
@@ -42,7 +42,7 @@ img{display:block; height:auto;}
     /* caja de búsqueda */
     #responsive-header .searchform-wrapper{width:4rem; height:3.6rem; border-radius:.3rem; transition:all .3s ease;}
     #responsive-header .searchform-wrapper:hover{background-color:rgba(255,255,255,.5); cursor:pointer;}
-    #responsive-header .searchform-wrapper .searchform{display:flex; align-items:center;}
+    #responsive-header .searchform-wrapper .searchform{display:flex; align-items:center; justify-content:center;}
         /* botones */
         #search-buttons svg{fill:var(--wp--preset--color--text);}
         #search-buttons svg#close-searchbar--button{display:none;}
