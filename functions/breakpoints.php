@@ -7,6 +7,7 @@ function pinplast_theme_custom_breakpoints() {
                 --breakpoint:min(100% - 3rem, 575px);
                 --scroll-up-header:0;
             }
+            #desktop-header{display:none;}
 
             @media(min-width:576px){
                 :root{
@@ -25,6 +26,7 @@ function pinplast_theme_custom_breakpoints() {
                     --breakpoint:min(100% - 3rem, 930px);
                 }
                 #responsive-header{display:none;}
+                #desktop-header{display:inherit;}
             }
 
             @media(min-width:1199px){
