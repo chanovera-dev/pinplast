@@ -15,27 +15,22 @@ closeMobileMenuButton.addEventListener("click", function() {
 });
 
 cabecera.addEventListener("click", function() {
-  if(menuMobile.contains.classList('open')){
-    myFunction(closeMobileMenuButton);
-    menuMobile.classList.remove('open');
+  if (menuMobile.classList.contains('open')) {
+    closeMobileMenuButton.click(); // Simula un clic en el botón de cerrar el menú
   }
 });
 
 contenido.addEventListener("click", function() {
-  if(menuMobile.contains.classList('open')){
-    myFunction(closeMobileMenuButton);
-    menuMobile.classList.remove('open');
+  if (menuMobile.classList.contains('open')) {
+    closeMobileMenuButton.click(); // Simula un clic en el botón de cerrar el menú
   }
 });
 
 pie.addEventListener("click", function() {
-  if(menuMobile.contains.classList('open')){
-    myFunction(closeMobileMenuButton);
-    menuMobile.classList.remove('open');
+  if (menuMobile.classList.contains('open')) {
+    closeMobileMenuButton.click(); // Simula un clic en el botón de cerrar el menú
   }
 });
-
-
 
 /* carga en svg4anybody después de que ha cargado todo el sitio */
 document.addEventListener('DOMContentLoaded', function() {
