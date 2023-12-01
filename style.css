@@ -38,4 +38,4 @@ img{display:block; height:auto;}
     .attachment-list li .counter{position:relative; display:grid; place-content:center; width:4rem; height:3.6rem; border-radius:.3rem;}
     .attachment-list li .counter:hover{background-color:rgba(255,255,255,.5);}
     .attachment-list li .counter .wrapper{position:absolute; top:0; right:50%; transform:translate(-50%, -50%);}
-    .attachment-list li .counter .wrapper .number{display:grid; width:1.5rem; height:1.5rem; place-content:center; background-color:var(--wp--preset--color--background);}
+    .attachment-list li .counter .wrapper .number{display:grid; width:1.5rem; height:1.5rem; place-content:center; background-color:var(--wp--preset--color--background); border-radius:50%; color:var(--wp--preset--color--text); font-size:1rem;}
