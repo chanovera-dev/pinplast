@@ -54,8 +54,8 @@ img{display:block; height:auto;}
     .menu-mobile--wrapper .name-menu--wrapper #close-menu-mobile:hover svg{fill:var(--wp--preset--color--text);}
     /* listas del menú */
     #menu-mobile ul{margin:0; padding:0; list-style:none;}
-    #menu-mobile ul li{border-bottom:1px solid var(--wp--preset--color--border);}
-    #menu-mobile ul li a{padding:0 2rem; display:flex; align-items:center; height:4.8rem; color:var(--wp--preset--color--text);}
+    #menu-mobile ul li{}
+    #menu-mobile ul li a{padding:0 2rem; display:flex; align-items:center; height:4.8rem; color:var(--wp--preset--color--text); border-bottom:1px solid var(--wp--preset--color--border);}
     /* menu mobile · abierto */
     .menu-mobile--wrapper.open{left:0;}
     :is(#main-header, #main, #main-footer).menu-mobile-open:before{
