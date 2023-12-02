@@ -87,6 +87,7 @@ img{display:block; height:auto;}
 /* desktop */
 .top-bar-wrapper{background-color:var(--wp--preset--color--top-bar);}
 .top-bar ul{display:flex;}
+.top-bar ul li:first-child a{padding-left:0;}
 .top-bar ul li a{display:flex; align-items:center; height:3.2rem; color:var(--wp--preset--color--top-bar-color); padding:0 1rem; font-size:1.4rem; transition:all .3s ease;}
 .top-bar ul li a:hover{color:var(--wp--preset--color--links);}
 
