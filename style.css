@@ -121,7 +121,7 @@ img{display:block; height:auto;}
     .searchform-wrapper .searchform input[type=text]:focus::placeholder{color:var(--wp--preset--color--attenuated);}
     /* customer service */
     .customer-service{text-align:right;}
-    .customer-service p:nth-child(1){font-size:1.5rem; margin-bottom:.6rem; color:#999;}
+    .customer-service p:nth-child(1){font-size:1.5rem; color:#999;}
     .customer-service p span{font-size:2rem; font-weight:700; color:var(--wp--preset--color--text);}
 /* bottom bar */
 .bottom-bar--wrapper{background-color:var(--wp--preset--color--yellow);}
