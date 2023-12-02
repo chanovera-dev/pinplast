@@ -143,6 +143,31 @@ if (window.innerWidth > 991) {
         subMenu.classList.toggle("open");
       });
   });
+
+
+
+  // Crear un nuevo elemento SVG
+  var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+  svg.setAttribute("width", "16");
+  svg.setAttribute("height", "16");
+  svg.setAttribute("fill", "currentColor");
+  svg.setAttribute("class", "bi bi-chevron-down");
+  svg.setAttribute("viewBox", "0 0 16 16");
+
+  // Crear el elemento 'path' dentro del SVG
+  var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  path.setAttribute("fill-rule", "evenodd");
+  path.setAttribute("d", "M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z");
+
+  // Agregar el elemento 'path' al elemento SVG
+  svg.appendChild(path);
+
+  // Obtener el elemento 'li' por su clase
+  var liElement = document.querySelector('.menu-item-has-children');
+
+  // Agregar el elemento SVG al final del elemento 'li'
+  liElement.appendChild(svg);
 }
 
 
