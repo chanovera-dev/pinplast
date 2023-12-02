@@ -93,6 +93,7 @@ img{display:block; height:auto;}
 .top-bar ul li a:hover{color:var(--wp--preset--color--links);}
 .top-bar ul li.menu-item-has-children a{padding:0 1rem 0 2rem; transition:all .3s ease;}
 .top-bar ul li.menu-item-has-children a:hover{background-color:#f1f1f1;}
+.top-bar ul li.menu-item-has-children ul.sub-menu{display:grid;}
 
 #main{position:relative;}
 
