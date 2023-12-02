@@ -25,7 +25,7 @@ function pinplast_theme_custom_breakpoints() {
             @media(min-width:991px){
                 :root{
                     --breakpoint:min(100% - 3rem, 930px);
-                    --size-logo:22rem;
+                    --size-logo:20rem;
                 }
                 #responsive-header{display:none;}
                 #desktop-header{display:inherit; background-color:var(--wp--preset--color--background);}
@@ -34,9 +34,6 @@ function pinplast_theme_custom_breakpoints() {
             @media(min-width:1199px){
                 :root{
                     --breakpoint:min(100% - 3rem, 1110px);
-                    --brand--middle-bar:25.5rem;
-                    --searchform-wrapper--middle-bar:60.344rem;
-                    --customer-service--middle-bar:14.156rem;
                 }
             }
 
