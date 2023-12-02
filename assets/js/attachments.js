@@ -143,6 +143,34 @@ if (window.innerWidth > 991) {
         subMenu.classList.toggle("open");
       });
   });
+
+
+
+  // Obtén todos los elementos li con la clase 'menu-item-has-children'
+  var menuItems = document.querySelectorAll('.menu-item-has-children');
+
+  // Itera sobre cada elemento y agrega el icono SVG
+  menuItems.forEach(function (menuItem) {
+    // Crea un elemento SVG
+    var svgElement = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svgElement.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    svgElement.setAttribute('width', '16');
+    svgElement.setAttribute('height', '16');
+    svgElement.setAttribute('fill', 'currentColor');
+    svgElement.setAttribute('class', 'bi bi-chevron-down');
+    svgElement.setAttribute('viewBox', '0 0 16 16');
+
+    // Crea el elemento 'path' y establece sus atributos
+    var pathElement = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    pathElement.setAttribute('fill-rule', 'evenodd');
+    pathElement.setAttribute('d', 'M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z');
+
+    // Agrega el elemento 'path' al elemento 'svg'
+    svgElement.appendChild(pathElement);
+
+    // Agrega el elemento 'svg' al elemento 'li'
+    menuItem.appendChild(svgElement);
+  });
 }
 
 
