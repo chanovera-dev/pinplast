@@ -110,19 +110,37 @@ if (window.innerWidth < 991) {
 
 
 if (window.innerWidth > 991) {
-  let BotonSubMenu = document.querySelectorAll(".top-bar nav .menu .menu-item-has-children a");
+  // Obtén todos los elementos .sub-menu
+  let subMenus = document.querySelectorAll(".top-bar nav .menu .menu-item-has-children .sub-menu");
 
-BotonSubMenu.forEach(function(boton) {
+  document.addEventListener("click", function(event) {
+      // Cierra todos los menús al hacer clic fuera de ellos
+      if (!event.target.closest(".menu-item-has-children")) {
+          subMenus.forEach(function(subMenu) {
+              subMenu.classList.remove("open");
+          });
+      }
+  });
+
+  // Itera sobre cada botón del menú
+  BotonSubMenu.forEach(function(boton) {
     boton.addEventListener("click", function(event) {
         // Evita que el enlace se comporte como un enlace normal
         event.preventDefault();
         
-        // Agrega la clase "open" a los elementos del submenú correspondientes
+        // Cierra todos los menús antes de abrir el actual
+        subMenus.forEach(function(subMenu) {
+            if (subMenu !== this.nextElementSibling) {
+                subMenu.classList.remove("open");
+            }
+        }, this);
+
+        // Agrega la clase "open" al submenú correspondiente
         let parentItem = this.parentElement;
         let subMenu = parentItem.querySelector(".sub-menu");
         subMenu.classList.toggle("open");
-    });
-});
+      });
+  });
 }
 
 
