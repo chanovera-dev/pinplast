@@ -45,12 +45,6 @@ function pinplast_theme_custom_breakpoints() {
                     --width-attachments:5.075rem;
                 }
             }
-
-            @media(min-width:1365px){
-                :root{
-                    --breakpoint:min(100% - 3rem, 1230px);
-                }
-            }
         </style>
     <?php
 }
