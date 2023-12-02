@@ -151,7 +151,7 @@ img{display:block; height:auto;}
 #main-footer{position: relative; text-align:var(--text-align--footer); padding-top:1.6rem;}
     /* widgets */
     .footer-widgets--wrapper{border-top:1px solid var(--wp--preset--color--line);}
-    .footer-widgets{padding:4.8rem 0 5.4rem;}
+    .footer-widgets{padding:4.8rem 0 5.4rem; display:grid; gap:4.2rem;}
     .footer-widgets a{color:var(--wp--preset--color--text);}
     /* contacto */
     .footer-widgets .contact h2{font-size:2.8rem; margin-bottom:1.6rem;}
