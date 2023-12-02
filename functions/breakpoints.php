@@ -6,6 +6,7 @@ function pinplast_theme_custom_breakpoints() {
             :root{
                 --breakpoint:min(100% - 3rem, 575px);
                 --scroll-up-header:0;
+                --size-logo:13rem;
             }
             #desktop-header{display:none;}
 
@@ -24,6 +25,7 @@ function pinplast_theme_custom_breakpoints() {
             @media(min-width:991px){
                 :root{
                     --breakpoint:min(100% - 3rem, 930px);
+                    --size-logo:22rem;
                     --brand--middle-bar:21rem;
                     --searchform-wrapper--middle-bar:47.4444rem;
                     --customer-service--middle-bar:14.156rem;
