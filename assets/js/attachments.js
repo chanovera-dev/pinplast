@@ -187,12 +187,6 @@ if (window.innerWidth > 991) {
       menuLink.classList.add('hover');
   });
 
-  menuLink.addEventListener('mouseleave', function() {
-    // Agregar la clase 'open' al submenú
-    subMenu.classList.remove('open');
-    menuLink.classList.remove('hover');
-});
-
   // Agregar el evento al salir del submenú
   subMenu.addEventListener('mouseleave', function() {
       // Quitar la clase 'open' al submenú
