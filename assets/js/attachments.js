@@ -143,28 +143,6 @@ if (window.innerWidth > 991) {
         subMenu.classList.toggle("open");
       });
   });
-
-
-
-  document.addEventListener("DOMContentLoaded", function() {
-    // Crear un nuevo elemento SVG con el contenido proporcionado
-    var svgContent = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">' +
-                        '<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>' +
-                      '</svg>';
-
-    // Crear un elemento div temporal y asignarle el contenido SVG
-    var tempDiv = document.createElement('div');
-    tempDiv.innerHTML = svgContent;
-
-    // Obtener el primer hijo del div temporal (el elemento SVG)
-    var svgElement = tempDiv.firstChild;
-
-    // Obtener el elemento 'li' por su clase
-    var liElement = document.querySelector('.menu-item-has-children');
-
-    // Agregar el elemento SVG al final del elemento 'li'
-    liElement.appendChild(svgElement);
-  });
 }
 
 
