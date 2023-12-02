@@ -124,7 +124,7 @@ img{display:block; height:auto;}
     .customer-service p span{font-size:2rem; font-weight:700; color:var(--wp--preset--color--text);}
 /* bottom bar */
 .bottom-bar--wrapper{background-color:var(--wp--preset--color--yellow);}
-.bottom-bar{display:flex; align-items:center;}
+.bottom-bar{display:grid; align-items:center; grid-template-columns:var(--grid-columns--bottom-bar);}
 .bottom-bar nav ul{display:flex; align-items:center;}
 .bottom-bar nav ul li{display:flex; align-items:center; height:5.4rem;}
 .bottom-bar nav ul li a{font-weight:700; color:var(--wp--preset--color--text);}
