@@ -3,7 +3,7 @@
         <footer id="main-footer" class="container">
             <aside class="section footer-widgets">
 
-                <div>
+                <div class="contact">
                     <h2>'.esc_html__('Contacto', 'pinplast').'</h2>';
                     include(TEMPLATEPATH . '/parts/widgets/address.php');
                 echo '
