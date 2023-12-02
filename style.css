@@ -106,7 +106,10 @@ img{display:block; height:auto;}
 .top-bar ul li.menu-item-has-children ul.sub-menu.open{padding:.6rem 0; box-shadow:0 1px 7px rgba(0, 0, 0, 0.25); opacity:1;}
 .top-bar ul li.menu-item-has-children ul.sub-menu.open li a{height:3.2rem; font-size:1.5rem;}
 /* middle bar */
-.middle-bar{display:flex; align-items:center; -webkit-box-align:center; height:10.4rem;}
+.middle-bar{display:flex; align-items:center; height:10.4rem;}
+.middle-bar .site-brand{width:var(--brand--middle-bar)}
+.middle-bar .searchform-wrapper{width:var(--searchform-wrapper--middle-bar);}
+.middle-bar .customer-service{width:var(--customer-service--middle-bar);}
 
 #main{position:relative;}
 
