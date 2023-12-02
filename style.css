@@ -148,9 +148,19 @@ img{display:block; height:auto;}
 #main{position:relative;}
 
 /* pie de página */
-#main-footer{position: relative;}
+#main-footer{position: relative; text-align:center;}
+    /* listas */
+    footer ul li,
+    .social .menu{justify-content:center;}
+    .social .menu{margin-bottom:2.9rem;}
     /* newsletter */
     .newsletter{grid-column:1/-1; max-width:420px;}
+    /* copyright */
+    .copyright{display:grid; gap:2.4rem; padding:2rem 0 2.4rem;}
+    .copyright p{order:2;}
+    /* socio de pagos */
+    .payments{order:1;}
+    .payments img{margin-inline:auto;}
 
 @media(max-width:767px){
     /* cabecera · caja de búsqueda */
