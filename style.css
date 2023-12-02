@@ -125,6 +125,7 @@ img{display:block; height:auto;}
 /* bottom bar */
 .bottom-bar--wrapper{background-color:var(--wp--preset--color--yellow);}
 .bottom-bar{display:flex; align-items:center;}
+.bottom-bar nav ul{display:flex; align-items:center;}
 
 #main{position:relative;}
 
