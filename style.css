@@ -91,9 +91,10 @@ img{display:block; height:auto;}
 .top-bar nav:first-child ul li:first-child a{padding-left:0;}
 .top-bar ul li a{display:flex; align-items:center; height:3.2rem; color:var(--wp--preset--color--top-bar-color); padding:0 1rem; font-size:1.4rem; transition:all .3s ease;}
 .top-bar ul li a:hover{color:var(--wp--preset--color--links);}
+.top-bar ul li.menu-item-has-children{position:relative;}
 .top-bar ul li.menu-item-has-children a{padding:0 1rem 0 2rem; transition:all .3s ease;}
 .top-bar ul li.menu-item-has-children a:hover{background-color:#f1f1f1;}
-.top-bar ul li.menu-item-has-children ul.sub-menu{display:grid;}
+.top-bar ul li.menu-item-has-children ul.sub-menu{position:absolute; top:3.2rem; display:grid;}
 
 #main{position:relative;}
 
