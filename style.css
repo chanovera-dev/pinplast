@@ -96,6 +96,7 @@ img{display:block; height:auto;}
 .top-bar ul li.menu-item-has-children{position:relative;}
 .top-bar ul li.menu-item-has-children a{padding-right:2rem; transition:all .3s ease;}
 .top-bar ul li.menu-item-has-children a:hover{background-color:#e6e6e6; color:var(--wp--preset--color--top-bar-color);}
+.top-bar ul li.menu-item-has-children a:focus{box-shadow:none;}
 .top-bar ul li.menu-item-has-children ul.sub-menu{position:absolute; top:3.2rem; right:0; display:grid; background-color:var(--wp--preset--color--background); padding:0; box-shadow:none; opacity:0; transition:all .3s ease;}
 .top-bar ul li.menu-item-has-children ul.sub-menu li a{width:15rem; height:0; font-size:0; font-weight:700; transition:all .3s ease;}
 /* top bar · submenu · abierto */
