@@ -9,6 +9,7 @@ function pinplast_theme_custom_breakpoints() {
                 --size-logo:13rem;
                 --width-attachments:4rem;
                 --height-attachments:3.6rem;
+                --text-align--footer:center;
             }
             #desktop-header{display:none;}
 
