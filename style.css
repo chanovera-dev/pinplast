@@ -110,9 +110,11 @@ img{display:block; height:auto;}
 .middle-bar .site-brand{width:var(--brand--middle-bar)}
 .middle-bar .searchform-wrapper{width:var(--searchform-wrapper--middle-bar);}
 .middle-bar .customer-service{width:var(--customer-service--middle-bar);}
+/* searchform */
+
 /* customer service */
 .customer-service{text-align:right;}
-.customer-service p:nth-child(1){font-size:1.5rem; color:#999;}
+.customer-service p:nth-child(1){font-size:1.5rem; margin-bottom:.6rem; color:#999;}
 .customer-service p span{font-size:2rem; font-weight:700; color:var(--wp--preset--color--text);}
 
 #main{position:relative;}
