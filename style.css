@@ -133,7 +133,7 @@ img{display:block; height:auto;}
 .bottom-bar nav ul li a:focus{box-shadow:none;}
 .bottom-bar nav ul li.menu-item-has-children a{padding-right:2.7rem;}
 .bottom-bar nav ul li.menu-item-has-children svg{width:1.3rem; height:1.3rem; position:absolute; top:38%; right:.8rem;}
-.bottom-bar nav ul li.menu-item-has-children ul.sub-menu{display:none;}
+.bottom-bar nav ul li.menu-item-has-children ul.sub-menu{position:absolute; top:5.4rem; display:grid;}
 
 #main{position:relative;}
 
