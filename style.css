@@ -100,6 +100,8 @@ img{display:block; height:auto;}
 .top-bar nav:nth-child(1) ul li.menu-item-has-children ul.sub-menu{left:0;}
 .top-bar nav:nth-child(2) ul li.menu-item-has-children ul.sub-menu{right:0;}
 .top-bar ul li.menu-item-has-children ul.sub-menu li a{width:15rem; height:0; font-size:0; font-weight:700; transition:all .3s ease;}
+.top-bar nav:nth-child(1) ul li.menu-item-has-children ul.sub-menu li a{}
+.top-bar nav:nth-child(2) ul li.menu-item-has-children ul.sub-menu li a{justify-content:flex-end;}
 /* top bar · submenu · abierto */
 .top-bar ul li.menu-item-has-children ul.sub-menu.open{padding:.6rem 0; box-shadow:0 1px 7px rgba(0, 0, 0, 0.25); opacity:1;}
 .top-bar ul li.menu-item-has-children ul.sub-menu.open li a{height:3.2rem; font-size:1.5rem;}
