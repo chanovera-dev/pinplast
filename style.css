@@ -112,8 +112,8 @@ img{display:block; height:auto;}
 .middle-bar .customer-service{width:var(--customer-service--middle-bar);}
 /* customer service */
 .customer-service{text-align:right;}
-.customer-service p:nth-child(1){font-size:1.6rem; color:#999;}
-.customer-service p span{font-size:2.2rem; font-weight:700; color:var(--wp--preset--color--text);}
+.customer-service p:nth-child(1){font-size:1.5rem; color:#999;}
+.customer-service p span{font-size:2rem; font-weight:700; color:var(--wp--preset--color--text);}
 
 #main{position:relative;}
 
