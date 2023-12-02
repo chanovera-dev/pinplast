@@ -110,7 +110,7 @@ if (window.innerWidth < 991) {
 
 
 if (window.innerWidth > 991) {
-  let BotonSubMenu = document.querySelectorAll(".menu-item-has-children a");
+  let BotonSubMenu = document.querySelectorAll(".top-bar nav .menu .menu-item-has-children a");
 
 BotonSubMenu.forEach(function(boton) {
     boton.addEventListener("click", function(event) {
