@@ -105,7 +105,11 @@ if (window.innerWidth < 991) {
     subMenu.classList.toggle('open');
     button.classList.toggle('rotate');
   }
-} else {
+}
+
+
+
+if (window.innerWidth > 991) {
   // Obtén la referencia al elemento li con la clase 'menu-item-has-children'
   var menuItem = document.querySelector('.menu-item-has-children');
 
