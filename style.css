@@ -133,10 +133,15 @@ img{display:block; height:auto;}
 .bottom-bar nav ul li a:focus{box-shadow:none;}
 .bottom-bar nav ul li.menu-item-has-children a{padding-right:2.7rem;}
 .bottom-bar nav ul li.menu-item-has-children svg{width:1.3rem; height:1.3rem; position:absolute; top:38%; right:.8rem;}
-.bottom-bar nav ul li.menu-item-has-children ul.sub-menu{position:absolute; top:5.4rem; display:grid; background-color:var(--wp--preset--color--background); padding:.6rem 0; box-shadow:0 1px 7px rgba(0, 0, 0, 0.25); transition:all .3s ease;}
-.bottom-bar nav ul li.menu-item-has-children ul.sub-menu li{height:3.2rem;}
-.bottom-bar nav ul li.menu-item-has-children ul.sub-menu li a{height:3.2rem; width:15rem; transition:all .3s ease;}
-.bottom-bar nav ul li.menu-item-has-children ul.sub-menu li a:hover{background-color:#e6e6e6;}
+/* sub menú · cerrado */
+.bottom-bar nav ul li.menu-item-has-children ul.sub-menu{position:absolute; top:5.4rem; display:grid; background-color:var(--wp--preset--color--background); padding:0; opacity:0; transition:all .3s ease;}
+.bottom-bar nav ul li.menu-item-has-children ul.sub-menu li{height:0;}
+.bottom-bar nav ul li.menu-item-has-children ul.sub-menu li a{height:0; width:15rem; transition:all .3s ease;}
+/* sub menú · abierto */
+.bottom-bar nav ul li.menu-item-has-children:hover ul.sub-menu{padding:.6rem 0; box-shadow:0 1px 7px rgba(0, 0, 0, 0.25);}
+.bottom-bar nav ul li.menu-item-has-children:hover ul.sub-menu li{height:3.2rem;}
+.bottom-bar nav ul li.menu-item-has-children:hover ul.sub-menu li a{height:3.2rem;}
+.bottom-bar nav ul li.menu-item-has-children:hover ul.sub-menu li a:hover{background-color:#e6e6e6;}
 
 #main{position:relative;}
 
