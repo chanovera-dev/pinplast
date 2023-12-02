@@ -111,6 +111,7 @@ if (window.innerWidth < 991) {
 
 if (window.innerWidth > 991) {
   // Obtén todos los elementos .sub-menu
+  let BotonSubMenu = document.querySelectorAll(".top-bar nav .menu .menu-item-has-children > a");
   let subMenus = document.querySelectorAll(".top-bar nav .menu .menu-item-has-children .sub-menu");
 
   document.addEventListener("click", function(event) {
