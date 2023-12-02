@@ -126,6 +126,7 @@ img{display:block; height:auto;}
 .bottom-bar--wrapper{background-color:var(--wp--preset--color--yellow);}
 .bottom-bar{display:flex; align-items:center;}
 .bottom-bar nav ul{display:flex; align-items:center;}
+.bottom-bar nav ul li{display:flex; align-items:center; height:5.4rem;}
 .bottom-bar nav ul li a{font-weight:700; color:var(--wp--preset--color--text);}
 .bottom-bar nav ul li.menu-item-has-children ul.sub-menu{display:none;}
 
