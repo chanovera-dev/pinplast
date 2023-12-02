@@ -149,6 +149,8 @@ img{display:block; height:auto;}
 
 /* pie de página */
 #main-footer{position: relative; text-align:var(--text-align--footer);}
+    /* widgets */
+    .footer-widgets{padding:4.8rem 0 5.4rem;}
 
 
 @media(max-width:767px){
