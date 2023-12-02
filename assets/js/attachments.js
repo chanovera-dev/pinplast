@@ -171,6 +171,26 @@ if (window.innerWidth > 991) {
     // Agrega el elemento 'svg' al elemento 'li'
     menuItem.appendChild(svgElement);
   });
+
+
+
+  // Obtener el elemento de enlace por su clase
+  var menuLink = document.querySelector('.bottom-bar nav .menu .menu-item-has-children > a');
+        
+  // Obtener el elemento de submenú por su clase
+  var subMenu = document.querySelector('.menu-item.has-children .sub-menu');
+
+  // Agregar el evento al pasar el mouse sobre el enlace
+  menuLink.addEventListener('mouseover', function() {
+      // Agregar la clase 'open' al submenú
+      subMenu.classList.add('open');
+  });
+
+  // Agregar el evento al salir del submenú
+  subMenu.addEventListener('mouseleave', function() {
+      // Quitar la clase 'open' al submenú
+      subMenu.classList.remove('open');
+  });
 }
 
 
