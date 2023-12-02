@@ -1,6 +1,6 @@
 <?php
     echo '
-    <div class="bottom-bar-wrapper">
+    <div class="bottom-bar--wrapper">
         <section class="section bottom-bar">';
             echo '
             <div class="">
