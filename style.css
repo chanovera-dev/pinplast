@@ -148,8 +148,9 @@ img{display:block; height:auto;}
 #main{position:relative;}
 
 /* pie de página */
-#main-footer{position: relative; text-align:var(--text-align--footer);}
+#main-footer{position: relative; text-align:var(--text-align--footer); padding-top:1.6rem;}
     /* widgets */
+    .footer-widgets--wrapper{border-top:1px solid var(--wp--preset--color--line);}
     .footer-widgets{padding:4.8rem 0 5.4rem;}
 
 
