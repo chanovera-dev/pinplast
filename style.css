@@ -153,7 +153,7 @@ img{display:block; height:auto;}
     .footer-widgets--wrapper{border-top:1px solid var(--wp--preset--color--line);}
     .footer-widgets{padding:4.8rem 0 5.4rem; display:grid; gap:4.2rem;}
     .footer-widgets .menus{display:grid; grid-template-columns:1fr 1fr; gap:3rem;}
-    .footer.widgets .menus .title-wrapper{margin-bottom:1.2; font-size:2rem;}
+    .footer-widgets .menus h2{margin-bottom:1.2; font-size:2rem;}
     .footer-widgets li{display:flex; align-items:center; justify-content:center; height:2.8rem;}
     .footer-widgets a{color:var(--wp--preset--color--text);}
     /* contacto */
