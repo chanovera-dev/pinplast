@@ -43,6 +43,7 @@ img{display:block; height:auto;}
     /* wishlist | carrito */
     .attachment-list{display:flex;}
     .attachment-list li .counter{position:relative; display:grid; place-content:center; width:4rem; height:3.6rem; border-radius:.3rem;}
+    .attachment-list li .counter:focus{box-shadow:none;}
     .attachment-list li .counter:hover{background-color:rgba(255,255,255,.5);}
     .attachment-list li .counter svg{fill:var(--wp--preset--color--text);}
     .attachment-list li .counter .wrapper{position:absolute; top:0; right:0;}
