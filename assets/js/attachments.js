@@ -184,12 +184,14 @@ if (window.innerWidth > 991) {
   menuLink.addEventListener('mouseover', function() {
       // Agregar la clase 'open' al submenú
       subMenu.classList.add('open');
+      menuLink.classList.add('hover');
   });
 
   // Agregar el evento al salir del submenú
   subMenu.addEventListener('mouseleave', function() {
       // Quitar la clase 'open' al submenú
       subMenu.classList.remove('open');
+      menuLink.classList.remove('hover');
   });
 }
 
