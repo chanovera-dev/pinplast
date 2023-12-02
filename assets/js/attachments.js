@@ -110,28 +110,25 @@ if (window.innerWidth < 991) {
 
 
 if (window.innerWidth > 991) {
-  // Obtén la referencia al elemento li con la clase 'menu-item-has-children'
-  var menuItem = document.querySelector('.menu-item-has-children');
+  let BotonSubMenu = document.querySelectorAll(".menu-item-has-children a");
+  let SubMenu = document.querySelectorAll(".menu-item-has-children .sub-menu");
 
-  // Crea un elemento SVG
-  var svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-  svgElement.setAttribute("xmlns", "http://www.w3.org/2000/svg");
-  svgElement.setAttribute("width", "16");
-  svgElement.setAttribute("height", "16");
-  svgElement.setAttribute("fill", "currentColor");
-  svgElement.setAttribute("class", "bi bi-chevron-down");
-  svgElement.setAttribute("viewBox", "0 0 16 16");
+BotonSubMenu.forEach(function(boton) {
+    boton.addEventListener("click", function(event) {
+        // Evita que el enlace se comporte como un enlace normal
+        event.preventDefault();
+        
+        // Agrega la clase "open" a los elementos del submenú correspondientes
+        let parentItem = this.parentElement;
+        let subMenu = parentItem.querySelector(".sub-menu");
+        subMenu.classList.toggle("open");
 
-  // Crea el elemento 'path' dentro del SVG y establece los atributos
-  var pathElement = document.createElementNS("http://www.w3.org/2000/svg", "path");
-  pathElement.setAttribute("fill-rule", "evenodd");
-  pathElement.setAttribute("d", "M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z");
-
-  // Agrega el elemento 'path' al elemento 'svg'
-  svgElement.appendChild(pathElement);
-
-  // Agrega el elemento 'svg' al elemento 'li'
-  menuItem.appendChild(svgElement);
+        // Agrega la clase "open" a los elementos de iconSubMenu
+        BotonSubMenu.forEach(function(icon) {
+            icon.classList.toggle("open");
+        });
+    });
+});
 }
 
 
