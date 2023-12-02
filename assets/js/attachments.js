@@ -111,7 +111,6 @@ if (window.innerWidth < 991) {
 
 if (window.innerWidth > 991) {
   let BotonSubMenu = document.querySelectorAll(".menu-item-has-children a");
-  let SubMenu = document.querySelectorAll(".menu-item-has-children .sub-menu");
 
 BotonSubMenu.forEach(function(boton) {
     boton.addEventListener("click", function(event) {
@@ -122,11 +121,6 @@ BotonSubMenu.forEach(function(boton) {
         let parentItem = this.parentElement;
         let subMenu = parentItem.querySelector(".sub-menu");
         subMenu.classList.toggle("open");
-
-        // Agrega la clase "open" a los elementos de iconSubMenu
-        BotonSubMenu.forEach(function(icon) {
-            icon.classList.toggle("open");
-        });
     });
 });
 }
