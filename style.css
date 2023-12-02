@@ -128,7 +128,9 @@ img{display:block; height:auto;}
 .bottom-bar nav{margin:0 1.4rem 0 .8rem;}
 .bottom-bar nav ul{display:flex; align-items:center;}
 .bottom-bar nav ul li{display:flex; align-items:center; height:5.4rem;}
-.bottom-bar nav ul li a{font-weight:700; color:var(--wp--preset--color--text); display:flex; align-items:center; height:4.2rem; border-radius:.2rem; padding:0 1.4rem;}
+.bottom-bar nav ul li a{font-weight:700; color:var(--wp--preset--color--text); display:flex; align-items:center; height:4.2rem; border-radius:.2rem; padding:0 1.4rem; transition:all .3s ease;}
+.bottom-bar nav ul li a:hover{background-color:rgba(255,255,255,.5);}
+.bottom-bar nav ul li a:focus{box-shadow:none;}
 .bottom-bar nav ul li.menu-item-has-children ul.sub-menu{display:none;}
 
 #main{position:relative;}
