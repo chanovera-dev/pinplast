@@ -154,8 +154,8 @@ if (window.innerWidth > 991) {
     // Crea un elemento SVG
     var svgElement = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svgElement.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-    svgElement.setAttribute('width', '13');
-    svgElement.setAttribute('height', '13');
+    svgElement.setAttribute('width', '10');
+    svgElement.setAttribute('height', '10');
     svgElement.setAttribute('fill', 'currentColor');
     svgElement.setAttribute('class', 'bi bi-chevron-down');
     svgElement.setAttribute('viewBox', '0 0 16 16');
