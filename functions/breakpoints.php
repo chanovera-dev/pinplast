@@ -35,7 +35,7 @@ function pinplast_theme_custom_breakpoints() {
             @media(min-width:1199px){
                 :root{
                     --breakpoint:min(100% - 3rem, 1110px);
-                    --grid-columns--middle-bar:25.5rem 60.34rem 1fr;
+                    --grid-columns--middle-bar:26.5rem 60.34rem 1fr;
                 }
             }
 
