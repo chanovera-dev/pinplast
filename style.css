@@ -97,7 +97,9 @@ img{display:block; height:auto;}
 .top-bar ul li.menu-item-has-children a{padding-right:2rem; transition:all .3s ease;}
 .top-bar ul li.menu-item-has-children a:hover{background-color:#e6e6e6; color:var(--wp--preset--color--top-bar-color);}
 .top-bar ul li.menu-item-has-children a:focus{box-shadow:none;}
-.top-bar ul li.menu-item-has-children ul.sub-menu{position:absolute; top:3.2rem; right:0; display:grid; background-color:var(--wp--preset--color--background); padding:0; box-shadow:none; opacity:0; transition:all .3s ease;}
+.top-bar ul li.menu-item-has-children ul.sub-menu{position:absolute; top:3.2rem; display:grid; background-color:var(--wp--preset--color--background); padding:0; box-shadow:none; opacity:0; transition:all .3s ease;}
+.top-bar nav:nth-child(1) ul li.menu-item-has-children ul.sub-menu{left:0;}
+.top-bar nav:nth-child(2) ul li.menu-item-has-children ul.sub-menu{right:0;}
 .top-bar ul li.menu-item-has-children ul.sub-menu li a{width:15rem; height:0; font-size:1.5rem; font-weight:700; transition:all .3s ease;}
 /* top bar · submenu · abierto */
 .top-bar ul li.menu-item-has-children ul.sub-menu.open{padding:.6rem 0; box-shadow:0 1px 7px rgba(0, 0, 0, 0.25); opacity:1;}
