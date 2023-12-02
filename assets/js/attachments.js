@@ -178,7 +178,7 @@ if (window.innerWidth > 991) {
   var menuLink = document.querySelector('.bottom-bar nav .menu .menu-item-has-children > a');
         
   // Obtener el elemento de submenú por su clase
-  var subMenu = document.querySelector('.menu-item.has-children .sub-menu');
+  var subMenu = document.querySelector('.bottom-bar nav .menu .menu-item-has-children .sub-menu');
 
   // Agregar el evento al pasar el mouse sobre el enlace
   menuLink.addEventListener('mouseover', function() {
