@@ -145,7 +145,7 @@ img{display:block; height:auto;}
 .bottom-bar nav ul li.menu-item-has-children ul.sub-menu.open li a{height:3.2rem; font-size:1.5rem;}
 .bottom-bar nav ul li.menu-item-has-children ul.sub-menu.open li a:hover{background-color:#e6e6e6;}
 
-#main{position:relative;}
+#main{position:relative; height:300rem;}
 
 /* pie de página */
 #main-footer{position: relative; text-align:var(--text-align--footer); font-size:1.5rem; padding-top:1.6rem;}
