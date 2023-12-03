@@ -36,7 +36,12 @@
             </section>
         </div>';
         } else {
-            echo '<section class="container"><div class="section"><p>' . esc_html__('Actualmente no hay artículos en esta tienda', 'pinplast') . '</p></div>';
+            echo '
+            <div class="container">
+                <section class="section">
+                    <p>' . esc_html__('Actualmente no hay artículos en esta tienda', 'pinplast') . '</p>
+                </section>
+            </div>';
         }
         
     echo '    
