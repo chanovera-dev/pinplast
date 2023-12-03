@@ -175,7 +175,7 @@ img{display:block; height:auto;}
         .footer-widgets .social .menu li a[href*="instagram"]{background-color:#815dc7;}
         .footer-widgets .social .menu li a[href*="sites"]{background-color:#e52e2e;}
     /* copyright */
-    .copyright{padding:2rem 0 2.4rem; display:grid;}
+    .copyright{padding:2rem 0 2.4rem; display:grid; border-top:1px solid var(--wp--preset--color--line);}
 
 
 @media(max-width:767px){
