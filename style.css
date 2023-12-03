@@ -176,6 +176,9 @@ img{display:block; height:auto;}
         .footer-widgets .social .menu li a[href*="sites"]{background-color:#e52e2e;}
     /* copyright */
     .copyright{padding:2rem 0 2.4rem; display:grid; border-top:1px solid var(--wp--preset--color--line);}
+    .copyright .payments{order:1;}
+    .copyright .payments img{margin-inline:auto;}
+    .copyright p{order:2;}
 
 
 @media(max-width:767px){
