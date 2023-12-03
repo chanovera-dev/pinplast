@@ -9,7 +9,7 @@
 .error404 .content-section .searchform-wrapper {width:min(100%, 48rem); height:3.6rem; margin-inline:auto; margin-bottom:3rem;}
 .error404 .content-section .searchform-wrapper  .searchform{position:relative; display:inherit;}
 .error404 .content-section .searchform-wrapper  .searchform #search-buttons{height:5.4rem; position:absolute; top:0; right:0;}
-.error404 .content-section .searchform-wrapper  .searchform #search-buttons #open-searchbar--button{width:2rem; height:2rem; padding:.8rem; color:var(--wp--preset--color--attenuated);}
+.error404 .content-section .searchform-wrapper  .searchform #search-buttons #open-searchbar--button{width:3.6rem; height:3.6rem; fill:var(--wp--preset--color--attenuated);}
 .error404 .content-section .searchform-wrapper  .searchform #search-buttons #close-searchbar--button{display:none;}
 .error404 .content-section .searchform-wrapper  .searchform input[type=text]{height:3.6rem; width:100%; padding:0; color:var(--wp--preset--color--attenuated); border:1px solid var(--wp--preset--color--attenuated); padding:0 3.6rem 0 1rem; border-radius:.3rem; background-color:rgba(255,255,255,.5);}
 .error404 .content-section .searchform-wrapper  .searchform input[type=text]:focus{background-color:rgba(255,255,255,1);}
