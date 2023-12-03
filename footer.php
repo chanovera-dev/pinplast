@@ -68,6 +68,7 @@
                     
                 </aside>
             </div>
+
             <div class="container">
                 <section class="section copyright">'.
                     '<p>©'.date("Y").esc_html__(' Pinplast', 'pinplast').' - '.esc_html__('Desarrollado y hospedado por ', 'pinplast').'<a href="https://peramanzana.com">PeraManzana</a></p>
@@ -76,6 +77,7 @@
                     </div>
                 </section>
             </div>
+            
         </footer>';
         wp_footer();
     echo '
