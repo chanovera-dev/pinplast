@@ -34,6 +34,11 @@
 					"name": "Green",
 					"slug": "green"
 				},
+				{
+					"color": "#ffc107",
+					"name": "Blue",
+					"slug": "blue"
+				},
                 {
 					"color": "#3d464d",
 					"name": "Text",
@@ -63,7 +68,12 @@
                     "color": "0 0 0 .2rem var(--wp--preset--color--text)",
 					"name": "link-focus",
 					"slug": "link-focus"
-                }
+                },
+				{
+					"color": "0 0 0 .3rem #007bff7d",
+					"name": "Box shadow input focus",
+					"slug": "box-shadow-input-focus"
+				}
             ]
         },
         "typography": {
