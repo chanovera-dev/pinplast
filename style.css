@@ -160,7 +160,7 @@ img{display:block; height:auto;}
         /* Boletín de noticias */
         .tnp-subscription form{display:grid!important; grid-template-columns:1fr auto; align-items:flex-end!important; gap:1rem!important;}
         .tnp-subscription form .tnp-field label{text-align:left;}
-        .tnp-subscription form input[type=email]{border:1px solid var(--wp--preset--color--border)!important; border-radius:.3rem!important; background-color:var(--wp--preset--color--background)!important;}
+        .tnp-subscription form input[type=email]{border:1px solid var(--wp--preset--color--border)!important; border-radius:.2rem!important; background-color:var(--wp--preset--color--background)!important;}
         .tnp-subscription form input[type=email]:focus{outline:none; border:1px solid var(--wp--preset--color--blue)!important; box-shadow:var(--wp--preset--color--box-shadow-input-focus)!important;}
         .tnp-subscription input.tnp-submit{background-color:var(--wp--preset--color--yellow)!important; border:1px solid var(--wp--preset--color--yellow)!important; color:var(--wp--preset--color--text)!important; font-weight:700!important; border-radius:.2rem!important; display:flex; align-items:center; height:4rem!important; padding:0 2rem!important; text-transform:capitalize!important; transition:all .3s ease;}
         .tnp-subscription input.tnp-submit:hover{background-color:var(--wp--preset--color--text)!important; border:1px solid var(--wp--preset--color--text)!important; color:#fff!important;}
