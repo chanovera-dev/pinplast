@@ -1,14 +1,4 @@
 if (window.innerWidth < 991) {
-  // elimina el responsive header y el menu mobile
-  let deleteDesktopHeader = document.getElementById("desktop-header");
-
-  // Verificar si el elemento existe antes de intentar eliminarlo
-  if (deleteDesktopHeader) {
-    // Obtener el padre del elemento y luego eliminar el elemento
-    let desktopHeaderParent = deleteDesktopHeader.parentNode;
-    desktopHeaderParent.removeChild(deleteDesktopHeader);
-  }  
-
   /* arreglo del botón del menú y del menú */
   const openMobileMenuButton = document.getElementById('open-menu-mobile--button');
   const closeMobileMenuButton = document.getElementById('close-menu-mobile');
