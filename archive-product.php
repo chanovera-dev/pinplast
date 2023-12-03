@@ -16,9 +16,9 @@
                 </section>
             </div>';
         echo '
-        <div class="container main-content">
+        <div class="container main-content">'
+        .do_shortcode('[yith_wcan_filters slug="filtro-pinplast"]').'
             <ul class="section product-list">';
-                echo do_shortcode('[yith_wcan_filters slug="filtro-pinplast"]');
                 while( have_posts() ){         
                     the_post();
                     get_template_part( 'templates/content', 'products' );          
