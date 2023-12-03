@@ -157,6 +157,8 @@ img{display:block; height:auto;}
     .footer-widgets :is(.newsletter, .contact) h2{font-size:2.8rem; margin-bottom:1.6rem;}
     .footer-widgets li{display:flex; align-items:center; justify-content:center; height:2.8rem;}
     .footer-widgets a{color:var(--wp--preset--color--text);}
+        /* dirección */
+        .footer-widgets address{font-style:normal;}
         /* Boletín de noticias */
         .footer-widgets .tnp-subscription form{display:grid!important; grid-template-columns:1fr auto; align-items:flex-end!important; gap:1rem!important;}
         .footer-widgets .tnp-subscription form .tnp-field label{text-align:left;}
