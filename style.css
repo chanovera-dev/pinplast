@@ -17,7 +17,7 @@ Tags:
 /* ajustes globales */
 html{font-size:62.5%; scroll-behavior:smooth;}
 *, :before, :after{box-sizing:border-box; margin:0;}
-body{font-size:1.6rem; position:relative;}
+body{font-size:1.5rem; position:relative;}
 :is(header,footer,aside,.resume-content) :is(ol,ul){margin:0; padding:0; list-style:none;}
 a{transition:all .3s ease; border-radius:.2rem;}
 a:focus{outline:none; box-shadow:var(--wp--preset--color--link-focus);}
