@@ -13,6 +13,7 @@ function pinplast_theme_custom_breakpoints() {
                 --grid-footer-widgets:1fr;
                 --li-justify-content--footer-widgets:center;
                 --grid-column--footer-newsletter:1/-1;
+                --social-menu-footer--alignment:center;
             }
             #desktop-header{display:none;}
 
@@ -28,6 +29,7 @@ function pinplast_theme_custom_breakpoints() {
                     --grid-footer-widgets:1fr 1fr;
                     --text-align--footer:left;
                     --li-justify-content--footer-widgets:flex-start;
+                    --social-menu-footer--alignment:flex-start;
                 }
             }
 

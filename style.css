@@ -169,7 +169,7 @@ img{display:block; height:auto;}
         .footer-widgets .tnp-subscription input.tnp-submit:hover{background-color:var(--wp--preset--color--text)!important; border:1px solid var(--wp--preset--color--text)!important; color:#fff!important;}
         /* redes sociales */
         .footer-widgets .social{margin-top:1.6rem;}
-        .footer-widgets .social .menu{display:flex; align-items:center; justify-content:center; gap:.7rem;}
+        .footer-widgets .social .menu{display:flex; align-items:center; justify-content:var(--social-menu-footer--alignment); gap:.7rem;}
         .footer-widgets .social .menu li a{display:inline-flex; align-items:center; gap:0; height:3.4rem; padding: 0 .9rem; border-radius:1.7rem; font-size:0;}
         .footer-widgets .social .menu li a:before{position:relative; padding:.8rem; display:inline-block;}
         .footer-widgets .social .menu li a[href*="facebook"]{background-color:#3c5a99;}
