@@ -42,3 +42,5 @@ require_once(get_template_directory() . '/functions/breakpoints.php');
 require_once(get_template_directory() . '/functions/wishlist.php');
 // Anexo para establecer iconos
 require_once(get_template_directory() . '/functions/icons.php');
+// Anexo para definir los componentes personalizados en las plantillas
+require_once(get_template_directory() . '/functions/components.php');

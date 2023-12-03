@@ -14,6 +14,7 @@ function pinplast_theme_custom_breakpoints() {
                 --li-justify-content--footer-widgets:center;
                 --grid-column--footer-newsletter:1/-1;
                 --social-menu-footer--alignment:center;
+                --font-size-title--error404:5rem;
             }
             #desktop-header{display:none;}
 
@@ -30,6 +31,7 @@ function pinplast_theme_custom_breakpoints() {
                     --text-align--footer:left;
                     --li-justify-content--footer-widgets:flex-start;
                     --social-menu-footer--alignment:flex-start;
+                    --font-size-title--error404:6rem;
                 }
             }
 
@@ -53,6 +55,7 @@ function pinplast_theme_custom_breakpoints() {
                     --height-attachments:4.2rem;
                     --grid-footer-widgets:1fr 1.6fr 1fr;
                     --grid-column--footer-newsletter:inherit;
+                    --font-size-title--error404:8rem;
                 }
                 #responsive-header{display:none;}
                 #desktop-header{display:inherit; background-color:var(--wp--preset--color--background);}

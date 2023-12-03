@@ -1,0 +1,17 @@
+.error404 .content-section{text-align:center;margin-bottom:6rem;}
+.error404 .content-section h1{margin:4rem 0 3.2rem; font-size:var(--font-size-title--error404); color:var(--wp--preset--color-line);}
+.error404 .content-section h2{margin-bottom:3rem; font-size:3.6rem; color:var(--wp--preset--color-text);}
+.error404 .content-section p{color:var(--wp--preset--color-text); margin-bottom:2rem;}
+.error404 .content-section a{background-color:#f0f0f0; color:var(--wp--preset--color-text); font-weight:700; display:inline-flex; align-items:center; height:3.2rem; padding:0 1.6rem; margin-inline:auto; transition:all .3s ease;}
+.error404 .content-section a:hover{background-color:var(--wp--preset--color-text); color:#f0f0f0;}
+
+/* searchform */
+.error404 .content-section .searchform-wrapper {width:min(100%, 48rem); height:3.6rem; margin-inline:auto; margin-bottom:3rem;}
+.error404 .content-section .searchform-wrapper  .searchform{position:relative; display:inherit;}
+.error404 .content-section .searchform-wrapper  .searchform #search-buttons{height:5.4rem; position:absolute; top:0; right:0;}
+.error404 .content-section .searchform-wrapper  .searchform #search-buttons #open-searchbar--button{width:2rem; height:2rem; padding:.8rem; color:var(--wp--preset--color-attenuated);}
+.error404 .content-section .searchform-wrapper  .searchform #search-buttons #close-searchbar--button{display:none;}
+.error404 .content-section .searchform-wrapper  .searchform input[type=text]{height:3.6rem; width:100%; padding:0; color:var(--wp--preset--color-attenuated); border:1px solid var(--wp--preset--color-attenuated); padding:0 3.6rem 0 1rem; border-radius:.3rem; background-color:rgba(255,255,255,.5);}
+.error404 .content-section .searchform-wrapper  .searchform input[type=text]:focus{background-color:rgba(255,255,255,1);}
+.error404 .content-section .searchform-wrapper  .searchform input[type=text]::placeholder{color:var(--wp--preset--color-attenuated);}
+.error404 .content-section .searchform-wrapper  .searchform input[type=text]:focus::placeholder{color:var(--wp--preset--color-text);}

@@ -59,6 +59,11 @@
 					"name": "Border",
 					"slug": "border"
 				},
+				{
+					"color": "#ced4da",
+					"name": "Border inputs",
+					"slug": "border-inputs"
+				},
                 {
                     "color": "#1a66ff",
 					"name": "Links",
