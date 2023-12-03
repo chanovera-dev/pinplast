@@ -111,17 +111,18 @@ if (window.innerWidth < 991) {
 
 // submenús de la top bar
 if (window.innerWidth > 991) {
-  // elimina el responsive header
+  // elimina el responsive header y el menu mobile
+  let deleteMenuMobile = document.getElementById('menu-mobile--wrapper');
   let deleteResponsiveHeader = document.getElementById("responsive-header");
 
   // Verificar si el elemento existe antes de intentar eliminarlo
-  if (deleteResponsiveHeader) {
+  if (deleteResponsiveHeader && deleteMenuMobile) {
     // Obtener el padre del elemento y luego eliminar el elemento
-    var responsiveHeaderParent = deleteResponsiveHeader.parentNode;
+    let responsiveHeaderParent = deleteResponsiveHeader.parentNode;
+    let menuMobileParent = deleteMenuMobile.parentNode;
     responsiveHeaderParent.removeChild(deleteResponsiveHeader);
-  } else {
-    console.log("El elemento con el ID 'responsive-header' no existe.");
-  }   
+    menuMobileParent.removeChild(deleteMenuMobile);
+  }  
 
 
 
