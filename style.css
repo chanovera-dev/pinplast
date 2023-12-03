@@ -229,4 +229,5 @@ img{display:block; height:auto;}
 
     /* footer */
     .footer-widgets :is(.newsletter, .contact, .menus) h2{font-size:2rem; margin-bottom:2.5rem;}
+    address li:is(:nth-child(4), :nth-child(n+6)){margin-left:2.4rem;}
 }
