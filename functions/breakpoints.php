@@ -57,6 +57,7 @@ function pinplast_theme_custom_breakpoints() {
                     --grid-column--footer-newsletter:inherit;
                     --font-size-title--error404:8rem;
                 }
+                #responsive-header{display:none;}
                 #desktop-header{display:inherit; background-color:var(--wp--preset--color--background);}
             }
 
