@@ -44,3 +44,35 @@ require_once(get_template_directory() . '/functions/wishlist.php');
 require_once(get_template_directory() . '/functions/icons.php');
 // Anexo para definir los componentes personalizados en las plantillas
 require_once(get_template_directory() . '/functions/components.php');
+// anexo para activar woocommerce
+if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+    require_once(get_template_directory() . '/functions/woocommerce.php');
+} else {}
+
+
+
+
+/* activa las migas de pan (breadcrumb) */
+function get_breadcrumb() {
+    echo 
+    '<a href="'.home_url().'" rel="nofollow">';
+        
+        echo __('Inicio', 'renata');
+    echo '</a>';
+    if (is_category() || is_single()) {
+        echo "";
+        
+            if (is_single()) {
+                echo "";
+                
+            }
+    } elseif (is_page()) {
+        echo '
+            <svg class="breadcrumb-arrow" width="6px" height="9px">
+                <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#arrow-rounded-right-6x9"></use>
+            </svg>'; 
+      the_title('<p>', '</p>');
+    } elseif (is_search()) {
+        echo "";
+    }
+}
