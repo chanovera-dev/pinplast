@@ -111,6 +111,20 @@ if (window.innerWidth < 991) {
 
 // submenús de la top bar
 if (window.innerWidth > 991) {
+  // elimina el responsive header
+  let deleteResponsiveHeader = document.getElementById("responsive-header");
+
+  // Verificar si el elemento existe antes de intentar eliminarlo
+  if (deleteResponsiveHeader) {
+    // Obtener el padre del elemento y luego eliminar el elemento
+    var responsiveHeaderParent = deleteResponsiveHeader.parentNode;
+    responsiveHeaderParent.removeChild(deleteResponsiveHeader);
+  } else {
+    console.log("El elemento con el ID 'responsive-header' no existe.");
+  }   
+
+
+
   // Obtén todos los elementos .sub-menu
   let BotonSubMenu = document.querySelectorAll(".top-bar nav .menu .menu-item-has-children > a");
   let subMenus = document.querySelectorAll(".top-bar nav .menu .menu-item-has-children .sub-menu");
