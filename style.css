@@ -156,7 +156,7 @@ img{display:block; height:auto;}
     .footer-widgets .menus h2{margin-bottom:1.2rem; font-size:2rem;}
     .footer-widgets .newsletter{grid-column:var(--grid-column--footer-newsletter);}
     .footer-widgets :is(.newsletter, .contact) h2{font-size:2.8rem; margin-bottom:1.6rem;}
-    .footer-widgets li{display:flex; align-items:center; justify-content:center; height:2.8rem;}
+    .footer-widgets li{display:flex; align-items:center; justify-content:var(--li-justify-content--footer-widgets); height:2.8rem;}
     .footer-widgets a{color:var(--wp--preset--color--text);}
         /* dirección */
         .footer-widgets address{font-style:normal;}
