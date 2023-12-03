@@ -17,16 +17,15 @@
             </div>';
         echo '
         <div class="container main-content">
-            <ul class="section product-list">';
-                while( have_posts() ){         
-                    the_post();
-                    get_template_part( 'templates/content', 'products' );          
-                }
-            echo '
-            </ul>';
-
-            
-        echo '
+            <section class="section">
+                <ul class="product-list">';
+                    while( have_posts() ){         
+                        the_post();
+                        get_template_part( 'templates/content', 'products' );          
+                    }
+                echo '
+                </ul>
+            </section>
         </div>
         <div class="container">
             <section class="section">';
