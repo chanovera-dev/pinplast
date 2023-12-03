@@ -36,6 +36,16 @@ function pinplast_theme_custom_breakpoints() {
             @media(min-width:991px){
                 :root{
                     --breakpoint:min(100% - 3rem, 930px);
+                    <?php
+                        $secondary_menu = wp_get_nav_menu_items('secondary');
+                        $tertiary_menu = wp_get_nav_menu_items('tertiary');
+                        
+                        if ($secondary_menu || $tertiary_menu) {
+                            echo '--scroll-up-header:-13.6rem;';
+                        } else {
+                            echo '--scroll-up-header:-10.4rem;';
+                        }
+                    ?>
                     --size-logo:20rem;
                     --grid-columns--middle-bar:22.5rem 47.5rem 1fr;
                     --grid-columns--bottom-bar:21rem 1fr auto;
