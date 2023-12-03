@@ -40,3 +40,5 @@ register_nav_menus(
 require_once(get_template_directory() . '/functions/breakpoints.php');
 // Anexo para definir el contador de la lista de deseos
 require_once(get_template_directory() . '/functions/wishlist.php');
+// Anexo para establecer iconos
+require_once(get_template_directory() . '/functions/icons.php');
