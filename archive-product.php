@@ -16,8 +16,7 @@
                 </section>
             </div>';
         echo '
-        <div class="container main-content">'
-        .do_shortcode('[yith_wcan_filters slug="filtro-pinplast"]').'
+        <div class="container main-content">
             <ul class="section product-list">';
                 while( have_posts() ){         
                     the_post();
