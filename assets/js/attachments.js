@@ -146,23 +146,6 @@ if (window.innerWidth > 991) {
 
 
 
-  if (window.innerWidth > 1199) {
-    // elimina el responsive header y el menu mobile
-    let deleteMenuMobile = document.getElementById('menu-mobile--wrapper');
-    let deleteResponsiveHeader = document.getElementById("responsive-header");
-
-    // Verificar si el elemento existe antes de intentar eliminarlo
-    if (deleteResponsiveHeader && deleteMenuMobile) {
-      // Obtener el padre del elemento y luego eliminar el elemento
-      let responsiveHeaderParent = deleteResponsiveHeader.parentNode;
-      let menuMobileParent = deleteMenuMobile.parentNode;
-      responsiveHeaderParent.removeChild(deleteResponsiveHeader);
-      menuMobileParent.removeChild(deleteMenuMobile);
-    }  
-  }
-
-
-
   // Obtén todos los elementos li con la clase 'menu-item-has-children'
   var menuItems = document.querySelectorAll('.menu-item-has-children');
 
@@ -192,24 +175,41 @@ if (window.innerWidth > 991) {
 
 
   // Obtener el elemento de enlace por su clase
-  var menuLink = document.querySelector('.bottom-bar nav .menu .menu-item-has-children > a');
+  //var menuLink = document.querySelector('.bottom-bar nav .menu .menu-item-has-children > a');
         
   // Obtener el elemento de submenú por su clase
-  var subMenu = document.querySelector('.bottom-bar nav .menu .menu-item-has-children .sub-menu');
+  //var subMenu = document.querySelector('.bottom-bar nav .menu .menu-item-has-children .sub-menu');
 
   // Agregar el evento al pasar el mouse sobre el enlace
-  menuLink.addEventListener('mouseover', function() {
+  //menuLink.addEventListener('mouseover', function() {
       // Agregar la clase 'open' al submenú
-      subMenu.classList.add('open');
-      menuLink.classList.add('hover');
-  });
+      //subMenu.classList.add('open');
+      //menuLink.classList.add('hover');
+  //});
 
   // Agregar el evento al salir del submenú
-  subMenu.addEventListener('mouseleave', function() {
+  //subMenu.addEventListener('mouseleave', function() {
       // Quitar la clase 'open' al submenú
-      subMenu.classList.remove('open');
-      menuLink.classList.remove('hover');
-  });
+      //subMenu.classList.remove('open');
+      //menuLink.classList.remove('hover');
+  //});
+}
+
+
+
+if (window.innerWidth > 1199) {
+  // elimina el responsive header y el menu mobile
+  let deleteMenuMobile = document.getElementById('menu-mobile--wrapper');
+  let deleteResponsiveHeader = document.getElementById("responsive-header");
+
+  // Verificar si el elemento existe antes de intentar eliminarlo
+  if (deleteResponsiveHeader && deleteMenuMobile) {
+    // Obtener el padre del elemento y luego eliminar el elemento
+    let responsiveHeaderParent = deleteResponsiveHeader.parentNode;
+    let menuMobileParent = deleteMenuMobile.parentNode;
+    responsiveHeaderParent.removeChild(deleteResponsiveHeader);
+    menuMobileParent.removeChild(deleteMenuMobile);
+  }  
 }
 
 
