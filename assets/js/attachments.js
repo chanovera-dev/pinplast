@@ -111,22 +111,7 @@ if (window.innerWidth < 991) {
 
 // submenús de la top bar
 if (window.innerWidth > 991) {
-  // elimina el responsive header y el menu mobile
-  let deleteMenuMobile = document.getElementById('menu-mobile--wrapper');
-  let deleteResponsiveHeader = document.getElementById("responsive-header");
-
-  // Verificar si el elemento existe antes de intentar eliminarlo
-  if (deleteResponsiveHeader && deleteMenuMobile) {
-    // Obtener el padre del elemento y luego eliminar el elemento
-    let responsiveHeaderParent = deleteResponsiveHeader.parentNode;
-    let menuMobileParent = deleteMenuMobile.parentNode;
-    responsiveHeaderParent.removeChild(deleteResponsiveHeader);
-    menuMobileParent.removeChild(deleteMenuMobile);
-  }  
-
-
-
-  // Obtén todos los elementos .sub-menu
+    // Obtén todos los elementos .sub-menu
   let BotonSubMenu = document.querySelectorAll(".top-bar nav .menu .menu-item-has-children > a");
   let subMenus = document.querySelectorAll(".top-bar nav .menu .menu-item-has-children .sub-menu");
 
@@ -158,6 +143,23 @@ if (window.innerWidth > 991) {
         subMenu.classList.toggle("open");
       });
   });
+
+
+
+  if (window.innerWidth > 1199) {
+    // elimina el responsive header y el menu mobile
+    let deleteMenuMobile = document.getElementById('menu-mobile--wrapper');
+    let deleteResponsiveHeader = document.getElementById("responsive-header");
+
+    // Verificar si el elemento existe antes de intentar eliminarlo
+    if (deleteResponsiveHeader && deleteMenuMobile) {
+      // Obtener el padre del elemento y luego eliminar el elemento
+      let responsiveHeaderParent = deleteResponsiveHeader.parentNode;
+      let menuMobileParent = deleteMenuMobile.parentNode;
+      responsiveHeaderParent.removeChild(deleteResponsiveHeader);
+      menuMobileParent.removeChild(deleteMenuMobile);
+    }  
+  }
 
 
 
