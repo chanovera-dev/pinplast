@@ -6,6 +6,11 @@ add_action( 'after_setup_theme', 'soporte_woocommerce' );
 
 
 
+//Disable all woocommerce stylesheets
+add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
+
+
 // Anexos
 // Estilos particulares para los templates
 require_once(get_template_directory() . '/functions/woocommerce/woocommerce-components.php');
