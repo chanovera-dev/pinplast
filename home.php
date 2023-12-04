@@ -51,8 +51,8 @@ get_header();
 
                                 custom_pagination();
 
-                                // Muestra el botón de avance solo si no estás en la última página
-                                if ($current_page < $total_pages) {
+                                // Muestra el botón de avance solo en la última página
+                                if ($current_page === $total_pages) {
                                     echo '
                                     <a class="next page-numbers disabled" href="#">
                                         <svg class="page-link__arrow page-link__arrow--right" aria-hidden="true" width="8px" height="13px">
@@ -63,7 +63,6 @@ get_header();
                             echo '
                             </div>
                         </div>
-
                     </div>';     
                 } else {
                     echo '<p>' . esc_html__('No se encontró ninguna coincidencia', 'pinplast') . '</p>';
