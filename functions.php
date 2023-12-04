@@ -100,7 +100,10 @@ add_filter ('excerpt_length', 'limite_excerpt', 999);
 // Función para agregar iconos SVG a los enlaces de "Anterior" y "Siguiente"
 function custom_pagination_icons() {
     // Define los iconos SVG que deseas usar
-    $previous_icon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16"><path d="M9.354 12.354a.5.5 0 0 0 0-.708L5.707 8l3.647-3.646a.5.5 0 0 0 0-.708a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708 0z"/></svg>';
+    $previous_icon = '
+                    <svg class="page-link__arrow page-link__arrow--left" aria-hidden="true" width="8px" height="13px">
+                        <use xlink:href="'; echo get_template_directory_uri(); echo '/assets/img/sprite.svg#arrow-rounded-left-8x13"></use>
+                    </svg>';
     $next_icon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path d="M6.646 8l-4-4a.5.5 0 0 1 0-.708a.5.5 0 0 1 .708 0L7.707 8l-5.354 5.354a.5.5 0 0 1-.708 0a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708 0z"/></svg>';
 
     // Obtiene los enlaces de paginación y reemplaza el texto por los iconos SVG
