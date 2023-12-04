@@ -9,9 +9,8 @@
             
             <section class="section content-header">
                 <div class="breadcrumbs">'; get_breadcrumb(); echo '</div>
-                <div class="title-wrapper">';
-                    the_title( '<h1>', '</h1>' );
-                echo '
+                <div class="title-wrapper">
+                    <h1>'.esc_html__('Contáctanos', 'pinplast').'</h1>
                 </div>
             </section>
 
