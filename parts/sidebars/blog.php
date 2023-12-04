@@ -8,7 +8,6 @@
             $items = wp_get_nav_menu_items($menu_id);
 
             if (!empty($items)) {
-                echo '<p class="title">' . $menu->name . '</p>';
                 wp_nav_menu(
                     array(
                         'container' => 'nav',
