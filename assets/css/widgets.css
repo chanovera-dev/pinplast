@@ -6,7 +6,7 @@ aside .widget h2{font-size:2rem;}
 aside .widget p{line-height:1.5; font-size:1.6rem;}
 aside .widget .social .menu li a{border-radius:0;}
 aside .tags a{
-    display:inline-flex; flex-wrap:wrap; gap:.7rem;
+    display:flex;
     background: transparent;
     font-weight:500;
     border: 1px solid #e5e5e5;
