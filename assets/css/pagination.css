@@ -6,6 +6,8 @@
 .woocommerce-pagination .page-numbers{display:flex; gap:.5rem; justify-content:center;}
 .navigation.pagination .nav-links .page-numbers,
 .woocommerce-pagination .page-numbers .page-numbers{display:grid; place-content:center; font-weight:500; width:2.9rem; height:3.3rem; color:var(--wp--preset--color--text); box-sizing:border-box; border-radius:.3rem; text-decoration:none; transition:all .3s ease;}
+.navigation.pagination .nav-links .page-numbers.disabled,
+.woocommerce-pagination .page-numbers .page-numbers.disabled{cursor:none; fill:var(--wp--preset--color--attenuated);}
 .navigation.pagination .nav-links .page-numbers.current,
 .woocommerce-pagination .page-numbers .page-numbers.current{background-color:var(--wp--preset--color--yellow); color:var(--wp--preset--color--text);}
 .navigation.pagination .nav-links .page-numbers.current:hover,
