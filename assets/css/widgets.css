@@ -1,11 +1,13 @@
-/* sidebar widgets */
+/* sidebar widgets · generales */
 aside{display:grid; gap:3rem; align-content:flex-start;}
 aside .widget{border:2px solid var(--wp--preset--color--border); padding:2.8rem; border-radius:.2rem;}
 aside .widget > :not(:last-child){margin-bottom:2rem;}
 aside .widget h2{font-size:2rem;}
 aside .widget p{line-height:1.5; font-size:1.6rem;}
 aside .widget .social .menu li a{border-radius:0;}
-aside .tags div{display:inline-flex; gap:.7rem;}
+
+/* nube de etiquetas */
+aside .tags div{display:inline-flex; flex-wrap:wrap; gap:.7rem;}
 aside .tags div a{
     display:inline-flex;
     background: transparent;
@@ -15,5 +17,6 @@ aside .tags div a{
     border-radius: .15rem;
     padding: .6rem 1rem .5rem;
     -webkit-transition: all .15s;
-    transition: all .15s;
+    transition: all .3s ease;
 }
+aside .tags div a:hover{border:var(--wp--preset--color--yellow); background-color:var(--wp--preset--color--yellow);}
