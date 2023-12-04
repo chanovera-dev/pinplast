@@ -62,10 +62,10 @@ function get_breadcrumb() {
 
     if (is_home()) {
         echo '
-            <svg class="breadcrumb-arrow" width="6px" height="9px">
-                <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#arrow-rounded-right-6x9"></use>
-            </svg>'; 
-      echo '<p>'.esc_html__('Blog', 'pinplast').'</p>';
+        <svg class="breadcrumb-arrow" width="6px" height="9px">
+            <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#arrow-rounded-right-6x9"></use>
+        </svg>
+        <p>'.esc_html__('Blog', 'pinplast').'</p>';
 
     } elseif (is_category() || is_single()) {
         echo "";
@@ -76,11 +76,15 @@ function get_breadcrumb() {
             }
     } elseif (is_page()) {
         echo '
-            <svg class="breadcrumb-arrow" width="6px" height="9px">
-                <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#arrow-rounded-right-6x9"></use>
-            </svg>'; 
-      the_title('<p>', '</p>');
+        <svg class="breadcrumb-arrow" width="6px" height="9px">
+            <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#arrow-rounded-right-6x9"></use>
+        </svg>'; 
+        the_title('<p>', '</p>');
     } elseif (is_search()) {
-        echo "";
+        echo '
+        <svg class="breadcrumb-arrow" width="6px" height="9px">
+            <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#arrow-rounded-right-6x9"></use>
+        </svg>
+        <p>'.esc_html__('Resultados de búsqueda para: ', 'pinplast').'</p>';
     }
 }
