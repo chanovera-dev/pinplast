@@ -109,15 +109,34 @@ function custom_pagination_icons() {
         <svg class="page-link__arrow page-link__arrow--right" aria-hidden="true" width="8px" height="13px">
             <use xlink:href="' . get_template_directory_uri() . '/assets/img/sprite.svg#arrow-rounded-right-8x13"></use>
         </svg>';
-    // Obtiene los enlaces de paginación y personaliza la salida HTML
-    $args = array(
-        'prev_next' => true,
-        'prev_text' => $previous_icon . '<span class="screen-reader-text">Previous</span>',
-        'next_text' => $next_icon . '<span class="screen-reader-text">Next</span>',
-    );
+    
+    // Obtiene el número total de páginas
+    global $wp_query;
+    $total_pages = $wp_query->max_num_pages;
 
-    $pagination = paginate_links($args);
+    // Página actual
+    $current_page = max(1, get_query_var('paged'));
 
-    // Muestra la paginación
-    echo $pagination;
+    // Muestra siempre los botones "Anterior" y "Siguiente"
+    echo '<div class="pagination">';
+    
+    // Botón "Anterior"
+    echo '<span class="pagination__item">';
+    if ($current_page > 1) {
+        previous_posts_link($previous_icon . '<span class="screen-reader-text">Previous</span>');
+    } else {
+        echo $previous_icon . '<span class="screen-reader-text">Previous</span>';
+    }
+    echo '</span>';
+
+    // Botón "Siguiente"
+    echo '<span class="pagination__item">';
+    if ($current_page < $total_pages) {
+        next_posts_link($next_icon . '<span class="screen-reader-text">Next</span>');
+    } else {
+        echo $next_icon . '<span class="screen-reader-text">Next</span>';
+    }
+    echo '</span>';
+
+    echo '</div>';
 }
