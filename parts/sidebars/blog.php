@@ -21,4 +21,9 @@
     <div class="tags widget">
         <?php include (TEMPLATEPATH. '/parts/widgets/tags-cloud.php'); ?>
     </div>
+    <div class="newsletter widget">
+        <h2><?php echo esc_html__('Nuestro boletín de noticias', 'pinplast'); ?></h2>
+        <p><?php echo esc_html__('Phasellus eleifend sapien felis, at sollicitudin arcu semper mattis. Mauris quis mi quis ipsum tristique lobortis. Nulla vitae est blandit rutrum.', 'pinplast'); ?></p>
+        <?php echo do_shortcode('[newsletter_form]'); ?>
+    </div>
 </aside>
