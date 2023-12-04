@@ -27,12 +27,16 @@ get_header();
                         echo '
                         <div class="navigation pagination">
                             <div class="nav-links">';
-                                global $wp_query;
+                            global $wp_query;
 
-                                // Obtiene la página actual y el total de páginas
+                            // Obtiene el total de páginas
+                            $total_pages = $wp_query->max_num_pages;
+                            
+                            // Verifica si hay más de una página
+                            if ($total_pages > 1) {
+                                // Obtiene la página actual
                                 $current_page = max(1, get_query_var('paged'));
-                                $total_pages = $wp_query->max_num_pages;
-
+                            
                                 // Muestra el botón de retroceso solo en la primera página
                                 if ($current_page === 1) {
                                     echo '
@@ -42,9 +46,9 @@ get_header();
                                         </svg>
                                     </a>';
                                 }
-
+                            
                                 custom_pagination();
-
+                            
                                 // Muestra el botón de avance solo en la última página
                                 if ($current_page === $total_pages) {
                                     echo '
@@ -54,6 +58,8 @@ get_header();
                                         </svg>
                                     </a>';
                                 }
+                            }
+                            
                             echo '
                             </div>
                         </div>
