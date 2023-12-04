@@ -27,3 +27,5 @@ main aside .newsletter h2{font-size:2.4rem;}
 main aside .newsletter .tnp-subscription{margin:0;}
 main aside .newsletter .tnp-subscription .tnp-field{margin-bottom:0;}
 main aside .newsletter .tnp-subscription form{grid-template-columns:1fr; gap:1.6rem!important;}
+main aside .newsletter .tnp-subscription form input[type=email]{border-color:#ced4da;}
+main aside .newsletter .tnp-subscription form input[type=submit]{width:100%;}
