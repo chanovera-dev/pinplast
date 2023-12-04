@@ -114,7 +114,8 @@ function custom_pagination() {
     $pagination = paginate_links(array(
         'prev_text' => $previous_icon,
         'next_text' => $next_icon,
-        'prev_next' => true, // Establece en false para mostrar siempre los botones
+        'prev_next' => true,
+        'next_text' => true,
     ));
 
     // Muestra la paginación
