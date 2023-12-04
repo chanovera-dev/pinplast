@@ -99,7 +99,7 @@ add_filter ('excerpt_length', 'limite_excerpt', 999);
 
 // Función para agregar iconos SVG a los enlaces de "Anterior" y "Siguiente"
 function custom_pagination_icons() {
-    // Define los iconos SVG que deseas usar para "Anterior" y "Siguiente"
+    // Define los iconos SVG que deseas usar
     $previous_icon = '
         <svg class="page-link__arrow page-link__arrow--left" aria-hidden="true" width="8px" height="13px">
             <use xlink:href="' . get_template_directory_uri() . '/assets/img/sprite.svg#arrow-rounded-left-8x13"></use>
@@ -109,34 +109,13 @@ function custom_pagination_icons() {
         <svg class="page-link__arrow page-link__arrow--right" aria-hidden="true" width="8px" height="13px">
             <use xlink:href="' . get_template_directory_uri() . '/assets/img/sprite.svg#arrow-rounded-right-8x13"></use>
         </svg>';
-    
-    // Obtiene el número total de páginas
-    global $wp_query;
-    $total_pages = $wp_query->max_num_pages;
+        
+    // Obtiene los enlaces de paginación y reemplaza el texto por los iconos SVG
+    $pagination = paginate_links(array(
+        'prev_text' => $previous_icon,
+        'next_text' => $next_icon,
+    ));
 
-    // Página actual
-    $current_page = max(1, get_query_var('paged'));
-
-    // Muestra siempre los botones "Anterior" y "Siguiente"
-    echo '<div class="pagination">';
-    
-    // Botón "Anterior"
-    echo '<span class="pagination__item">';
-    if ($current_page > 1) {
-        previous_posts_link($previous_icon . '<span class="screen-reader-text">Previous</span>');
-    } else {
-        echo $previous_icon . '<span class="screen-reader-text">Previous</span>';
-    }
-    echo '</span>';
-
-    // Botón "Siguiente"
-    echo '<span class="pagination__item">';
-    if ($current_page < $total_pages) {
-        next_posts_link($next_icon . '<span class="screen-reader-text">Next</span>');
-    } else {
-        echo $next_icon . '<span class="screen-reader-text">Next</span>';
-    }
-    echo '</span>';
-
-    echo '</div>';
+    // Muestra la paginación
+    echo $pagination;
 }
