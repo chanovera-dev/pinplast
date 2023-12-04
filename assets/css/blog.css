@@ -9,3 +9,4 @@ main .content-header .title-wrapper h1{font-size:var(--font-size--titles-page);}
 
 /* Entradas */
 main .posts-wrapper .posts{display:grid; gap:var(--separation-posts);}
+main .posts-wrapper .posts .thumbnail{width:100%;}
