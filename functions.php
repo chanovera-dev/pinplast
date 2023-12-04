@@ -94,3 +94,22 @@ function get_breadcrumb() {
 // Delimita el tamaño del excerpt a 25 palabras
 function limite_excerpt($limite) { return 20; }
 add_filter ('excerpt_length', 'limite_excerpt', 999);
+
+
+
+// Función para agregar iconos SVG a los enlaces de "Anterior" y "Siguiente"
+function custom_pagination_icons($content) {
+    // Define los iconos SVG que deseas usar
+    $previous_icon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16"><path d="M9.354 12.354a.5.5 0 0 0 0-.708L5.707 8l3.647-3.646a.5.5 0 0 0 0-.708a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708 0z"/></svg>';
+    $next_icon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path d="M6.646 8l-4-4a.5.5 0 0 1 0-.708a.5.5 0 0 1 .708 0L7.707 8l-5.354 5.354a.5.5 0 0 1-.708 0a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708 0z"/></svg>';
+
+    // Reemplaza el texto por los iconos SVG en los enlaces de "Anterior" y "Siguiente"
+    $content = str_replace('Previous', $previous_icon, $content);
+    $content = str_replace('Next', $next_icon, $content);
+
+    return $content;
+}
+
+// Aplica la función a los enlaces de "Anterior" y "Siguiente"
+add_filter('previous_posts_link_attributes', 'custom_pagination_icons');
+add_filter('next_posts_link_attributes', 'custom_pagination_icons');
