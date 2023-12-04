@@ -97,6 +97,7 @@ add_filter ('excerpt_length', 'limite_excerpt', 999);
 
 
 
+// Función para agregar iconos SVG a los enlaces de "Anterior" y "Siguiente"
 function custom_pagination() {
     // Define los iconos SVG que deseas usar
     $previous_icon = '
@@ -109,23 +110,12 @@ function custom_pagination() {
             <use xlink:href="' . get_template_directory_uri() . '/assets/img/sprite.svg#arrow-rounded-right-8x13"></use>
         </svg>';
 
-    // Obtiene los enlaces de paginación sin desactivar "previous" y "next"
+    // Obtiene los enlaces de paginación y reemplaza el texto por los iconos SVG
     $pagination = paginate_links(array(
         'prev_text' => $previous_icon,
         'next_text' => $next_icon,
-        'mid_size'  => 1, // Puedes ajustar esto según tus necesidades
-        'end_size'  => 1,
-        'type'      => 'array', // Importante para personalizar los enlaces
     ));
 
-    // Si hay enlaces de paginación, imprime la estructura personalizada
-    if ($pagination) {
-        echo '<ul class="pagination">';
-
-        foreach ($pagination as $page) {
-            echo '<li class="page-item">' . $page . '</li>';
-        }
-
-        echo '</ul>';
-    }
+    // Muestra la paginación
+    echo $pagination;
 }
