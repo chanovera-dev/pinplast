@@ -1,3 +1,5 @@
+#body{display:grid; min-height:100vh; align-content:flex-start; grid-template-rows:auto 1fr auto;}
+
 /* mapa */
 .page-template-contact iframe{width:100%; height:var(--height-map--contact); margin-bottom:1rem;}
 
