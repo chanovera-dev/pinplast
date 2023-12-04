@@ -19,6 +19,7 @@ function pinplast_theme_custom_breakpoints() {
                 --separation-posts:3.6rem;
             }
             #desktop-header{display:none;}
+            main .posts-wrapper{display:grid; gap:3.6rem;}
 
             @media(min-width:576px){
                 :root{
@@ -38,6 +39,7 @@ function pinplast_theme_custom_breakpoints() {
                     --separation-posts:3rem;
                 }
                 main .posts-wrapper .posts{grid-template-columns:1fr 1fr;}
+                main .posts-wrapper{gap:3rem;}
             }
 
             @media(min-width:991px){
@@ -64,6 +66,7 @@ function pinplast_theme_custom_breakpoints() {
                 }
                 #responsive-header{display:none;}
                 #desktop-header{display:inherit; background-color:var(--wp--preset--color--background);}
+                main .posts-wrapper{grid-template-columns:1fr 28.4rem;}
             }
 
             @media(min-width:1199px){
@@ -74,6 +77,7 @@ function pinplast_theme_custom_breakpoints() {
                     --width-attachments:5.075rem;
                     --grid-footer-widgets:1fr 1fr 1fr;
                 }
+                main .posts-wrapper{grid-template-columns:1fr 33rem;}
             }
         </style>
     <?php
