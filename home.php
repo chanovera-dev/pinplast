@@ -42,7 +42,7 @@ get_header();
                                 // Muestra el botón de retroceso solo en la primera página
                                 if ($current_page === 1) {
                                     echo '
-                                    <a class="prev page-numbers" href="#">
+                                    <a class="prev page-numbers disabled" href="#">
                                         <svg class="page-link__arrow page-link__arrow--left" aria-hidden="true" width="8px" height="13px">
                                             <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#arrow-rounded-left-8x13"></use>
                                         </svg>
@@ -54,7 +54,7 @@ get_header();
                                 // Muestra el botón de avance solo en la última página
                                 if ($current_page === $total_pages) {
                                     echo '
-                                    <a class="next page-numbers" href="#">
+                                    <a class="next page-numbers disabled" href="#">
                                         <svg class="page-link__arrow page-link__arrow--right" aria-hidden="true" width="8px" height="13px">
                                             <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#arrow-rounded-right-8x13"></use>
                                         </svg>
