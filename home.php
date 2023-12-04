@@ -48,10 +48,6 @@ get_header();
                                         </svg>
                                     </a>';
                                     custom_pagination();
-                                } elseif ($current_page === $total_pages) {
-                                    
-                                    custom_pagination();   
-                                    echo '<span class="icon-prev-text">Icono de next</span>';
                                 }
                             echo '
                             </div>
