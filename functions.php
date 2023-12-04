@@ -119,3 +119,9 @@ function custom_pagination() {
     // Muestra la paginación
     echo $pagination;
 }
+
+
+
+// deshabilita contact form 7 en todas las páginas | revisar components.php para ver que páginas tienen habilitado contact form 7
+add_filter( 'wpcf7_load_js', '__return_false' );
+add_filter( 'wpcf7_load_css', '__return_false' );
