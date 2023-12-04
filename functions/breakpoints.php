@@ -19,6 +19,7 @@ function pinplast_theme_custom_breakpoints() {
                 --separation-posts:3.6rem;
                 --height-map--contact:30rem;
                 --padding-address-contact:2.2rem;
+                --grid-address-contact:1fr;
             }
             #desktop-header{display:none;}
             main .posts-wrapper{display:grid; gap:3.6rem;}
@@ -69,6 +70,7 @@ function pinplast_theme_custom_breakpoints() {
                     --font-size-title--error404:8rem;
                     --height-map--contact:50rem;
                     --padding-address-contact:3.2rem;
+                    --grid-address-contact:1fr 1fr;
                 }
                 #responsive-header{display:none;}
                 #desktop-header{display:inherit; background-color:var(--wp--preset--color--background);}
