@@ -24,7 +24,7 @@ get_header();
                             get_template_part( 'templates/content', 'archive' );    
                         }
 
-                        the_posts_pagination();
+                        custom_pagination_icons();
                     echo '
                     </div>';     
                 } else {
