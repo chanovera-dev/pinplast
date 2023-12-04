@@ -92,5 +92,5 @@ function get_breadcrumb() {
 
 
 // Delimita el tamaño del excerpt a 25 palabras
-function limite_excerpt($limite) { return 18; }
+function limite_excerpt($limite) { return 20; }
 add_filter ('excerpt_length', 'limite_excerpt', 999);
