@@ -97,6 +97,7 @@ add_filter ('excerpt_length', 'limite_excerpt', 999);
 
 
 
+// Función para agregar iconos SVG a los enlaces de "Anterior" y "Siguiente"
 function custom_pagination() {
     // Define los iconos SVG que deseas usar
     $previous_icon = '
@@ -109,20 +110,12 @@ function custom_pagination() {
             <use xlink:href="' . get_template_directory_uri() . '/assets/img/sprite.svg#arrow-rounded-right-8x13"></use>
         </svg>';
 
-    // Obtén la página actual y el número total de páginas
-    global $wp_query;
-    $current_page = max(1, get_query_var('paged'));
-    $total_pages = $wp_query->max_num_pages;
+    // Obtiene los enlaces de paginación y reemplaza el texto por los iconos SVG
+    $pagination = paginate_links(array(
+        'prev_text' => $previous_icon,
+        'next_text' => $next_icon,
+    ));
 
-    // Asegúrate de que hay al menos una página
-    if ($total_pages > 1) {
-        // Obtiene los enlaces de paginación y reemplaza el texto por los iconos SVG
-        $pagination = paginate_links(array(
-            'prev_text' => ($current_page > 1) ? $previous_icon : '',
-            'next_text' => ($current_page < $total_pages) ? $next_icon : '',
-        ));
-
-        // Muestra la paginación
-        echo $pagination;
-    }
+    // Muestra la paginación
+    echo $pagination;
 }
