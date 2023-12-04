@@ -20,3 +20,6 @@ aside .tags div a{
     transition: all .3s ease;
 }
 aside .tags div a:hover{border:var(--wp--preset--color--yellow); background-color:var(--wp--preset--color--yellow);}
+
+/* boletín de noticias */
+aside .newsletter{text-align:center; background-color:var(--wp--preset--color--border);}
