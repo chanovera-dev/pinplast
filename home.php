@@ -23,9 +23,13 @@ get_header();
                             the_post();  
                             get_template_part( 'templates/content', 'archive' );    
                         }
-
-                        custom_pagination_icons();
-                    echo '
+                        echo '
+                        <div class="navigation pagination">
+                            <div class="nav-links">';
+                                custom_pagination_icons();
+                            echo '
+                            </div>
+                        </div>
                     </div>';     
                 } else {
                     echo '<p>' . esc_html__('No se encontró ninguna coincidencia', 'pinplast') . '</p>';
