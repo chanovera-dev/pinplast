@@ -8,7 +8,7 @@ get_header();
             <section class="section content-header">
                 <div class="breadcrumbs">'; get_breadcrumb(); echo '</div>
                 <div class="title-wrapper">';
-                    the_archive_title( '<h2 class="title">', '</h2>' );
+                    the_archive_title( '<h1>', '</h1>' );
                 echo '
                 </div>
             </section>

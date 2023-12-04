@@ -5,7 +5,7 @@ get_header();
     <main id="main">
         <div class="container main-content">
 
-            <section class="section">
+            <section class="section content-header">
                 <div class="breadcrumbs">'; get_breadcrumb(); echo '</div>
                 <div class="title-wrapper">
                     <h1>'.esc_html__('Últimos artículos', 'pinplast').'</h1>
