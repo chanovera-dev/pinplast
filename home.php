@@ -26,7 +26,7 @@ get_header();
                         echo '
                         <div class="navigation pagination">
                             <div class="nav-links">';
-                                custom_pagination_icons();
+                                custom_pagination();
                             echo '
                             </div>
                         </div>
