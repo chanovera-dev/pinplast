@@ -18,4 +18,4 @@
         the_excerpt();
             
     echo '
-    </article>';
+    </article>'; 
