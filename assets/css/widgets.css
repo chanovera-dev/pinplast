@@ -22,4 +22,4 @@ aside .tags div a{
 aside .tags div a:hover{border:var(--wp--preset--color--yellow); background-color:var(--wp--preset--color--yellow);}
 
 /* boletín de noticias */
-aside .newsletter{text-align:center; background-color:#f5f5f5; border-color:#f5f5f5;}
+aside .newsletter{text-align:center; background-color:#f5f5f5; border-color:#f5f5f5; font-size:1.5rem;}
