@@ -47,7 +47,7 @@
                             </a>';
                         }
 
-                        //custom_pagination();
+                        custom_pagination();
 
                         // Muestra el botón de avance solo en la última página
                         if ($current_page === $total_pages) {
