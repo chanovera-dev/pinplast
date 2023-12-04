@@ -48,6 +48,8 @@ get_header();
                                         </svg>
                                     </a>';
                                     custom_pagination();
+                                } else {
+                                    custom_pagination();
                                 }
                             echo '
                             </div>
