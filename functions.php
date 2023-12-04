@@ -110,11 +110,10 @@ function custom_pagination() {
             <use xlink:href="' . get_template_directory_uri() . '/assets/img/sprite.svg#arrow-rounded-right-8x13"></use>
         </svg>';
 
-    // Obtiene los enlaces de paginación
+    // Obtiene los enlaces de paginación y reemplaza el texto por los iconos SVG
     $pagination = paginate_links(array(
         'prev_text' => $previous_icon,
         'next_text' => $next_icon,
-        'mid_size'  => 1, // Muestra 1 enlace a cada lado de la página actual
     ));
 
     // Muestra la paginación
