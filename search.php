@@ -8,7 +8,7 @@ get_header();
             <section class="section content-header">
                 <div class="breadcrumbs">'; get_breadcrumb(); echo '</div>
                 <div class="title-wrapper">
-                    <h1 class="title">'.esc_html__('Resultados de búsqueda para: ', 'pinplast'); echo the_search_query().'</h1>
+                    <h1 class="title">'; echo the_search_query().'</h1>
                 </div>
             </section>
             
