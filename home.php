@@ -49,10 +49,9 @@ get_header();
                                     </a>';
                                 }
 
-                                custom_pagination();
-
                                 // Muestra el botón de avance solo en la última página
                                 if ($current_page === $total_pages) {
+                                    custom_pagination();
                                     echo '
                                     <a class="next page-numbers disabled" href="#">
                                         <svg class="page-link__arrow page-link__arrow--right" aria-hidden="true" width="8px" height="13px">
@@ -60,6 +59,8 @@ get_header();
                                         </svg>
                                     </a>';
                                 }
+
+                                custom_pagination();
                             echo '
                             </div>
                         </div>
