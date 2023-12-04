@@ -47,10 +47,10 @@ get_header();
                                             <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#arrow-rounded-left-8x13"></use>
                                         </svg>
                                     </a>';
-                                }
+                                } elseif
 
                                 // Muestra el botón de avance solo en la última página
-                                if ($current_page === $total_pages) {
+                                 ($current_page === $total_pages) {
                                     custom_pagination();
                                     echo '
                                     <a class="next page-numbers disabled" href="#">
