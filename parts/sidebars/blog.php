@@ -18,4 +18,7 @@
             }
         ?>
     </div>
+    <div class="tags widget">
+    <?php echo get_the_tag_list(); ?>
+</div>
 </aside>

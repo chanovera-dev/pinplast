@@ -36,7 +36,7 @@ function pinplast_theme_custom_breakpoints() {
                     --social-menu-footer--alignment:flex-start;
                     --font-size-title--error404:6rem;
                     --font-size--titles-page:3.6rem;
-                    --separation-posts:6.4rem 3rem;
+                    --separation-posts:7rem 3rem;
                 }
                 main .posts-wrapper .posts{grid-template-columns:1fr 1fr;}
                 main .posts-wrapper{gap:3rem;}
