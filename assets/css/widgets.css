@@ -5,3 +5,15 @@ aside .widget > :not(:last-child){margin-bottom:2rem;}
 aside .widget h2{font-size:2rem;}
 aside .widget p{line-height:1.5; font-size:1.6rem;}
 aside .widget .social .menu li a{border-radius:0;}
+aside .tags-cloud a{
+    display: block;
+    background: transparent;
+    border: 1px solid #e5e5e5;
+    color: #3d464d;
+    border-radius: 1.5px;
+    padding: 3px 8px 2px;
+    margin: 2px;
+    -webkit-transition: all .15s;
+    transition: all .15s;
+}
+}
