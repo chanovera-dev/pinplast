@@ -12,4 +12,4 @@ main .posts-wrapper .posts{display:grid; gap:var(--separation-posts);}
 main .posts-wrapper .posts .thumbnail{width:100%;}
 main .posts-wrapper .posts .publicate-date_widget{margin-top:1.4rem; color:var(--wp--preset--color--attenuated);}
 main .posts-wrapper .posts .permalink{color:var(--wp--preset--color--text); transition: all .3s ease;}
-main .posts-wrapper .posts .permalink h2{font-size:2.2rem; line-height:2.2; margin:.4rem 0 1.2rem;}
+main .posts-wrapper .posts .permalink .title{font-size:2.2rem; line-height:2.2; margin:.4rem 0 1.2rem;}
