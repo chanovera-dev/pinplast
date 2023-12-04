@@ -1,5 +1,5 @@
 /* sidebar widgets */
-aside{display:grid; gap:3rem; align-items:flex-start;}
+aside{display:grid; gap:3rem; align-content:flex-start;}
 aside .widget{border:2px solid var(--wp--preset--color--border); padding:2.8rem; border-radius:.2rem;}
 aside .widget > :not(:last-child){margin-bottom:2rem;}
 aside .widget h2{font-size:2rem;}

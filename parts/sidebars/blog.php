@@ -19,6 +19,7 @@
         ?>
     </div>
     <div class="tags widget">
+        <h2><?php echo esc_html__('Nube de etiquetas', 'pinplast'); ?></h2>
     <?php echo get_the_tag_list(); ?>
 </div>
 </aside>
