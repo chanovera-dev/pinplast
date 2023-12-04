@@ -1,4 +1,4 @@
 /* breadcrumbs */
-.breadcrumbs{display:inline-flex; align-items:center; flex-wrap:wrap; gap:0 .7rem; color:var(--wp--preset--color--attenuated); fill:var(--wp--preset--color--attenuated); padding:1.6rem 0 3.2rem;}
+.breadcrumbs{display:inline-flex; align-items:center; flex-wrap:wrap; gap:0 .7rem; color:var(--wp--preset--color--attenuated); fill:var(--wp--preset--color--attenuated); padding-top:1.6rem}
 .breadcrumbs a{color:var(--wp--preset--color--text); transition:all .3s ease;}
 .breadcrumbs a:hover{color:var(--wp--preset--color--links);}
