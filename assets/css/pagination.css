@@ -3,9 +3,9 @@
 .navigation.pagination{display:grid; grid-gap:3rem; text-align:center; grid-column:1/-1; margin-top:4rem;}
 .woocommerce-pagination{grid-column:1/-1;}
 .navigation.pagination .nav-links,
-.woocommerce-pagination .page-numbers{display:flex; gap:1rem; justify-content:center;}
+.woocommerce-pagination .page-numbers{display:flex; gap:.5rem; justify-content:center;}
 .navigation.pagination .nav-links .page-numbers,
-.woocommerce-pagination .page-numbers li .page-numbers{display:grid; place-content:center; width:2.9rem; height:3.3rem; color:var(--wp--preset--color--text); box-sizing:border-box; border-radius:.3rem; text-decoration:none; transition:all .3s ease;}
+.woocommerce-pagination .page-numbers li .page-numbers{display:grid; place-content:center; font-weight:500; width:2.9rem; height:3.3rem; color:var(--wp--preset--color--text); box-sizing:border-box; border-radius:.3rem; text-decoration:none; transition:all .3s ease;}
 .navigation.pagination .nav-links .page-numbers.current,
 .woocommerce-pagination .page-numbers li .page-numbers.current{background-color:var(--wp--preset--color--yellow); color:var(--wp--preset--color--text);}
 .navigation.pagination .nav-links .page-numbers.current:hover,
