@@ -17,8 +17,8 @@ $query = new WP_Query( $args );
 if ( function_exists( 'wp_tag_cloud' ) && $query->have_posts() ) :
     echo '<h2>' . esc_html__('Nube de etiquetas', 'karlicius') . '</h2><div>';
     wp_tag_cloud( array(
-        'smallest'  => 1.6,
-        'largest'   => 1.6,
+        'smallest'  => 1.3,
+        'largest'   => 1.3,
         'unit'      => 'rem',
         'orderby'   => 'name',
         'order'     => 'ASC',
