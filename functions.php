@@ -88,3 +88,9 @@ function get_breadcrumb() {
         <p>'.esc_html__('Resultados de búsqueda para: ', 'pinplast').'</p>';
     }
 }
+
+
+
+// Delimita el tamaño del excerpt a 25 palabras
+function limite_excerpt($limite) { return 25; }
+add_filter ('excerpt_length', 'limite_excerpt', 999);
