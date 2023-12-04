@@ -15,7 +15,7 @@
 .navigation.pagination .nav-links .page-numbers:hover,
 .woocommerce-pagination .page-numbers .page-numbers:hover{background-color:var(--wp--preset--color--line);}
 .navigation.pagination .nav-links .page-numbers.disabled:hover,
-.woocommerce-pagination .page-numbers .page-numbers.disabled:hover{background-color:orange;}
+.woocommerce-pagination .page-numbers .page-numbers.disabled:hover{background-color:orange!important;}
 :is(.navigation.pagination .nav-links, .woocommerce-pagination .page-numbers) :is(.page-numbers.prev, .page-numbers.next){fill:var(--wp--preset--color--text);}
 :is(.navigation.pagination .nav-links, .woocommerce-pagination .page-numbers) :is(.page-numbers.prev, .page-numbers.next):hover{background-color:var(--wp--preset--color--line);}
 
