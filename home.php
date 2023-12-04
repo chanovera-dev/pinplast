@@ -23,13 +23,7 @@ get_header();
                             the_post();  
                             get_template_part( 'templates/content', 'archive' );    
                         }
-                        // echo '
-                        // <div class="navigation pagination">
-                        //     <div class="nav-links">';
-                        //         custom_pagination();
-                        //     echo '
-                        //     </div>
-                        // </div>
+
                         echo '
                         <div class="navigation pagination">
                             <div class="nav-links">';

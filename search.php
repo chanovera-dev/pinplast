@@ -24,8 +24,39 @@ get_header();
                             get_template_part( 'templates/content', 'archive' );    
                         }
 
-                        the_posts_pagination();
-                    echo '
+                        echo '
+                        <div class="navigation pagination">
+                            <div class="nav-links">';
+                                global $wp_query;
+
+                                // Obtiene la página actual y el total de páginas
+                                $current_page = max(1, get_query_var('paged'));
+                                $total_pages = $wp_query->max_num_pages;
+
+                                // Muestra el botón de retroceso solo en la primera página
+                                if ($current_page === 1) {
+                                    echo '
+                                    <a class="prev page-numbers disabled" href="#">
+                                        <svg class="page-link__arrow page-link__arrow--left" aria-hidden="true" width="8px" height="13px">
+                                            <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#arrow-rounded-left-8x13"></use>
+                                        </svg>
+                                    </a>';
+                                }
+
+                                custom_pagination();
+
+                                // Muestra el botón de avance solo en la última página
+                                if ($current_page === $total_pages) {
+                                    echo '
+                                    <a class="next page-numbers disabled" href="#">
+                                        <svg class="page-link__arrow page-link__arrow--right" aria-hidden="true" width="8px" height="13px">
+                                            <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#arrow-rounded-right-8x13"></use>
+                                        </svg>
+                                    </a>';
+                                }
+                            echo '
+                            </div>
+                        </div>
                     </div>';     
                 } else {
                     echo '<p>' . esc_html__('No se encontró ninguna coincidencia', 'pinplast') . '</p>';
