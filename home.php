@@ -23,13 +23,35 @@ get_header();
                             the_post();  
                             get_template_part( 'templates/content', 'archive' );    
                         }
+                        // echo '
+                        // <div class="navigation pagination">
+                        //     <div class="nav-links">';
+                        //         custom_pagination();
+                        //     echo '
+                        //     </div>
+                        // </div>
                         echo '
                         <div class="navigation pagination">
                             <div class="nav-links">';
-                                custom_pagination();
+                                global $wp_query;
+
+                                // Obtiene la página actual y el total de páginas
+                                $current_page = max(1, get_query_var('paged'));
+                                $total_pages = $wp_query->max_num_pages;
+
+                                // Muestra el botón de retroceso solo en la primera página
+                                if ($current_page === 1) {
+                                    echo '<span class="icon-prev-text">Icono de Prev</span>';
+                                    custom_pagination();
+                                } elseif ($current_page === $total_pages) {
+                                    
+                                    custom_pagination();   
+                                    echo '<span class="icon-prev-text">Icono de next</span>';
+                                }
                             echo '
                             </div>
                         </div>
+
                     </div>';     
                 } else {
                     echo '<p>' . esc_html__('No se encontró ninguna coincidencia', 'pinplast') . '</p>';
