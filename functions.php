@@ -110,19 +110,12 @@ function custom_pagination() {
             <use xlink:href="' . get_template_directory_uri() . '/assets/img/sprite.svg#arrow-rounded-right-8x13"></use>
         </svg>';
 
-    // Obtiene los enlaces de paginación sin preocuparse si está en la primera o última página
+    // Obtiene los enlaces de paginación y reemplaza el texto por los iconos SVG
     $pagination = paginate_links(array(
         'prev_text' => $previous_icon,
         'next_text' => $next_icon,
-        'type' => 'array', // Necesario para trabajar con un array en lugar de una cadena
     ));
 
     // Muestra la paginación
-    if ($pagination && is_array($pagination)) {
-        echo '<ul class="pagination">';
-        foreach ($pagination as $page) {
-            echo '<li class="page-item">' . $page . '</li>';
-        }
-        echo '</ul>';
-    }
+    echo $pagination;
 }
