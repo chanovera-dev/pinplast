@@ -66,7 +66,7 @@ function pinplast_theme_custom_breakpoints() {
                 }
                 #responsive-header{display:none;}
                 #desktop-header{display:inherit; background-color:var(--wp--preset--color--background);}
-                main .posts-wrapper{grid-template-columns:1fr 28.4rem;}
+                main .posts-wrapper{grid-template-columns:1fr 28.4rem; gap:6rem 3rem;}
             }
 
             @media(min-width:1199px){

@@ -1,6 +1,6 @@
 /* sidebar widgets */
-aside{display:grid; gap:3rem;}
-aside .widget{border:1px solid var(--wp--preset--color--border); padding:2.8rem; border-radius:.2rem;}
+aside{display:grid; gap:3rem; align-items:flex-start;}
+aside .widget{border:2px solid var(--wp--preset--color--border); padding:2.8rem; border-radius:.2rem;}
 aside .widget > :not(:last-child){margin-bottom:2rem;}
 aside .widget h2{font-size:2rem;}
 aside .widget p{line-height:1.5;}
