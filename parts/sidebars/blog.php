@@ -1,5 +1,5 @@
 <aside>
-    <div class="about-blog">
+    <div class="about-blog widget">
         <h2><?php echo esc_html__('Acerca del blog', 'pinplast'); ?></h2>
         <p><?php echo esc_html__('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra nulla sem vitae neque. Quisque id sodales libero.', 'pinplast'); ?></p>
         <?php

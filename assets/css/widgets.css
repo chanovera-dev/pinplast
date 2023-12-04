@@ -1,0 +1,3 @@
+/* sidebar widgets */
+sidebar .widget{border:1px solid var(--wp--preset--color--border); padding:2.8rem;}
+sidebar .widget > :not(:last-child){margin-bottom:2rem;}
