@@ -1,5 +1,5 @@
 /* mapa */
-.page-template-contact iframe{width:100%; height:30rem; margin-bottom:0;}
+.page-template-contact iframe{width:100%; height:var(--height-map--contact); margin-bottom:0;}
 
 /* breadcrumbs */
 .breadcrumbs{display:inline-flex; align-items:center; flex-wrap:wrap; gap:0 1.2rem; color:var(--wp--preset--color--attenuated); fill:var(--wp--preset--color--attenuated); padding-top:1.6rem}
