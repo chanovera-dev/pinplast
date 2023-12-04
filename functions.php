@@ -112,6 +112,7 @@ function custom_pagination_icons() {
         'prev_next' => true,
         'prev_text' => $previous_icon . '<span class="screen-reader-text">Previous</span>',
         'next_text' => $next_icon . '<span class="screen-reader-text">Next</span>',
+        'next_text' => true,
     );
 
     $pagination = paginate_links($args);
