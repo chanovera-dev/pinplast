@@ -16,17 +16,3 @@ main .content-header .title-wrapper h1{font-size:var(--font-size--titles-page);}
 .border-section ul{margin:0; padding:0; list-style:none;}
 .border-section ul li{color:var(--color-header);}
 .border-section p{margin-top:1.6rem;}
-
-@media(min-width:768px){
-    .page-template-contact iframe{height:44rem;}
-    .border-section{padding:2.4rem;}
-}
-
-@media(min-width:1024px){
-    .page-template-contact iframe{height:50rem;}
-    .border-section{padding:3.2rem; grid-template-columns:1fr 1fr;}
-}
-
-@media(min-width:1200px){
-    .page-template-contact iframe{height:60rem;}
-}
