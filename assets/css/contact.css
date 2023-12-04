@@ -10,8 +10,10 @@
 main .content-header .title-wrapper{padding:.6rem 0 3.2rem;}
 main .content-header .title-wrapper h1{font-size:var(--font-size--titles-page);}
 
+/* dirección y formulario */
+.border-section{padding:var(--padding-address-contact); display:grid; gap:5rem; border:2px solid var(--wp--preset--color--border);}
 .form-section{margin-bottom:6rem;font-size:1.6rem; line-height:1.8;}
-.border-section{padding:2.2rem; display:grid; gap:5rem; border:2px solid var(--wp--preset--color--border);}
+
 .border-section h2{font-size:2.6rem; margin-bottom:2.4rem; color:var(--color-header);}
 .border-section ul{margin:0; padding:0; list-style:none;}
 .border-section ul li{color:var(--color-header);}

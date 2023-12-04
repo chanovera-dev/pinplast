@@ -18,6 +18,7 @@ function pinplast_theme_custom_breakpoints() {
                 --font-size--titles-page:3rem;
                 --separation-posts:3.6rem;
                 --height-map--contact:30rem;
+                --padding-address-contact:2.2rem;
             }
             #desktop-header{display:none;}
             main .posts-wrapper{display:grid; gap:3.6rem;}
@@ -39,6 +40,7 @@ function pinplast_theme_custom_breakpoints() {
                     --font-size--titles-page:3.6rem;
                     --separation-posts:7rem 3rem;
                     --height-map--contact:44rem;
+                    --padding-address-contact:2.4rem;
                 }
                 main .posts-wrapper .posts{grid-template-columns:1fr 1fr;}
                 main .posts-wrapper{gap:3rem;}
@@ -66,6 +68,7 @@ function pinplast_theme_custom_breakpoints() {
                     --grid-column--footer-newsletter:inherit;
                     --font-size-title--error404:8rem;
                     --height-map--contact:50rem;
+                    --padding-address-contact:3.2rem;
                 }
                 #responsive-header{display:none;}
                 #desktop-header{display:inherit; background-color:var(--wp--preset--color--background);}
