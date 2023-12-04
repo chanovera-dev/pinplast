@@ -29,9 +29,11 @@
         </div>
         <div class="container">
             <section class="section">
-                <div class="woocommerce-pagination">';
+                <div class="woocommerce-pagination">
+                    <div class="page-numbers">';
                         custom_pagination();
                     echo '
+                    </div>
                 </div>
             </section>
         </div>';
