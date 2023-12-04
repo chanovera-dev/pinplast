@@ -8,7 +8,7 @@ get_header();
             <section class="section">
                 <div class="breadcrumbs">'; get_breadcrumb(); echo '</div>
                 <div class="title-wrapper">
-                    <h3>'.esc_html__('Últimos artículos', 'pinplast').'</h3>
+                    <h1>'.esc_html__('Últimos artículos', 'pinplast').'</h1>
                 </div>
             </section>
             

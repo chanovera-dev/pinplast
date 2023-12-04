@@ -5,7 +5,7 @@ get_header();
     <main id="main">
         <div class="container main-content">
 
-            <section class="section">
+            <section class="section content-header">
                 <div class="breadcrumbs">'; get_breadcrumb(); echo '</div>
                 <div class="title-wrapper">';
                     the_archive_title( '<h2 class="title">', '</h2>' );
@@ -41,5 +41,5 @@ get_header();
             </section>
         </div>
     </main>';
-    
+
 get_footer();
