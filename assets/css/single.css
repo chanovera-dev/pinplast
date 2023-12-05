@@ -43,8 +43,7 @@
 .single-post .post-wrapper .content :is(ul, ol) li{margin-bottom:1.12rem; font-size:1.6rem; line-height:1.625;}
 
 /* etiquetas */
-/* nube de etiquetas */
-.single-post .post-wrapper .content .tags{display:inline-flex; flex-wrap:wrap; gap:.7rem; margin:6rem 3rem;}
+.single-post .post-wrapper .content .tags{display:inline-flex; flex-wrap:wrap; gap:.7rem; margin:6rem 0 3rem;}
 .single-post .post-wrapper .content .tags a{
     display:inline-flex;
     background: transparent;

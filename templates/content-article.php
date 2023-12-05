@@ -17,7 +17,12 @@ echo '
                     echo '<img class="post-thumbnail" src="'; the_post_thumbnail_url( 'full' ); echo '" alt="" width="730" height="490" loading="lazy">';
                 endif;
                 the_content();
-                echo '<div class="tags">'.get_the_tag_list().'</div>
+                echo '
+                <aside>
+                    <div class="tags">'.get_the_tag_list().'</div>';
+                    include(TEMPLATEPATH . '/parts/widgets/related-posts.php');
+                    echo '
+                </aside>
             </div>';
             include(TEMPLATEPATH . '/parts/sidebars/post.php');
         echo '
