@@ -25,7 +25,7 @@ aside .tags div a:hover{border-color:var(--wp--preset--color--yellow); backgroun
 main aside .newsletter{text-align:center; background-color:#f5f5f5; border-color:#f5f5f5;}
 main aside .newsletter h2{font-size:2.4rem; padding-top:.6rem;}
 main aside .newsletter p{font-size:1.5rem;}
-main aside .newsletter .tnp-subscription{margin:0;}
+main aside .newsletter .tnp-subscription{margin:0; max-width:100%;}
 main aside .newsletter .tnp-subscription .tnp-field{margin-bottom:0;}
 main aside .newsletter .tnp-subscription form{grid-template-columns:1fr; gap:1.6rem!important;}
 main aside .newsletter .tnp-subscription form input[type=email]{border-color:#ced4da!important;}
