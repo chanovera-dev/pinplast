@@ -13,7 +13,7 @@
 .single-post .post-wrapper .content h3{margin:var(--margin-h3--single); font-size:2.8rem;}
 .single-post .post-wrapper .content figure{margin:4rem 0;}
 .single-post .post-wrapper .content figure figcaption{margin-top:2rem; color:var(--wp--preset--color--attenuated); text-align:center;}
-.single-post .post-wrapper .content hr:is(:before, :after){
+.single-post .post-wrapper .content :is(hr:before, hr:after){
     position: absolute;
     content: '';
     display: block;
