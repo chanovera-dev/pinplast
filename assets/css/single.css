@@ -15,6 +15,7 @@
 .single-post .post-wrapper .content figure{margin:4rem 0;}
 .single-post .post-wrapper .content figure figcaption{margin-top:2rem; color:var(--wp--preset--color--attenuated); text-align:center;}
 .single-post .post-wrapper .content hr{
+    overflow:inherit;
     position: relative;
     width: 4px;
     height: 4px;
