@@ -73,6 +73,7 @@ function pinplast_theme_custom_breakpoints() {
                     --height-map--contact:50rem;
                     --padding-address-contact:3.2rem;
                     --grid-address-contact:1fr 1fr;
+                    --margin-bottom-post-thumbnail--single:4rem;
                 }
                 #responsive-header{display:none;}
                 #desktop-header{display:inherit; background-color:var(--wp--preset--color--background);}
