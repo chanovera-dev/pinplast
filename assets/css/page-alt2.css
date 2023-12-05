@@ -3,5 +3,5 @@
 .page-template-page-alt2 main .content .title{text-align:center; margin-bottom:2rem; font-size:3.6rem; font-weight:700;}
 
 @media(min-width:1200px){
-    .page-template-page-alt2 .container .content{width:min(100% - 3rem, 92rem);}
+    .page-template-page-alt2 .container .content{width:min(100% - 3rem, 92rem); text-align:center;}
 }
