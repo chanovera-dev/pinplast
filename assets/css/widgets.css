@@ -32,6 +32,7 @@ main aside .newsletter .tnp-subscription form input[type=email]{border-color:#ce
 main aside .newsletter .tnp-subscription form input[type=submit]{width:100%;}
 
 /* Últimos artículos */
+main aside .latest-posts .title-wrapper{padding-bottom:1rem;} 
 main aside .latest-posts .post{display:grid; grid-template-columns:9rem 1fr; grid-template-rows:auto auto; gap:0 1.6rem;}
 main aside .latest-posts .post .thumbnail{width:9rem; height:7rem; object-fit:cover; grid-row:1/3;}
 main aside .latest-posts .post .permalink{color:var(--wp--preset--color--text); grid-row:1/2; transition:all .3s ease;}
