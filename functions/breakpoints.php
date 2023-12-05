@@ -49,6 +49,7 @@ function pinplast_theme_custom_breakpoints() {
                 }
                 main .posts-wrapper .posts{grid-template-columns:1fr 1fr;}
                 main :is(.post-wrapper, .posts-wrapper){gap:3rem;}
+                .single-post .post-wrapper .content blockquote{text-align:center;}
             }
 
             @media(min-width:991px){
