@@ -8,6 +8,7 @@ main .content-header .title-wrapper{padding:.6rem 0 3.2rem;}
 main .content-header .title-wrapper h1{font-size:var(--font-size--titles-page);}
 
 /* contenido */
+.page .content{padding:var(--padding-content--page); border:2px solid var(--wp--preset--color--line);}
 .page .content .post-thumbnail{width:100%; margin-bottom:var(--margin-bottom-post-thumbnail--single);}
 .page .content a{text-decoration:none; transition:all .3s ease;}
 .page .content a:hover{text-decoration:underline;}
