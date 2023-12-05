@@ -37,4 +37,4 @@ main aside .latest-posts .post .thumbnail{width:9rem; height:7rem; object-fit:co
 main aside .latest-posts .post .permalink{color:var(--wp--preset--color--text); grid-row:1/2; transition:all .3s ease;}
 main aside .latest-posts .post .permalink:hover{color:var(--wp--preset--color--links);}
 main aside .latest-posts .post .permalink h4{font-weight:400;}
-main aside .latest-posts .post .publicate-date_widget{grid-row:1/3;}
+main aside .latest-posts .post .publicate-date_widget{grid-row:2/3;}
