@@ -14,7 +14,7 @@ echo '
                 include(TEMPLATEPATH . '/parts/widgets/publicate-date.php');
                 if ( has_post_thumbnail() == false ) :
                 else:
-                    echo '<img src="'; the_post_thumbnail_url( 'full' ); echo '" alt="" width="730" height="490" loading="lazy">';
+                    echo '<img class="post-thumbnail" src="'; the_post_thumbnail_url( 'full' ); echo '" alt="" width="730" height="490" loading="lazy">';
                 endif;
                 the_content();
             echo '
