@@ -35,7 +35,7 @@
 ?>
 <div class="related-posts_widget">
     <div class="title-wrapper">
-        <h3 class="title"><?= __('Artículos relacionados', 'pinplast') ?></h3>
+        <h4 class="title"><?php echo esc_html__('Artículos relacionados', 'pinplast') ?></h4>
     </div>
     <?php 
             foreach ($related_posts as $post) :
