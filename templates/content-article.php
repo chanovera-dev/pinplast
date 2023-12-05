@@ -17,6 +17,7 @@ echo '
                     echo '<img class="post-thumbnail" src="'; the_post_thumbnail_url( 'full' ); echo '" alt="" width="730" height="490" loading="lazy">';
                 endif;
                 the_content();
+                echo get_the_tag_list();
             echo '
             </div>';
             include(TEMPLATEPATH . '/parts/sidebars/post.php');
