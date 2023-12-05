@@ -52,3 +52,16 @@ function page_styles() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'page_styles' );
+
+
+
+// Estilos para la página frontal
+function frontpage_styles() {
+    if ( is_front_page() or is_page_template('front-page.php') ) {
+        wp_dequeue_style( 'wp-block-library' );
+        /* hero section */
+        wp_enqueue_style( 'general-frontpage-styles', get_template_directory_uri() . '/assets/css/frontpage/frontpage.css' );
+
+    }
+}
+add_action( 'wp_enqueue_scripts', 'frontpage_styles' );
