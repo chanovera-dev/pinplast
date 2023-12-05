@@ -36,4 +36,4 @@
 .single-post .post-wrapper .content hr:before{right:-3rem;}
 .single-post .post-wrapper .content hr:before{left:-3rem;}
 .single-post .post-wrapper .content :is(ul, ol){margin:var(--margin-lists--single);}
-.single-post .post-wrapper .content :is(ul, ol) li{margin-bottom:1.12rem;}
+.single-post .post-wrapper .content :is(ul, ol) li{margin-bottom:1.12rem; font-size:1.6rem;}
