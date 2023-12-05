@@ -8,7 +8,7 @@ echo '
         </section>
     </div>
     <div class="container">
-        <article class="section content-section">
+        <article class="section post-wrapper">
             <div class="content">';
                 the_title('<h1>', '</h1>');
                 include(TEMPLATEPATH . '/parts/widgets/publicate-date.php');
