@@ -53,4 +53,4 @@
     -webkit-transition: all .15s;
     transition: all .3s ease;
 }
-.single-post .post-wrapper .content .tags a:hover{border:var(--wp--preset--color--yellow); background-color:var(--wp--preset--color--yellow);}
+.single-post .post-wrapper .content .tags a:hover{border-color:var(--wp--preset--color--yellow); background-color:var(--wp--preset--color--yellow);}

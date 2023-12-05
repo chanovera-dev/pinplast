@@ -19,7 +19,7 @@ aside .tags div a{
     -webkit-transition: all .15s;
     transition: all .3s ease;
 }
-aside .tags div a:hover{border:var(--wp--preset--color--yellow); background-color:var(--wp--preset--color--yellow);}
+aside .tags div a:hover{border-color:var(--wp--preset--color--yellow); background-color:var(--wp--preset--color--yellow);}
 
 /* boletín de noticias */
 main aside .newsletter{text-align:center; background-color:#f5f5f5; border-color:#f5f5f5;}
