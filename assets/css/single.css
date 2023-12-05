@@ -28,9 +28,9 @@
 .single-post .post-wrapper .content :is(ul, ol) li{margin-bottom:1.12rem; font-size:1.6rem; line-height:1.625;}
 
 /* etiquetas */
-aside .single-post .post-wrapper .content .tags{display:inline-flex; flex-wrap:wrap; gap:.7rem; margin:6rem 0 3rem;}
-aside .single-post .post-wrapper .content .tags a{display:inline-flex; background:transparent; font-weight:500; border:1px solid #e5e5e5; color:var(--wp--preset--color--text); border-radius:.15rem; padding:.6rem 1rem .5rem; transition:all .3s ease; }
-aside .single-post .post-wrapper .content .tags a:hover{border-color:var(--wp--preset--color--yellow); background-color:var(--wp--preset--color--yellow);}
+aside .post-wrapper .content .tags{display:inline-flex; flex-wrap:wrap; gap:.7rem; margin:6rem 0 3rem;}
+aside .post-wrapper .content .tags a{display:inline-flex; background:transparent; font-weight:500; border:1px solid #e5e5e5; color:var(--wp--preset--color--text); border-radius:.15rem; padding:.6rem 1rem .5rem; transition:all .3s ease; }
+aside .post-wrapper .content .tags a:hover{border-color:var(--wp--preset--color--yellow); background-color:var(--wp--preset--color--yellow);}
 
 /* artículos relacionados */
 aside .related-posts_widget{display:grid; gap:3rem; grid-template-columns:var(--grid-related-posts--single);}
