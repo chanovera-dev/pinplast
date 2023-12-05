@@ -24,6 +24,7 @@ function pinplast_theme_custom_breakpoints() {
                 --margin-blockquote:3.6rem;
                 --margin-h3--single:3.5rem 1.4rem;
                 --margin-lists--single:2.4rem 0;
+                --grid-related-posts--single:1fr;
             }
             #desktop-header{display:none;}
             main :is(.post-wrapper, .posts-wrapper){display:grid; gap:3.6rem;}
@@ -49,6 +50,7 @@ function pinplast_theme_custom_breakpoints() {
                     --margin-bottom-post-thumbnail--single:3rem;
                     --margin-blockquote:5.4rem 0 4.5rem;
                     --margin-lists--single:2.72rem 0;
+                    --grid-related-posts--single:1fr 1fr;
                 }
                 main .posts-wrapper .posts{grid-template-columns:1fr 1fr;}
                 main :is(.post-wrapper, .posts-wrapper){gap:3rem;}
