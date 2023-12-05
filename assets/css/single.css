@@ -1,4 +1,4 @@
 /* breadcrumbs */
-.breadcrumbs{display:inline-flex; align-items:center; flex-wrap:wrap; gap:0 .7rem; color:var(--attenuated-text); padding:1.6rem 0 3.2rem;}
+.breadcrumbs{display:inline-flex; align-items:center; flex-wrap:wrap; gap:0 1.2rem; color:var(--attenuated-text); padding:1.6rem 0 3.2rem;}
 .breadcrumbs a{color:var(--color-text); transition:all .3s ease;}
 .breadcrumbs a:hover{color:var(--color-links);}

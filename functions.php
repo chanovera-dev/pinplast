@@ -75,7 +75,11 @@ function get_breadcrumb() {
                 <svg class="breadcrumb-arrow" width="6px" height="9px">
                     <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#arrow-rounded-right-6x9"></use>
                 </svg>
-                <p>'.esc_html__('Blog', 'pinplast').'</p>';
+                <a href="'.site_url('/blog').' rel="nofollow">'.esc_html__('Blog', 'pinplast').'</a>
+                <svg class="breadcrumb-arrow" width="6px" height="9px">
+                    <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#arrow-rounded-right-6x9"></use>
+                </svg>';
+                the_title('<p>', '</p>');
                         
             }
     } elseif (is_page()) {
