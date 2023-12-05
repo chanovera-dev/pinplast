@@ -22,7 +22,7 @@ function pinplast_theme_custom_breakpoints() {
                 --grid-address-contact:1fr;
             }
             #desktop-header{display:none;}
-            main .posts-wrapper{display:grid; gap:3.6rem;}
+            main :is(.post-wrapper, .posts-wrapper){display:grid; gap:3.6rem;}
 
             @media(min-width:576px){
                 :root{
@@ -44,7 +44,7 @@ function pinplast_theme_custom_breakpoints() {
                     --padding-address-contact:2.4rem;
                 }
                 main .posts-wrapper .posts{grid-template-columns:1fr 1fr;}
-                main .posts-wrapper{gap:3rem;}
+                main :is(.post-wrapper, .posts-wrapper){gap:3rem;}
             }
 
             @media(min-width:991px){
@@ -74,7 +74,7 @@ function pinplast_theme_custom_breakpoints() {
                 }
                 #responsive-header{display:none;}
                 #desktop-header{display:inherit; background-color:var(--wp--preset--color--background);}
-                main .posts-wrapper{grid-template-columns:1fr 28.4rem; gap:3rem 5rem;}
+                main :is(.post-wrapper, .posts-wrapper){grid-template-columns:1fr 28.4rem; gap:3rem 5rem;}
             }
 
             @media(min-width:1199px){
@@ -86,7 +86,7 @@ function pinplast_theme_custom_breakpoints() {
                     --grid-footer-widgets:1fr 1fr 1fr;
                     --height-map--contact:54rem;
                 }
-                main .posts-wrapper{grid-template-columns:1fr 33rem;}
+                main :is(.post-wrapper, .posts-wrapper){grid-template-columns:1fr 33rem;}
             }
         </style>
     <?php
