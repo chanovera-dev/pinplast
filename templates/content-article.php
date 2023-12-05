@@ -10,12 +10,12 @@ echo '
     <div class="container">
         <article class="section content-section">
             <div class="content">';
+                the_title('<h1>', '</h1>');
+                include(TEMPLATEPATH . '/parts/widgets/publicate-date.php');
                 if ( has_post_thumbnail() == false ) :
                 else:
                     echo '<img src="'; the_post_thumbnail_url( 'full' ); echo '" alt="" width="730" height="490" loading="lazy">';
                 endif;
-                the_title('<h1>', '</h1>');
-                include(TEMPLATEPATH . '/parts/widgets/publicate-date.php');
                 the_content();
             echo '
             </div>';
