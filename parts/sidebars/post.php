@@ -18,6 +18,7 @@
             }
         ?>
     </div>
+    <?php include (TEMPLATEPATH. '/parts/widgets/latest-posts.php'); ?>
     <div class="tags widget">
         <?php include (TEMPLATEPATH. '/parts/widgets/tags-cloud.php'); ?>
     </div>
