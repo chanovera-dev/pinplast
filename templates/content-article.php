@@ -8,24 +8,26 @@ echo '
         </section>
     </div>
     <div class="container">
-        <article class="section post-wrapper">
-            <div class="content">';
-                the_title('<h1>', '</h1>');
-                include(TEMPLATEPATH . '/parts/widgets/publicate-date.php');
-                if ( has_post_thumbnail() == false ) :
-                else:
-                    echo '<img class="post-thumbnail" src="'; the_post_thumbnail_url( 'full' ); echo '" alt="" width="730" height="490" loading="lazy">';
-                endif;
-                the_content();
-                echo '
+        <section class="section post-wrapper">
+            <div>
+                <article class="content">';
+                    the_title('<h1>', '</h1>');
+                    include(TEMPLATEPATH . '/parts/widgets/publicate-date.php');
+                    if ( has_post_thumbnail() == false ) :
+                    else:
+                        echo '<img class="post-thumbnail" src="'; the_post_thumbnail_url( 'full' ); echo '" alt="" width="730" height="490" loading="lazy">';
+                    endif;
+                    the_content();
+                    echo '
+                </article>
                 <aside>
                     <div class="tags">'.get_the_tag_list().'</div>';
                     include(TEMPLATEPATH . '/parts/widgets/related-posts.php');
                     echo '
                 </aside>
-            </div>';
+            <div>';
             include(TEMPLATEPATH . '/parts/sidebars/post.php');
         echo '
-        </article>
+        </section>
     </div>
 </main>';

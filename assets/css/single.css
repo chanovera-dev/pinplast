@@ -31,14 +31,3 @@
 aside .post-wrapper .content .tags{display:inline-flex; flex-wrap:wrap; gap:.7rem; margin:6rem 0 3rem;}
 aside .post-wrapper .content .tags a{display:inline-flex; background:transparent; font-weight:500; border:1px solid #e5e5e5; color:var(--wp--preset--color--text); border-radius:.15rem; padding:.6rem 1rem .5rem; transition:all .3s ease; }
 aside .post-wrapper .content .tags a:hover{border-color:var(--wp--preset--color--yellow); background-color:var(--wp--preset--color--yellow);}
-
-/* artículos relacionados */
-aside .related-posts_widget{display:grid; gap:3rem; grid-template-columns:var(--grid-related-posts--single);}
-aside .related-posts_widget .title-wrapper{position:relative; overflow:hidden; grid-column:1/-1;}
-aside .related-posts_widget .title-wrapper .title{display:inline; position:relative; font-size:2.2rem;}
-aside .related-posts_widget .title-wrapper .title:before{position:absolute; top:50%; transform:translateY(-50%); left:calc(100% + 1.5rem); width:120rem; height:.2rem; background-color:var(--wp--preset--color--line); content:'';}
-aside .related-posts_widget .post .thumbnail{width:100%; aspect-ratio:3/2; object-fit:cover; margin-bottom:1.2rem; transition:all .3s ease;}
-aside .related-posts_widget .post .thumbnail:hover{filter:brightness(.75);}
-aside .related-posts_widget .post .permalink{font-size:1.5rem; line-height:2rem; color:var(--wp--preset--color--text); transition:all .3s ease;}
-aside .related-posts_widget .post .permalink:hover{color:var(--wp--preset--color--links);  text-decoration:none;}
-aside .related-posts_widget .post > .publicate-date_widget{color:var(--wp--preset--color--attenuated); margin-top:.8rem;}
