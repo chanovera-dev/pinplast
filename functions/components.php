@@ -55,7 +55,7 @@ add_action( 'wp_enqueue_scripts', 'page_styles' );
 
 
 
-// Estilos para el template de la página Contacto
+// componentes para las páginas de tipo 'page' alt 1
 function page_alt1_styles() {
     if ( is_page_template('page-alt1.php') ) {
         wp_dequeue_style( 'wp-block-library' );
@@ -63,6 +63,17 @@ function page_alt1_styles() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'page_alt1_styles' );
+
+
+
+// componentes para las páginas de tipo 'page' alt 2
+function page_alt2_styles() {
+    if ( is_page_template('page-alt2.php') ) {
+        wp_dequeue_style( 'wp-block-library' );
+        wp_enqueue_style( 'page-alt1-styles', get_template_directory_uri() . '/assets/css/page-alt2.css' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'page_alt2_styles' );
 
 
 

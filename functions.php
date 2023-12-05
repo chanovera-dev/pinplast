@@ -44,6 +44,8 @@ require_once(get_template_directory() . '/functions/wishlist.php');
 require_once(get_template_directory() . '/functions/icons.php');
 // Anexo para definir los componentes personalizados en las plantillas
 require_once(get_template_directory() . '/functions/components.php');
+// Anexo para definir los backgrounds en las plantillas
+require_once(get_template_directory() . '/functions/backgrounds.php');
 // anexo para activar woocommerce
 if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
     require_once(get_template_directory() . '/functions/woocommerce.php');
