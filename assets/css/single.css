@@ -7,6 +7,6 @@
 .single-post .post-wrapper .content h1{font-size:var(--font-size--titles-page); margin-bottom:.8rem;}
 .single-post .post-wrapper .content .publicate-date_widget{color:var(--wp--preset--color--attenuated); margin-bottom:3rem;}
 .single-post .post-wrapper .content .post-thumbnail{width:100%; margin-bottom:var(--margin-bottom-post-thumbnail--single);}
-.single-post .post-wrapper .content p{line-height:1.625; margin-bottom:1.5rem; font-size:1.6rem;}
-.single-post .post-wrapper .content blockquote{margin:3.6rem; font-size:1.6rem;}
+.single-post .post-wrapper .content p{line-height:1.625; margin-bottom:1.5rem;}
+.single-post .post-wrapper .content blockquote{margin:var(--margin-blockquote); font-size:1.6rem; font-style:italic;}
 .single-post .post-wrapper .content blockquote p{color:var(--wp--preset--color--attenuated); margin:0;}
