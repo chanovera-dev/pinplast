@@ -6,7 +6,7 @@
 
         global $post;
 
-        $last_posts = get_posts(array('posts_per_page' => 6));
+        $last_posts = get_posts(array('posts_per_page' => 3));
 
         foreach ( $last_posts as $post ) :
         setup_postdata( $post );
