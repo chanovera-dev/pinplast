@@ -72,7 +72,7 @@ add_action( 'wp_enqueue_scripts', 'frontpage_styles' );
 function single_styles() {
     if ( is_single() ) {
         wp_enqueue_style( 'single-styles', get_template_directory_uri() . '/assets/css/single.css' );
-        wp_enqueue_style( 'forms-styles', get_template_directory_uri() . '/assets/css/forms.css' );
+        wp_enqueue_style( 'widgets-styles', get_template_directory_uri() . '/assets/css/widgets.css' );
 
     }
 }
