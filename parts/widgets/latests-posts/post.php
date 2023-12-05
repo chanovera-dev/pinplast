@@ -7,5 +7,5 @@
     <a class="permalink" href="<?php the_permalink() ?>" target="_blank">
         <?php the_title( '<h4>', '</h4>' ); ?>
     </a>
-    <div style="display:flex; width:100%;"></div>
+    <?php include(TEMPLATEPATH . '/parts/widgets/publicate-date.php'); ?>
 </article>
