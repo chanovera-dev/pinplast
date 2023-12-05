@@ -12,7 +12,7 @@ echo '
             <div class="content">';
                 if ( has_post_thumbnail() == false ) :
                 else:
-                    echo '<img src="' . the_post_thumbnail_url( 'full' ) . '" alt="" width="730" height="490" loading="lazy">';
+                    echo '<img src="'; the_post_thumbnail_url( 'full' ); echo '" alt="" width="730" height="490" loading="lazy">';
                 endif;
                 the_title('<h1>', '</h1>');
                 include(TEMPLATEPATH . '/parts/widgets/publicate-date.php');
