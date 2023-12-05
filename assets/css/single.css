@@ -11,3 +11,4 @@
 .single-post .post-wrapper .content blockquote{margin:var(--margin-blockquote); font-size:1.8rem; font-style:italic;}
 .single-post .post-wrapper .content blockquote p:last-child{font-size:1.6rem; color:var(--wp--preset--color--attenuated); margin:0; font-style:normal;}
 .single-post .post-wrapper .content h3{margin:var(--margin-h3--single); font-size:2.8rem;}
+.single-post .post-wrapper .content figure{margin:4rem 0;}
