@@ -11,7 +11,7 @@
                 echo '
                 </div>
             </section>
-            <article class="section content-section border-section">';
+            <article class="section content border-section">';
                 the_content();
             echo '
             </article>
