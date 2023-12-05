@@ -23,13 +23,4 @@ echo '
         echo '
         </article>
     </div>
-    <div class="container comments-section-wrapper">
-        <section class="section comments-section">
-            <div class="comments">';
-                comments_template();
-            echo '
-            </div>';    
-        echo '
-        </section>
-    </div>
 </main>';
