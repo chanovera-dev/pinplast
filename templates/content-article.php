@@ -25,7 +25,7 @@ echo '
                     include(TEMPLATEPATH . '/parts/widgets/related-posts.php');
                     echo '
                 </aside>
-            <div>';
+            </div>';
             include(TEMPLATEPATH . '/parts/sidebars/post.php');
         echo '
         </section>
