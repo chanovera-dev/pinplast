@@ -28,10 +28,10 @@
     position: absolute;
     content: '';
     display: block;
-    width: inherit;
-    height: inherit;
-    border-radius: inherit;
-    background: inherit;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background: #ccc;
 }
 .single-post .post-wrapper .content hr:before{right:-3rem;}
 .single-post .post-wrapper .content hr:before{left:-3rem;}
