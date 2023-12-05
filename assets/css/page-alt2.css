@@ -1,5 +1,5 @@
 .about-us__image{height:var(--height-header--alt2);}
-.content-section{position:relative; top:var(--top-content-alt2); background-color:white; padding:var(--padding-content-alt2); padding-bottom:0; border-radius:.6rem .6rem 0 0;}
+.page-template-page-alt2 main .content{position:relative; top:var(--top-content-alt2); background-color:white; padding:var(--padding-content-alt2); padding-bottom:0; border-radius:.6rem .6rem 0 0;}
 @media(min-width:1200px){
-    .page-template-page-alt2 .container .content-section{width:min(100% - 3rem, 92rem);}
+    .page-template-page-alt2 .container .content{width:min(100% - 3rem, 92rem);}
 }
