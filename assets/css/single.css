@@ -10,8 +10,8 @@
 .single-post .post-wrapper .content a{text-decoration:none; transition:all .3s ease;}
 .single-post .post-wrapper .content a:hover{text-decoration:underline;}
 .single-post .post-wrapper .content p{line-height:1.625; margin-bottom:1.5rem; font-size:1.6rem;}
-.single-post .post-wrapper .content figure{transition:all.3s ease;}
-.single-post .post-wrapper .content figure:hover{filter:brightness(1.05);}
+.single-post .post-wrapper .content img{transition:all.3s ease;}
+.single-post .post-wrapper .content img:hover{filter:brightness(.5);}
 .single-post .post-wrapper .content blockquote{margin:var(--margin-blockquote);}
 .single-post .post-wrapper .content blockquote p:first-child{ font-size:1.8rem; font-style:italic;}
 .single-post .post-wrapper .content blockquote p:last-child{font-size:1.6rem; color:var(--wp--preset--color--attenuated); margin:0; font-style:normal;}
