@@ -12,7 +12,7 @@
 
     if (!empty($taxonomies)) {
         $args = array(
-            'posts_per_page' => 6,
+            'posts_per_page' => 4,
             'tax_query' => array(
                 'relation' => 'OR',
                 array(
