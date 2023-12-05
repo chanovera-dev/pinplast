@@ -32,4 +32,4 @@ main aside .newsletter .tnp-subscription form input[type=email]{border-color:#ce
 main aside .newsletter .tnp-subscription form input[type=submit]{width:100%;}
 
 /* Últimos artículos */
-main aside .latest-posts .post{display:grid; grid-template-columns:9rem 1fr;}
+main aside .latest-posts .post{display:grid; grid-template-columns:9rem 1fr; gap:1.6rem;}
