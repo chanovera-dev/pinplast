@@ -4,4 +4,5 @@
 .breadcrumbs a:hover{color:var(--wp--preset--color--links);}
 
 /* contenido */
-.single-post .content-section .content h1{font-size:var(--font-size--titles-page);}
+.single-post .content-section .content h1{font-size:var(--font-size--titles-page); margin-bottom:.8rem;}
+.single-post .content-section .content .publicate-date_widget{color:var(--wp--preset--color--attenuated); margin-bottom:3rem;}
