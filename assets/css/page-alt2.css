@@ -5,4 +5,5 @@
 
 @media(min-width:1200px){
     .page-template-page-alt2 .container .content{width:min(100% - 3rem, 92rem);}
+    .page-template-page-alt2 main .content :is(h2, h3){margin-top:7.5rem;}
 }
