@@ -22,4 +22,10 @@ table tbody tr:last-child{background-color:rgba(0, 0, 0, .025);}
 
 @media(min-width:768px){
     main .container .section h1{font-size:3.6rem;}
+
+     /* ajustes de la tabla */
+     table{border:1px solid var(--wp--preset--color--line);}
+     table tbody tr{border:none; margin-bottom:0;}
+     table tbody tr:not(:last-child){height:11.7rem;}
+     table tbody tr td.product-name{text-align:left; border-bottom:none;}
 }
