@@ -12,7 +12,7 @@ echo '<ul class="attachment-list">';
             <svg width="20px" height="20px">
                 <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#cart-20"></use>
             </svg>
-            <div class="wrapper"><span class="number">'; echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() );  echo'</span></div>
+            <div class="wrapper"><span class="number">'; echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() );  echo'</span></div>
         </a>
     </li>';
 echo '</ul>';
