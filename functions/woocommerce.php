@@ -56,7 +56,7 @@ function custom_wc_get_star_rating_html($html, $rating, $count = 0) {
 
 
 
-
+// mostrar el carrito en tiempo real
 add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
 
 function woocommerce_header_add_to_cart_fragment( $fragments ) {
