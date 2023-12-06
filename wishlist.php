@@ -13,7 +13,7 @@
         echo 
         '<section class="container main-content">
             <div class="section padding-section product-cart">';
-                echo do_shortcode('[yith_wcwl_wishlist]');
+                the_content();
             echo 
             '</div>
         </section>
