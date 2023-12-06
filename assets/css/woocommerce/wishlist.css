@@ -11,7 +11,7 @@ table{
     border-collapse:separate;
     text-align:left;
 }
-table :is(thead, tbody) :is(th, td){padding:9px 12px; box-sizing:border-box; text-align:right;}
+table.wishlist_table :is(thead, tbody) :is(th, td){padding:9px 12px; box-sizing:border-box; text-align:right;}
 
 @media(min-width:768px){
     main .container .section h1{font-size:3.6rem;}
