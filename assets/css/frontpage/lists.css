@@ -38,7 +38,7 @@
     margin-right:1rem;
 }
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button.product_type_variable{font-size:1.3rem;}
-.product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .yith-wcwl-add-to-wishlist{background-color:var(--wp--preset--color--line);}
+.product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .yith-wcwl-add-to-wishlist{background-color:var(--wp--preset--color--line); margin-top:0;}
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .yith-wcwl-add-button .add_to_wishlist{color:var(--wp--preset--color--attenuated);}
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .yith-wcwl-add-button .add_to_wishlist i{font-size:1.6rem; margin-right:0;}
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .yith-wcwl-add-button .add_to_wishlist span{font-size:0;}
