@@ -64,9 +64,13 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 
 	ob_start();
 
-	?>
-	<a class="cart-customlocation" href="<?php echo esc_url(wc_get_cart_url()); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?> – <?php echo $woocommerce->cart->get_cart_total(); ?></a>
-	<?php
+    echo '
+	<a class="counter cart-customlocation" href="'; echo esc_url(wc_get_cart_url()); echo '">
+        <svg width="20px" height="20px">
+            <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#cart-20"></use>
+        </svg>
+        <div class="wrapper"><span class="number">'; echo sprintf ( WC()->cart->get_cart_contents_count() );  echo'</span></div>
+    </a>';
 	$fragments['a.cart-customlocation'] = ob_get_clean();
 	return $fragments;
 }
