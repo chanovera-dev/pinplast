@@ -13,7 +13,7 @@ add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
 // Anexos
 // Estilos particulares para los templates
-require_once(get_template_directory() . '/functions/woocommerce/woocommerce-components.php');
+//require_once(get_template_directory() . '/functions/woocommerce/woocommerce-components.php');
 
 
 
