@@ -8,7 +8,7 @@ echo '<ul class="attachment-list">';
     } else {}
     
     echo '<li>
-        <a class="counter cart-customlocation" href="'; echo esc_url(wc_get_cart_url()); echo '" title="'; _e( 'View your shopping cart' ); echo '">
+        <a class="counter cart-customlocation" href="'; echo esc_url(wc_get_cart_url()); echo '">
             <svg width="20px" height="20px">
                 <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#cart-20"></use>
             </svg>
