@@ -74,3 +74,21 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 	$fragments['a.cart-customlocation'] = ob_get_clean();
 	return $fragments;
 }
+
+
+
+// Sube de lugar product_meta
+function subir_metadatos() {
+    remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+    add_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 20);
+}
+add_action('init', 'subir_metadatos');
+
+
+
+// Mueve el precio debajo
+function mover_precio_debajo() {
+    remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
+    add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 21);
+}
+add_action('init', 'mover_precio_debajo');
