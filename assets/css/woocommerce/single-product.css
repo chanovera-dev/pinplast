@@ -47,6 +47,7 @@
 /* precio */
 .price{font-size:2.8rem; font-weight:700; color:var(--wp--preset--color--text); margin:1.8rem 0 1.4rem;}
 /* agregar al carrito */
+main input[type=submit], button.single_add_to_cart_button{height:4.6rem;}
 .variations_form.cart{display:grid; justify-content:center;}
 .cart{display:inline-flex; align-items:center; gap:1rem;}
 .woocommerce-variation-add-to-cart{display:flex; gap:2rem;}
