@@ -70,4 +70,6 @@ main .container .section h1{font-size:3rem; color:var(--wp--preset--color--text)
     .page-template-wishlist-template table.wishlist_table thead th{border-top:none; height:5.6rem;}
     .page-template-wishlist-template .wishlist_table .product-stock-status span.wishlist-in-stock{padding:.3rem .6rem; background-color:var(--wp--preset--color--green); color:#fff;}
     .page-template-wishlist-template .wishlist_table tr td.product-thumbnail a img{width:8rem;}
+    .page-template-wishlist-template .wishlist_table .product-add-to-cart a{background-color:var(--wp--preset--color--yellow); border:1px solid var(--wp--preset--color--yellow); color:var(--wp--preset--color--text); padding:.6rem 1.6rem; transition:all .3s ease;}
+    .page-template-wishlist-template .wishlist_table .product-add-to-cart a:hover{background-color:var(--wp--preset--color--text); border:1px solid var(--wp--preset--color--text); color:#fff;}
 }
