@@ -95,7 +95,7 @@ add_action('init', 'mover_precio_debajo');
 
 
 
-/* Actualizar importes de carrito al cambiar cantidades *
+/* Actualizar importes de carrito al cambiar cantidades */
 add_action( 'wp_footer', 'dlanau_actualizar_importe_carrito_' );
 function dlanau_actualizar_importe_carrito_() {
 if (is_cart()) :
@@ -108,4 +108,4 @@ jQuery("[name='update_cart']").trigger("click");
 </script>
 <?php
 endif;
-}*/
+}
