@@ -1,5 +1,5 @@
-// Encuentra todos los elementos input de tipo número
-const numberInputs = document.querySelectorAll('input[type="number"]');
+// Encuentra todos los elementos input de tipo número dentro del carrito de WooCommerce
+const numberInputs = document.querySelectorAll('.woocommerce-cart-form input[type="number"]');
 
 // Itera sobre cada input de número y agrega los botones
 numberInputs.forEach(input => {
@@ -10,44 +10,25 @@ numberInputs.forEach(input => {
     buttonLess.innerText = "-";
     buttonPlus.innerText = "+";
 
-    function down() { 
-        const inputElement = this.parentNode.querySelector('[type=number]');
-        inputElement.stepDown(); 
-        updateLocalStorage(inputElement);
-    }
-    buttonLess.onclick = down;
+    function updateQuantity() {
+        const quantityInput = this.parentNode.querySelector('[type=number]');
+        const currentQuantity = parseInt(quantityInput.value, 10);
 
-    function up() { 
-        const inputElement = this.parentNode.querySelector('[type=number]');
-        inputElement.stepUp(); 
-        updateLocalStorage(inputElement);
-    }
-    buttonPlus.onclick = up;
-
-    input.insertAdjacentElement("afterend", buttonPlus);
-    input.insertAdjacentElement("beforebegin", buttonLess);
-
-    // Recuperar el valor del localStorage y establecerlo en el campo de cantidad
-    const savedValue = localStorage.getItem(input.name);
-    if (savedValue !== null) {
-        input.value = savedValue;
-    }
-});
-
-// Función para actualizar el valor en localStorage
-function updateLocalStorage(inputElement) {
-    localStorage.setItem(inputElement.name, inputElement.value);
-}
-
-
-
-// Recuperar el valor del localStorage y establecerlo en el campo de cantidad al cargar la página
-window.addEventListener('load', () => {
-    const numberInputs = document.querySelectorAll('input[type="number"]');
-    numberInputs.forEach(input => {
-        const savedValue = localStorage.getItem(input.name);
-        if (savedValue !== null) {
-            input.value = savedValue;
+        if (this === buttonLess) {
+            quantityInput.stepDown();
+        } else if (this === buttonPlus) {
+            quantityInput.stepUp();
         }
-    });
+
+        // Actualiza la cantidad utilizando las funciones de WooCommerce
+        $(quantityInput).trigger('change');
+    }
+
+    buttonLess.onclick = updateQuantity;
+    buttonPlus.onclick = updateQuantity;
+
+    // Inserta los botones después del input de cantidad
+    input.insertAdjacentElement("afterend", buttonPlus);
+    // Inserta el botón de decremento antes del input de cantidad
+    input.insertAdjacentElement("beforebegin", buttonLess);
 });
