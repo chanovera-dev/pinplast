@@ -35,7 +35,7 @@ if ($count_sales === 0) {
                         $args = array(
                             'post_type' => 'product',
                             'post_status' => 'publish',
-                            'posts_per_page' => 7,
+                            'posts_per_page' => 6,
                             'orderby' => 'date',
                             'order'   => 'DESC',
                             'meta_query' => WC()->query->get_meta_query(),
@@ -117,7 +117,7 @@ if ($count_sales === 0) {
                         $args = array(
                             'post_type' => 'product',
                             'post_status' => 'publish',
-                            'posts_per_page' => 7,
+                            'posts_per_page' => 6,
                             'orderby' => 'date',
                             'order'   => 'DESC',
                             'meta_query' => WC()->query->get_meta_query(),
