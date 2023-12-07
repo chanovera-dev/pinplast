@@ -59,9 +59,11 @@ jQuery(document).ready(function($) {
 
 
 
-
 jQuery(document).ready(function($) {
     $('body').on('click', 'button[name="update_cart"]', function() {
+        // Realiza una acción personalizada cuando se actualiza el carrito.
+        updateCartCounter();
+        
         // Realiza una llamada AJAX para ejecutar la función de PHP.
         $.ajax({
             url: your_ajax_object.ajax_url,
@@ -75,4 +77,17 @@ jQuery(document).ready(function($) {
             },
         });
     });
+
+    function updateCartCounter() {
+        // Realiza la lógica necesaria para obtener el nuevo número de elementos en el carrito.
+        var newCartCount = obtenerNuevoContadorDelCarrito();
+        
+        // Actualiza el contenido del contador en la interfaz.
+        $('#cart-counter').text(newCartCount);
+    }
+
+    function obtenerNuevoContadorDelCarrito() {
+        // Implementa la lógica para obtener el número actualizado de elementos en el carrito.
+        return 10; // Número de elementos en el carrito.
+    }
 });
