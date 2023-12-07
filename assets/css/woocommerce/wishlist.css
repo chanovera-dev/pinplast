@@ -14,7 +14,7 @@ table{
 
 .shop_table{padding-left:0;}
 .page-template-wishlist-template .wishlist_table.mobile li{border:1px solid var(--wp--preset--color--line); margin-bottom:2rem;}
-.page-template-wishlist-template .wishlist_table.mobile li table.additional-info{margin-bottom:2rem; padding:.9rem 1.2rem;}
+.page-template-wishlist-template .wishlist_table.mobile li table.additional-info{margin-bottom:1.5rem; padding:.9rem 1.2rem;}
 .page-template-wishlist-template .wishlist_table.mobile li .item-wrapper{display:grid; width:100%;}
 .page-template-wishlist-template .wishlist_table.mobile li .item-wrapper .item-details{width:100%; color:var(--wp--preset--color--text);}
 .page-template-wishlist-template .wishlist_table.mobile li .item-wrapper .product-thumbnail{width:100%; max-width:100%;}
@@ -25,6 +25,7 @@ table{
 .page-template-wishlist-template .wishlist_table.mobile li .item-details table.item-details-table{margin-bottom:0; padding:.9rem 1.2rem;}
 .page-template-wishlist-template .wishlist_table.mobile li .item-details table.item-details-table :is(td.label, td.value),
 .page-template-wishlist-template .wishlist_table.mobile li :is(td.label, td.value){font-size:1.5rem; padding:0;}
+.page-template-wishlist-template .wishlist_table .product-add-to-cart{padding:0 1.2rem;}
 .page-template-wishlist-template .wishlist_table .product-add-to-cart a{margin:0; display:grid!important; place-content:center; height:3.8rem; font-weight:700; background-color:var(--wp--preset--color--yellow); color:var(--wp--preset--color--text);}
 .page-template-wishlist-template .wishlist_table.mobile li .additional-info-wrapper .product-remove{padding:.9rem 1.2rem;}
 
