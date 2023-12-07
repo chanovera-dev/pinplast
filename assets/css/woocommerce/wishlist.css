@@ -47,10 +47,10 @@ main .container .section h1{font-size:3rem; color:var(--wp--preset--color--text)
     .page-template-wishlist-template .wishlist_table.mobile li .item-details table.item-details-table :is(td.label, td.value),
     .page-template-wishlist-template .wishlist_table.mobile li :is(td.label, td.value){font-size:1.5rem; padding:0;}
     .page-template-wishlist-template .wishlist_table.mobile li .item-details table.item-details-table tr{display:grid;}
-    .page-template-wishlist-template .wishlist_table.mobile li .item-details table.item-details-table td.label{width:100%; text-align:right;}
+    .page-template-wishlist-template .wishlist_table.mobile li .item-details table.item-details-table td.label{margin-bottom:.4rem; width:100%; text-align:right;}
     .page-template-wishlist-template .wishlist_table.mobile li .additional-info-wrapper{display:flex; gap:2rem; align-items:flex-start;}
     .page-template-wishlist-template .wishlist_table.mobile li .additional-info-wrapper .product-add-to-cart{width:12rem; margin-bottom:0;}
     .page-template-wishlist-template .wishlist_table.mobile li table.additional-info{width:11rem;}
     .page-template-wishlist-template .wishlist_table.mobile li table.additional-info tr{display:grid;}
-    .page-template-wishlist-template .wishlist_table.mobile li table.additional-info tr td.label{width:100%; text-align:right;}
+    .page-template-wishlist-template .wishlist_table.mobile li table.additional-info tr td.label{margin-bottom:.4rem; width:100%; text-align:right;}
 }
