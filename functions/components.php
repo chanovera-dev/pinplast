@@ -99,3 +99,31 @@ function single_styles() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'single_styles' );
+
+
+
+// Estilos para la página frontal
+function pinplast_frontpage_styles() {
+    if ( is_front_page() or is_page_template('front-page.php') ) {
+        wp_dequeue_style( 'wp-block-library' );
+        /* slideshows */
+        wp_enqueue_script( 'slideshow-hero', get_template_directory_uri() . '/assets/js/slideshow-hero.js', array(), '1.0', true );
+        wp_enqueue_script( 'slideshow-featured-products', get_template_directory_uri() . '/assets/js/featured-products-slideshow.js', array(), '1.0', true );
+        wp_enqueue_script( 'slideshow-arrivals', get_template_directory_uri() . '/assets/js/arrivals-slideshow.js', array(), '1.0', true );
+        wp_enqueue_script( 'slideshow-blog', get_template_directory_uri() . '/assets/js/blog-slideshow.js', array(), '1.0', true );
+        wp_enqueue_script( 'slideshow-latest-sales', get_template_directory_uri() . '/assets/js/latest-sales-slideshows.js', array(), '1.0', true );
+        /* features */
+        wp_enqueue_style( 'features-styles', get_template_directory_uri() . '/assets/css/frontpage/features.css' );
+        /* featured products */
+        wp_enqueue_style( 'lists-styles', get_template_directory_uri() . '/assets/css/frontpage/lists.css' );
+        /* catalog link */
+        wp_enqueue_style( 'catalog-styles', get_template_directory_uri() . '/assets/css/frontpage/catalog.css' );
+        /* categories */
+        wp_enqueue_style( 'categories-styles', get_template_directory_uri() . '/assets/css/frontpage/categories.css' );
+        /* hero section */
+        wp_enqueue_style( 'hero-styles', get_template_directory_uri() . '/assets/css/frontpage/hero.css' );
+        /* sections */
+        wp_enqueue_style( 'frontpage-styles', get_template_directory_uri() . '/assets/css/frontpage.css' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'pinplast_frontpage_styles' );
