@@ -127,7 +127,7 @@ img{display:block; height:auto;}
 .bottom-bar--wrapper{background-color:var(--wp--preset--color--yellow);}
 .bottom-bar{display:grid; align-items:center; grid-template-columns:var(--grid-columns--bottom-bar);}
 /* botón de comprar por categorías */
-.bottom-bar .departments-button{width:100%; height:4.2rem; padding:0 1.4rem; display:flex; align-items:center; justify-content:space-between; background-color:var(--wp--preset--color--text); border:var(--wp--preset--color--text); color:#fff; fill:#859ba6; font-weight:600; transition:all .3s ease;}
+.bottom-bar .departments-button{width:100%; height:4.2rem; padding:0 1.4rem; display:flex; gap:1.4rem; align-items:center; justify-content:space-between; background-color:var(--wp--preset--color--text); border:var(--wp--preset--color--text); color:#fff; fill:#859ba6; font-weight:600; transition:all .3s ease;}
 .bottom-bar .departments-button:hover{fill:#fff;}
 .bottom-bar .departments-button .departments__button-arrow{margin-left:auto;}
 /* menú */
