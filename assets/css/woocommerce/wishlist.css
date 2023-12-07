@@ -45,7 +45,8 @@ main .container .section h1{font-size:3rem; color:var(--wp--preset--color--text)
     .page-template-wishlist-template .wishlist_table.mobile li .item-wrapper .item-details .product-name h3 a{color:var(--wp--preset--color--text);}
     .page-template-wishlist-template .wishlist_table.mobile li .item-details table.item-details-table tr{display:grid;}
     .page-template-wishlist-template .wishlist_table.mobile li .additional-info-wrapper{display:flex; gap:2rem; align-items:center;}
-    .page-template-wishlist-template .wishlist_table.mobile li .additional-info-wrapper .product-add-to-cart{width:11rem;}
+    .page-template-wishlist-template .wishlist_table.mobile li .additional-info-wrapper .product-add-to-cart{width:12rem;}
+    .page-template-wishlist-template .wishlist_table.mobile li table.additional-info{width:9rem;}
     .page-template-wishlist-template .wishlist_table.mobile li table.additional-info tr{display:grid;}
     .page-template-wishlist-template .wishlist_table.mobile li table.additional-info tr td.label{width:100%;}
 }
