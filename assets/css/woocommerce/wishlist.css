@@ -26,6 +26,7 @@ table.wishlist_table thead{display:none;} */
 .page-template-wishlist-template .wishlist_table.mobile li .item-details table.item-details-table{margin-bottom:0; padding:.9rem 1.2rem;}
 .page-template-wishlist-template .wishlist_table.mobile li .item-details table.item-details-table :is(td.label, td.value),
 .page-template-wishlist-template .wishlist_table.mobile li :is(td.label, td.value){font-size:1.5rem; padding:0;}
+.page-template-wishlist-template .wishlist_table .product-add-to-cart a{margin:0; display:grid; place-content:center; height:3.8rem; font-weight:700; background-color:var(--wp--preset--color--yellow); color:var(--wp--preset--color--text);}
 .page-template-wishlist-template .wishlist_table.mobile li .additional-info-wrapper .product-remove{padding:.9rem 1.2rem;}
 
 @media(min-width:768px){
