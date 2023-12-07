@@ -5,8 +5,8 @@
             echo '
             <div class="">
                 <button class="departments-button">
-                    <svg width="20px" height="20px">
-                        <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#cross-20"></use>
+                    <svg width="18px" height="14px">
+                        <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#menu-18x14"></use>
                     </svg>'
                     .esc_html__('Comprar por categoría', 'pinplast').'
                     <svg class="departments__button-arrow" width="9px" height="6px">
