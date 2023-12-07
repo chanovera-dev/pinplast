@@ -58,7 +58,8 @@ main .container .section h1{font-size:3rem; color:var(--wp--preset--color--text)
 }
 
 @media(min-width:1200px){
-    .page-template-wishlist-template .wishlist_table tr td.product-remove{padding:1.6rem;}
+    .page-template-wishlist-template .wishlist_table tr td.product-remove{padding:1.6 1.2rem; text-align:center;}
+    .page-template-wishlist-template .wishlist_table tr td.product-remove a{text-align:center; font-size:2.8rem;}
     .page-template-wishlist-template table.wishlist_table{width:100%; font-size:100%; border:1px solid var(--wp--preset--color--line); border-collapse:collapse;}
     .page-template-wishlist-template table.wishlist_table :is(th, td){text-align:left;}
     .page-template-wishlist-template table.wishlist_table tr:not(:last-child){border-bottom:1px solid var(--wp--preset--color--line);}
