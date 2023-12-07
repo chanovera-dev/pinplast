@@ -2,12 +2,12 @@
 .slideshow-wrapper{position:relative; width:100%; height:395px; overflow:hidden;}
 .slideshow-wrapper .slideshow{width:300%; height:100%; display:flex; align-items:center; transition:all .3s ease;}
 .slideshow-wrapper .slideshow .slide{width:100%; height:100%; background-color:#f6f6f6; padding:2.6rem 1.5rem 5rem; display:grid;}
-.slideshow-wrapper .slideshow .slide .content .title{font-size:var(--font-size-title-slide); font-weight:700; line-height:var(--line-height-title-slide); color:#3d464d; margin-bottom:var(--margin-bottom-title-slide);}
+.slideshow-wrapper .slideshow .slide .content .title{font-size:var(--font-size-title-slide); font-weight:700; line-height:var(--line-height-title-slide); color:var(--wp--preset--color--text); margin-bottom:var(--margin-bottom-title-slide);}
 .slideshow-wrapper .slideshow .slide .content button{
     margin-top:.6rem;
-    border: 1px solid var(--yellow);
-    background-color:var(--yellow);
-    color:var(--color-header);
+    border: 1px solid var(--wp--preset--color--yellow);
+    background-color:var(--wp--preset--color--yellow);
+    color:var(--wp--preset--color--text);
     font-weight: 600;
     font-size:1.5rem;
     border-radius: 0.3rem;
@@ -19,15 +19,15 @@
     transition: all .3s ease;
 }
 .slideshow-wrapper .slideshow .slide button:hover{
-    border:1px solid var(--color-header); gap:1rem;
-    background-color:var(--color-header);
+    border:1px solid var(--wp--preset--color--text); gap:1rem;
+    background-color:var(--wp--preset--color--text);
     color:#ffffff;
 }
 
 .slideshow-wrapper .slideshow-buttons-wrapper{position:absolute; bottom:1.5rem; transform:translateX(-50%); left:50%;}
 .slideshow-wrapper .slideshow-buttons-wrapper .slideshow-buttons{padding:.4rem; background-color:#ffffff; display:flex; gap:.8rem; margin:0; list-style:none; border-radius:.9rem;}
 .slideshow-wrapper .slideshow-buttons .slideshow-button{width:1rem; height:1rem; border-radius:50%; background-color:#e0e0e0;}
-.slideshow-wrapper .slideshow-buttons .slideshow-button.active{background-color:var(--yellow);}
+.slideshow-wrapper .slideshow-buttons .slideshow-button.active{background-color:var(--wp--preset--color--yellow);}
 
 
 @media screen and (min-width: 31px) and (max-width: 767px){
