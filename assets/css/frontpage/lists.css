@@ -80,8 +80,9 @@
 .blog-list .post .content{font-size:1.5rem;}
 .blog-list .post .content .permalink{color:var(--wp--preset--color--text); transition:all .3s ease;}
 .blog-list .post .content .permalink:hover{color:var(--color-links);}
-.blog-list .post .content .permalink .title{font-size:1.7rem; font-weight:700;}
-.blog-list .post .content .publicate-date_widget{margin-bottom:1rem; color:#adadad; font-size:1.4rem;}
+.blog-list .post .content .permalink .title{font-size:1.7rem; font-weight:700; line-height:1.5;}
+.blog-list .post .content .publicate-date_widget{margin:1rem 0; color:#adadad; font-size:1.4rem;}
+.blog-list .post .content  p{line-height:1.5;}
 .blog-wrapper{width:100%; position:relative; overflow:hidden;}
 .blog-list{width:600%; display:grid; grid-template-columns:repeat(6, 1fr); transition:all .3s ease;}
 .slideshow-buttons__blog{position:absolute; top:50%; transform:translateY(-50%); right:0; display:flex; gap:2px; padding-left:2rem; background-color:var(--wp--preset--color--background);}
