@@ -36,9 +36,9 @@ main .container .section h1{font-size:3rem; color:var(--wp--preset--color--text)
 @media(min-width:768px){
     main .container .section h1{font-size:3.6rem;}
     
-    .page-template-wishlist-template .wishlist_table.mobile li{border:1px solid var(--wp--preset--color--line); display:flex; align-items:center; padding:2rem;}
+    .page-template-wishlist-template .wishlist_table.mobile li{border:1px solid var(--wp--preset--color--line); display:flex; align-items:center; gap:2rem; padding:2rem;}
     .page-template-wishlist-template .wishlist_table.mobile li:not(:last-child){margin-bottom:2rem;}
-    .page-template-wishlist-template .wishlist_table.mobile li .item-wrapper{display:flex; align-items:center;}
+    .page-template-wishlist-template .wishlist_table.mobile li .item-wrapper{display:flex; align-items:center; gap:2rem;}
     .page-template-wishlist-template .wishlist_table.mobile li .item-wrapper .product-thumbnail img{width:8rem;}
     .page-template-wishlist-template .wishlist_table.mobile li .item-wrapper .item-details{display:flex; width:inherit; align-items:center;}
     .page-template-wishlist-template .wishlist_table.mobile li .item-wrapper .item-details .product-name h3{font-size:1.5rem; font-weight:400;}
