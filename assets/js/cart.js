@@ -56,25 +56,3 @@ jQuery(document).ready(function($) {
         });
     });
 });
-
-
-
-jQuery(document).ready(function($) {
-    // Escucha el evento de cambio en la cantidad de productos en el carrito
-    $(document.body).on('updated_cart_totals', function() {
-        // Realiza una solicitud AJAX para actualizar el contenido del carrito
-        $.ajax({
-            type: 'GET',
-            url: wc_cart_fragments_params.wc_ajax_url.toString().replace('%%endpoint%%', 'get_refreshed_fragments'),
-            success: function(response) {
-                // Llama a la función woocommerce_header_add_to_cart_fragment después de la actualización
-                if (response && response.fragments) {
-                    $.each(response.fragments, function(key, value) {
-                        $(key).replaceWith(value);
-                    });
-                    $(document.body).trigger('wc_fragments_refreshed');
-                }
-            }
-        });
-    });
-});
