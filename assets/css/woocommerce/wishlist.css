@@ -68,4 +68,5 @@ main .container .section h1{font-size:3rem; color:var(--wp--preset--color--text)
     .page-template-wishlist-template table.wishlist_table td a:hover{color:var(--wp--preset--color--links);}
     .page-template-wishlist-template table.wishlist_table thead{background-color:rgba(0,0,0,.025); border-bottom:1px solid var(--wp--preset--color--line);}
     .page-template-wishlist-template table.wishlist_table thead th{border-top:none;}
+    .page-template-wishlist-template .wishlist_table .product-stock-status span.wishlist-in-stock{color:var(--wp--preset--color--text);}
 }
