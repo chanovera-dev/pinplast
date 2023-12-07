@@ -123,7 +123,7 @@ function pinplast_frontpage_styles() {
         /* hero section */
         wp_enqueue_style( 'hero-styles', get_template_directory_uri() . '/assets/css/frontpage/hero.css' );
         /* sections */
-        wp_enqueue_style( 'frontpage-styles', get_template_directory_uri() . '/assets/css/woocommerce/frontpage.css' );
+        wp_enqueue_style( 'frontpage-styles', get_template_directory_uri() . '/assets/css/frontpage/frontpage.css' );
     }
 }
 add_action( 'wp_enqueue_scripts', 'pinplast_frontpage_styles' );
