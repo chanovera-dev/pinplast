@@ -45,20 +45,14 @@ jQuery(document).ready(function($) {
         addQuantityButtons($(this));
     });
 
-    // Observador de mutaciones para detectar cambios en el DOM
-    const observer = new MutationObserver(function(mutations) {
-        mutations.forEach(function(mutation) {
-            // Verifica si un nodo hijo fue agregado al formulario del carrito
-            if (mutation.target.classList.contains('woocommerce-cart-form') && mutation.addedNodes.length > 0) {
-                // Encuentra los nuevos elementos input de tipo número y agrega los botones
-                $(mutation.addedNodes).find('input[type="number"]').each(function() {
-                    addQuantityButtons($(this));
-                });
-            }
+    // Observa el evento 'updated_cart_totals' de WooCommerce
+    $(document.body).on('updated_cart_totals', function() {
+        // Encuentra todos los elementos input de tipo número dentro del carrito de WooCommerce después de la actualización
+        const updatedNumberInputs = $('.woocommerce-cart-form input[type="number"]');
+
+        // Agrega los botones a los elementos de entrada de cantidad actualizados
+        updatedNumberInputs.each(function() {
+            addQuantityButtons($(this));
         });
     });
-
-    // Configura el observador para que observe cambios en el DOM
-    const observerConfig = { childList: true, subtree: true };
-    observer.observe(document.body, observerConfig);
 });
