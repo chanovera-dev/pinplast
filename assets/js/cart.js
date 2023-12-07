@@ -10,12 +10,44 @@ numberInputs.forEach(input => {
     buttonLess.innerText = "-";
     buttonPlus.innerText = "+";
 
-    function down() { this.parentNode.querySelector('[type=number]').stepDown(); }
+    function down() { 
+        const inputElement = this.parentNode.querySelector('[type=number]');
+        inputElement.stepDown(); 
+        updateLocalStorage(inputElement);
+    }
     buttonLess.onclick = down;
 
-    function up() { this.parentNode.querySelector('[type=number]').stepUp(); }
+    function up() { 
+        const inputElement = this.parentNode.querySelector('[type=number]');
+        inputElement.stepUp(); 
+        updateLocalStorage(inputElement);
+    }
     buttonPlus.onclick = up;
 
     input.insertAdjacentElement("afterend", buttonPlus);
     input.insertAdjacentElement("beforebegin", buttonLess);
+
+    // Recuperar el valor del localStorage y establecerlo en el campo de cantidad
+    const savedValue = localStorage.getItem(input.name);
+    if (savedValue !== null) {
+        input.value = savedValue;
+    }
+});
+
+// Función para actualizar el valor en localStorage
+function updateLocalStorage(inputElement) {
+    localStorage.setItem(inputElement.name, inputElement.value);
+}
+
+
+
+// Recuperar el valor del localStorage y establecerlo en el campo de cantidad al cargar la página
+window.addEventListener('load', () => {
+    const numberInputs = document.querySelectorAll('input[type="number"]');
+    numberInputs.forEach(input => {
+        const savedValue = localStorage.getItem(input.name);
+        if (savedValue !== null) {
+            input.value = savedValue;
+        }
+    });
 });
