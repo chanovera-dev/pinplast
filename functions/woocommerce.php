@@ -56,6 +56,63 @@ function custom_wc_get_star_rating_html($html, $rating, $count = 0) {
 
 
 
+// Saber la cantidad de productos vendidos
+function get_total_products_sold() {
+    $args = array(
+        'post_type'      => 'product',
+        'posts_per_page' => -1,
+    );
+
+    $products = new WP_Query($args);
+
+    $total_sold = 0;
+
+    if ($products->have_posts()) {
+        while ($products->have_posts()) {
+            $products->the_post();
+            $product_id = get_the_ID();
+            $total_sold += get_post_meta($product_id, '_wc_total_sales', true);
+        }
+        wp_reset_postdata();
+    }
+
+    return $total_sold;
+}
+
+
+
+// saber la cantidad de 'sales'
+function get_total_onsale() {
+    $args = array(
+        'post_type'      => 'product',
+        'posts_per_page' => -1,
+        'meta_query'     => array(
+            array(
+                'key'     => '_sale_price',
+                'value'   => 0,
+                'compare' => '>',
+                'type'    => 'NUMERIC',
+            ),
+        ),
+    );
+
+    $products = new WP_Query($args);
+
+    $total_sold = 0;
+
+    if ($products->have_posts()) {
+        while ($products->have_posts()) {
+            $products->the_post();
+            $product_id = get_the_ID();
+            $total_sold += get_post_meta($product_id, '_wc_total_sales', true);
+        }
+        wp_reset_postdata();
+    }
+
+    return $total_sold;
+}
+
+
 // mostrar el carrito en tiempo real
 add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
 
