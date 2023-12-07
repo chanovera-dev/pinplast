@@ -56,3 +56,13 @@ main .container .section h1{font-size:3rem; color:var(--wp--preset--color--text)
     .page-template-wishlist-template .wishlist_table .product-add-to-cart a,
     .page-template-wishlist-template .wishlist_table.mobile li .additional-info-wrapper .product-remove a{color:var(--wp--preset--color--text)}
 }
+
+@media(min-width:1200px){
+    .page-template-wishlist-template table.wishlist_table{width:100%; font-size:100%;}
+    /* tabla */
+    table{
+        width:100%;
+        border-collapse:separate;
+        text-align:left;
+    }
+}
