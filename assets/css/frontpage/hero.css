@@ -51,10 +51,9 @@
     .slideshow-wrapper .slideshow .slide .picture-product{right:-38%;}
 }
 
-/* @media(min-width:1200px){
-    .slideshow-wrapper{height:437px;}
+@media(min-width:1200px){
     .slideshow-wrapper .slideshow .slide .content .excerpt{font-size:2rem;}
     .slideshow-wrapper .slideshow .slide .content button{margin-top:4.7rem;}
     .slideshow-wrapper .slideshow .slide .picture-product{right:-10%;}
     .slideshow-wrapper .slideshow-buttons .slideshow-button{width:1.1rem; height:1.1rem;}
-} */
+}
