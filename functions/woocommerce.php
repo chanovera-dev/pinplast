@@ -77,6 +77,22 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 
 
 
+// Agrega la acción para manejar la solicitud AJAX para actualizar el carrito al actualizar los precios del carrito
+add_action('wp_ajax_update_cart_counter', 'update_cart_counter_callback');
+
+function update_cart_counter_callback() {
+    // Puedes llamar a tu función de PHP aquí.
+    $fragments = woocommerce_header_add_to_cart_fragment(array());
+    
+    // Devuelve la respuesta al cliente.
+    echo json_encode($fragments);
+
+    // Asegúrate de detener la ejecución después de enviar la respuesta.
+    wp_die();
+}
+
+
+
 // Sube de lugar product_meta
 function subir_metadatos() {
     remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
