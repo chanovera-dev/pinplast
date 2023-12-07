@@ -15,6 +15,7 @@ table.wishlist_table :is(thead, tbody) :is(th, td){padding:9px 12px; box-sizing:
 table.wishlist_table thead{display:none;}
 .shop_table{padding-left:0;}
 .page-template-wishlist-template .wishlist_table.mobile li{border:1px solid var(--wp--preset--color--line); margin-bottom:2rem; padding:2rem;}
+.page-template-wishlist-template .wishlist_table.mobile li table.additional-info{margin-bottom:2rem;}
 .page-template-wishlist-template .wishlist_table.mobile li .item-wrapper{display:grid; width:100%;}
 .page-template-wishlist-template .wishlist_table.mobile li .item-wrapper .item-details{width:100%; color:var(--wp--preset--color--text);}
 .page-template-wishlist-template .wishlist_table.mobile li .item-wrapper .item-details .product-name{padding:1rem 0 2rem;}
