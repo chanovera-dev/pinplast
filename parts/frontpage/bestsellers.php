@@ -19,7 +19,7 @@ if ($total_products_sold === 0) {
             <?php
                 $args = array(
                     'post_type' => 'product',
-                    'meta_key' => 'total_sales',
+                    // 'meta_key' => 'total_sales',
                     'orderby' => 'meta_value_num',
                     'posts_per_page' => 7,
                 );
