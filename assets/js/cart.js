@@ -56,3 +56,23 @@ jQuery(document).ready(function($) {
         });
     });
 });
+
+
+
+
+jQuery(document).ready(function($) {
+    $('body').on('click', 'button[name="update_cart"]', function() {
+        // Realiza una llamada AJAX para ejecutar la función de PHP.
+        $.ajax({
+            url: your_ajax_object.ajax_url,
+            type: 'POST',
+            data: {
+                action: 'update_cart_counter', // Nombre de la acción en tu función de PHP.
+            },
+            success: function(response) {
+                // La respuesta puede contener información actualizada desde la función de PHP.
+                console.log(response);
+            },
+        });
+    });
+});
