@@ -108,7 +108,7 @@ table tbody tr td.product-quantity .quantity input[type=number].qty:focus{outlin
 @media(min-width:768px){
     main .container .section h1{font-size:3.6rem;}
     main .container .product-cart .woocommerce{display:grid;}
-    .product-thumbnail{display:inherit!important;}
+    .product-thumbnail{display:inherit!important; font-size:0;}
     .product-thumbnail img{width:8rem;}
     /* cabecera de la tabla */
     table thead tr th.product-remove .screen-reader-text{display:none;}
