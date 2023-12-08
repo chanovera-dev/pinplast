@@ -46,7 +46,7 @@
 }
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button.product_type_variable{font-size:1.3rem;}
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .yith-wcwl-add-to-wishlist{margin-top:0; background-color:var(--wp--preset--color--line); width:2.925rem; height:2.925rem; border-radius:.3rem; display:grid; place-content:center; transition: all .3s ease;}
-.product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .yith-wcwl-add-to-wishlist:hover{background-color:var(--wp--preset--color--attenuated);}
+.product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .yith-wcwl-add-to-wishlist:hover{background-color:var(--wp--preset--color--border);}
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .added_to_cart.wc-forward{display:none;}
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .yith-wcwl-add-button .add_to_wishlist{color:var(--wp--preset--color--attenuated);}
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .yith-wcwl-add-button .add_to_wishlist i{font-size:1.6rem; margin-right:0;}
