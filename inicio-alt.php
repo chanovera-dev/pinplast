@@ -1,4 +1,4 @@
-<?php /* Template name: Inicio 2 */
+<?php /* Template name: Inicio alt */
     get_header();
 
     echo '
