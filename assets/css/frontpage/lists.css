@@ -17,7 +17,8 @@
 .product-list li .card .content .rating .star-rating svg{width:2rem; height:2rem; color:var(--wp--preset--color--attenuated);}
 .product-list li .card .content .rating .star-rating svg.bi-star-fill{color:var(--wp--preset--color--green);}
 .product-list li .card .content .rating .votes-rating{font-size:1.2rem; color:var(--wp--preset--color--attenuated);}
-.product-list li .card .content .price .woocommerce-Price-amount.amount bdi{font-weight:700;}
+.product-list li .card .content .price .woocommerce-Price-amount.amount bdi{font-weight:700; text-decoration:none;}
+.product-list li .card .content .price del .woocommerce-Price-amount.amount bdi{font-weight:400; font-size:1.4rem;}
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons{display:flex; flex-wrap:wrap; align-items:baseline;}
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{
     padding:.5rem 1rem;
