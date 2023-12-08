@@ -17,7 +17,7 @@
 .product-list li .card .content .rating .star-rating svg{width:2rem; height:2rem; color:var(--wp--preset--color--attenuated);}
 .product-list li .card .content .rating .star-rating svg.bi-star-fill{color:var(--wp--preset--color--green);}
 .product-list li .card .content .rating .votes-rating{font-size:1.2rem; color:var(--wp--preset--color--attenuated);}
-.product-list li .card .content .price{display:flex; flex-direction:row-reverse;}
+.product-list li .card .content .price{display:flex; gap:.5rem; flex-direction:row-reverse; justify-content:flex-start;}
 .product-list li .card .content .price ins{text-decoration:none;}
 .product-list li .card .content .price ins .woocommerce-Price-amount.amount bdi{font-weight:700; font-size:1.6rem; color:red;}
 .product-list li .card .content .price del{text-decoration:none; position:relative;}
