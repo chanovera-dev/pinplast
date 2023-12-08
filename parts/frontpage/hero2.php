@@ -3,7 +3,7 @@
     <div class="block-slideshow__body">
         <div class="owl-carousel">
             <a class="block-slideshow__slide" href="#">
-                <div class="block-slideshow__slide-image block-slideshow__slide-image--desktop" style="background-image:<?php echo get_theme_mod('slide_img1', get_bloginfo('template_url') . '/assets/img/slides/slide-1.jpg'); ?>"></div>
+                <div class="block-slideshow__slide-image block-slideshow__slide-image--desktop" style="background-image: url('<?php echo get_theme_mod('slide_img1', get_bloginfo('template_url') . '/assets/img/slides/slide-1.jpg'); ?>')"></div>
                 <div class="block-slideshow__slide-image block-slideshow__slide-image--mobile" style="background-image: url('images/slides/slide-1-mobile.jpg')"></div>
                 <div class="block-slideshow__slide-content">
                     <div class="block-slideshow__slide-title">Big choice of<br>Plumbing products</div>
