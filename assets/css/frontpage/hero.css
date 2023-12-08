@@ -44,7 +44,7 @@
 }
 
 @media(min-width:1024px){
-    .hero-section{display:grid; grid-template-columns:282px 1fr; gap:1.5rem;}
+    .hero-section{display:grid; grid-template-columns:var(--grid-columns--hero); gap:1.5rem;}
     .hero-section .slideshow-wrapper{grid-column:2/3;}
     .slideshow-wrapper .slideshow .slide .content{max-width:73%;}
     .slideshow-wrapper .slideshow .slide .content button{height:4.6rem; font-size:2rem;}

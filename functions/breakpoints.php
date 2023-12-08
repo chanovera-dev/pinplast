@@ -87,6 +87,7 @@ function pinplast_theme_custom_breakpoints() {
                     --size-logo:20rem;
                     --grid-columns--middle-bar:22.5rem 47.5rem 1fr;
                     --grid-columns--bottom-bar:21rem 1fr auto;
+                    --grid-columns--hero:21rem 1fr;
                     --width-attachments:4.675rem;
                     --height-attachments:4.2rem;
                     --grid-footer-widgets:1fr 1.6fr 1fr;
@@ -111,6 +112,7 @@ function pinplast_theme_custom_breakpoints() {
                     --breakpoint:min(100% - 3rem, 1110px);
                     --grid-columns--middle-bar:27rem 60.34rem 1fr;
                     --grid-columns--bottom-bar:25.5rem 1fr auto;
+                    --grid-columns--hero:25.5rem 1fr;
                     --width-attachments:5.075rem;
                     --grid-footer-widgets:1fr 1fr 1fr;
                     --height-map--contact:54rem;
