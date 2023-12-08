@@ -1,0 +1,7 @@
+.hero-section.padding-section{padding:1.5rem 0;}
+
+@media(min-width:1024px){
+    .hero-section{display:grid; grid-template-columns:var(--grid-columns--hero); gap:1.5rem;}
+    .hero-section .block-slideshow__body{grid-column:2/3;}
+
+}

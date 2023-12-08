@@ -127,3 +127,15 @@ function pinplast_frontpage_styles() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'pinplast_frontpage_styles' );
+
+
+
+// Estilos para la página frontal
+function pinplast_inicio_alt_styles() {
+    if ( is_front_page() or is_page_template('inicio-alt.php') ) {
+        wp_dequeue_style( 'wp-block-library' );
+        /* hero */
+        wp_enqueue_style( 'hero-alt-styles', get_template_directory_uri() . '/assets/css/frontpage/hero-alt.css' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'pinplast_inicio_alt_styles' );

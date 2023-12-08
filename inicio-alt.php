@@ -3,7 +3,7 @@
 
     echo '
     <main id="main">';
-        include(TEMPLATEPATH . '/parts/frontpage/hero2.php');
+        include(TEMPLATEPATH . '/parts/frontpage/hero-alt.php');
         echo '
     </main>';
 
