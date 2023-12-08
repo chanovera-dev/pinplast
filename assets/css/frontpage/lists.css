@@ -22,7 +22,7 @@
 .product-list li .card .content .price ins{text-decoration:none;}
 .product-list li .card .content .price ins .woocommerce-Price-amount.amount bdi{font-weight:700; font-size:1.6rem; color:red;}
 .product-list li .card .content .price del{text-decoration:none; position:relative;}
-.product-list li .card .content .price del:after{position:absolute; content:''; width:100%; height:.1rem; background-color:var(--wp--preset--color--attenuated); top:50%; left:0;}
+.product-list li .card .content .price del:after{position:absolute; content:''; width:100%; height:.1rem; background-color:var(--wp--preset--color--attenuated); top:40%; left:0;}
 .product-list li .card .content .price del .woocommerce-Price-amount.amount bdi{font-weight:400; font-size:1.4rem; color:var(--wp--preset--color--attenuated);}
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons{display:flex; flex-wrap:wrap; align-items:baseline;}
 .product-list li .card .add-to-cart_add-to-wishlist--buttons .buttons .add_to_cart_button{
