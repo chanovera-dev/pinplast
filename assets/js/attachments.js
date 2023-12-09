@@ -267,3 +267,21 @@ if (window.innerWidth < 767) {
       searchForm.classList.remove('active');
   });
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Espera a que el DOM esté completamente cargado
+
+  // Obtén referencias a los elementos por sus ID
+  let departmentsButton = document.getElementById('departments-button');
+  let chevronDepartmentsButton = document.querySelector('.departments__button-arrow');
+  let categoriesList = document.getElementById('categories-list');
+
+  // Agrega un evento de clic al botón
+  departmentsButton.addEventListener('click', function () {
+    // Alternar la clase 'open' en el elemento con ID 'categories-list'
+    categoriesList.classList.toggle('open');
+    chevronDepartmentsButton.classList.toggle('rotate');
+  });
+});
