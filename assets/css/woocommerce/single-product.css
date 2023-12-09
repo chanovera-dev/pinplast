@@ -34,35 +34,35 @@
 .flex-control-nav li img.flex-active{border:2px solid var(--wp--preset--color--yellow);}
 
 /* sumario */
-.product_title{color:var(--wp--preset--color--text); margin-bottom:2rem;}
+.product-summary .product_title{color:var(--wp--preset--color--text); margin-bottom:2rem;}
 /* calificación */
-.woocommerce-product-rating{display:flex; align-items:center; gap:1.5rem; margin-bottom:1.6rem;}
-.woocommerce-product-rating .star-rating{display:flex; align-items:center; gap:.5rem;}
-.woocommerce-product-rating .star-rating svg{width:2rem; height:2rem; color:var(--wp--preset--color--attenuated);}
-.woocommerce-product-rating .star-rating svg.bi-star-fill{color:var(--wp--preset--color--green);}
-.woocommerce-review-link{color:var(--wp--preset--color--attenuated); transition:all .3s ease;}
-.woocommerce-review-link:hover{color:var(--wp--preset--color--links);}
+.product-summary .woocommerce-product-rating{display:flex; align-items:center; gap:1.5rem; margin-bottom:1.6rem;}
+.product-summary .woocommerce-product-rating .star-rating{display:flex; align-items:center; gap:.5rem;}
+.product-summary .woocommerce-product-rating .star-rating svg{width:2rem; height:2rem; color:var(--wp--preset--color--attenuated);}
+.product-summary .woocommerce-product-rating .star-rating svg.bi-star-fill{color:var(--wp--preset--color--green);}
+.product-summary .woocommerce-review-link{color:var(--wp--preset--color--attenuated); transition:all .3s ease;}
+.product-summary .woocommerce-review-link:hover{color:var(--wp--preset--color--links);}
 /* descripción corta */
-.woocommerce-product-details__short-description{padding-bottom:1.6rem; margin-bottom:1.6rem; border-bottom:1px solid var(--wp--preset--color--line);}
-.woocommerce-product-details__short-description p{color:var(--wp--preset--color--text); line-height:1.5;}
+.product-summary .woocommerce-product-details__short-description{padding-bottom:1.6rem; margin-bottom:1.6rem; border-bottom:1px solid var(--wp--preset--color--line);}
+.product-summary .woocommerce-product-details__short-description p{color:var(--wp--preset--color--text); line-height:1.5;}
 /* metadatos */
-.product_meta{display:inline-flex; gap:0 2rem; flex-wrap:wrap; margin-left:.7rem; margin-bottom:2rem; color:var(--wp--preset--color--attenuated);}
-.product_meta a{color:var(--wp--preset--color--green); transition:all .3s ease;}
-.product_meta a:hover{color:var(--wp--preset--color--links);}
+.product-summary .product_meta{display:inline-flex; gap:0 2rem; flex-wrap:wrap; margin-left:.7rem; margin-bottom:2rem; color:var(--wp--preset--color--attenuated);}
+.product-summary .product_meta a{color:var(--wp--preset--color--green); transition:all .3s ease;}
+.product-summary .product_meta a:hover{color:var(--wp--preset--color--links);}
 /* precio */
 .price{font-size:2.8rem; font-weight:700; color:var(--wp--preset--color--text); margin:1.8rem 0 1.4rem;}
 /* agregar al carrito */
-.single-product main .cart input[type=submit], 
-.single-product main .cart button.single_add_to_cart_button{height:4.6rem;}
-.single-product main .yith-wcwl-add-to-wishlist .feedback .yith-wcwl-icon{margin-right:0;}
-.variations_form.cart{display:grid; justify-content:center;}
-.cart{display:inline-flex; align-items:center; gap:1rem;}
-.woocommerce-variation-add-to-cart{display:flex; gap:2rem;}
+.single-product main .product-summary .cart input[type=submit], 
+.single-product main .product-summary .cart button.single_add_to_cart_button{height:4.6rem;}
+.single-product main .product-summary .yith-wcwl-add-to-wishlist .feedback .yith-wcwl-icon{margin-right:0;}
+.product-summary .variations_form.cart{display:grid; justify-content:center;}
+.product-summary .cart{display:inline-flex; align-items:center; gap:1rem;}
+.product-summary .woocommerce-variation-add-to-cart{display:flex; gap:2rem;}
 /* wishlist */
-.yith-wcwl-add-to-wishlist{display:inline-flex; margin-top:0; margin-top:0; position:relative; top:-3px; margin-left:.6rem;}
-.yith-wcwl-add-button,
-.yith-wcwl-wishlistexistsbrowse{display:grid; place-content:center; width:4.6rem; height:4.6rem; background-color:var(--wp--preset--color--line); border-radius:.2rem;}
-.yith-wcwl-add-button > a i{color:var(--wp--preset--color--text); margin-right:0!important;}
+.product-summary .yith-wcwl-add-to-wishlist{display:inline-flex; margin-top:0; margin-top:0; position:relative; top:-3px; margin-left:.6rem;}
+.product-summary .yith-wcwl-add-button,
+.product-summary .yith-wcwl-wishlistexistsbrowse{display:grid; place-content:center; width:4.6rem; height:4.6rem; background-color:var(--wp--preset--color--line); border-radius:.2rem;}
+.product-summary .yith-wcwl-add-button > a i{color:var(--wp--preset--color--text); margin-right:0!important;}
 
 /* container aside product */
 
@@ -85,19 +85,10 @@
 /* productos relacionados */
 .related.products{display:grid; gap:2rem;}
 .related.products h2{font-weight:700;}
-.related.products .products{margin:0; padding:0; list-style:none; display:flex; align-items:flex-start; gap:1.5rem; overflow-x:scroll; padding-bottom:2rem;}
-.related.products .products li{box-shadow:0 0 0 1px #ededed inset; padding:1rem; min-width:100%;}
-.related.products .products li a{display:grid; margin-bottom:1rem;}
-.related.products .products li a > *:not(:last-child){margin-bottom:1rem;}
-.related.products .products li a .woocommerce-loop-product__title{font-size:1.5rem; font-weight:400; color:var(--wp--preset--color--text);}
-.related.products .products li a img{width:70%; height:auto; margin-inline:auto; padding-top:1rem;}
-.related.products .products li a:last-child{margin-bottom:1rem;}
-.related.products .products li :is(.product_type_simple, .product_type_variable){display:inline-flex; align-items:center; height:2.6rem; padding:0 1rem; background-color:var(--wp--preset--color--yellow); border-radius:.2rem; border:1px solid var(--wp--preset--color--yellow); color:var(--wp--preset--color--text); font-size:1.3rem; font-weight:700; text-transform:capitalize;}
+.related.products ul{gap:1.5rem;}
 
 @media(min-width:768px){
     .data-product{display:grid; gap:3rem; grid-template-columns:284px 1fr;}
-    /* productos relacionados */
-    .related.products .products li{min-width:222px;}
 }
 
 @media(min-width:1024px){
