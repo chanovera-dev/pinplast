@@ -201,12 +201,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // detecta el scroll en el sitio y agrega clases según el evento desencadenado
 const body = document.body;
+const isHome = body.classList.contains('home');
 const header = document.querySelector(".main-header");
 const menu = document.querySelector(".main-header .menu");
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
 let categoriesList = document.getElementById('categories-list');
 let lastScroll = 0;
+
+ // Agregar o la clase "open" en base a la clase "home" del body
+ if (isHome) {
+   categoriesList.classList.add('open');
+ }
 
 window.addEventListener("scroll", () => {
   // Comprobar si la clase "open" está presente y eliminarla
@@ -217,6 +223,9 @@ window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
   if (currentScroll <= 0) {
     body.classList.remove(scrollUp);
+    if (isHome) {
+      categoriesList.classList.add('open');
+    }
     return;
   }
   
@@ -228,6 +237,7 @@ window.addEventListener("scroll", () => {
     // up
     body.classList.remove(scrollDown);
     body.classList.add(scrollUp);
+    
   }
   lastScroll = currentScroll;
 });
