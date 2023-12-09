@@ -284,6 +284,13 @@ if(window.innerWidth > 768){
   slide.classList.add('desktop');
 }
 
+if(window.innerWidth > 1024){
+  let slide = document.querySelector('.slideshow-wrapper .slideshow .slide.slide1');
+  slide.classList.remove('mobile');
+  slide.classList.remove('desktop');
+  slide.classList.add('desktop-full');
+}
+
 
 document.addEventListener('DOMContentLoaded', function () {
   // Espera a que el DOM esté completamente cargado
