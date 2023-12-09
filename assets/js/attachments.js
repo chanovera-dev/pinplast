@@ -207,6 +207,7 @@ const menu = document.querySelector(".main-header .menu");
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
 let categoriesList = document.getElementById('categories-list');
+let departmentsButton = document.getElementById('departments-button');
 let chevronDepartmentsButton = document.querySelector('.departments__button-arrow');
 let lastScroll = 0;
 
@@ -229,6 +230,7 @@ window.addEventListener("scroll", () => {
     if (isHome) {
       categoriesList.classList.add('open');
       chevronDepartmentsButton.classList.add('rotate');
+      departmentsButton.disable = true;
     }
     return;
   }
