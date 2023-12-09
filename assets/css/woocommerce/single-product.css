@@ -77,6 +77,7 @@
     .tabs.wc-tabs .reviews_tab.active a{border-bottom:2px solid var(--wp--preset--color--yellow);}
     .tabs.wc-tabs a{display:flex; align-items:center; padding:0 4.8rem; height:6.8rem; font-size:2rem; font-weight:700; color:var(--wp--preset--color--text); border-bottom:2px solid transparent;}
     .tabs.wc-tabs a:hover{background-color:#f2f2f2; border-bottom:2px solid #e0e0e0; color:var(--wp--preset--color--text);}
+    .tabs.wc-tabs a:focus{box-shadow:none;}
     /* descripción del producto */
     .woocommerce-Tabs-panel--description > *{line-height:1.7;}
     .woocommerce-Tabs-panel--description > *:not(:last-child){margin-bottom:1.7rem;}
