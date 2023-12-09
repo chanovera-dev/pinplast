@@ -240,11 +240,12 @@ window.addEventListener("scroll", () => {
     // down
     body.classList.remove(scrollUp);
     body.classList.add(scrollDown);
+    departmentsButton.disabled = false;
   } else if (currentScroll < lastScroll && body.classList.contains(scrollDown)) {
     // up
     body.classList.remove(scrollDown);
     body.classList.add(scrollUp);
-    
+    departmentsButton.disabled = false;
   }
   lastScroll = currentScroll;
 });
