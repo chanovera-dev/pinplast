@@ -273,23 +273,29 @@ if (window.innerWidth < 767) {
 
 
 
-let slide = document.querySelectorAll('.slideshow-wrapper .slideshow .slide');
+let slides = document.querySelectorAll('.slideshow-wrapper .slideshow .slide');
 
 if (window.innerWidth < 767) {
-
-  slide.classList.add('mobile');
+  slides.forEach(slide => {
+    slide.classList.add('mobile');
+    slide.classList.remove('desktop', 'desktop-full'); // Asegúrate de quitar otras clases si es necesario
+  });
 }
 
-if(window.innerWidth > 768){
-  slide.classList.remove('mobile');
-  slide.classList.add('desktop');
+if (window.innerWidth > 768 && window.innerWidth <= 1024) {
+  slides.forEach(slide => {
+    slide.classList.remove('mobile', 'desktop-full');
+    slide.classList.add('desktop');
+  });
 }
 
-if(window.innerWidth > 1024){
-  slide.classList.remove('mobile');
-  slide.classList.remove('desktop');
-  slide.classList.add('desktop-full');
+if (window.innerWidth > 1024) {
+  slides.forEach(slide => {
+    slide.classList.remove('mobile', 'desktop');
+    slide.classList.add('desktop-full');
+  });
 }
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
