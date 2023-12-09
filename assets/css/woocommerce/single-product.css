@@ -81,7 +81,7 @@
     /* valoraciones */
     #tab-reviews{padding:2.4rem;}
     #comments .woocommerce-Reviews-title,
-    #reply-title{font-size:2.8rem; margin-bottom:3.2rem; font-weight:700;}
+    #reply-title{display:block; font-size:2.8rem; margin-bottom:3.2rem; font-weight:700;}
     #commentform .comment-form-cookies-consent{line-height:1.5;}
 
 /* tabs */
