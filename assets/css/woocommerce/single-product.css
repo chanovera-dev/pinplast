@@ -94,7 +94,7 @@
     #commentform .comment-form-cookies-consent{line-height:1.5;}
     /* tabla */
     .woocommerce-product-attributes{border-collapse:separate; text-align:left; border-spacing:0;}
-    .woocommerce-product-attributes :is(thead, tbody) :is(th, td){padding:9px 12px; box-sizing:border-box; text-align:right;}
+    .woocommerce-product-attributes :is(thead, tbody) :is(th, td){padding:1.8rem 2.4rem; box-sizing:border-box; text-align:right;}
     .woocommerce-product-attributes :is(thead, tbody) tr:nth-child(odd){background-color:rgba(0,0,0,.025);}
 
 /* tabs */
