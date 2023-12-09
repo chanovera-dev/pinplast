@@ -19,3 +19,17 @@ buttonPlus.onclick = up
 
 inputQty.insertAdjacentElement("afterend", buttonPlus);
 inputQty.insertAdjacentElement("beforebegin", buttonLess);
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Buscar la <ul> con las clases 'products' y 'columns-4'
+    var productList = document.querySelector('ul.products.columns-4');
+
+    // Verificar si se encontró la <ul>
+    if (productList) {
+        // Reemplazar las clases existentes con 'product-list'
+        productList.classList.remove('products', 'columns-4');
+        productList.classList.add('product-list');
+    }
+});
