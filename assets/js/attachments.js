@@ -273,6 +273,7 @@ if (window.innerWidth < 767) {
 
 
 
+/* agregar clases para personalizar fondos · mirar en backgrounds.php */
 let slides = document.querySelectorAll('.slideshow-wrapper .slideshow .slide');
 
 if (window.innerWidth < 767) {
@@ -284,7 +285,7 @@ if (window.innerWidth < 767) {
 
 if (window.innerWidth > 768 && window.innerWidth <= 1024) {
   slides.forEach(slide => {
-    slide.classList.remove('mobile', 'desktop-full');
+    slide.classList.remove('mobile');
     slide.classList.add('desktop');
   });
 }
