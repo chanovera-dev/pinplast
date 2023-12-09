@@ -278,7 +278,7 @@ let slides = document.querySelectorAll('.slideshow-wrapper .slideshow .slide');
 if (window.innerWidth < 767) {
   slides.forEach(slide => {
     slide.classList.add('mobile');
-    slide.classList.remove('desktop', 'desktop-full'); // Asegúrate de quitar otras clases si es necesario
+    slide.classList.remove('desktop');
   });
 }
 
