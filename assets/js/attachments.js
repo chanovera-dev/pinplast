@@ -273,19 +273,19 @@ if (window.innerWidth < 767) {
 
 
 
+let slide = document.querySelectorAll('.slideshow-wrapper .slideshow .slide');
+
 if (window.innerWidth < 767) {
-  let slide = document.querySelector('.slideshow-wrapper .slideshow .slide');
+
   slide.classList.add('mobile');
 }
 
 if(window.innerWidth > 768){
-  let slide = document.querySelector('.slideshow-wrapper .slideshow .slide');
   slide.classList.remove('mobile');
   slide.classList.add('desktop');
 }
 
 if(window.innerWidth > 1024){
-  let slide = document.querySelector('.slideshow-wrapper .slideshow .slide');
   slide.classList.remove('mobile');
   slide.classList.remove('desktop');
   slide.classList.add('desktop-full');
