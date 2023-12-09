@@ -38,7 +38,7 @@ function obtener_categorias_woocommerce() {
     $categorias = get_categories($args);
 
     if (!empty($categorias)) {
-        echo '<ul>';
+        echo '<ul class="categories-list">';
         foreach ($categorias as $categoria) {
             echo '<li>' . $categoria->name;
 
