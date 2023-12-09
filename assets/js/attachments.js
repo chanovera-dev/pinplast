@@ -297,7 +297,7 @@ main.addEventListener("click", function() {
   let departmentsButton = document.getElementById('departments-button');
   let chevronDepartmentsButton = document.querySelector('.departments__button-arrow');
     // Llama a la función myFunction y pasa el botón del menú como argumento
-    if(categoriesList.classList.contains("open") && chevronDepartmentsButton.classList.contains('rotate'))
+    if(categoriesList.classList.contains("open") && chevronDepartmentsButton.classList.contains('rotate')){
         myFunction(departmentsButton);
     }
 });
