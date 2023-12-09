@@ -24,6 +24,8 @@ function template_redirect_action() {
             $product = wc_get_product( $post->ID );
             $tipo    = $product->get_type();
             wp_enqueue_style( 'single-product-styles', get_template_directory_uri() . '/assets/css/woocommerce/single-product.css' );
+            /* listas */
+            wp_enqueue_style( 'lists-styles', get_template_directory_uri() . '/assets/css/frontpage/lists.css' );
             // JS de ajustes
             wp_enqueue_script( 'ajustes', get_template_directory_uri() . '/assets/js/single-product.js', '', 1, true );
             /* estilos css para los formularios */
