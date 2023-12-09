@@ -267,11 +267,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Obtén referencias a los elementos por sus ID
   let departmentsButton = document.getElementById('departments-button');
+  let chevronDepartmentsButton = document.getElementById('chevronDepartmentsButton');
   let categoriesList = document.getElementById('categories-list');
 
   // Agrega un evento de clic al botón
   departmentsButton.addEventListener('click', function () {
     // Alternar la clase 'open' en el elemento con ID 'categories-list'
     categoriesList.classList.toggle('open');
+    chevronDepartmentsButton.classList.toggle('rotate');
   });
 });
