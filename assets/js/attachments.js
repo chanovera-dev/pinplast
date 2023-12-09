@@ -288,16 +288,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// Obtén referencia al elemento body
-let main = document.getElementById("main");
+// Obtén una referencia al menú
+const categoriesMenu = document.getElementById('categories-list');
 
-// Agrega un evento de click al elemento body
-main.addEventListener("click", function() {
-  let categoriesList = document.getElementById('categories-list');
-  let departmentsButton = document.getElementById('departments-button');
-  let chevronDepartmentsButton = document.querySelector('.departments__button-arrow');
-    // Llama a la función myFunction y pasa el botón del menú como argumento
-    if(categoriesList.classList.contains("open") && chevronDepartmentsButton.classList.contains('rotate')){
-        myFunction(departmentsButton);
-    }
+// Agrega un event listener al documento para escuchar clics
+document.addEventListener('click', function(event) {
+  // Verifica si el clic ocurrió dentro o fuera del menú
+  const isClickInsideMenu = categoriesMenu.contains(event.target);
+  
+  // Si el clic ocurrió fuera del menú y el menú está abierto, ciérralo
+  if (!isClickInsideMenu && categoriesMenu.classList.contains('open')) {
+    categoriesMenu.classList.remove('open');
+  }
 });
