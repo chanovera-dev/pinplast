@@ -209,13 +209,8 @@ let categoriesList = document.getElementById('categories-list');
 let lastScroll = 0;
 
 window.addEventListener("scroll", () => {
-  // Comprobar si el body tiene la clase "home"
-  const isHome = body.classList.contains('home');
-
-  // Agregar o quitar la clase "open" en base a la clase "home" del body
-  if (isHome) {
-    categoriesList.classList.add('open');
-  } else if (categoriesList.classList.contains('open')) {
+  // Comprobar si la clase "open" está presente y eliminarla
+  if (categoriesList.classList.contains('open')) {
     categoriesList.classList.remove('open');
   }
 
@@ -236,7 +231,6 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = currentScroll;
 });
-
 
 
 
