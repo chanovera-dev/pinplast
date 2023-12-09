@@ -38,9 +38,10 @@ function obtener_categorias_woocommerce() {
     $categorias = get_categories($args);
 
     if (!empty($categorias)) {
-        echo '<ul class="categories-list">';
+        echo '<ul>';
         foreach ($categorias as $categoria) {
-            echo '<li>' . $categoria->name;
+            $categoria_link = get_term_link($categoria->term_id, 'product_cat');
+            echo '<li><a href="' . esc_url($categoria_link) . '">' . $categoria->name . '</a>';
 
             // Obtener subcategorías de la categoría actual
             $subcategorias = get_terms('product_cat', array(
@@ -51,7 +52,8 @@ function obtener_categorias_woocommerce() {
             if (!empty($subcategorias)) {
                 echo '<ul>';
                 foreach ($subcategorias as $subcategoria) {
-                    echo '<li>' . $subcategoria->name . '</li>';
+                    $subcategoria_link = get_term_link($subcategoria->term_id, 'product_cat');
+                    echo '<li><a href="' . esc_url($subcategoria_link) . '">' . $subcategoria->name . '</a></li>';
                 }
                 echo '</ul>';
             }
