@@ -4,7 +4,7 @@
         <section class="section bottom-bar">';
             echo '
             <div class="categories-list-wrapper">
-                <button class="departments-button">
+                <button id="departments-button" class="departments-button">
                     <svg width="18px" height="14px">
                         <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#menu-18x14"></use>
                     </svg>'

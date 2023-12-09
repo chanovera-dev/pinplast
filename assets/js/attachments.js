@@ -175,20 +175,20 @@ if (window.innerWidth > 991) {
 
 
 
-if (window.innerWidth > 1199) {
-  // elimina el responsive header y el menu mobile
-  let deleteMenuMobile = document.getElementById('menu-mobile--wrapper');
-  let deleteResponsiveHeader = document.getElementById("responsive-header");
+// if (window.innerWidth > 1199) {
+//   // elimina el responsive header y el menu mobile
+//   let deleteMenuMobile = document.getElementById('menu-mobile--wrapper');
+//   let deleteResponsiveHeader = document.getElementById("responsive-header");
 
-  // Verificar si el elemento existe antes de intentar eliminarlo
-  if (deleteResponsiveHeader && deleteMenuMobile) {
-    // Obtener el padre del elemento y luego eliminar el elemento
-    let responsiveHeaderParent = deleteResponsiveHeader.parentNode;
-    let menuMobileParent = deleteMenuMobile.parentNode;
-    responsiveHeaderParent.removeChild(deleteResponsiveHeader);
-    menuMobileParent.removeChild(deleteMenuMobile);
-  }  
-}
+//   // Verificar si el elemento existe antes de intentar eliminarlo
+//   if (deleteResponsiveHeader && deleteMenuMobile) {
+//     // Obtener el padre del elemento y luego eliminar el elemento
+//     let responsiveHeaderParent = deleteResponsiveHeader.parentNode;
+//     let menuMobileParent = deleteMenuMobile.parentNode;
+//     responsiveHeaderParent.removeChild(deleteResponsiveHeader);
+//     menuMobileParent.removeChild(deleteMenuMobile);
+//   }  
+// }
 
 
 
@@ -242,3 +242,19 @@ if (window.innerWidth < 767) {
       searchForm.classList.remove('active');
   });
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Espera a que el DOM esté completamente cargado
+
+  // Obtén referencias a los elementos por sus ID
+  var departmentsButton = document.getElementById('departments-button');
+  var categoriesList = document.getElementById('categories-list');
+
+  // Agrega un evento de clic al botón
+  departmentsButton.addEventListener('click', function () {
+    // Alternar la clase 'open' en el elemento con ID 'categories-list'
+    categoriesList.classList.toggle('open');
+  });
+});

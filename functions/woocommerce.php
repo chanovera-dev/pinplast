@@ -38,7 +38,7 @@ function obtener_categorias_woocommerce() {
     $categorias = get_categories($args);
 
     if (!empty($categorias)) {
-        echo '<ul class="categories-list">';
+        echo '<ul id="categories-list" class="categories-list">';
         foreach ($categorias as $categoria) {
             $categoria_link = get_term_link($categoria->term_id, 'product_cat');
             echo '<li><a href="' . esc_url($categoria_link) . '">' . $categoria->name . '</a>';
