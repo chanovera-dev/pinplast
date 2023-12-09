@@ -3,7 +3,7 @@
 function pinplast_theme_custom_backgrounds() {
     ?>
         <style>
-            .about-us__image{background:url('<?php the_post_thumbnail_url( 'full' ); ?>'); background-repeat:no-repeat; background-position:50% 50%; background-size:cover;"}
+            .about-us__image{background:url('<?php the_post_thumbnail_url( 'full' ); ?>'); background-repeat:no-repeat; background-position:50% 50%; background-size:cover;}
 
             
 
