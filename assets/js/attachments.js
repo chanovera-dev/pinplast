@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Obtén referencias a los elementos por sus ID
   let departmentsButton = document.getElementById('departments-button');
-  let chevronDepartmentsButton = document.getElementById('chevronDepartmentsButton');
+  let chevronDepartmentsButton = document.getElementById('chevron-departments-button');
   let categoriesList = document.getElementById('categories-list');
 
   // Agrega un evento de clic al botón
