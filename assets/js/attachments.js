@@ -207,17 +207,20 @@ const menu = document.querySelector(".main-header .menu");
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
 let categoriesList = document.getElementById('categories-list');
+let chevronDepartmentsButton = document.querySelector('.departments__button-arrow');
 let lastScroll = 0;
 
  // Agregar o la clase "open" en base a la clase "home" del body
  if (isHome) {
    categoriesList.classList.add('open');
+   chevronDepartmentsButton.classList.add('rotate');
  }
 
 window.addEventListener("scroll", () => {
   // Comprobar si la clase "open" está presente y eliminarla
   if (categoriesList.classList.contains('open')) {
     categoriesList.classList.remove('open');
+    chevronDepartmentsButton.classlist.remove('rotate');
   }
 
   const currentScroll = window.pageYOffset;
@@ -225,6 +228,7 @@ window.addEventListener("scroll", () => {
     body.classList.remove(scrollUp);
     if (isHome) {
       categoriesList.classList.add('open');
+      chevronDepartmentsButton.classList.add('rotate');
     }
     return;
   }
