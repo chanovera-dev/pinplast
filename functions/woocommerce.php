@@ -82,7 +82,7 @@ function wcc_change_breadcrumb_delimiter( $defaults ) {
 
 
 // Reemplaza los números de las valoraciones por iconos de estrellas
-add_filter('woocommerce_get_star_rating_html', 'replace_star_ratings', 10, 2);
+add_filter('wc_get_rating_html', 'replace_star_ratings', 10, 3);
 function replace_star_ratings($html, $rating) {
     $html = ""; // Erase default HTML
     for($i = 0; $i < 5; $i++) {
