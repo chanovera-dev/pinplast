@@ -215,6 +215,7 @@ let lastScroll = 0;
  if (isHome) {
    categoriesList.classList.add('open');
    chevronDepartmentsButton.classList.add('rotate');
+   departmentsButton.disabled = true;
  }
 
 window.addEventListener("scroll", () => {
