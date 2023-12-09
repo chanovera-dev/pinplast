@@ -273,34 +273,6 @@ if (window.innerWidth < 767) {
 
 
 
-// /* agregar clases para personalizar fondos · mirar en backgrounds.php */
-// document.addEventListener('DOMContentLoaded', function () {
-//   let slides = document.querySelectorAll('.slideshow-wrapper .slideshow .slide');
-
-//   if (window.innerWidth < 767) {
-//     slides.forEach(slide => {
-//       slide.classList.add('mobile');
-//       slide.classList.remove('desktop');
-//     });
-//   }
-
-//   if (window.innerWidth > 768 && window.innerWidth <= 1024) {
-//     slides.forEach(slide => {
-//       slide.classList.remove('mobile');
-//       slide.classList.add('desktop');
-//     });
-//   }
-
-//   if (window.innerWidth > 1024) {
-//     slides.forEach(slide => {
-//       slide.classList.remove('mobile', 'desktop');
-//       slide.classList.add('desktop-full');
-//     });
-//   }
-// });
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
   // Espera a que el DOM esté completamente cargado
 
