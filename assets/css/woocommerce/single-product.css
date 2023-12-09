@@ -78,6 +78,10 @@
     #comments > *{margin-bottom:1.6rem;}
     #respond > *{margin-bottom:1.6rem;}
 
+    /* valoraciones */
+    #tab-reviews{padding:2.4rem;}
+    #comments .woocommerce-Reviews-title{font-size:2.8rem; margin-bottom:3.2rem;}
+
 /* tabs */
 .woocommerce-Tabs-panel{border:2px solid var(--wp--preset--color--border); padding:2.4rem; border-radius:.2rem;}
 .wc-tabs_wrapper{display:grid; gap:3rem;}
@@ -89,10 +93,21 @@
 
 @media(min-width:768px){
     .data-product{display:grid; gap:3rem; grid-template-columns:284px 1fr;}
+    /* valoraciones */
+    #tab-reviews{padding:4rem 5rem;}
+    #comments .woocommerce-Reviews-title{margin-bottom:5rem;}
+    #commentform{display:grid; grid-template-columns:repeat(3, 1fr); gap:1.5rem; max-width:61.733rem;}
+    #commentform .comment-notes{grid-column:1/-1;}
+    #commentform .comment-form-comment{grid-column:1/-1;}
+    #commentform .comment-form-author{grid-column:2/3; grid-row:2/3;}
+    #commentform .comment-form-email{grid-column:3/4; grid-row:2/3;}
+    #commentform .comment-form-cookies-consent{grid-column:1/-1;}
 }
 
 @media(min-width:1024px){
     .data-product{grid-template-columns:1fr 1fr;}
+    /* valoraciones */
+    #tab-reviews{padding:6rem 7rem;}
 }
 
 @media(min-width:1200px){
