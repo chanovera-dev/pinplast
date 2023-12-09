@@ -278,7 +278,7 @@ if (window.innerWidth < 767) {
   slide.classList.add('mobile');
 }
 
-if(window.innnerWidth > 768){
+if(window.innerWidth > 768){
   let slide = document.querySelector('.slideshow-wrapper .slideshow .slide.slide1');
   slide.classList.remove('mobile');
   slide.classList.add('desktop');
