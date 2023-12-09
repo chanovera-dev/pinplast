@@ -80,7 +80,8 @@
 
     /* valoraciones */
     #tab-reviews{padding:2.4rem;}
-    #comments .woocommerce-Reviews-title{font-size:2.8rem; margin-bottom:3.2rem;}
+    #comments .woocommerce-Reviews-title,
+    #reply-title{font-size:2.8rem; margin-bottom:3.2rem; font-weight:700;}
     #commentform .comment-form-cookies-consent{line-height:1.5;}
 
 /* tabs */
@@ -96,7 +97,8 @@
     .data-product{display:grid; gap:3rem; grid-template-columns:284px 1fr;}
     /* valoraciones */
     #tab-reviews{padding:4rem 5rem;}
-    #comments .woocommerce-Reviews-title{margin-bottom:5rem;}
+    #comments .woocommerce-Reviews-title,
+    #reply-title{margin-bottom:5rem;}
     #commentform{display:grid; grid-template-columns:repeat(3, 1fr); gap:1.5rem; max-width:61.733rem;}
     #commentform .comment-notes{grid-column:1/-1;}
     #commentform .comment-form-comment{grid-column:1/-1;}
