@@ -19,7 +19,7 @@ function pinplast_theme_custom_backgrounds() {
                 background-size: cover;
             }
 
-            #hero .hero-section .slideshow-wrapper .slideshow .slide.slide1.desktop-full {
+            #hero .hero-section .slideshow-wrapper .slideshow .slide.desktop-full {
                 background: url('<?php echo get_theme_mod('slide_img1_desktop_full', get_bloginfo('template_url') . '/assets/img/slides/slide-1-full.jpg'); ?>');
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
