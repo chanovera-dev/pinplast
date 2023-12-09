@@ -95,7 +95,7 @@
     /* tabla */
     .woocommerce-product-attributes{border-collapse:separate; text-align:right;}
     .woocommerce-product-attributes :is(thead, tbody) :is(th, td){padding:9px 12px; box-sizing:border-box; text-align:right;}
-    .woocommerce-product-attributes :is(thead, tbody) :nth-child(odd){background-color:var(--wp--preset--color--attenuated);}
+    .woocommerce-product-attributes :is(thead, tbody) tr:nth-child(odd){background-color:var(--wp--preset--color--line);}
 
 /* tabs */
 .woocommerce-Tabs-panel{border:2px solid var(--wp--preset--color--border); padding:2.4rem; border-radius:.2rem;}
