@@ -85,13 +85,16 @@
     #comments > *{margin-bottom:1.6rem;}
     #respond > *{margin-bottom:1.6rem;}
 
-    /* valoraciones */
+    /* información adicional y valoraciones */
     .woocommerce-Tabs-panel--additional_information,
     #tab-reviews{padding:2.4rem;}
     .woocommerce-Tabs-panel--additional_information h2,
     #comments .woocommerce-Reviews-title,
     #reply-title{display:block; font-size:2.8rem; margin-bottom:3.2rem; font-weight:700;}
     #commentform .comment-form-cookies-consent{line-height:1.5;}
+    /* tabla */
+    .woocommerce-product-attributes{border-collapse:separate; text-align:left;}
+    .woocommerce-product-attributes :is(thead, tbody) :is(th, td){padding:9px 12px; box-sizing:border-box; text-align:right;}
 
 /* tabs */
 .woocommerce-Tabs-panel{border:2px solid var(--wp--preset--color--border); padding:2.4rem; border-radius:.2rem;}
@@ -104,7 +107,7 @@
 
 @media(min-width:768px){
     .data-product{display:grid; gap:3rem; grid-template-columns:284px 1fr;}
-    /* valoraciones */
+    /* Información adicional y valoraciones */
     .woocommerce-Tabs-panel--additional_information,
     #tab-reviews{padding:4rem 5rem;}
     .woocommerce-Tabs-panel--additional_information h2,
@@ -120,7 +123,7 @@
 
 @media(min-width:1024px){
     .data-product{grid-template-columns:1fr 1fr;}
-    /* valoraciones */
+    /* información adicional y valoraciones */
     .woocommerce-Tabs-panel--additional_information,
     #tab-reviews{padding:6rem 7rem;}
 }
