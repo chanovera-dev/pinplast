@@ -230,7 +230,7 @@ window.addEventListener("scroll", () => {
     if (isHome) {
       categoriesList.classList.add('open');
       chevronDepartmentsButton.classList.add('rotate');
-      departmentsButton.disable = true;
+      departmentsButton.disabled = true;
     }
     return;
   }
