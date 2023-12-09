@@ -32,6 +32,7 @@ function pinplast_theme_custom_breakpoints() {
                 --font-size-title-slide:2.6rem;
                 --line-height-title-slide:1.3;
                 --margin-bottom-title-slide:2rem;
+                --font-size--departments-button:1.1rem;
             }
             #desktop-header{display:none;}
             main :is(.post-wrapper, .posts-wrapper){display:grid; gap:3.6rem;}
@@ -116,6 +117,7 @@ function pinplast_theme_custom_breakpoints() {
                     --width-attachments:5.075rem;
                     --grid-footer-widgets:1fr 1fr 1fr;
                     --height-map--contact:54rem;
+                    --font-size--departments-button:1.5rem;
                 }
                 main :is(.post-wrapper, .posts-wrapper){grid-template-columns:1fr 33rem;}
             }
