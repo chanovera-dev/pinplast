@@ -220,7 +220,7 @@ window.addEventListener("scroll", () => {
   // Comprobar si la clase "open" está presente y eliminarla
   if (categoriesList.classList.contains('open')) {
     categoriesList.classList.remove('open');
-    chevronDepartmentsButton.classlist.remove('rotate');
+    chevronDepartmentsButton.classList.remove('rotate');
   }
 
   const currentScroll = window.pageYOffset;
