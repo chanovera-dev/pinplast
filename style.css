@@ -142,7 +142,9 @@ img{display:block; height:auto;}
     font-size: 14px;
     line-height: 16px;
     letter-spacing: .02em;
+    transition:all .3s ease;
 }
+.bottom-bar .categories-list-wrapper .categories-list li a:hover{background-color:#525d66;}
 /* menú */
 .bottom-bar nav{margin:0 1.4rem 0 .8rem;}
 .bottom-bar nav ul{display:flex; align-items:center;}
