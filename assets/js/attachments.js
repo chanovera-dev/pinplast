@@ -285,19 +285,3 @@ document.addEventListener('DOMContentLoaded', function () {
     chevronDepartmentsButton.classList.toggle('rotate');
   });
 });
-
-
-
-// Obtén una referencia al menú
-const categoriesMenu = document.getElementById('categories-list');
-
-// Agrega un event listener al documento para escuchar clics
-document.addEventListener('click', function(event) {
-  // Verifica si el clic ocurrió dentro o fuera del menú
-  const isClickInsideMenu = categoriesMenu.contains(event.target);
-  
-  // Si el clic ocurrió fuera del menú y el menú está abierto, ciérralo
-  if (!isClickInsideMenu && categoriesMenu.classList.contains('open')) {
-    categoriesMenu.classList.remove('open');
-  }
-});
