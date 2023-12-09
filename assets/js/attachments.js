@@ -205,9 +205,15 @@ const header = document.querySelector(".main-header");
 const menu = document.querySelector(".main-header .menu");
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
+let categoriesList = document.getElementById('categories-list');
 let lastScroll = 0;
 
 window.addEventListener("scroll", () => {
+  // Comprobar si la clase "open" está presente y eliminarla
+  if (categoriesList.classList.contains('open')) {
+    categoriesList.classList.remove('open');
+  }
+
   const currentScroll = window.pageYOffset;
   if (currentScroll <= 0) {
     body.classList.remove(scrollUp);
@@ -225,6 +231,7 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = currentScroll;
 });
+
 
 
 
@@ -249,8 +256,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Espera a que el DOM esté completamente cargado
 
   // Obtén referencias a los elementos por sus ID
-  var departmentsButton = document.getElementById('departments-button');
-  var categoriesList = document.getElementById('categories-list');
+  let departmentsButton = document.getElementById('departments-button');
+  let categoriesList = document.getElementById('categories-list');
 
   // Agrega un evento de clic al botón
   departmentsButton.addEventListener('click', function () {
