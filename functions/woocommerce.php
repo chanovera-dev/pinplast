@@ -23,6 +23,49 @@ require_once(get_template_directory() . '/functions/woocommerce/woocommerce-comp
 
 
 
+// Crea una lista de las categorías y subcategorías de woocommerce
+function obtener_categorias_woocommerce() {
+    $args = array(
+        'taxonomy'     => 'product_cat',
+        'orderby'      => 'name',
+        'show_count'   => 0,
+        'pad_counts'   => 0,
+        'hierarchical' => 1,
+        'title_li'     => '',
+        'hide_empty'   => 0,
+    );
+
+    $categorias = get_categories($args);
+
+    if (!empty($categorias)) {
+        echo '<ul>';
+        foreach ($categorias as $categoria) {
+            echo '<li>' . $categoria->name;
+
+            // Obtener subcategorías de la categoría actual
+            $subcategorias = get_terms('product_cat', array(
+                'parent'     => $categoria->term_id,
+                'hide_empty' => false,
+            ));
+
+            if (!empty($subcategorias)) {
+                echo '<ul>';
+                foreach ($subcategorias as $subcategoria) {
+                    echo '<li>' . $subcategoria->name . '</li>';
+                }
+                echo '</ul>';
+            }
+
+            echo '</li>';
+        }
+        echo '</ul>';
+    } else {
+        echo 'No hay categorías disponibles.';
+    }
+}
+
+
+
 // cambia el separador del breadcrumbs de woocommerce
 add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_delimiter' );
 function wcc_change_breadcrumb_delimiter( $defaults ) {

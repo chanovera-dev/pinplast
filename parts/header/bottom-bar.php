@@ -12,7 +12,9 @@
                     <svg class="departments__button-arrow" width="9px" height="6px">
                         <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#arrow-rounded-down-9x6"></use>
                     </svg>
-                </button>
+                </button>';
+                obtener_categorias_woocommerce();
+            echo '
             </div>';
             wp_nav_menu(
                 array(
