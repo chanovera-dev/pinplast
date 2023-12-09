@@ -85,7 +85,9 @@
     #respond > *{margin-bottom:1.6rem;}
 
     /* valoraciones */
+    .woocommerce-Tabs-panel--additional_information,
     #tab-reviews{padding:2.4rem;}
+    .woocommerce-Tabs-panel--additional_information h2,
     #comments .woocommerce-Reviews-title,
     #reply-title{display:block; font-size:2.8rem; margin-bottom:3.2rem; font-weight:700;}
     #commentform .comment-form-cookies-consent{line-height:1.5;}
@@ -102,7 +104,9 @@
 @media(min-width:768px){
     .data-product{display:grid; gap:3rem; grid-template-columns:284px 1fr;}
     /* valoraciones */
+    .woocommerce-Tabs-panel--additional_information,
     #tab-reviews{padding:4rem 5rem;}
+    .woocommerce-Tabs-panel--additional_information h2,
     #comments .woocommerce-Reviews-title,
     #reply-title{margin-bottom:5rem;}
     #commentform{display:grid; grid-template-columns:repeat(3, 1fr); gap:1.5rem; max-width:61.733rem;}
@@ -116,6 +120,7 @@
 @media(min-width:1024px){
     .data-product{grid-template-columns:1fr 1fr;}
     /* valoraciones */
+    .woocommerce-Tabs-panel--additional_information,
     #tab-reviews{padding:6rem 7rem;}
 }
 
