@@ -2,7 +2,7 @@
 
 // Estilos para los archivos de la tienda
 function shop_styles() {
-    if ( is_shop() || is_product_category() ) {
+    if ( is_shop() || is_product_category() || is_tax(get_object_taxonomies( 'product' )) ) {
         wp_dequeue_style( 'wp-block-library' );
         wp_enqueue_style( 'shop-styles', get_template_directory_uri() . '/assets/css/woocommerce/shop.css' );
         /* listas */
