@@ -25,9 +25,9 @@ function pinplast_theme_custom_breakpoints() {
                 --margin-h3--single:3.5rem 1.4rem;
                 --margin-lists--single:2.4rem 0;
                 --grid-related-posts--single:1fr;
-                --padding-content--page:4.5rem 3.5rem 6rem;
+                --padding-content--page:4.5rem 3.5rem 0 6rem;
                 --height-header--alt2:33rem;
-                --top-content-alt2:-29rem;
+                --top-content-alt2:-7rem;
                 --padding-content-alt2:3rem 2.4rem;
                 --font-size-title-slide:2.6rem;
                 --line-height-title-slide:1.3;
@@ -59,7 +59,7 @@ function pinplast_theme_custom_breakpoints() {
                     --margin-blockquote:5.4rem 0 4.5rem;
                     --margin-lists--single:2.72rem 0;
                     --grid-related-posts--single:1fr 1fr;
-                    --padding-content--page:7.5rem 11rem 11rem;
+                    --padding-content--page:7.5rem 11rem 0 11rem;
                     --height-header--alt2:46rem;
                     --top-content-alt2:-38rem;
                     --padding-content-alt2:5rem;
@@ -99,7 +99,7 @@ function pinplast_theme_custom_breakpoints() {
                     --grid-address-contact:1fr 1fr;
                     --margin-bottom-post-thumbnail--single:4rem;
                     --margin-h3--single:4.9rem 0 2.1rem;
-                    --padding-content--page:8.5rem 20rem 12rem;
+                    --padding-content--page:8.5rem 20rem 0 12rem;
                     --height-header--alt2:50rem;
                     --padding-content-alt2:7.5rem 9.2rem;
                 }
