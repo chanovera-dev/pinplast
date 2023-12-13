@@ -1,5 +1,5 @@
 .about-us__image{height:var(--height-header--alt2);}
-.page-template-page-alt2 main .content{position:relative; top:var(--top-content-alt2); background-color:white; padding:var(--padding-content-alt2); padding-bottom:0; border-radius:.6rem .6rem 0 0; text-align:left;}
+.page-template-page-alt2 main .content{position:relative; top:var(--top-content-alt2); background-color:white; padding:var(--padding-content-alt2); padding-bottom:0; border-radius:.6rem .6rem 0 0; text-align:justify;}
 .page-template-page-alt2 main .content :is(.title, .wp-block-heading){text-align:center; margin-bottom:2rem; font-size:3.6rem; font-weight:700;}
 .page-template-page-alt2 main .content :is(ol, ul){text-align:left;}
 
