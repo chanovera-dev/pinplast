@@ -27,7 +27,7 @@ function pinplast_theme_custom_breakpoints() {
                 --grid-related-posts--single:1fr;
                 --padding-content--page:4.5rem 3.5rem 0 6rem;
                 --height-header--alt2:33rem;
-                --top-content-alt2:-7rem;
+                --top-content-alt2:-5rem;
                 --padding-content-alt2:3rem 2.4rem;
                 --font-size-title-slide:2.6rem;
                 --line-height-title-slide:1.3;
@@ -61,7 +61,7 @@ function pinplast_theme_custom_breakpoints() {
                     --grid-related-posts--single:1fr 1fr;
                     --padding-content--page:7.5rem 11rem 0 11rem;
                     --height-header--alt2:46rem;
-                    --top-content-alt2:-38rem;
+                    --top-content-alt2:-7rem;
                     --padding-content-alt2:5rem;
                     --font-size-title-slide:3rem;
                     --line-height-title-slide:1.1;
