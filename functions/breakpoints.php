@@ -25,7 +25,7 @@ function pinplast_theme_custom_breakpoints() {
                 --margin-h3--single:3.5rem 1.4rem;
                 --margin-lists--single:2.4rem 0;
                 --grid-related-posts--single:1fr;
-                --padding-content--page:4.5rem 3.5rem 0 6rem;
+                --padding-content--page:4.5rem 3.5rem 0;
                 --height-header--alt2:33rem;
                 --top-content-alt2:-4.5rem;
                 --padding-content-alt2:3rem 2.4rem;
