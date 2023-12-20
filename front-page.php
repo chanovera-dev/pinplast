@@ -10,7 +10,7 @@
         include(TEMPLATEPATH . '/parts/frontpage/catalog.php');
 
         include(TEMPLATEPATH . '/parts/frontpage/bestsellers.php');
-        include(TEMPLATEPATH . '/parts/frontpage/categories.php');
+        // include(TEMPLATEPATH . '/parts/frontpage/categories.php');
         include(TEMPLATEPATH . '/parts/frontpage/arrivals.php');
         include(TEMPLATEPATH . '/parts/frontpage/latest.php');
         if ( get_posts() == null ) : else: include(TEMPLATEPATH . '/parts/frontpage/blog.php'); endif;
