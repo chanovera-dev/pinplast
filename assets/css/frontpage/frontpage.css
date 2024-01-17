@@ -13,6 +13,7 @@ iframe{width:100%; height:var(--height-map--contact); margin-bottom:1rem;}
     #products .products-section{display:grid;grid-template-columns:repeat(3, 1fr);gap:3rem;}
     #products .products-section .title-wrapper.section{width:100%;}
     #products .woocommerce .products{gap:0;}
+    #products .woocommerce .products .product{box-shadow:none;}
     #products .woocommerce .products .product:not(:last-child){border-bottom:1px solid transparent;}
     #products .woocommerce .products .product:hover{border-bottom:1px solid var(--wp--preset--color--yellow);}
     #products .woocommerce .products .product .products-list__item{grid-template-columns:12rem 1fr;grid-template-rows:1fr auto;padding-top:var(--top--onsale);}
