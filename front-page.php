@@ -2,7 +2,7 @@
     get_header();
 
     echo '
-    <main id="main">';
+    <main id="main"><h2>main</h2>';
         include(TEMPLATEPATH . '/parts/frontpage/hero.php');
         include(TEMPLATEPATH . '/parts/frontpage/features.php');
         include(TEMPLATEPATH . '/parts/frontpage/featured-products.php');
