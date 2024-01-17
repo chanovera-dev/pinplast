@@ -11,6 +11,12 @@ function scrollPage() {
   let chevronDepartmentsButton = document.querySelector('.departments__button-arrow');
   let lastScroll = 0;
 
+  if (isHome) {
+    categoriesList.classList.add('open');
+    chevronDepartmentsButton.classList.add('rotate');
+    departmentsButton.disabled = true;
+  }
+  
   window.addEventListener("scroll", () => {
     // Comprobar si la clase "open" está presente y eliminarla
     if (categoriesList.classList.contains('open')) {
