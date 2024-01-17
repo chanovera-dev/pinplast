@@ -1,17 +1,17 @@
-
-
-// Función para manejar el scroll
-function handleScroll() {
-  // Comprobar si la clase "open" está presente y eliminarla
-  // Variables globales
+// detecta el scroll en el sitio y agrega clases según el evento desencadenado
 const body = document.body;
 const isHome = body.classList.contains('home');
-const categoriesList = document.getElementById('categories-list');
-const departmentsButton = document.getElementById('departments-button');
-const chevronDepartmentsButton = document.querySelector('.departments__button-arrow');
+const header = document.querySelector(".main-header");
+const menu = document.querySelector(".main-header .menu");
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
+let categoriesList = document.getElementById('categories-list');
+let departmentsButton = document.getElementById('departments-button');
+let chevronDepartmentsButton = document.querySelector('.departments__button-arrow');
 let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+  // Comprobar si la clase "open" está presente y eliminarla
   if (categoriesList.classList.contains('open')) {
     categoriesList.classList.remove('open');
     chevronDepartmentsButton.classList.remove('rotate');
@@ -27,7 +27,7 @@ let lastScroll = 0;
     }
     return;
   }
-
+  
   if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
     // down
     body.classList.remove(scrollUp);
@@ -40,31 +40,4 @@ let lastScroll = 0;
     departmentsButton.disabled = false;
   }
   lastScroll = currentScroll;
-}
-
-// Función para inicializar el scroll y las referencias a elementos
-function initializeScroll() {
-  window.addEventListener("scroll", handleScroll);
-}
-
-// Llamada inicial para configurar el scroll
-initializeScroll();
-
-// Luego, después de cargar contenido AJAX, vuelve a inicializar el scroll
-// y las referencias a elementos llamando a initializeScroll nuevamente.
-// Asegúrate de hacer esto después de que el contenido AJAX esté en el DOM.
-// Ejemplo:
-// ajaxLoadContent().then(() => {
-//   initializeScroll();
-// });
-
-// Función de ejemplo para cargar contenido AJAX
-function ajaxLoadContent() {
-  // Simulación de carga AJAX
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      // Código para cargar el contenido aquí
-      resolve();
-    }, 1000);
-  });
-}
+});
