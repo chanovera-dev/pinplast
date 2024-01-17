@@ -9,7 +9,7 @@
 iframe{width:100%; height:var(--height-map--contact); margin-bottom:1rem;}
 
 @media(min-width:1200px){
-    #products{display:inherit;}
+    #products{display:inherit;margin-bottom:var(--margin-bottom--post);}
     #products .products-section{display:grid;grid-template-columns:repeat(3, 1fr);gap:3rem;}
     #products .products-section .title-wrapper.section{width:100%;}
     #products .woocommerce .products{gap:0;grid-template-rows:repeat(3, 1fr);margin-bottom:0;}
