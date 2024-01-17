@@ -92,10 +92,10 @@ menuTopBarWithChildrens();
 
 function menuBottomBarWithChildrens() {
     // Obtener todos los elementos li con la clase 'menu-item-has-children'
-    let menuItems = document.querySelectorAll('.bottom-bar .primary .menu .menu-item-has-children');
+    //let menuItems = document.querySelectorAll('.bottom-bar .primary .menu .menu-item-has-children');
 
     // Iterar sobre cada elemento y agregar el botón con el SVG
-    menuItems.forEach(function(item) {
+    document.querySelectorAll('.bottom-bar .primary .menu .menu-item-has-children').forEach(function(item) {
         // Obtener la etiqueta <a> dentro de cada elemento menu-item-has-children
         let anchor = item.querySelector('a');
 
