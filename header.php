@@ -12,10 +12,12 @@ echo '
     echo '
     </head>
     <body id="body" '; body_class(); echo '>';
-        include(TEMPLATEPATH . '/parts/header/menu-mobile.php');    
+        include(TEMPLATEPATH . '/parts/header/menu-mobile.php');
+        include(TEMPLATEPATH . '/parts/sidebars/woocommerce-mobile.php');
         echo '
+        <div id="panel-overlay"></div>  
         <header id="main-header" class="container main-header">
-            <section id="responsive-header">';
+            <section id="mobile-header">';
                 echo '<section class="section header-content">';
                     include(TEMPLATEPATH . '/parts/header/menu-button.php');
                     include(TEMPLATEPATH . '/parts/header/brand.php');

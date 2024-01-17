@@ -4,8 +4,13 @@
 .breadcrumbs a:hover{color:var(--wp--preset--color--links);}
 
 /* contenido */
+.single-post .post-wrapper{display:grid;gap:var(--gap--posts-wrapper);grid-template-columns:var(--grid-template-columns--posts-wrapper);}
+.single-post .post-wrapper .content .post-categories{margin:0 0 1.2rem;padding:0;list-style:none;display:inline-flex;gap:.7rem;}
+.single-post .post-wrapper .content .post-categories li a{padding:.5rem .7rem .4rem;display:block;font-size:1.1rem;line-height:1;font-weight:500;text-transform:uppercase;color:gray;background-color:var(--wp--preset--color--line);border-radius:.15rem;}
 .single-post .post-wrapper .content h1{font-size:var(--font-size--titles-page); margin-bottom:.8rem;}
-.single-post .post-wrapper .content > .publicate-date_widget{color:var(--wp--preset--color--attenuated); margin-bottom:3rem;}
+.single-post .post-wrapper .content .author-date-comments--wrapper{display:inline-flex; gap:1rem;color:var(--wp--preset--color--attenuated);margin-bottom:3rem;font-size:1.4rem;}
+.single-post .post-wrapper .content .author-date-comments--wrapper > *{position:relative;}
+.single-post .post-wrapper .content .author-date-comments--wrapper > *:not(:last-child):after{position:relative;content:'';width:.4rem;height:.4rem;border-radius:.2rem;top:-.2rem;background-color:var(--wp--preset--color--attenuated);margin-left:1rem;display:inline-block;}
 .single-post .post-wrapper .content .post-thumbnail{width:100%; margin-bottom:var(--margin-bottom-post-thumbnail--single);}
 .single-post .post-wrapper .content a{text-decoration:none; transition:all .3s ease;}
 .single-post .post-wrapper .content a:hover{text-decoration:underline;}
@@ -31,3 +36,28 @@
 aside .post-wrapper .content .tags{display:inline-flex; flex-wrap:wrap; gap:.7rem; margin:6rem 0 3rem;}
 aside .post-wrapper .content .tags a{display:inline-flex; background:transparent; font-weight:500; border:1px solid #e5e5e5; color:var(--wp--preset--color--text); border-radius:.15rem; padding:.6rem 1rem .5rem; transition:all .3s ease; }
 aside .post-wrapper .content .tags a:hover{border-color:var(--wp--preset--color--yellow); background-color:var(--wp--preset--color--yellow);}
+
+/* comentarios · contenedor */
+.single-post .comments-section{display:grid;grid-template-columns:var(--grid-template-columns--posts-wrapper);gap:var(--gap--posts-wrapper);margin-bottom:var(--margin-bottom--post);margin-top:var(--margin-top--comments);}
+.single-post .comments-section :is(ol,ul){border-top:1px solid var(--wp--preset--color--line-comments);}
+    /* comentarios */
+    #comments{font-size:2.2rem; padding-bottom:2.8rem;line-height:1.2;}
+    :is(.commentlist, .children){list-style:none;}
+    .commentlist{padding-left:0;}
+    .commentlist li:not(:first-child){border-top:1px solid var(--wp--preset--color--line-comments);}
+    .commentlist li .comment-body{position:relative; padding:2rem 0; display:grid; gap:0 21px; grid-template-columns:60px 1fr;}
+    .commentlist li .comment-body :is(.comment-meta, .comment-metadata, .comment-content, .reply){grid-column:2/3;}
+    .commentlist li .comment-body .comment-meta .comment-author .avatar{position:absolute; top:20px; left:0; border-radius:50%;}
+    .commentlist li .comment-body .comment-meta .comment-author .fn,
+    .commentlist li .comment-body .comment-meta .comment-author .fn .url{color:var(--wp--preset--color--title);transition:all .3s ease;}
+    .commentlist li .comment-body .comment-meta .comment-author .fn .url:hover{color:var(--wp--preset--color--links);}
+    .commentlist li .comment-body .comment-meta .comment-author .says{display:none;}
+    .commentlist li .comment-body .comment-metadata{font-size:1.4rem;}
+    .commentlist li .comment-body .comment-metadata a:where(:not(.wp-element-button)):any-link{color:#999;}
+    .commentlist li .comment-body .comment-content{padding-top:19px;font-size:1.6rem;}
+    .commentlist li .comment-body .reply{position:absolute;top:2rem;right:0;font-size:1.4rem;font-weight:600;}
+    .commentlist li .comment-body .reply a{color:var(--wp--preset--color--text);}
+    /* deja un comentario */
+    #respond{padding-top:65px;}
+    #reply-title{font-size:var(--wp--preset--font-size--x-large); color:var(--wp--preset--color--title); padding-bottom:3px;}
+    .comment-form :is(.logged-in-as, .comment-notes){margin-bottom:28px; font-size:1.4rem;}

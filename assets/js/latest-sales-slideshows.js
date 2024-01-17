@@ -1,10 +1,10 @@
-const slideshowContainerLatest = document.getElementById('latest-sales-list');
+const slideshowContainerLatest = document.querySelector('.sale-products .slideshow-products--wrapper .woocommerce .products');
 const prevButtonLatest = document.getElementById('backward-button__latest-sales');
 const nextButtonLatest = document.getElementById('forward-button__latest-sales');
 let currentImageIndexLatest = 0;
 
 function updateSlideshowLatest() {
-    const translateX = -16.6666 * currentImageIndexLatest;
+    const translateX = -12.5 * currentImageIndexLatest;
     slideshowContainerLatest.style.transform = `translateX(${translateX}%)`;
 
     if (currentImageIndexLatest === 0) {

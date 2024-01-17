@@ -1,4 +1,4 @@
-const slideshowContainerArrivals = document.getElementById('arrivals-list');
+const slideshowContainerArrivals = document.querySelector('.arrivals .slideshow-products--wrapper .woocommerce .products');
 const prevButtonArrivals = document.getElementById('backward-button__arrivals');
 const nextButtonArrivals = document.getElementById('forward-button__arrivals');
 let currentImageIndexArrivals = 0;

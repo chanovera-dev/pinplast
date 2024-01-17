@@ -1,4 +1,4 @@
-const slideshowContainerBlog = document.getElementById('blog-list');
+const slideshowContainerBlog = document.querySelector('.blog .posts');
 const prevButtonBlog = document.getElementById('backward-button__blog');
 const nextButtonBlog = document.getElementById('forward-button__blog');
 let currentImageIndexBlog = 0;
@@ -17,10 +17,10 @@ function updateSlideshowBlog() {
 
     switch (true) {
         case window.innerWidth >= 1024:
-            numero = 3;
+            numero = 4;
             break;
         case window.innerWidth >= 768:
-            numero = 4;
+            numero = 5;
             break;
         default:
             numero = 5;

@@ -1,4 +1,4 @@
-const slideshowContainer = document.getElementById('featured-products-list');
+const slideshowContainer = document.querySelector('.featured-products .slideshow-products--wrapper .woocommerce .products');
 const prevButton = document.getElementById('backward-button__featured-products');
 const nextButton = document.getElementById('forward-button__featured-products');
 let currentImageIndex = 0;

@@ -1,11 +1,11 @@
-#body{display:grid; min-height:100vh; align-content:flex-start; grid-template-rows:auto 1fr auto;}
+#body{display:grid;min-height:100vh;align-content:flex-start;grid-template-rows:auto 1fr auto;}
 
 /* mapa */
-.page-template-contact iframe{width:100%; height:var(--height-map--contact); margin-bottom:1rem;}
+.page-template-contact iframe{width:100%;height:var(--height-map--contact);margin-bottom:1rem;}
 
 /* breadcrumbs */
-.breadcrumbs{display:inline-flex; align-items:center; flex-wrap:wrap; gap:0 1.2rem; color:var(--wp--preset--color--attenuated); fill:var(--wp--preset--color--attenuated); padding-top:1.6rem}
-.breadcrumbs a{color:var(--wp--preset--color--text); transition:all .3s ease;}
+.breadcrumbs{display:inline-flex;align-items:center;flex-wrap:wrap;gap:0 1.2rem;color:var(--wp--preset--color--attenuated);fill:var(--wp--preset--color--attenuated);padding-top:1.6rem}
+.breadcrumbs a{color:var(--wp--preset--color--text);transition:all .3s ease;}
 .breadcrumbs a:hover{color:var(--wp--preset--color--links);}
 
 /* título */
@@ -13,10 +13,12 @@ main .content-header .title-wrapper{padding:.6rem 0 3.2rem;}
 main .content-header .title-wrapper h1{font-size:var(--font-size--titles-page);}
 
 /* dirección y formulario */
-.border-section{padding:var(--padding-address-contact); display:grid; gap:5rem; grid-template-columns:var(--grid-address-contact); border:2px solid var(--wp--preset--color--border);}
-.form-section{margin-bottom:6rem;font-size:1.6rem; line-height:1.8;}
+.border-section{padding:var(--padding-address-contact);display:grid;gap:5rem;grid-template-columns:var(--grid-address-contact);border:2px solid var(--wp--preset--color--border);}
+.form-section{margin-bottom:6rem;font-size:1.6rem;line-height:1.8;}
 
-.border-section h2{font-size:2.6rem; margin-bottom:2.4rem; color:var(--color-header);}
-.border-section ul{margin:0; padding:0; list-style:none;}
-.border-section ul li{color:var(--color-header);}
+.border-section h2{font-size:2.6rem;margin-bottom:2.4rem;}
+.border-section ul{margin:0;padding:0;list-style:none;}
+.border-section ul li{color:var(--wp--preset--color--text);}
 .border-section p{margin-top:1.6rem;}
+.border-section a{color:var(--wp--preset--color--text);transition:all .3s ease;}
+.border-section a:hover{color:var(--wp--preset--color--links);}

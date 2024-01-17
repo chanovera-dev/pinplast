@@ -4,7 +4,7 @@ $tertiary_menu = wp_get_nav_menu_items('tertiary');
 
 if ($secondary_menu || $tertiary_menu) {
     echo '
-    <div class="top-bar-wrapper">
+    <div class="top-bar--wrapper">
         <section class="section top-bar">';
 
     if ($secondary_menu) {
@@ -31,4 +31,3 @@ if ($secondary_menu || $tertiary_menu) {
         </section>
     </div>';
 }
-?>

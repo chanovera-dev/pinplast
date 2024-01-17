@@ -1,11 +1,36 @@
+#main{margin-bottom:var(--margin-bottom--post);}
+#main .container .section{display:grid;grid-template-columns:1fr;gap:0 1.5rem;}
+#main .container .section :is(.woocommerce-products-header,.woocommerce-notices-wrapper){display:none;}
+#main .container .section .products{grid-column:1/-1;margin-top:1.5rem;margin-left:-1.5rem;margin-right:-1.5rem;}
+
+/* mensajes de woocommerce */
+.woocommerce-notices-wrapper{background-color:#bde5a1;}
+.woocommerce-notices-wrapper .wc-block-components-notice-banner.is-success{margin:0;border-radius:0;border:none;background-color:transparent;width:var(--breakpoint);margin-inline:auto;padding:1.2rem 0!important;color:#34402d;font-size:1.5rem;}
+.woocommerce-notices-wrapper .wc-block-components-notice-banner.is-success a{text-decoration:none;background:hsla(0,0%,100%,.5);opacity:1;border-radius:.15rem;box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:0 .3rem!important;transition:all .3s ease;}
+.woocommerce-notices-wrapper .wc-block-components-notice-banner.is-success a:hover{background:hsla(0,0%,100%,1);}
+
+/* sidebar */
+#sidebar-woocommerce--desktop{display:var(--display--sidebar--woocommerce);}
+
 /* breadcrumb */
-.woocommerce-breadcrumb{display:inline-flex; align-items:center; flex-wrap:wrap; gap:0 1.2rem; color:var(--wp--preset--color--attenuated); fill:var(--wp--preset--color--attenuated); padding:1.6rem 0 3.2rem;}
+.woocommerce-breadcrumb{display:inline-flex; align-items:center; flex-wrap:wrap; gap:0 1.2rem; color:var(--wp--preset--color--attenuated); fill:var(--wp--preset--color--attenuated); padding:1.6rem 0;grid-column:1/-1;}
 .woocommerce-breadcrumb a{color:var(--wp--preset--color--text); transition:all .3s ease;}
 .woocommerce-breadcrumb a:hover{color:var(--wp--preset--color--links);}
 
-/* productos */
-.product-list{gap:1.5rem;}
+/* ordenamiento */
+.woocommerce-ordering{text-align:right;}
 
-@media(min-width:1200px){
-    :is(.woocommerce-shop, .woocommerce-page) .product-list{grid-template-columns:repeat(4, 1fr);}
+/* Oculta el select original */
+
+@media(min-width:430px){
+    #main .container .section .products{margin-left:0;margin-right:0;}
+}
+
+@media(min-width:1024px){
+    #main .container .section{display:grid;gap:2rem 3rem;grid-template-columns:25.5rem auto 1fr auto;}
+    #main .container .section .products{grid-column:2/5;}
+    #main .container .section aside{grid-row:2/4;}
+    #main .container .section aside#sidebar-woocommerce--desktop .yith-wcan-filter{border:1px solid var(--wp--preset--color--border);padding:.8rem 2rem;}
+    #main .container .section aside#sidebar-woocommerce--desktop .yith-wcan-filters .yith-wcan-filter .filter-title{margin-bottom:2rem;font-size:2rem;}
+
 }

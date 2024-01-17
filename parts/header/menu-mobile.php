@@ -7,7 +7,7 @@
         echo '
         <div class="name-menu--wrapper">
             <p class="name-menu"><b>' . $menu->name . '</b></p>
-            <button id="close-menu-mobile">
+            <button id="close-menu-mobile" onclick="closeMenuMobile()">
             <svg width="20px" height="20px">
                 <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#cross-20"></use>
             </svg>

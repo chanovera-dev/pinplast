@@ -15,36 +15,41 @@
                             $menu_id = get_nav_menu_locations()[ 'information' ];
                             $menu = wp_get_nav_menu_object( $menu_id );
                             $items = wp_get_nav_menu_items( $menu_id );
-                            echo '<div class="title-wrapper"><h2>' . $menu->name . '</h2></div>';
-                            wp_nav_menu(
-                                array(
-                                    'container' => 'nav', 
-                                    'container_class' => 'information', 
-                                    'theme_location' => 'information',
-                                ) 
-                            ); 
+                            if (!empty($items)) {
+                                echo '
+                                <h2>' . $menu->name . '</h2>';
+                                wp_nav_menu(
+                                    array(
+                                        'container' => 'nav', 
+                                        'container_class' => 'information', 
+                                        'theme_location' => 'information',
+                                    ) 
+                                ); 
+                            }
                         echo '
                         </div>
                         <div>';
                             $menu_id = get_nav_menu_locations()[ 'most-viewed' ];
                             $menu = wp_get_nav_menu_object( $menu_id );
                             $items = wp_get_nav_menu_items( $menu_id );
-                            echo '<div class="title-wrapper"><h2>' . $menu->name . '</h2></div>';
-                            wp_nav_menu(
-                                array(
-                                    'container' => 'nav', 
-                                    'container_class' => 'most-viewed', 
-                                    'theme_location' => 'most-viewed',
-                                ) 
-                            ); 
+                            if (!empty($items)) {
+                                echo '
+                                <h2>' . $menu->name . '</h2>';
+                                wp_nav_menu(
+                                    array(
+                                        'container' => 'nav', 
+                                        'container_class' => 'most-viewed', 
+                                        'theme_location' => 'most-viewed',
+                                    ) 
+                                ); 
+                            }
+                            
                         echo '
                         </div>
                     </div>
 
                     <div class="newsletter">
-                        <div class="title-wrapper">
-                            <h2>Boletín de noticias</h2>
-                        </div>
+                        <h2>Boletín de noticias</h2>
                         <p>'.esc_html__('Suscríbete a nuestros envíos de correo y recibe promociones y ofertas exclusivas.', 'pinplast').'</p>'.
                         do_shortcode('[newsletter_form]').'
                         <div>';
@@ -70,11 +75,11 @@
             </div>
 
             <div class="container">
-                <section class="section copyright">'.
-                    '<p>©'.date("Y").esc_html__(' Pinplast', 'pinplast').' - '.esc_html__('Desarrollado y hospedado por ', 'pinplast').'<a href="https://peramanzana.com">PeraManzana</a></p>
+                <section class="section copyright">
                     <div class="payments">
                         <img src="'.get_theme_mod('payments', get_bloginfo('template_url') . '/assets/img/payments.png').'" loading="lazy">
                     </div>
+                    <p>©'.date("Y").esc_html__(' Pinplast', 'pinplast').' - '.esc_html__('Desarrollado y hospedado por ', 'pinplast').'<a href="https://peramanzana.com">PeraManzana</a></p>   
                 </section>
             </div>
             

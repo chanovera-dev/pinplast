@@ -1,64 +1,105 @@
 if (window.innerWidth < 991) {
   /* arreglo del botón del menú y del menú */
-  const openMobileMenuButton = document.getElementById('open-menu-mobile--button');
-  const closeMobileMenuButton = document.getElementById('close-menu-mobile');
-  const menuMobile = document.getElementById('menu-mobile--wrapper')
-  const cuerpo = document.getElementById('body');
-  const cabecera = document.getElementById('main-header');
-  const contenido = document.getElementById('main');
-  const pie = document.getElementById('main-footer');
+  // const openMobileMenuButton = document.getElementById('open-menu-mobile--button');
+  // const closeMobileMenuButton = document.getElementById('close-menu-mobile');
+  // const menuMobile = document.getElementById('menu-mobile--wrapper')
+  // const cuerpo = document.getElementById('body');
+  // const cabecera = document.getElementById('main-header');
+  // const contenido = document.getElementById('main');
+  // const pie = document.getElementById('main-footer');
 
-  openMobileMenuButton.addEventListener("click", function() {
-    menuMobile.classList.add('open');
-    cabecera.classList.add('menu-mobile-open');
-    contenido.classList.add('menu-mobile-open');
-    pie.classList.add('menu-mobile-open');
-    cuerpo.style.overflow = 'hidden';
-  });
+  // openMobileMenuButton.addEventListener("click", function() {
+  //   menuMobile.classList.add('open');
+  //   cabecera.classList.add('menu-mobile-open');
+  //   contenido.classList.add('menu-mobile-open');
+  //   pie.classList.add('menu-mobile-open');
+  //   cuerpo.style.overflow = 'hidden';
+  // });
 
-  closeMobileMenuButton.addEventListener("click", function() {
-    menuMobile.classList.remove('open');
-    cabecera.classList.remove('menu-mobile-open');
-    contenido.classList.remove('menu-mobile-open');
-    pie.classList.remove('menu-mobile-open');
-    cuerpo.style.overflow = 'inherit';
-  });
+  // closeMobileMenuButton.addEventListener("click", function() {
+  //   menuMobile.classList.remove('open');
+  //   cabecera.classList.remove('menu-mobile-open');
+  //   contenido.classList.remove('menu-mobile-open');
+  //   pie.classList.remove('menu-mobile-open');
+  //   cuerpo.style.overflow = 'inherit';
+  // });
 
-  contenido.addEventListener("click", function() {
-    if (menuMobile.classList.contains('open')) {
-      closeMobileMenuButton.click();
-      cabecera.classList.add('menu-mobile-close');
-      contenido.classList.add('menu-mobile-close');
-      pie.classList.add('menu-mobile-close');
-      cuerpo.style.overflow = 'inherit';
-        setTimeout(function() {
-          cabecera.classList.remove('menu-mobile-open');
-          contenido.classList.remove('menu-mobile-open');
-          pie.classList.remove('menu-mobile-open');
-          cabecera.classList.remove('menu-mobile-close');
-          contenido.classList.remove('menu-mobile-close');
-          pie.classList.remove('menu-mobile-close');
-      }, 300); 
-    }
-  });
+  // contenido.addEventListener("click", function() {
+  //   if (menuMobile.classList.contains('open')) {
+  //     closeMobileMenuButton.click();
+  //     cabecera.classList.add('menu-mobile-close');
+  //     contenido.classList.add('menu-mobile-close'); /* arreglo del botón del menú y del menú */
+  //     const openMobileMenuButton = document.getElementById('open-menu-mobile--button');
+  //     const closeMobileMenuButton = document.getElementById('close-menu-mobile');
+  //     const menuMobile = document.getElementById('menu-mobile--wrapper')
+  //     const cuerpo = document.getElementById('body');
+  //     const cabecera = document.getElementById('main-header');
+  //     const contenido = document.getElementById('main');
+  //     const pie = document.getElementById('main-footer');
+    
+  //     openMobileMenuButton.addEventListener("click", function() {
+  //       menuMobile.classList.add('open');
+  //       cabecera.classList.add('menu-mobile-open');
+  //       contenido.classList.add('menu-mobile-open');
+  //       pie.classList.add('menu-mobile-open');
+  //       cuerpo.style.overflow = 'hidden';
+  //     });
+    
+  //     closeMobileMenuButton.addEventListener("click", function() {
+  //       menuMobile.classList.remove('open');
+  //       cabecera.classList.remove('menu-mobile-open');
+  //       contenido.classList.remove('menu-mobile-open');
+  //       pie.classList.remove('menu-mobile-open');
+  //       cuerpo.style.overflow = 'inherit';
+  //     });
+    
+  //     contenido.addEventListener("click", function() {
+  //       if (menuMobile.classList.contains('open')) {
+  //         closeMobileMenuButton.click();
+  //         cabecera.classList.add('menu-mobile-close');
+  //         contenido.classList.add('menu-mobile-close');
+  //         pie.classList.add('menu-mobile-close');
+  //         cuerpo.style.overflow = 'inherit';
+  //           setTimeout(function() {
+  //             cabecera.classList.remove('menu-mobile-open');
+  //             contenido.classList.remove('menu-mobile-open');
+  //             pie.classList.remove('menu-mobile-open');
+  //             cabecera.classList.remove('menu-mobile-close');
+  //             contenido.classList.remove('menu-mobile-close');
+  //             pie.classList.remove('menu-mobile-close');
+  //         }, 300); 
+  //       }
+  //     });
+  //     pie.classList.add('menu-mobile-close');
+  //     cuerpo.style.overflow = 'inherit';
+  //       setTimeout(function() {
+  //         cabecera.classList.remove('menu-mobile-open');
+  //         contenido.classList.remove('menu-mobile-open');
+  //         pie.classList.remove('menu-mobile-open');
+  //         cabecera.classList.remove('menu-mobile-close');
+  //         contenido.classList.remove('menu-mobile-close');
+  //         pie.classList.remove('menu-mobile-close');
+  //     }, 300); 
+  //   }
+  // });
 
-  pie.addEventListener("click", function() {
-    if (menuMobile.classList.contains('open')) {
-      closeMobileMenuButton.click();
-      cabecera.classList.add('menu-mobile-close');
-      contenido.classList.add('menu-mobile-close');
-      pie.classList.add('menu-mobile-close');
-      cuerpo.style.overflow = 'inherit';
-        setTimeout(function() {
-          cabecera.classList.remove('menu-mobile-open');
-          contenido.classList.remove('menu-mobile-open');
-          pie.classList.remove('menu-mobile-open');
-          cabecera.classList.remove('menu-mobile-close');
-          contenido.classList.remove('menu-mobile-close');
-          pie.classList.remove('menu-mobile-close');
-      }, 300);
-    }
-  });
+  // pie.addEventListener("click", function() {
+  //   if (menuMobile.classList.contains('open')) {
+  //     closeMobileMenuButton.click();
+  //     cabecera.classList.add('menu-mobile-close');
+  //     contenido.classList.add('menu-mobile-close');
+  //     pie.classList.add('menu-mobile-close');
+  //     cuerpo.style.overflow = 'inherit';
+  //       setTimeout(function() {
+  //         cabecera.classList.remove('menu-mobile-open');
+  //         contenido.classList.remove('menu-mobile-open');
+  //         pie.classList.remove('menu-mobile-open');
+  //         cabecera.classList.remove('menu-mobile-close');
+  //         contenido.classList.remove('menu-mobile-close');
+  //         pie.classList.remove('menu-mobile-close');
+  //     }, 300);
+  //   }
+  // });
 
 
 
@@ -212,11 +253,11 @@ let chevronDepartmentsButton = document.querySelector('.departments__button-arro
 let lastScroll = 0;
 
  // Agregar o la clase "open" en base a la clase "home" del body
- if (isHome) {
-   categoriesList.classList.add('open');
-   chevronDepartmentsButton.classList.add('rotate');
-   departmentsButton.disabled = true;
- }
+//  if (isHome) {
+//    categoriesList.classList.add('open');
+//    chevronDepartmentsButton.classList.add('rotate');
+//    departmentsButton.disabled = true;
+//  }
 
 window.addEventListener("scroll", () => {
   // Comprobar si la clase "open" está presente y eliminarla

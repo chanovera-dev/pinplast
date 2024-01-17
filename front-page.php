@@ -2,7 +2,7 @@
     get_header();
 
     echo '
-    <main id="main"><h2>main</h2>';
+    <main id="main">';
         include(TEMPLATEPATH . '/parts/frontpage/hero.php');
         include(TEMPLATEPATH . '/parts/frontpage/features.php');
         include(TEMPLATEPATH . '/parts/frontpage/featured-products.php');
@@ -12,7 +12,7 @@
         include(TEMPLATEPATH . '/parts/frontpage/bestsellers.php');
         // include(TEMPLATEPATH . '/parts/frontpage/categories.php');
         include(TEMPLATEPATH . '/parts/frontpage/arrivals.php');
-        include(TEMPLATEPATH . '/parts/frontpage/latest.php');
+        include(TEMPLATEPATH . '/parts/frontpage/sale-products.php');
         if ( get_posts() == null ) : else: include(TEMPLATEPATH . '/parts/frontpage/blog.php'); endif;
         include(TEMPLATEPATH . '/parts/frontpage/products.php');
 

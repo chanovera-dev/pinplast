@@ -1,5 +1,6 @@
 <?php
-echo '<ul class="attachment-list">';
+echo '
+<ul class="attachment-list">';
     if (is_plugin_active('yith-woocommerce-wishlist/init.php')) {
         echo 
         '<li>'.
@@ -15,4 +16,5 @@ echo '<ul class="attachment-list">';
             <div class="wrapper"><span class="number">'; echo sprintf ( WC()->cart->get_cart_contents_count() );  echo'</span></div>
         </a>
     </li>';
-echo '</ul>';
+echo '
+</ul>';

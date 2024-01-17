@@ -22,7 +22,7 @@
                         <li>'; echo get_theme_mod('address_line2', 'entre Progreso y Acapulco.'); echo '</li>
                         <li>'; echo get_theme_mod('address_line3', 'Fracc. Jardines de Mocambo.'); echo '</li>
                         <li>Correo: '; echo get_theme_mod('email_office', 'pinplast@hotmail.com'); echo '</li>
-                        <li>Números: '; echo get_theme_mod('office_phone_number1', '2299216844'); echo ', '; echo get_theme_mod('office_phone_number2', '2299222433'); echo '</li>
+                        <li>Números: <a class="customer-service" href="tel:'.get_theme_mod('office_phone_number1', '2299216844').'">'.get_theme_mod('office_phone_number1', '2299216844').', </a><a class="customer-service" href="tel:'.get_theme_mod('office_phone_number2', '2299222433').'">'.get_theme_mod('office_phone_number2', '2299222433').'</a></li>
                     </ul>
                     <p><strong>'.esc_html__('Horario de servicio', 'pinplast').'</strong></p>
                     <ul>
