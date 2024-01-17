@@ -12,7 +12,7 @@ iframe{width:100%; height:var(--height-map--contact); margin-bottom:1rem;}
     #products{display:inherit;}
     #products .products-section{display:grid;grid-template-columns:repeat(3, 1fr);gap:3rem;}
     #products .products-section .title-wrapper.section{width:100%;}
-    #products .woocommerce .products{gap:0;}
+    #products .woocommerce .products{gap:0;grid-template-rows:repeat(3, 1fr);margin-bottom:0;}
     #products .woocommerce .products .product:before{box-shadow:none;}
     #products .woocommerce .products .product{border:1px solid var(--wp--preset--color--border);}
     #products .woocommerce .products .product:not(:last-child){border-bottom:1px solid transparent;}
