@@ -91,82 +91,68 @@ menuTopBarWithChildrens();
 
 
 function menuBottomBarWithChildrens() {
-    // Obtener todos los elementos li con la clase 'menu-item-has-children'
-    let menuItems = document.querySelectorAll('.bottom-bar .primary .menu .menu-item-has-children');
+    // Obtener el contenedor principal
+    let menuContainer = document.querySelector('.bottom-bar .primary .menu');
 
-    // Iterar sobre cada elemento y agregar el botón con el SVG
-    menuItems.forEach(function(item) {
-        // Obtener la etiqueta <a> dentro de cada elemento menu-item-has-children
-        let anchor = item.querySelector('a');
+    // Agregar evento mouseover para delegar la lógica a los elementos hijo
+    menuContainer.addEventListener('mouseover', function(event) {
+        let target = event.target;
 
-        // Crear el elemento SVG
-        var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-        svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-        svg.setAttribute('width', '16');
-        svg.setAttribute('height', '16');
-        svg.setAttribute('fill', 'currentColor');
-        svg.setAttribute('class', 'bi bi-chevron-down');
-        svg.setAttribute('viewBox', '0 0 16 16');
-
-        // Crear el elemento path dentro del SVG
-        var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-        path.setAttribute('fill-rule', 'evenodd');
-        path.setAttribute('d', 'M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z');
-
-        // Agregar el path al elemento SVG
-        svg.appendChild(path);
-
-        // Agregar el SVG al contenido de la etiqueta <a>
-        anchor.appendChild(svg);
-
-        let timeoutId;
-
-        // Agregar evento mouseover para agregar la clase 'open' a la clase 'sub-menu'
-        anchor.addEventListener('mouseover', function() {
+        // Verificar si el elemento objetivo es un elemento 'a' dentro de 'menu-item-has-children'
+        if (target && target.tagName === 'A' && target.closest('.menu-item-has-children')) {
             // Cerrar cualquier otro sub-menu abierto
             closeOtherSubMenus();
 
-            // Obtener la clase 'sub-menu' del elemento actual
+            let item = target.closest('.menu-item-has-children');
             let subMenu = item.querySelector('.sub-menu');
+
             // Agregar la clase 'open'
             subMenu.classList.add('open');
-            
-            // Limpiar cualquier temporizador existente
-            clearTimeout(timeoutId);
-        });
 
-        // Agregar evento mouseleave con un retraso de 3 segundos
-        anchor.addEventListener('mouseleave', function() {
-            // Obtener la clase 'sub-menu' del elemento actual
+            // Crear el elemento SVG
+            var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+            svg.setAttribute('width', '16');
+            svg.setAttribute('height', '16');
+            svg.setAttribute('fill', 'currentColor');
+            svg.setAttribute('class', 'bi bi-chevron-down');
+            svg.setAttribute('viewBox', '0 0 16 16');
+
+            // Crear el elemento path dentro del SVG
+            var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            path.setAttribute('fill-rule', 'evenodd');
+            path.setAttribute('d', 'M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z');
+
+            // Agregar el path al elemento SVG
+            svg.appendChild(path);
+
+            // Agregar el SVG al contenido de la etiqueta <a>
+            target.appendChild(svg);
+        }
+    });
+
+    // Agregar evento mouseleave para delegar la lógica a los elementos hijo
+    menuContainer.addEventListener('mouseleave', function(event) {
+        let target = event.target;
+
+        // Verificar si el elemento objetivo es un elemento 'a' dentro de 'menu-item-has-children'
+        if (target && target.tagName === 'A' && target.closest('.menu-item-has-children')) {
+            let item = target.closest('.menu-item-has-children');
             let subMenu = item.querySelector('.sub-menu');
 
             // Configurar un temporizador para remover la clase 'open' después de 3 segundos
-            timeoutId = setTimeout(function() {
+            setTimeout(function() {
                 subMenu.classList.remove('open');
+                // Eliminar el icono SVG
+                let svg = target.querySelector('svg');
+                if (svg) {
+                    svg.remove();
+                }
             }, 1000);
-        });
-
-        // Agregar evento mouseover a la clase 'sub-menu' para pausar la eliminación de la clase 'open'
-        let subMenu = item.querySelector('.sub-menu');
-        subMenu.addEventListener('mouseover', function() {
-            // Limpiar cualquier temporizador existente
-            clearTimeout(timeoutId);
-        });
-
-        // Agregar evento mouseleave a la clase 'sub-menu' para reanudar la eliminación de la clase 'open'
-        subMenu.addEventListener('mouseleave', function() {
-            subMenu.classList.remove('open');
-        });
+        }
     });
-
-    // Función para cerrar cualquier otro sub-menu abierto
-    function closeOtherSubMenus() {
-        let openSubMenus = document.querySelectorAll('.bottom-bar .primary .menu .sub-menu.open');
-        openSubMenus.forEach(function(openSubMenu) {
-            openSubMenu.classList.remove('open');
-        });
-    }
 }
+
 
 // Llamar a la función después de cargar el DOM
 document.addEventListener('DOMContentLoaded', menuBottomBarWithChildrens);
