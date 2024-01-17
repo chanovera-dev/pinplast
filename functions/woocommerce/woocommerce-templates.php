@@ -55,25 +55,7 @@ function shop_styles() {
         function sidebar_container_end() {
             echo '</aside>';
         }
-
-
-        // suplantando la sidebar de woocommerce
-        add_action( 'wp', function() {
-            // remueve la sidebar original
-            remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
-
-            // agrega la sidebar en las páginas de tienda, archivo, etc.
-            if ( is_shop() || is_product_category() || is_tax(get_object_taxonomies( 'product' )) ) {
-                // agrega la nueva sidebar en la posición 22
-                add_action( 'woocommerce_before_main_content', function() {
-                    if ( is_active_sidebar( 'woocommerce_sidebar' ) ) {
-                        dynamic_sidebar( 'woocommerce_sidebar' );
-                    } else {
-                        get_sidebar( 'woocommerce' );
-                    }
-                }, 22 );
-            }
-        } );
+        
     }
 }
 add_action( 'wp_enqueue_scripts', 'shop_styles' );
