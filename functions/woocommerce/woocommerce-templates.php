@@ -55,6 +55,10 @@ function shop_styles() {
         function sidebar_container_end() {
             echo '</aside>';
         }
+
+
+        // remueve la sidebar original
+        remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
     }
 }
 add_action( 'wp_enqueue_scripts', 'shop_styles' );

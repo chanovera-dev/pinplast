@@ -127,7 +127,7 @@ function pinplast_widgets_init() {
 add_action( 'widgets_init', 'pinplast_widgets_init' );
 
 
-
+ 
 // suplantando la sidebar de woocommerce
 add_action( 'wp', function() {
     // remueve la sidebar original
