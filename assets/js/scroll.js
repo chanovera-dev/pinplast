@@ -1,4 +1,9 @@
-// Variables globales
+
+
+// Función para manejar el scroll
+function handleScroll() {
+  // Comprobar si la clase "open" está presente y eliminarla
+  // Variables globales
 const body = document.body;
 const isHome = body.classList.contains('home');
 const categoriesList = document.getElementById('categories-list');
@@ -7,10 +12,6 @@ const chevronDepartmentsButton = document.querySelector('.departments__button-ar
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
 let lastScroll = 0;
-
-// Función para manejar el scroll
-function handleScroll() {
-  // Comprobar si la clase "open" está presente y eliminarla
   if (categoriesList.classList.contains('open')) {
     categoriesList.classList.remove('open');
     chevronDepartmentsButton.classList.remove('rotate');
