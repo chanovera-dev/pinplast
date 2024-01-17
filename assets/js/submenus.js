@@ -167,9 +167,7 @@ function menuBottomBarWithChildrens() {
         });
     }
 }
-
-// Llamar a la función después de cargar el DOM
-document.addEventListener('DOMContentLoaded', menuBottomBarWithChildrens);
+menuBottomBarWithChildrens();
 
 
 
