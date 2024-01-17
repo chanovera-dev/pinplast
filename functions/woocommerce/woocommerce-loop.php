@@ -61,8 +61,6 @@ function valoraciones_personalizadas() {
         return;
     }
 
-    $rating = wc_get_rating_html( $product->get_average_rating() );
-
     if ( $rating < 1 ) {
         echo '
         <div class="star-rating" role="img" aria-label="Valorado en ' . esc_attr( $product->get_average_rating() ) . ' de 5">
