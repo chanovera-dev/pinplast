@@ -1,14 +1,12 @@
-let menuMobile = document.getElementById('menu-mobile--wrapper');
-let sidebarMobile = document.getElementById('sidebar-woocommerce--wrapper');
 let panelOverlay = document.getElementById('panel-overlay');
 
 function openMenuMobile() {
-    menuMobile.classList.add('open');
+    document.getElementById('menu-mobile--wrapper').classList.add('open');
     panelOverlay.classList.add('show');
 }
 
 function closeMenuMobile() {
-    menuMobile.classList.remove('open');
+    document.getElementById('menu-mobile--wrapper').classList.remove('open');
     panelOverlay.classList.remove('show');
 }
 
@@ -20,14 +18,15 @@ document.addEventListener("click", function(event) {
 });
 
 function openSidebar() {
-    sidebarMobile.classList.add('open');
+    document.getElementById('sidebar-woocommerce--wrapper').classList.add('open');
     panelOverlay.classList.add('show');
 }
 
 function closeSidebarMobile() {
-    sidebarMobile.classList.remove('open');
+    document.getElementById('sidebar-woocommerce--wrapper').classList.remove('open');
     panelOverlay.classList.remove('show');
 }
+
 
 /* carga el svg4anybody después de que ha cargado todo el sitio */
 document.addEventListener('DOMContentLoaded', function() {
