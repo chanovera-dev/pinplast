@@ -9,7 +9,7 @@ ul.products li .onsale{position:absolute;top:var(--top--onsale);left:var(--left-
 
 /* imagen y link oficial al producto */
 ul.products li .woocommerce-LoopProduct-link.woocommerce-loop-product__link{padding:var(--padding--link-to-product);display:block;align-self:baseline;}
-ul.products li .woocommerce-LoopProduct-link.woocommerce-loop-product__link img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail{width:100%;aspect-ratio:1/1;object-fit:contain;}
+ul.products li .woocommerce-LoopProduct-link.woocommerce-loop-product__link img{width:100%;aspect-ratio:1/1;object-fit:contain;}
 
 /* título del producto y permalink */
 ul.products li .product-card__info{padding:var(--padding--product-card-info);align-self:end;}
