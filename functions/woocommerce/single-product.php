@@ -76,23 +76,17 @@ add_action('woocommerce_single_product_summary', 'contenedor_despues_carrito', 3
 
 
 // Quitar el rango de precios de los productos variables en woocommerce
- 
-function precio_desde( $price, $product ) {
-    // Precio normal
-    $prices = array( $product->get_variation_price( 'min', true ), $product->get_variation_price( 'max', true ) );
-    $price = $prices[0] !== $prices[1] ? sprintf( __( 'Desde: %1$s', 'woocommerce' ), wc_price( $prices[0] ) ) : wc_price( $prices[0] );
- 
-    // Precio rebajado
-    $prices = array( $product->get_variation_regular_price( 'min', true ), $product->get_variation_regular_price( 'max', true ) );
-    sort( $prices );
-    $saleprice = $prices[0] !== $prices[1] ? sprintf( __( 'Desde: %1$s', 'woocommerce' ), wc_price( $prices[0] ) ) : wc_price( $prices[0] );
- 
-    if ( $price !== $saleprice ) {
-        $price = '';
-    }
-   
-    return $price;
+function dcms_variation_price_format( $price, $product ) {
+
+	$min_price = $product->get_variation_price( 'min' );
+	$max_price = $product->get_variation_price( 'max' );
+
+	$result_price = wc_price( $min_price );
+
+    if ( $min_price !== $max_price ) {
+		$result_price = sprintf( __( 'Desde: %1$s', 'woocommerce' ), $result_price );
+	}
+
+    return $result_price;
 }
- 
-add_filter( 'woocommerce_variable_sale_price_html', 'precio_desde', 10, 2 );
-add_filter( 'woocommerce_variable_price_html', 'precio_desde', 10, 2 );
+add_filter( 'woocommerce_variable_price_html', 'dcms_variation_price_format', 10, 2 );
