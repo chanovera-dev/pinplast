@@ -60,7 +60,7 @@
     .single-product main .entry-summary .cart input[type=submit], 
     .single-product main .entry-summary .cart button.single_add_to_cart_button{height:4.6rem;}
     .single-product main .entry-summary .yith-wcwl-add-to-wishlist .feedback .yith-wcwl-icon{margin-right:0;}
-    .entry-summary .cart-wishlist--wrapper{display:inline-flex;align-items:end;width:100%;}
+    .entry-summary .cart-wishlist--wrapper{display:inline-flex;align-items:end;width:100%;margin-bottom:1rem;}
     .entry-summary .variations_form.cart{}
     .entry-summary .cart{display:inline-flex; align-items:center; gap:1rem;margin-bottom:.3rem;}
     .entry-summary .woocommerce-variation-add-to-cart{display:flex; gap:2rem;}
