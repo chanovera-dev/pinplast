@@ -84,7 +84,7 @@ function dcms_variation_price_format( $price, $product ) {
 	$result_price = wc_price( $min_price );
 
     if ( $min_price !== $max_price ) {
-		$result_price = sprintf( __( 'Desde: %1$s', 'woocommerce' ), $result_price );
+		$result_price = sprintf( $result_price );
 	}
 
     return $result_price;
