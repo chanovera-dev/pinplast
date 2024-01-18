@@ -71,4 +71,4 @@ add_action('woocommerce_single_product_summary', 'contenedor_antes_carrito', 29)
 function contenedor_despues_carrito() {
     echo '</div>';
 }
-add_action('woocommerce_single_product_summary', 'contenedor_despues_carrito', 31);
+add_action('woocommerce_single_product_summary', 'contenedor_despues_carrito', 32);
