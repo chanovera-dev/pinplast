@@ -88,7 +88,7 @@ function precio_desde( $price, $product ) {
     $saleprice = $prices[0] !== $prices[1] ? sprintf( __( 'Desde: %1$s', 'woocommerce' ), wc_price( $prices[0] ) ) : wc_price( $prices[0] );
  
     if ( $price !== $saleprice ) {
-        $price = '<del>' . $saleprice . '</del> <ins>' . $price . '</ins>';
+        $price = '';
     }
    
     return $price;
