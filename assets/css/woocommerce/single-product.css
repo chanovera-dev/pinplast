@@ -5,7 +5,7 @@
 
 /* sumario */
 .container.summary{margin-bottom:var(--margin-bottom--post);}
-.container.summary .section .product{position:relative;display:grid;grid-template-columns:repeat(auto-fill, minmax(400px, 1fr));}
+.container.summary .section .product{position:relative;display:grid;grid-template-columns:repeat(auto-fill, minmax(400px, 1fr));gap:5rem;}
     /* oferta */
     .container.summary .section .product .onsale{position:absolute;top:0;right:0;font-size:1.1rem;border-radius:.15rem;letter-spacing:.02em;line-height:1;padding:.5rem .8rem .4rem;font-weight:500;text-transform:uppercase;background-color:#f33;color:#fff;}
     /* galería */
