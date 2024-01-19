@@ -144,7 +144,8 @@ img{display:block;height:auto;}
             .bottom-bar .categories-list-wrapper .categories-list li a{font-weight:400;position:relative;display:block;padding:10px 16px;color:#fff;font-size:14px;line-height:16px;letter-spacing:.02em;transition:all .3s ease;}
             .bottom-bar .categories-list-wrapper .categories-list li a:hover{background-color:#525d66;}
             /* botón de comprar por categorías · lista abierta */
-            .bottom-bar .categories-list-wrapper .categories-list.open{background-color:var(--wp--preset--color--text);padding:.6rem 0;height:41.6rem;max-height:41.6rem;}
+            .bottom-bar .categories-list-wrapper .categories-list.open{background-color:var(--wp--preset--color--text);padding:.6rem 0;height:41.6rem;max-height:41.6rem;overflow-y:scroll;}
+            .bottom-bar .categories-list-wrapper .categories-list.open::-webkit-scrollbar{display:none;}
             
         /* menú */
         .bottom-bar nav{margin:0 1.4rem 0 .8rem;}
