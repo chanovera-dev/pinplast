@@ -12,7 +12,7 @@
 /* contenido */
 .page .border-section{border:2px solid var(--wp--preset--color--line);}
 .page main .section.content.upload{background-color:var(--wp--preset--color--background);margin-top:var(--content-upload);border-radius:.6rem;max-width:var(--max-width--content-upload);}
-.page main .section.content{padding:var(--padding-content--page);margin-bottom:var(--margin-bottom--post);}
+.page main .section.content{padding:var(--padding-content--page);margin-bottom:var(--margin-bottom--post);text-align:justify;}
 .page main .section.content .post-thumbnail{width:100%;margin-bottom:var(--margin-bottom-post-thumbnail--single);}
 .page main .section.content a{text-decoration:none;transition:all .3s ease;}
 .page main .section.content a:hover{text-decoration:underline;}
