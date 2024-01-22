@@ -152,7 +152,7 @@ function pinplast_theme_custom_breakpoints() {
                     --grid-template-columns--posts:1fr 1fr;
 
                     /* tienda */
-                    --grid-template-columns--lists:repeat(auto-fill, minmax(218px, 1fr));
+                    --grid-template-columns--lists:repeat(auto-fill, minmax(207px, 1fr));
                     --gap--lists:1.6rem 1.2rem;
 
                     /* single product */
