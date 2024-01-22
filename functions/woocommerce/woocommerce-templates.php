@@ -18,7 +18,7 @@ function shop_styles() {
         add_action('woocommerce_before_main_content', 'sidebar_buttons', 24);
         function sidebar_buttons() {
         echo '
-            <button id="filters-buttons" onclick="openSidebar()">
+            <button id="filters-button" onclick="openSidebar()">
                 <svg class="filters-button__icon" width="16px" height="16px">
                     <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#filters-16"></use>
                 </svg>' . 
