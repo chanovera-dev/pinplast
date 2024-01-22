@@ -33,3 +33,5 @@
 .page main .section.content hr:after{left:-3rem;}
 .page main .section.content :is(ul, ol){margin:var(--margin-lists--single);}
 .page main .section.content :is(ul, ol) li{margin-bottom:1.12rem;font-size:1.6rem;line-height:1.625;}
+.page main .section.content .category-button{background-color:var(--wp--preset--color--yellow);border:1px solid var(--wp--preset--color--yellow);color:var(--wp--preset--color--text);border-radius:.3rem;transition:all .3s ease;}
+.page main .section.content .category-button:hover{background-color:var(--wp--preset--color--text);border:1px solid var(--wp--preset--color--text);color:#fff;}
