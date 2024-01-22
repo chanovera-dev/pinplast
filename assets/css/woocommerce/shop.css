@@ -21,6 +21,7 @@
 #filters-button{
     display: flex;
     align-items: center;
+    gap:.7rem;
     padding: 0 9px;
     height: 32px;
     border: 1px solid #e5e5e5;
@@ -30,7 +31,9 @@
     font-family: inherit;
     font-weight: 500;
     font-size: 14px;
-    color: inherit;
+    color: var(--wp--preset--color--text);
+    margin-right:auto;
+    margin-bottom:1rem;
 }
 
 /* ordenamiento */
