@@ -331,7 +331,6 @@ function pinplast_theme_custom_breakpoints() {
                 }
 
                 /* tienda */
-                #filters-button{display:none;}
                 ul.products li{border:1px solid #ededed;}
                 ul.products li:hover{border:1px solid var(--wp--preset--color--yellow);}
                 ul.products li:hover .products-list__item{border:1px solid var(--wp--preset--color--yellow);}

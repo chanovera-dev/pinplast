@@ -54,8 +54,8 @@
     #main .container .section aside#sidebar-woocommerce--desktop .yith-wcan-filters .yith-wcan-filter .filter-title{margin-bottom:2rem;font-size:2rem;}
 
     /* botón de filtros */
-    #filters-button{margin-bottom:0;}
-    
+    #filters-button{display:none;}
+
     /* ordenamiento */
     .woocommerce-ordering{text-align:right;}
     .woocommerce-result-count{margin-bottom:0;}
