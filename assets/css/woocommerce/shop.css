@@ -53,6 +53,10 @@
     #main .container .section aside#sidebar-woocommerce--desktop .yith-wcan-filter{border:1px solid var(--wp--preset--color--border);padding:.8rem 2rem;}
     #main .container .section aside#sidebar-woocommerce--desktop .yith-wcan-filters .yith-wcan-filter .filter-title{margin-bottom:2rem;font-size:2rem;}
 
+    /* botón de filtros */
+    #filters-button{margin-bottom:0;}
+    
     /* ordenamiento */
     .woocommerce-ordering{text-align:right;}
+    .woocommerce-result-count{margin-bottom:0;}
 }
