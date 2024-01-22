@@ -131,3 +131,45 @@ function cerrar_contenedor_product_data() {
     echo '</div>';
 }
 add_action('woocommerce_after_shop_loop_item', 'cerrar_contenedor_product_data', 12);
+
+
+
+// Modificar texto del botón Añadir al carrito
+function pinplast_woocommerce_product_add_to_cart_text() {
+
+global $product;
+$product_type = $product->product_type;
+
+  switch ( $product_type ) {
+       case 'external':
+       return __( 'Ir', 'woocommerce' );
+       break;
+       case 'grouped':
+       return __( 'Detalles', 'woocommerce' );
+       break;
+       case 'simple':
+      return __( 'Comprar', 'woocommerce' );
+       break;
+       case 'variable':
+      return __( 'Opciones', 'woocommerce' );
+       break;
+       default:
+      return __( 'Detalles', 'woocommerce' );
+   }
+
+}
+
+add_filter( 'woocommerce_product_add_to_cart_text' , 'pinplast_woocommerce_product_add_to_cart_text' );
+
+
+
+//Modificar texto del botón Añadir al carrito si el producto es gratis
+// function custom_woocommerce_product_add_to_cart_text($text) {
+//     global $product;
+//     $precio = $product->get_price();
+//       if(empty ($precio)) {
+//           return __( '¡Gratis!', 'woocommerce' );
+//        }
+//         return $text;
+//     }
+//     add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text' );
