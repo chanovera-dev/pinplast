@@ -50,7 +50,7 @@
     #main .container .section{display:grid;gap:2rem 0;grid-template-columns:25.5rem auto 1fr auto;}
     #main .container .section .products{grid-column:2/5;margin-left:3rem;}
     #main .container .section aside{grid-row:2/4;border:1px solid var(--wp--preset--color--border);}
-    #main .container .section aside#sidebar-woocommerce--desktop .yith-wcan-filter{border:1px solid var(--wp--preset--color--border);padding:.8rem 2rem;margin-bottom:0;}
+    #main .container .section aside#sidebar-woocommerce--desktop .yith-wcan-filter{border:1px solid var(--wp--preset--color--border);padding:.8rem 2rem;margin-bottom:0!important;}
     #main .container .section aside#sidebar-woocommerce--desktop .yith-wcan-filters .yith-wcan-filter .filter-title{margin-bottom:2rem;font-size:2rem;}
 
     /* botón de filtros */
