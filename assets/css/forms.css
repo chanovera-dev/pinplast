@@ -63,6 +63,10 @@ main input[type=number]{-moz-appearance:textfield;}
 #button-less:focus, 
 #button-plus:focus{outline:none;}
 
+/* select */
+select{display:block;height:34px;padding:0 10px;border:1px solid #ced4da;background-color:#fff;}
+select:focus{border:1px solid var(--wp--preset--color--border-input-focus);box-shadow:var(--wp--preset--shadow--input);}
+
 /* contact-form 7 */
 .wpcf7-form{position:relative; display:grid; gap:1.5rem 1rem;}
 .border-section .wpcf7-form p{margin-top:0;}
