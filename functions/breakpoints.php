@@ -269,6 +269,8 @@ function pinplast_theme_custom_breakpoints() {
                     --grid-column--newsletter--footer:inherit;
                 }
 
+                select{margin-left:auto;}
+                
                 /* frontpage */
                     /* más vendidos */
                     #main .container .best-selling.section .woocommerce .products{grid-template-columns:1.8fr 1fr 1fr 1fr;}
