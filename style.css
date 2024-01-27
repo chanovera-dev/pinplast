@@ -209,5 +209,5 @@ img{display:block;height:auto;}
 .social .menu li a[href*="google"]{background-color:#e52e2e;}
 
 /* select */
-select{display:block;height:34px;padding:0 10px;border:1px solid #ced4da;background-color:#fff;border-radius:3px;font-size:14px;font-family:'Roboto';}
+select{display:block;height:34px;padding:0 10px;border:1px solid #ced4da;background-color:#fff;border-radius:3px;font-size:14px;font-family:'Roboto';outline:none;}
 select:focus{border:1px solid var(--wp--preset--color--border-input-focus);box-shadow:var(--wp--preset--shadow--input);}
