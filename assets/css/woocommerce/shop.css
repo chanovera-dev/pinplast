@@ -58,5 +58,5 @@
 
     /* ordenamiento */
     .woocommerce-ordering{text-align:right;}
-    .woocommerce-result-count{margin-bottom:0;margin-left:3rem;}
+    .woocommerce-result-count{margin-bottom:0;margin-left:3rem;display:inline-flex;align-items:center;}
 }
