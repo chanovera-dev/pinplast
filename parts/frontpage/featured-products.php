@@ -32,7 +32,7 @@ if (empty($productos_destacados)) {
         </div>
         <section class="featured-products slideshow section">
             <div class="slideshow-products--wrapper">
-                <?php echo do_shortcode('[products limit="8" featured="true"]'); ?>
+                <?php echo do_shortcode('[featured_products limit="8"]'); ?>
             </div>
         </section>
     </div>
