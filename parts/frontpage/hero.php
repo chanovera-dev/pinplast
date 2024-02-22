@@ -2,24 +2,25 @@
     <div class="section padding-section hero-section">
         <div class="slideshow-wrapper">
             <div id="slideshow" class="slideshow">
+                
                 <div class="slide slide1">
                     <div class="content">
-                        <h2 class="title">Gran selección en <br>artículos de pintura</h2>
-                        <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Etiam pharetra laoreet dui quis molestie.</p>
+                        <h2 class="title">Protección Total con <br>Nuestros Impermeabilizantes</h2>
+                        <p class="excerpt">Descubre fórmulas avanzadas para resguardar <br>tu hogar de filtraciones y humedad.</p>
                         <button>Comprar ahora</button>
                     </div>
                 </div>
                 <div class="slide slide2">
                     <div class="content">
-                        <h2 class="title">Gran selección en <br>artículos de pintura</h2>
-                        <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Etiam pharetra laoreet dui quis molestie.</p>
+                        <h2 class="title">Colores que Transforman, <br>Calidad que Perdura</h2>
+                        <p class="excerpt">Explora nuestra paleta de pinturas premium para <br>renovar tus espacios con durabilidad y estilo.</p>
                         <button>Comprar ahora</button>
                     </div>
                 </div>
                 <div class="slide slide3">
                     <div class="content">
-                        <h2 class="title">Gran selección en <br>artículos de pintura</h2>
-                        <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Etiam pharetra laoreet dui quis molestie.</p>
+                        <h2 class="title">Soluciones Rápidas con <br>Impermeabilizantes Prefabricados</h2>
+                        <p class="excerpt">Simplifica tu proyecto con nuestros impermeabilizantes listos para usar, <br>diseñados para adaptarse a cualquier desafío.</p>
                         <button>Comprar ahora</button>
                     </div>
                 </div>
