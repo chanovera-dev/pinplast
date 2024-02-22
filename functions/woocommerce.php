@@ -177,7 +177,7 @@ function display_highest_price_in_loop() {
         $highest_price = max($variation_prices);
 
         // Display the highest price
-        echo '<p>Highest Price: ' . wc_price($highest_price) . '</p>';
+        echo '<p>Precio de cubeta: ' . wc_price($highest_price) . '</p>';
     } else {
         // For simple products or other types, just display regular price
         echo '<p>Price: ' . $product->get_price_html() . '</p>';
