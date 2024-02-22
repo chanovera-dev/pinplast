@@ -201,7 +201,8 @@ function pinplast_theme_custom_breakpoints() {
                 /* pie de página */
                     /* dirección */
                     .footer-widgets address li:nth-child(5){margin-left:2.4rem;}
-                    .footer-widgets address li:nth-child(7){margin-left:2.4rem;}
+                    .footer-widgets address li:nth-child(7),
+                    .footer-widgets address li:nth-child(8){margin-left:2.4rem;}
                     /* copyright */
                     #main-footer .copyright{display:flex;flex-direction:row-reverse;height:5.4rem;padding:0;align-items:center;justify-content:space-between;}
             }
