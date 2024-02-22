@@ -7,7 +7,7 @@
                     <div class="content">
                         <h2 class="title">Protección Total con <br>Nuestros Impermeabilizantes</h2>
                         <p class="excerpt">Descubre fórmulas avanzadas para resguardar <br>tu hogar de filtraciones y humedad.</p>
-                        <button>Comprar ahora</button>
+                        <button><a href="<?php echo home_url(); ?>/categoria-producto/impermeabilizantes/">Comprar ahora</a></button>
                     </div>
                 </div>
                 <div class="slide slide2">
