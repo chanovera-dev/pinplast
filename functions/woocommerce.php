@@ -160,14 +160,4 @@ require_once(get_template_directory() . '/functions/woocommerce/woocommerce-loop
 
 
 // mostrar el costo máximo en la página de productos
-add_filter('woocommerce_variable_price_html', 'custom_variation_price', 10, 2);
-function custom_variation_price( $price, $product ) {
-// Get the highest priced variation
-$highest_price = $product->get_variation_price('max');
-	if ($highest_price > 0) {
-     // Display the highest price
-     $price = wc_price($highest_price);
- }
 
- return $price;
-}
