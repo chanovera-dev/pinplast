@@ -7,9 +7,8 @@
     gap: 0;
     border: none;
     padding: 0;
-    color:var(--wp--preset--color--text);
 }
-.feature-cell > a{display:grid; grid-template-columns:4.8rem 1fr; height:8.5rem; padding:0 2.4rem; align-items:center; place-content:center; gap:0 2.4rem; border:1px solid var(--wp--preset--color--line);}
+.feature-cell > a{display:grid; grid-template-columns:4.8rem 1fr; height:8.5rem; padding:0 2.4rem; align-items:center; place-content:center; gap:0 2.4rem; border:1px solid var(--wp--preset--color--line);color:var(--wp--preset--color--text);}
 .feature-cell h2{font-size:1.7rem; font-weight:700; grid-column:2/3; grid-row:1/2;}
 .feature-cell p{font-size:1.4rem; grid-column:2/3; grid-row:2/3;}
 
