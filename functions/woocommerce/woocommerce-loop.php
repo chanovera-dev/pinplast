@@ -93,19 +93,13 @@ add_action( 'woocommerce_after_shop_loop_item_title', 'valoraciones_personalizad
     // Añade la etiqueta de precio final
     add_action('woocommerce_after_shop_loop_item_title', 'custom_display_final_price', 10);
     function custom_display_final_price() {
-        //global $product;
-        $product = wc_get_product($product_id);
+        global $product;
         
         // Obtiene el precio final
-        //$final_price = wc_get_price_to_display($product);
-        if ($product) {
-            $price = $product->get_price();
-            $max_price = $product->get_variation_price('max'); // For variable products
-            // Use $max_price as needed
-        }
+        $final_price = wc_get_price_to_display($product);
 
         // Muestra el precio final
-        echo '<span class="price">' . wc_price($max_price) . '</span>';
+        echo '<span class="price">' . wc_price($final_price) . '</span>';
     }
 
     
