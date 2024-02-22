@@ -160,8 +160,6 @@ require_once(get_template_directory() . '/functions/woocommerce/woocommerce-loop
 
 
 // mostrar el costo máximo en la página de productos
-// Add this code to your theme's functions.php file
-
 function display_highest_price_in_loop() {
     global $product;
 
@@ -176,8 +174,9 @@ function display_highest_price_in_loop() {
         // Get the highest variation price
         $highest_price = max($variation_prices);
 
-        // Display the highest price
-        echo '<p>Precio de cubeta: ' . wc_price($highest_price) . '</p>';
+        // Display the highest price as the product price
+        $product->set_price($highest_price);
+        echo '<p>Price: ' . $product->get_price_html() . '</p>';
     } else {
         // For simple products or other types, just display regular price
         echo '<p>Price: ' . $product->get_price_html() . '</p>';
@@ -186,4 +185,3 @@ function display_highest_price_in_loop() {
 
 // Hook the function into the WooCommerce product loop
 add_action('woocommerce_after_shop_loop_item', 'display_highest_price_in_loop', 10);
-
