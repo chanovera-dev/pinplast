@@ -14,14 +14,14 @@
                     <div class="content">
                         <h2 class="title">Colores que Transforman, <br>Calidad que Perdura</h2>
                         <p class="excerpt">Explora nuestra paleta de pinturas premium para <br>renovar tus espacios con durabilidad y estilo.</p>
-                        <button>Comprar ahora</button>
+                        <button><a href="<?php echo home_url(); ?>/categoria-producto/pintura/">Comprar ahora</a></button>
                     </div>
                 </div>
                 <div class="slide slide3">
                     <div class="content">
                         <h2 class="title">Soluciones Rápidas con <br>Impermeabilizantes Prefabricados</h2>
                         <p class="excerpt">Simplifica tu proyecto con nuestros impermeabilizantes listos para usar, <br>diseñados para adaptarse a cualquier desafío.</p>
-                        <button>Comprar ahora</button>
+                        <button><a href="<?php echo home_url(); ?>/categoria-producto/prefabricado/">Comprar ahora</a></button>
                     </div>
                 </div>
             </div>
