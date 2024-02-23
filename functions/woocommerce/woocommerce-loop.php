@@ -88,19 +88,37 @@ add_action( 'woocommerce_after_shop_loop_item_title', 'valoraciones_personalizad
 
 // mostrar solamente el precio final
     // Elimina la etiqueta de precio regular
-    remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10);
+    // remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10);
 
     // Añade la etiqueta de precio final
-    add_action('woocommerce_after_shop_loop_item_title', 'custom_display_final_price', 10);
-    function custom_display_final_price() {
-        global $product;
+    // add_action('woocommerce_after_shop_loop_item_title', 'custom_display_final_price', 10);
+    // function custom_display_final_price() {
+        // global $product;
         
         // Obtiene el precio final
-        $final_price = wc_get_price_to_display($product);
+        // $final_price = wc_get_price_to_display($product);
 
         // Muestra el precio final
-        echo '<span class="price">' . wc_price($final_price) . '</span>';
-    }
+        // echo '<span class="price">' . wc_price($final_price) . '</span>';
+    // }
+
+// Eliminar la etiqueta de precio regular
+remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10);
+
+// Añadir la etiqueta de precio final más alto
+add_action('woocommerce_after_shop_loop_item_title', 'custom_display_highest_price', 10);
+function custom_display_highest_price() {
+    global $product;
+
+    // Obtener los precios
+    $prices = $product->get_variation_prices();
+
+    // Obtener el precio más alto
+    $highest_price = max($prices['price']);
+
+    // Mostrar el precio más alto
+    echo '<span class="price">' . wc_price($highest_price) . '</span>';
+}
 
     
 
