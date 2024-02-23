@@ -97,11 +97,16 @@ add_action( 'woocommerce_after_shop_loop_item_title', 'valoraciones_personalizad
         
          // Obtiene el precio final
          // $final_price = wc_get_price_to_display($product);
-         // Obtener los precios
-        $prices = $product->get_variation_prices();
-
-        // Obtener el precio más alto
-        $highest_price = max($prices['price']);
+         // Verifica si el producto tiene variaciones
+        if ($product->is_type('variable')) {
+            // Obtener los precios de las variaciones
+            $prices = $product->get_variation_prices();
+            // Obtener el precio más alto
+            $highest_price = max($prices['price']);
+        } else {
+            // Si el producto no tiene variaciones, obtener el precio regular
+            $highest_price = $product->get_price();
+        }
 
          // Muestra el precio final
          echo '<span class="price">' . wc_price($highest_price) . '</span>';
