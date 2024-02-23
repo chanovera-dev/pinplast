@@ -156,17 +156,3 @@ function woo_hide_page_title() { return false; }
 
 // Anexo para definir los contenedores de las listas de productos
 require_once(get_template_directory() . '/functions/woocommerce/woocommerce-loop.php');
-
-
-
-// cantidad de productos en la búsqueda
-add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page' );
-function new_loop_shop_per_page( $products ) {
-  $products = 20;
-  return $products;
-}
-add_filter( 'loop_shop_columns', 'new_loop_shop_columns' );
-function new_loop_shop_columns( $columns ) {
- $columns = 3;
- return $columns;
-}
