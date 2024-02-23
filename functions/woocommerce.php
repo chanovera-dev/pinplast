@@ -159,4 +159,9 @@ require_once(get_template_directory() . '/functions/woocommerce/woocommerce-loop
 
 
 
-// mostrar el costo máximo en la página de productos
+// cantidad de productos en la búsqueda
+add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page' );
+function new_loop_shop_per_page( $products ) {
+  $products = 20;
+  return $products;
+}
