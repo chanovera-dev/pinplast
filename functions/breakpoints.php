@@ -277,7 +277,7 @@ function pinplast_theme_custom_breakpoints() {
                     /* más vendidos */
                     #main .container .best-selling.section .woocommerce .products{grid-template-columns:1.8fr 1fr 1fr 1fr;}
                     #main .container .best-selling.section .woocommerce .products .product:nth-child(1){grid-column:span 1;grid-row:span 2;}
-                    #main .container .best-selling.section .woocommerce .products .product:nth-child(1) .products-list__item{grid-template-rows:auto auto auto 1fr;}
+                    #main .container .best-selling.section .woocommerce .products .product:nth-child(1) .products-list__item{grid-template-rows:auto 1fr;}
                     #main .container .best-selling.section .woocommerce .products .product:nth-child(1) .products-list__item .product-card__info .title-wrapper.product-permalink .woocommerce-loop-product__title{font-size:1.7rem;margin-bottom:1.5rem;}
                     #main .container .best-selling.section .woocommerce .products .product:nth-child(1) .products-list__item .price{font-size:2rem;}
                     #main .container .best-selling.section .woocommerce .products .product:nth-child(1) .products-list__item .product-card__buttons :is(.button.product_type_simple.add_to_cart_button.ajax_add_to_cart,.button.button.product_type_variable.add_to_cart_button,.button.product_type_simple){height:3.8rem;font-size:1.7rem;display:flex;align-items:center;padding:0 2rem;}
