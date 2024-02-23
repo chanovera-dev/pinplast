@@ -96,10 +96,15 @@ add_action( 'woocommerce_after_shop_loop_item_title', 'valoraciones_personalizad
          global $product;
         
          // Obtiene el precio final
-         $final_price = wc_get_price_to_display($product);
+         // $final_price = wc_get_price_to_display($product);
+         // Obtener los precios
+        $prices = $product->get_variation_prices();
+
+        // Obtener el precio más alto
+        $highest_price = max($prices['price']);
 
          // Muestra el precio final
-         echo '<span class="price">' . wc_price($final_price) . '</span>';
+         echo '<span class="price">' . wc_price($highest_price) . '</span>';
      }
 
 
