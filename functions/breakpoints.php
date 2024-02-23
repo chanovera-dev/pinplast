@@ -283,7 +283,7 @@ function pinplast_theme_custom_breakpoints() {
                     #main .container .best-selling.section .woocommerce .products .product:nth-child(1) .products-list__item .product-card__buttons :is(.button.product_type_simple.add_to_cart_button.ajax_add_to_cart,.button.button.product_type_variable.add_to_cart_button,.button.product_type_simple){height:3.8rem;font-size:1.7rem;display:flex;align-items:center;padding:0 2rem;}
                     #main .container .best-selling.section .woocommerce .products .product:nth-child(1) .products-list__item .product-card__buttons .yith-wcwl-add-button,
                     #main .container .best-selling.section .woocommerce .products .product:nth-child(1) .products-list__item .product-card__buttons .yith-wcwl-add-to-wishlist .feedback{width:3.8rem;}
-                    #main .container .best-selling.section .woocommerce .products .product:nth-child(1) .products-list__item .product-card__buttons{max-height:30rem;width:100%!important;left:0!important;position:relative;padding-bottom:var(--top--onsale);align-self:end;}
+                    #main .container .best-selling.section .woocommerce .products .product:nth-child(1) .products-list__item .product-card__buttons{max-height:30rem;width:100%!important;left:0!important;position:relative;padding-bottom:var(--top--onsale);align-self:end;padding-left:0;}
                     #main .container .best-selling.section .woocommerce .products .product:nth-child(1):hover .products-list__item .product-card__buttons{bottom:0;padding:0 1.8rem 1.8rem 1.8rem;border:none!important;}
                     /* recien llegados */
                     #main .container .arrivals.slideshow.section .slideshow-products--wrapper .woocommerce .products{width:200%;}
