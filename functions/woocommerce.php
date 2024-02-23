@@ -165,3 +165,8 @@ function new_loop_shop_per_page( $products ) {
   $products = 20;
   return $products;
 }
+add_filter( 'loop_shop_columns', 'new_loop_shop_columns' );
+function new_loop_shop_columns( $columns ) {
+ $columns = 3;
+ return $columns;
+}
