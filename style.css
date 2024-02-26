@@ -76,7 +76,7 @@ img{display:block;height:auto;}
         /* submenú */
         #menu-mobile > ul li.menu-item-has-children > ul.sub-menu{max-height:0;transition:all .4s ease;overflow:hidden;}
         #menu-mobile > ul li.menu-item-has-children > ul.sub-menu li a{font-size:1.4rem;height:4rem;background-color:#f7f7f7;}
-        #menu-mobile > ul li.menu-item-has-children > ul.sub-menu.open{max-height:500px;}
+        #menu-mobile > ul li.menu-item-has-children > ul.sub-menu.open{max-height:2500px;}
 
 /* sidebar woocommerce mobile */
 .sidebar-woocommerce--wrapper{position:fixed;top:0;left:-100%;width:100%;max-width:29rem;height:100svh;background-color:var(--wp--preset--color--background);transition:all .3s ease; z-index:8;}
