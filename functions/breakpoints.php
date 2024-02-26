@@ -211,7 +211,7 @@ function pinplast_theme_custom_breakpoints() {
                 /* frontpage */
                     /* más vendidos */
                     #main .container .best-selling.section .woocommerce .products .product:nth-child(1){grid-column:span 3;}
-                    #main .container .best-selling.section .woocommerce .products .product:nth-child(1) .products-list__item{grid-template-columns:16.8rem 1fr;grid-template-rows:auto;}
+                    #main .container .best-selling.section .woocommerce .products .product:nth-child(1) .products-list__item{grid-template-columns:16.8rem 1fr;grid-template-rows:1fr;}
                     #main .container .best-selling.section .woocommerce .products .product:nth-child(1) .products-list__item .woocommerce-LoopProduct-link.woocommerce-loop-product__link{grid-row:1/4;}
             }
 
