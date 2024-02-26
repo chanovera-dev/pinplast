@@ -6,7 +6,7 @@
         $items = wp_get_nav_menu_items( $menu_id );
         echo '
         <div class="name-menu--wrapper">
-            <p class="name-menu"><b>' . $menu->name . '</b></p>
+            <p class="name-menu"><b>' . esc_html__('Menú', 'pinplast') . '</b></p>
             <button id="close-menu-mobile" onclick="closeMenuMobile()">
             <svg width="20px" height="20px">
                 <use xlink:href="'.get_template_directory_uri().'/assets/img/sprite.svg#cross-20"></use>

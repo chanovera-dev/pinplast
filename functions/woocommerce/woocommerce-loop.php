@@ -19,9 +19,9 @@ add_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop
 
 
 
-// agregar link del producto alrededor del título y su contenedor
+// agregar link del producto alrededor del título y su contenedor · $loop->post->ID · $post->ID · the_permalink()
 function contenedor_link_arriba_titulo() {
-    echo '<div class="product-card__info"><a class="title-wrapper product-permalink" href="' . esc_url( get_permalink( $loop->post->ID ) ) . '">';
+    echo '<div class="product-card__info"><a class="title-wrapper product-permalink" href="' . esc_url( get_permalink(get_the_ID()) ) . '">';
 }
 add_action('woocommerce_shop_loop_item_title', 'contenedor_link_arriba_titulo', 9);
 
