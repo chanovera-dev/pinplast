@@ -39,6 +39,8 @@ abbr[title]{color:red; text-decoration:none;}
     color:#fff;
 }
 
+.woocommerce-input-wrapper button{width:100%;max-width:112px;margin-right:auto;display:grid;place-content:center;height:38px;}
+
 @media(min-width:1024px){
     main .woocommerce-checkout{grid-template-columns:1fr 1fr; grid-template-rows:auto 1fr;}
     #customer_details{grid-column:1/2; grid-row:1/3;}
