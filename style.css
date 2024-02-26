@@ -20,7 +20,7 @@ body{font-size:1.5rem;position:relative;}
 :is(header,footer,aside) :is(ol,ul){padding:0;list-style:none;}
 img{display:block;height:auto;}
 .container .section{width:var(--breakpoint);margin-inline:auto;}
-.yith-wcwl-add-button a.add_to_wishlist{font-size:0!important;}
+/*.yith-wcwl-add-button a.add_to_wishlist{font-size:0!important;}
 
 /* cabecera */
 #main-header{position:sticky;top:0;background-color:var(--background--header);transform:translate3d(0,0,0);z-index:6;}
