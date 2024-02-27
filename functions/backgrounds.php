@@ -23,7 +23,7 @@ function pinplast_theme_custom_backgrounds() {
 
             @media(min-width:1200px){
                 #slideshow .slide2{background:linear-gradient(to right, #0000005b, #00000000), url('<?php echo get_theme_mod('slide_img1_desktop_full', get_bloginfo('template_url') . '/assets/img/slides/slide-1-full-new.jpg'); ?>');}
-                #slideshow .slide1{background:linear-gradient(to right, #0000005b, #00000000), url('<?php echo get_theme_mod('slide_img2_desktop_full', get_bloginfo('template_url') . '/assets/img/slides/1desktop.jpg'); ?>');}
+                #slideshow .slide1{background:linear-gradient(to right, #0000005b, #00000000), url('<?php echo get_theme_mod('slide_img2_desktop_full', get_bloginfo('template_url') . '/assets/img/slides/1tablet.jpg'); ?>');}
                 #slideshow .slide3{background:linear-gradient(to right, #0000005b, #00000000), url('<?php echo get_theme_mod('slide_img3_desktop_full', get_bloginfo('template_url') . '/assets/img/slides/slide-3-full-new.jpg'); ?>');}
             }
         </style>
