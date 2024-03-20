@@ -2,6 +2,7 @@ function scrollPage() {
   // detecta el scroll en el sitio y agrega clases según el evento desencadenado
   const body = document.body;
   const isHome = body.classList.contains('home');
+  const is404 = body.classList.contains('error404');
   const header = document.querySelector(".main-header");
   const menu = document.querySelector(".main-header .menu");
   const scrollUp = "scroll-up";
@@ -11,7 +12,7 @@ function scrollPage() {
   let chevronDepartmentsButton = document.querySelector('.departments__button-arrow');
   let lastScroll = 0;
 
-  if (isHome) {
+  if (isHome || is404) {
     categoriesList.classList.add('open');
     chevronDepartmentsButton.classList.add('rotate');
     departmentsButton.disabled = true;
@@ -27,7 +28,7 @@ function scrollPage() {
     const currentScroll = window.pageYOffset;
     if (currentScroll <= 0) {
       body.classList.remove(scrollUp);
-      if (isHome) {
+      if (isHome || is404) {
         categoriesList.classList.add('open');
         chevronDepartmentsButton.classList.add('rotate');
         departmentsButton.disabled = true;
