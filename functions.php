@@ -250,3 +250,13 @@ function widgets_areas(){
     );
 }
 add_action( 'widgets_init', 'widgets_areas' );
+
+
+
+add_filter('pre_get_document_title', 'cambio_404', 10);
+function cambio_404($title) {
+  if (is_404()) {
+    return 'Pinplast';
+  }
+  return $title;
+}
