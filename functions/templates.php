@@ -1,14 +1,14 @@
 <?php
 
 // Estilos para la página 404
-function page404_styles() {
-    if ( is_404() ) {
-        wp_enqueue_style( 'error404-styles', get_template_directory_uri() . '/assets/css/error404.css' );
+// function page404_styles() {
+//    if ( is_404() ) {
+//        wp_enqueue_style( 'error404-styles', get_template_directory_uri() . '/assets/css/error404.css' );
         /* forms */
-        wp_enqueue_style( 'forms-styles', get_template_directory_uri() . '/assets/css/forms.css' );
-    }
-}
-add_action( 'wp_enqueue_scripts', 'page404_styles' );
+//        wp_enqueue_style( 'forms-styles', get_template_directory_uri() . '/assets/css/forms.css' );
+//    }
+// }
+// add_action( 'wp_enqueue_scripts', 'page404_styles' );
 
 
 
@@ -83,7 +83,7 @@ add_action( 'wp_enqueue_scripts', 'single_styles' );
 
 // Estilos para la página frontal
 function pinplast_frontpage_styles() {
-    if ( is_front_page() or is_page_template('front-page.php') ) {
+    if ( is_front_page() or is_page_template('front-page.php') or is_404() ) {
         wp_dequeue_style( 'wp-block-library' );
         /* slideshows */
         wp_enqueue_script( 'slideshow-hero', get_template_directory_uri() . '/assets/js/slideshow-hero.js', array(), '1.0', true );
